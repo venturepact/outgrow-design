@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+    src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/montserrat-regular-webfont.woff2') format('woff2'), url('../fonts/montserrat-regular-webfont.woff') format('woff'), url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-smooth: always;
+    -webkit-font-smoothing: antialiased;
+}
+
+@font-face {
+    font-family: "montserratbold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserratsemibold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-semibold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-semibold-webfont.woff2") format("woff2"), url("../fonts/montserrat-semibold-webfont.woff") format("woff"), url("../fonts/montserrat-semibold-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "montserratlight";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'montserratultra_light';
+    src: url('../fonts/montserrat-ultralight-webfont.woff2') format('woff2'), url('../fonts/montserrat-ultralight-webfont.woff') format('woff'), url('../fonts/montserrat-ultralight-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "montserrathairline";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-hairline-webfont.woff2") format("woff2"), url("../fonts/montserrat-hairline-webfont.woff") format("woff"), url("../fonts/montserrat-hairline-webfont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: url(MaterialIcons-Regular.eot);
+    /* For IE6-8 */
+    src: local('Material Icons'), local('materialIcons-Regular'), url(../fonts/materialIcons-Regular.woff2) format('woff2'), url(../fonts/materialIcons-Regular.woff) format('woff'), url(../fonts/materialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    /* Preferred icon size */
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+	
+@font-face {
+    font-family: 'montserrat-bold';
+    src: url('../fonts/montserrat-bold-webfont.eot');
+    src: url('../fonts/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff'),
+         url('../fonts/montserrat-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* font kit end */
+/*################### common css start ###################*/
+    
+body {
+    font-family: 'montserratregular';
+    color: #8e989f;
+}
+
+ul, li {
+    list-style: none;
+}
+
+a:focus,
+img:focus,
+button:focus,
+input:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+    color:inherit;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+
+label {
+    margin-bottom: 0px !important;
+    font-weight: normal !important;
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.np{padding: 0px;}
+
+.img-max{
+    max-width: 100%;
+}
+
+/* Start: Modal Video */
+    #video-modal {
+        padding-left: 0px !important;
+    }
+
+    #video-modal .modal-xlg{
+        float: left;
+        width: 100%;
+        margin: 0px;
+    }
+
+    #video-modal .modal-content {
+        border-radius: 0px;
+        /* border: 1px solid #e9eef0; */
+        float: left;
+        width: 100%;
+        height: 100%;
+        box-shadow: none;
+        border: none;
+    }
+
+    #video-modal .modal-header {
+        padding: 20px 25px;
+        border-bottom: none;
+    }
+
+    #video-modal .modal-logo{
+        margin-bottom: 50px;
+        margin-top: 40px;
+    }
+
+    #video-modal .modal-body {
+        position: relative;
+        padding: 0px;
+        float: left;
+        width: 100%;
+    }
+
+    #video-modal .modal-sidebar {
+        height: 100vh;
+        background: #fff;
+        box-shadow: 0px 1px 11px 0px rgba(0, 0, 0, 0.23);
+        width: 240px;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        float: left;
+        z-index: 9;
+    }
+
+    .sidebar-arrow {
+        background: #fff;
+        height: 30px;
+        width: 30px;
+        position: absolute;
+        top: 15px;
+        cursor: pointer;
+        right: -30px;
+        z-index: 9999;
+        margin: 0 auto;
+        text-align: center;
+        /* padding: 12px 0px; */
+        box-shadow: 0px 0 6px 0px rgba(0, 0, 0, 0.2);
+    }
+
+    .sidebar-arrow i.material-icons{
+        color: #62696d;
+        font-size: 12px;
+        padding: 8px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .sidebar-inner {
+        float: left;
+        width: 100%;
+        padding: 30px 0 0;
+    }
+
+    .sidebar-title{
+        font-size: 18px;
+        color: #fb545b;
+        font-family: montserratregular;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: 0px;
+    }
+
+    .sidebar-video-thumb{
+        float: left;
+        width: 100%;
+    }
+
+    .sidebar-video-container{
+        float: left;
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 0px 30px;
+    }
+
+    .sidebar-video-block{
+        text-align: center;
+    }
+
+    .sidebar-video-block iframe {
+        border: none;
+        z-index: -1;
+        position: relative;
+    }
+
+    .sidebar-video-content{
+        float: left;
+        width: 100%;        
+        padding: 0px 10px 0px;
+        line-height: 16px;
+    }
+
+    .sidebar-video-content .video-title{
+        font-size: 14px;
+        color: #62696d;
+        font-family: montserratregular;
+        display: block;
+        padding-top: 5px;
+    }
+
+    .sidebar-video-content .now-playing{
+        color: #fb545b;
+        font-size: 10px;
+        font-family: montserratregular;
+    }
+
+    .sidebar-video-content .now-playing i.material-icons {
+        font-size: 10px;
+        position: relative;
+        top: 1px;
+    }
+
+    .modal-video-full {
+        float: left;
+        /*width: 81%;*/
+        /*width: calc(100% - 255px);*/
+        width: calc(100% - 272px);
+        height: 100vh;
+        margin-left: 255px;
+        position: relative;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(255, 255, 255, 0.95);
+        /*overflow-y: scroll;*/
+        padding: 30px 65px 55px;
+        text-align: center;
+    }
+
+    .modal-video-full h3{
+        font-size: 16px;
+        color: #62696d;
+        font-family: montserratregular;
+        margin-top: 0;    
+        margin-bottom: 32px;
+}
+
+    .modal-video-full-block{
+        float: left;
+        width: 100%;
+        /*max-height: 528px;*/
+    }
+
+    .modal-video-full-block iframe{
+        border: none;
+        box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.28);
+    }
+
+    #video-modal button.close.btn-close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        opacity: 0.9;
+        z-index: 9;
+    }
+
+    #video-modal button.close.btn-close i.material-icons{
+        font-size: 24px;
+        color: #62696d;
+    }
+
+    #video-modal button.close.btn-close:hover {
+        opacity: 1;
+    }
+
+    .embed-responsive {
+        overflow: visible;
+    }
+
+/* End: Modal Video */
+
+/* start: responsive css */
+
+    @media (max-width: 767px) {
+        #video-modal .modal-sidebar{
+            left: -240px;
+        }
+
+        .modal-video-full {
+            width: 100%;
+            height: 100vh;
+            margin-left: 0px;
+        }
+
+        .modal-video-full-block iframe {
+            height: 100%;
+        }
+
+        /*#video-modal .modal-content {
+            width: 100%;
+        }*/
+
+    }
+
+    @media (max-width: 1920px) {
+        .sidebar-inner .slimScrollDiv{
+            height: 880px;
+        }
+
+        .sidebar-inner .slimscroll{
+            height: 880px;
+        }
+
+    }
+
+/* end: responsive css */

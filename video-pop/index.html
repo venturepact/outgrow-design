@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outgrow :: Home</title>
+
+	<link href='https://www.filepicker.io/api/file/Ay8X8PhXTdaClFdhsLeR' rel='shortcut icon'>
+    <!-- css start -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<!-- homepage css -->
+    <link rel="stylesheet" href="css/custom-sa.css">
+    
+            
+</head>
+
+<body class="" > 
+
+	<div class="">
+		<button type="button" class="btn" data-toggle="modal" data-target="#video-modal">CTA Button</button>
+	</div>
+
+	<!-- Start: Modal Video -->
+	<div id="video-modal" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-xlg">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<!-- <div class="modal-header">			
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+	       			 <h4 class="modal-title">Login</h4>
+				</div> -->
+				<div class="modal-body">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="row">
+						<div class="modal-sidebar">
+							<div class="sidebar-arrow">
+								<i class="material-icons">arrow_backword</i>
+							</div>
+							<div class="sidebar-inner">
+								<h2 class="sidebar-title">Studio Tour Videos</h2>
+								<div class="sidebar-video-thumb slimscroll">
+									<div class="sidebar-video-container">
+										<a href="#">
+											<div class="sidebar-video-block">
+												<iframe width="160" height="90" src="https://www.youtube.com/embed/wFrj5kc1MLs">
+												</iframe>
+											</div>
+										</a>
+										<div class="sidebar-video-content">
+											<span class="video-title">Landing Page</span>
+											<a class="now-playing" href="javascript:void(0);">
+												<i class="material-icons">play_circle_filled</i>
+												Now Playing
+											</a>
+										</div>
+									</div>
+									<div class="sidebar-video-container">
+										<a href="#">
+											<div class="sidebar-video-block">
+												<img src="images/1.jpg">
+											</div>
+										</a>
+										<div class="sidebar-video-content">
+											<span class="video-title">Questionnaire</span>
+											<!-- <a class="now-playing" href="javascript:void(0);">
+												<i class="material-icons">play_circle_filled</i>
+												Now Playing
+											</a> -->
+										</div>
+									</div>
+									<div class="sidebar-video-container">
+										<a href="#">
+											<div class="sidebar-video-block">
+												<img src="images/2.jpg">
+											</div>
+										</a>
+										<div class="sidebar-video-content">
+											<span class="video-title">Results</span>
+											<!-- <a class="now-playing" href="javascript:void(0);">
+												<i class="material-icons">play_circle_filled</i>
+												Now Playing
+											</a> -->
+										</div>
+									</div>
+									<div class="sidebar-video-container">
+										<a href="#">
+											<div class="sidebar-video-block">
+												<img src="images/3.jpg">
+											</div>
+										</a>
+										<div class="sidebar-video-content">
+											<span class="video-title">How to build a formula</span>
+											<!-- <a class="now-playing" href="javascript:void(0);">
+												<i class="material-icons">play_circle_filled</i>
+												Now Playing
+											</a> -->
+										</div>
+									</div>
+									<div class="sidebar-video-container">
+										<a href="#">
+											<div class="sidebar-video-block">
+												<iframe width="160" height="90" src="https://www.youtube.com/embed/wFrj5kc1MLs">
+												</iframe>
+											</div>
+										</a>
+										<div class="sidebar-video-content">
+											<span class="video-title">Landing Page</span>
+											<!-- <a class="now-playing" href="javascript:void(0);">
+												<i class="material-icons">play_circle_filled</i>
+												Now Playing
+											</a> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-video-full">
+							<h3 class="">How to make the Landing Page your own</h3>
+							<div class="modal-video-full-block">
+								<div class="embed-responsive embed-responsive-16by9">
+									<!-- <iframe width="960" height="540" src="https://www.youtube.com/embed/wFrj5kc1MLs">								
+									</iframe> -->
+									<iframe src="https://www.youtube.com/embed/wFrj5kc1MLs" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+					</div>			
+				</div>
+				<!-- <div class="modal-footer">
+					
+				</div> -->
+			</div>
+		</div>
+	</div>
+	<!-- End: Modal Video -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Slimscroll :js -->
+    <script type="text/javascript" src="js/jquery.slimscroll.js"></script>
+	<script>
+	//window.onresize = function(){ location.reload(); }
+	
+     jQuery(document).ready(function() {
+        $('.slimscroll').slimscroll();
+
+    //  	$('#scrollDiv').slimScroll({
+	   //    	height: 'auto'
+	   //  });
+
+ 	 	// $(window).resize(function(){
+	   //    	var h=$(window).height()-380;
+	   //    	$('#scrollDiv').height(h);
+	   //    	$('.slimScrollDiv').height(h);
+	   //  });
+
+    });
+
+	if($(window).width()<767){
+		$(".modal-sidebar .sidebar-arrow").html('<i class="material-icons">arrow_forward</i>');
+		$(".modal-sidebar").addClass('closed');
+		// $(".modal-sidebar").animate({
+  //           marginLeft: '0px',
+  //           easing: 'linear'
+  //       }, 300);
+	}
+
+    $(".sidebar-arrow").click(function(){
+    	if($(".modal-sidebar").hasClass('closed')){
+    		
+			$(".modal-sidebar").removeClass('closed');
+			$(".modal-sidebar .sidebar-arrow").html('<i class="material-icons">arrow_backward</i>');
+	        $(".modal-sidebar").animate({
+	            left: "0px",
+	            easing: 'linear'
+	        }, 300);
+
+	        if($(window).width()>767){
+				var winWidth = $(window).width() - 242;
+				$(".modal-video-full").animate({
+		           	'width':winWidth,
+		           	marginLeft: '+=255px',
+		           	easing: 'linear'
+		       	}, 300);
+		   	}
+    		
+	        // setTimeout(function(){$(".modal-video-full").css({
+	        // 	'margin-left':'235px'});},200);
+    	}
+    	else{
+	    	$(".modal-sidebar").addClass('closed');
+			$(".modal-sidebar .sidebar-arrow").html('<i class="material-icons">arrow_forward</i>');
+	        $(".modal-sidebar").animate({
+	            left: "-240px",
+	            easing: 'linear'
+	        }, 300);
+			$(".modal-video-full").animate({
+	            'width':'100%',
+	            marginLeft: '0px',
+	            easing: 'linear'
+	        }, 300);
+
+			// if($(window).width()>1920){
+			// 	$(".modal-video-full").animate({
+		 //            'width':'87%',
+		 //            marginLeft: '+=255px',
+		 //            easing: 'linear'
+		 //        }, 300);
+   //  		}
+
+	    }
+    });
+    </script>
+</body>
+</html>

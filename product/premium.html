@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+	<title>Product</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!-- Favicon -->
+	<link href='https://www.filepicker.io/api/file/Ay8X8PhXTdaClFdhsLeR' rel='shortcut icon'>
+
+	<link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Your custom styles -->
+    <link href="assets/css/extra.css" rel="stylesheet">
+    <link href="assets/css/custom.css" rel="stylesheet">
+    <link href="assets/css/custom-material.css" rel="stylesheet">
+
+    <!-- Bootstrap Material Design : CSS 
+  	<link href="assets/bootstrap-material/css/bootstrap-material-design.css" rel="stylesheet">
+  	<link href="assets/bootstrap-material/css/ripples.min.css" rel="stylesheet">  -->
+
+  	<!-- Bootstrap Switch Master : CSS -->
+  	<link href="assets/css/bootstrap-switch.css" rel="stylesheet">	
+    <style type="text/css">
+    .cookies-header{
+	    background: #f87b80;
+	    color: #fff;
+	    float: left;
+	    width: 100%;
+	    padding: 10px 40px;
+	    font-family: montserratlight;
+        font-size: 13px;
+    	box-shadow: 2px 2px 13px 1px rgba(0, 0, 0, 0.3);
+    }
+    .cookies-header i{
+    	color: #fff;
+	    display: inline-block;
+	    vertical-align: middle;
+	    margin-right: 9px;
+	    font-size: 16px;
+	    margin-top: -3px;
+    }
+    .cookies-header .btn-close{
+	    opacity: 0.8;
+	    line-height: 15px;
+    }
+    </style>
+</head>
+
+<body class="">
+	<!-- Start: Main -->
+    <div id="main">
+    	<!-- Start: Header -->
+		<header class="cookies-header">
+			<div class="col-md-12 np">
+				<i class="material-icons">settings</i><span>Allows cookies from the outgrow web application.</span>
+				<button type="button" class="close btn-close pull-right" data-dismiss="modal" aria-label="Close">
+                    <i class="material-icons">clear</i>
+                </button>
+			</div>
+
+		</header>
+		<!-- End: Header -->
+
+
+	</div>
+	<!-- End: Main -->
+
+	<!-- BEGIN: PAGE SCRIPTS --> 
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script>
+
+	<!-- BEGIN: Library --> 
+	<script src="assets/js/jquery-ui.js"></script>
+
+	<!-- Bootstrap script -->
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>  
+
+    <!-- Bootstrap Switch Master -->
+    <script type="text/javascript" src="assets/js/bootstrap-switch.js"></script>
+
+    <!-- Bootstrap Material Design : jQuery --> 
+  	<script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script>
+  	<script type="text/javascript" src="assets/bootstrap-material/js/ripples.min.js"></script> 
+  	<script>
+	  	$.material.init();
+
+	  	$(document).on('click','.cookies-header .btn-close',function(){
+	  		$('.cookies-header').fadeOut();
+
+	  	})
+	</script>
+
+</body>
+</html>

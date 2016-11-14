@@ -1,0 +1,214 @@
+/*################### Feature Page responsive css start ###################*/
+
+@media (min-width: 320px) and (max-width:768px) {
+	#feature .section-1-left h3 {
+		font-size: 30px;
+	}
+	#feature .section-1-right {
+		padding-right: 0;
+	}
+	#feature .section-1 {
+		margin-top: 10px;
+		margin-bottom: -10px;
+	}
+	#feature .section-1-left {
+		padding-left: 10px;
+	}
+	#feature .r-hide{
+		display:none;
+	}
+	#feature .r-show{
+		display:block;
+	}
+	#feature .section-1-right{
+		padding-left: 0px;
+	}
+	#feature .collag-right{
+		margin-top: 20px;
+		width: 144px;
+		right: 0px;
+	}
+	#feature .collag-right .collage-red {
+		width: 144px;
+		height: 144px;
+		padding: 5px;
+		margin-bottom: 10px;
+	}
+	#feature .section-1-right .collage-text {
+		margin-top: 10px;
+	}
+	#feature .collag-left {
+		float: left;
+		width: 144px;
+	}
+	#feature .collag-left .collage-red {
+		float: left;
+		width: 144px;
+		height: 144px;
+		padding: 0px 10px;
+		margin-right: 0px;
+	}
+	#feature .section-1-left h4{
+		display:none;
+	}
+	#feature .section-1-left .btn-buildcal {
+		width: 100%;
+		margin-top:0px;
+		padding:15px 20px;
+	}
+	#feature .section-1-left .btn-buildcal i {
+		display: inline-block;
+		float: none;
+		position: relative;
+		margin-right: 10px;
+		top: 5px;
+	}
+	#feature .section1-left-cell{
+		height:50vh;
+	}
+	#feature .section-7{
+		margin-top:50px;
+	}
+	#feature .section .img-container-left{
+		margin-left:0px;
+		width:100%;
+		float:left;
+	}
+	#feature .section-9-left{
+		padding:0px 15px;
+	}
+	#feature .section-7 .slider-sa {
+		min-height: 200px;
+		padding-right: 0px;
+	}
+	#feature .section-9-left span{
+		margin-left:10px;
+	}
+	#feature .section-7 .section-9-left .btn-exploreTemp{
+		margin-left: 20px;
+		top: 50px;
+	}
+	#feature img {
+		width: 100%;
+		/*height: auto;*/
+		margin-top: 40px;
+	}
+	#feature .sec4-2 {
+		left: 50%;
+		top: -15%;
+    }
+	#feature img.sec4-2 {
+		height: 100%;
+		width: 50%;
+		max-width:100%;
+	}
+	#feature .section.section-5 {
+		margin-top: 30px;
+		margin-bottom: 40px;
+	}
+	#feature .section .container.sec-5-container {
+		width:100%;
+		padding:0px;
+	}
+	#feature .section.section-5 p{
+		width:100%;
+		margin-left:0px;
+		font-size:15px;
+	}
+	#feature .section.section-5 span{
+		font-size:30px;
+		margin-top:50px;
+	}
+	#feature .container.container-center h1{
+		text-align:left;
+		margin-left:0px;
+	}
+	#feature .section .img-container-right{
+		width: 100%;
+	}
+	#feature .section-4 .section-4-left span span{
+		width: 80%;
+		padding:0px;
+	}
+	#feature .section-4 .section-4-left h4{
+		padding:0 15px;
+		margin-left:-40px;
+	}
+	#feature .section-4-left span{
+		padding:0 15px;
+		margin-left:-40px;
+	}
+	#feature .container.container-center .sec10-testimonial{
+		padding-top: 30px;
+		padding-bottom: 30px;
+		padding-right: 10px;
+		min-height:150px;
+	}
+	#feature .section.section-10 i.material-icons{
+		font-size:52px;
+	}
+	#feature .section.section-10 i.material-icons{
+		font-size:50px;
+	}
+	#feature .section.section-10 span{
+		font-size:15px;
+	}
+	#feature .section-7 .section-9-left span span{
+		width:80%;
+	}
+	#feature .section-7 .section-9-left .btn-buildCalc{
+		margin-left:25px;
+		margin-top:50px;
+	}
+	#feature .section.section-6.sec-analytics .container{
+		width:100%;
+	}
+	#feature .section-6{
+		margin-top:0px;
+		margin-bottom:10px;
+	}
+	#feature .section-6.sec-analytics h1{
+		padding:0 15px;
+		text-align:left;
+	}
+	#feature .section-6.sec-analytics p{
+		padding:0 15px;
+		text-align:left;
+	}
+	#feature .section.section-10.sec-help p{
+		padding-bottom:60px;
+	}
+	#feature .footer-link ul li a{
+		font-size:12px;
+	}
+	#feature .section.section-6.sec-analytics .container img{
+		margin-top:30px;
+	}
+	#feature .section-10{
+		margin-bottom:0px;
+	}
+	#feature .lead-gen{
+		margin-top:0px;
+	}
+	#feature .section-1-left .btn-bottominfo{
+		width:100%;
+	}
+	#feature .footer-copyright{
+		display:none;
+	}
+}
+
+@media (min-width: 440px) and (max-width:768px) {
+	
+}
+
+@media (min-width: 600px) and (max-width:768px) {
+	
+}
+@media (min-width: 1024px) and (max-width:1366px) {
+	.r-show{
+		display:none;
+	}
+}
+
+/*################### Feature Page responsive css end ###################*/

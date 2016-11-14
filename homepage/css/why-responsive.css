@@ -1,0 +1,477 @@
+/*################### Why page responsive css start ###################*/
+
+@media (min-width: 320px) and (max-width:768px) {
+	#why .rs-hide{
+		display:none !important;
+	}
+	#why .rs-show{
+		display:block !important;
+	}
+	#why .section-1{
+		margin-top:10px;
+	}
+	#why .section-1-left{ 
+		padding-left:25px;
+	}
+	#why .section-1-why{
+		margin-top:20px;
+	}
+	#why .collag-left{
+		width:100%;
+		margin-left:0px;
+	}
+	#why .section-2-heading{
+		text-align: left;
+		padding-left: 5px;
+		padding-bottom: 30px;
+		text-transform:none;
+	}
+	#why .section-2-subheading{
+		text-align: left;
+		width: 90%;
+		margin:0 auto;
+		margin-left:16px;
+	}
+	#why .section-4-left span i{
+		margin-top:40px; 
+		font-size:50px;
+		margin-left:-6px;
+	}
+	#why .img-2{
+		width: 70%;
+		margin-left: -15%;
+		float: left;
+	}
+	#why  .img-res{
+		width: 70%;
+		margin-left: -5%;
+		float: left;
+	}
+	#why .section-1-why .container-fluid {
+		padding: 0px;
+	}
+	#why .collag-left i {
+		margin-top: 10px;
+		color: #fb6c73;
+	}
+	#why .img-container-right{
+		padding:0px;
+	}
+	#why .section-4-left span{
+		margin-top:2px;
+		font-size:16px;
+		padding: 0 20px;
+	}
+	#why .section-4{
+		margin-top:0px;
+	}
+	#why .section-7-right {
+		padding-right: 0px;
+		margin-top: -15%;
+	}
+	#why .section-7-left {
+		padding-right: 10px;
+		padding-left: 10px;
+		margin-top: -30px;
+	}
+	#why .circle-value {
+		width: 33%;
+	}
+	#why .section-7-left span{
+		width:100%;
+	}
+	#why .section-7-left span i{
+		margin-top:2px;
+	}
+	#why .sec4-2 {
+		position: absolute;
+		left: 40%;
+		top: 40%;
+		box-shadow: 2px 0px 8px 2px rgba(0,0,0,0.1);
+		height: 215px;
+	}
+	#why .google-trends {
+		margin-top: -80px;
+	}
+	#why .section-12 {
+		margin-top: 120px;
+	}
+	#why .sec10-testname1 img {
+		float: none;
+		margin-bottom: 15px;
+		width: 350px;
+		height: 270px;
+		border: none;
+		border-radius: 0%;
+	}
+	#why .sec10-testname1 {
+		float: none;
+		position: relative;
+		top: -130px;
+		width: 130%;
+		left: -10px;
+	}
+	#why .sec10-testname1 img{
+		margin-left:-40px;
+	}
+	#why .sec10-em1{
+		display:block;
+		float: left;
+		color: rgba(255,255,255,1);
+		font-size: 276px;
+		font-family: montserratregular;
+		margin-right: 10px;
+		position: relative;
+		height: 0px;
+		top: -235px;
+		font-style: normal;
+		left: 160px;
+	}
+	#why .sec10-testimonial div.sec10-tes-inner span {
+		text-align: center;
+		line-height: normal;
+		width: 90%;
+		padding: 10px;
+		line-height: 25px;
+		margin-left: 20px;
+		margin-top: -55px;
+	}
+	#why .sec10-testname{
+		margin-bottom:30px;
+	}
+	#why .section-heading {
+		margin-top: 70px;
+	}
+	#why .section-16-left {
+		padding-left: 20px;
+		padding-right: 20px;
+		margin-top: -80px;
+		margin-bottom: 30px;
+	}
+	#why .section-16-left h4{
+		margin-top:40px;
+	}
+	#why .sec4-2-1 {
+		position: relative;
+		left: 4%;
+		box-shadow: 0px 5px 28px 8px rgba(0,0,0,0.2);
+		right: 4%;
+		width: 92%;
+	}
+	#why .circle-value label {
+		width: 78px;
+		height: 78px;
+		opacity:1;
+	}
+	#why .sec7-test em{
+	   top: 50px;
+		left: 45px;
+	}
+}
+@media (min-width: 320px) and (max-width:420px) {
+	#why .sec7-test em{
+		top: 50px;
+		left: 43px;
+	}
+	#why .section-7-left span {
+		width: 100%;
+		margin-top: 30px;
+	}
+	#why .section-7-left span i {
+		margin-right: 6px;
+	}
+	#why .sec4-2{
+		height:185px;
+	}
+	#why .sec10-testname1 img {
+		margin-left: 10px;
+	}
+	#why .sec10-em1{
+		left:90px;
+	}
+	#why .section-16-left span i{
+		margin-right:10px;
+	}
+	#why .section-16-left span span{
+		width:86%;
+	}
+	#why .section-4-left{
+		padding-left:40px;
+	}
+	#why .circle-value em {
+		left: 45px;
+		top:49px;
+		color: #62696d;
+	}
+}
+@media (min-width: 335px) and (max-width:375px) {
+	#why .sec7-test em {
+		top: 26px;
+		left: 68px;
+	}
+	#why .sec10-em1 {
+		left: 121px;
+	}
+	#why .section-4 img{
+		width:100%;
+	}
+}
+@media (min-width: 414px) and (max-width:414px) {
+	#why .section1-left-cell{
+		height:51vh;
+	}
+	#why .sec7-test em {
+		top: 25px;
+		left: 68px;
+	}
+	#why .sec10-em1 {
+		left: 150px;
+	}
+}
+@media (min-width: 568px) and (max-width:568px) {
+	#why .sec10-em1{
+		left:220px;
+	}
+	#why .section-16 img{
+		width:100%;
+	}
+	#why .section-1-why {
+		margin-top: 30px !important; 
+	}
+	#why .collag-left a.collag3 {
+		margin-top: 30px !important;
+	}
+	#why .section-2-heading{
+		padding-left:5px;
+	}
+	#why .section-2-subheading{
+		margin-left:7px;
+	}
+	
+}
+@media (min-width: 600px) and (max-width:667px){
+	#why .section-4 img{
+		width:100%;
+	}
+	#why .circle-value label{
+		margin-left:30px;
+	}
+	#why .sec7-test em{
+		left:100px;
+	}
+	#why .sec4-2{
+		left:42%;
+	}
+	#why .sec10-em1{
+		left:250px;
+	}
+	#why .section-16 img{
+		width:100%;
+	}
+	#why .section-2-heading{
+		padding-left:25px;
+	}
+	#why .collag4-img{
+		min-height:200px;
+	}
+	#why .collag3-img{
+		min-height:200px;
+	}
+}
+@media (min-width: 667px) and (max-width:667px) {
+	#why .section-1-why {
+		margin-top: 0px !important;
+	}
+	#why .collag-left a.collag3 {
+		margin-top: 0px !important;
+	}
+	#why .section-2-heading {
+		padding-left: 7px !important;
+	}
+	#why .section-2-subheading {
+		text-align: left;
+		width: 90%;
+		margin: 0 auto;
+	}
+	#why .section-2-subheading{
+		width:90%;
+	}
+}
+@media (min-width: 440px) and (max-width:768px) {
+	#why .section-1-why{
+		margin-top:-60px;
+	}
+	#why .collag-left a.collag3{
+		margin-top:-60px;
+	}
+}
+@media (min-width: 736px) and (max-width:736px) {
+	#why .section-4 img{
+		width:100%;
+	}
+	#why .circle-value label{
+		margin-left:50px;
+	}
+	#why .sec7-test em{
+		left:120px;
+	}
+	#why .sec4-2{
+		left:46%;
+	}
+	#why .sec10-em1{
+		margin-left:290px;
+	}
+	#why .sec10-testname1 img {
+		margin-left: 110px;
+	}
+	#why .section-16 img{
+		width:100%;
+	}
+}
+@media (max-width: 768px) and (min-width: 767px){
+	#why .rs-hide{
+		display:none !important;
+	}
+	#why .rs-show{
+		display:block !important;
+	}
+	#why .navbar-right {
+		float: left !important;
+		margin-left: 15px;
+	}
+	#why .custom-navbar.navbar-default .navbar-nav > li {
+		margin-right: 0px;
+	}
+	#why .section1-left-cell{
+		height:45vh;
+	}
+	#why .section-1-right{
+		margin-left:-20px;
+	}
+	#why .section-2-heading{
+		padding-left: 35px;
+	}
+	#why .section-2-subheading{
+		text-align:center;
+	}
+	#why .section-2-heading{
+		padding-left:0px;
+		text-align:center;
+	}
+	#why .section-7-right {
+		padding-right: 0px;
+		margin-top: -5%;
+	}
+	#why .sec10-em1{
+		left:320px;
+	}
+	#why .sec10-testname1{
+		left:-40px;
+	}
+	#why .sec10-testimonial div.sec10-tes-inner span{
+		margin-left:30px;
+	}
+	#why .section-16-left{
+		margin-top:-20px;
+	}
+	#why .sec4-2-1{
+		left:6%;
+	}
+	#why .sec4-2{
+		left:71%;
+		top:39%;
+		height: 245px
+	}
+	#why .section-7-left {
+		padding-right: 0px;
+		padding-left: 10px;
+		margin-top: -30px;
+	}
+	#why .section-7-left span i{
+		margin-right:7px;
+	}
+	#why .section-7 .section-7-left span span{
+		width:90%;
+	}
+	#why .google-trends {
+		margin-top: 40px;
+	}
+	#why .section-1-left {
+		margin-top: 0px !important;
+	}
+	#why .section-16-left span i{
+		margin-right:3px;
+	}
+}
+@media (min-width: 768px) and (max-width:1200px){
+	#why .section-1-why {
+		margin-top: 80px;
+	}
+	#why .rs-hide {
+		display: block !important;
+	}
+	#why .rs-show {
+		display: none !important;
+	}
+	#why .section-1-left h3{
+		margin-top:-60px;
+	}
+	#why .section-1-left h3{
+		width:90%;
+	}
+	#why .section-1-left h5{
+		width:90%;
+	}
+	#why .section-1-left h4{
+		width:87%;
+	}
+	#why .section-1-left{
+		margin-top:90px;
+	}
+}
+@media (min-width: 1024px) and (max-width:1024px){
+	#why .section-1-left h3{
+		width:100%;
+	}
+	#why .section-1-left h5{
+		width:100%;
+	}
+	#why .section-1-left h4{
+		width:100%;
+	}
+}
+@media (min-width: 1024px) and (max-width:1250px) {
+	.navbar-right {
+		float: left !important;
+		margin-left: -14px;
+	}
+	.container-fluid > .navbar-header{
+		margin-left:-30px;
+	}
+	.custom-navbar.navbar-default .navbar-nav > li > a{
+		padding-top: 15px;
+		padding-left: 35px;
+	}
+	.custom-navbar.navbar-default .navbar-nav > li{
+		margin-right:0px;
+	}
+	#why .section-7-left span i{
+		margin-right:10px;
+	}
+}
+
+@media (min-width: 600px) and (max-width:768px) {
+	
+}
+@media (min-width: 1480px) and (max-width:1800px) {
+	
+}
+@media (min-width: 1810px) and (max-width:1920px) {
+	
+}
+@media (min-width: 1480px) and (max-width:1920px) {
+	
+	
+}
+
+/*################### Homepage responsive css end ###################*/

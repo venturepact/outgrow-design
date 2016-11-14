@@ -1,0 +1,174 @@
+/*################### useCase responsive css start ###################*/
+
+@media (min-width: 320px) and (max-width:768px) {
+	.rs-hide{
+		display:none !important;
+	}
+	.gallery-content-center .abc{
+		margin-left:0px;
+	}
+	.gallery-content-center .img-outer{
+		width:95%;
+		margin-top: 30px;
+	}
+	.gallery-content-center .color-outer{
+		width:95%;
+	}
+	.gallery-header-center{
+		width:74%;
+	}
+}
+
+@media (min-width: 440px) and (max-width:768px) {
+	.gallery-header-center{
+		width:100%;
+	}
+	.gallery-content-center .abc{
+		margin-left:70px;
+	}
+	.gallery-content-center .color-outer{
+		width:100%;
+	}
+	.gallery-content-center .img-outer {
+		width: 100%;
+	}
+}
+@media (min-width: 600px) and (max-width:640px) {
+	.gallery-content-center .color-outer {
+		width: 100%;
+		margin: 0% 30%;
+	}
+	.gallery-content-center .img-outer {
+		width: 100%;
+		margin: 0 30%;
+	}
+	.gallery-content-center .img-outer-text {
+		float: left;
+		width: 100%;
+		margin: 0 30%;
+	}
+}
+@media (min-width:768px) and (max-width:768px){
+	.gallery-content-center .abc {
+		margin-left: 30px;
+	}
+	.gallery-content-center .img-outer {
+		margin-top:0px;
+	}
+}
+@media (min-width:568px) and (max-width:568px){
+	.gallery-content-center .abc {
+		margin-left: 20%;
+		width: 330px;
+	}
+}
+@media (max-width: 375px) and (min-width: 375px){
+	.gallery-content-center .abc {
+		margin-left: 30px;
+	}
+}
+@media (min-width: 1024px) and (max-width:1250px) {
+	.collage-outer{
+		margin-left:-10px;
+		margin-right:-10px;
+	}
+	.collage-solid.s-first {
+		top: -62px;
+		left: 16%;
+	}
+	.collage-hollow.h-sec {
+		left: 16%;
+		top: 42%;
+	}
+	.collage-hollow.h-third {
+		left: 32%;
+		top: 0%;
+	}
+	.collage-solid.s-fourth {
+		top: -30%;
+		left: 51%;
+	}
+	.collage-solid.s-third {
+		top: 83px;
+		left: 48%;
+	}
+	.collage-hollow.h-fourth {
+		top: -32%;
+		left: 67%;
+	}
+	.collage-solid.s-fifth {
+		top: -58%;
+		left: 83%;
+	}
+	.collage-hollow.h-fifth {
+		top: 15%;
+		left: 85%;
+	}
+	.collage-solid.s-sixth {
+		top: 42%;
+		left: 69%;
+	}
+	.navbar-right {
+		float: left !important;
+		margin-left: -14px;
+	}
+	.container-fluid > .navbar-header{
+		margin-left:-30px;
+	}
+	.custom-navbar.navbar-default .navbar-nav > li > a{
+		padding-top: 15px;
+		padding-left: 35px;
+	}
+	.custom-navbar.navbar-default .navbar-nav > li{
+		margin-right:0px;
+	}
+	
+}
+
+@media (max-width: 768px) and (min-width: 767px){
+	.navbar-right {
+		float: left !important;
+		margin-left: 15px;
+	}
+	.custom-navbar.navbar-default .navbar-nav > li {
+		margin-right: 0px;
+	}
+}
+@media (min-width: 667px) and (max-width:776px){
+	.gallery-content-center .abc {
+		margin-left: 21%;
+	}
+	.gallery-content-center .abc{
+		width:370px;
+	}
+}	
+@media (min-width:768px) and (max-width:768px){
+	.gallery-content-center .abc {
+		margin-left: 25%;
+	}
+}
+@media (min-width:384px) and (max-width:384px){
+	.gallery-content-center .abc {
+		margin: 0 10%;
+	}
+}
+@media (min-width: 414px) and (max-width:414px) {
+	.gallery-content-center .abc {
+		margin: 0 12%;
+	}
+	.gallery-content-center .color-outer {
+		width: 100%;
+	}
+	.gallery-content-center .img-outer {
+		width: 100%;
+	}
+}
+@media (min-width: 1810px) and (max-width:1920px) {
+	
+}
+@media (min-width: 1480px) and (max-width:1920px) {
+	
+	
+}
+
+/*################### useCase responsive css end ###################*/

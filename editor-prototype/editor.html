@@ -1,0 +1,1682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+	
+    <!-- css start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.colorpickersliders.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/wysiwyg.css">
+	<!-- template css -->
+    <link href="assets/template/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/template/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+		#myModal .modal-body img{ width:100%;}
+		.close{position: absolute; right: -25px; font-size: 18px; top: -9px; color: #fff;  opacity: 1;}
+		.modal-lg { width: 1024px;}
+		
+	</style>
+    <!-- css end -->
+</head>
+
+<body>
+    <!-- Editor header start-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid nav-padding">
+            <div class="navbar-header editor-navheader col-sm-3 col-md-2">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand navbar-logopadding">
+                    <img src="assets/images/logo.png" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <input type="text" class="ed-projectname" contenteditable="true" value="How much it costs to make an app" placeholder="How much it costs to make an app" />
+                <div class="navbar-rightside">
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic btn-menu"><i class="material-icons">donut_large</i></button>
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic">PREVIEW</button>
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic">PUBLISH</button>
+                    <div class="btn-group navbar-leftside">
+                        <div class="col-xs-12 no-padding">
+                            <label><i class="material-icons blue-text">account_box</i> Pratham</label>
+                            <div class="btn-group">
+                                <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <label><i class="material-icons">help_outline</i></label>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Name</a></li>
+                                    <li><a href="#">Email</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Editor header end-->
+    <!-- Editor Left sidebar start -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 editor-sidebar sidebar">
+                <div class="editor-accordion">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <i class="material-icons corner">arrow_drop_down_circle</i> <i class="material-icons main-ic">dashboard</i> Build</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body box-build panel-scroll">
+                                    <div class="ed-sidebar editor-tab">
+                                        <span class="visible-parent"><a href="#" class="section-head" data-toggle="landing"><span class="circle"></span>Landing Page</a>
+                                        <a href="#" class="visible"><i class="material-icons">visibility</i></a></span>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <span class="add-visible-parent "><a href="#" class="section-head a1" data-toggle="questionner"><span class="circle">&nbsp;</span>Questionner</a>
+                                        <div class="btn-group icon-options  add-options pull-right">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">add_circle_outline</i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#"> <i class="material-icons add-options-i">playlist_add</i>Add Section</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="material-icons add-options-i">sort</i>Add Question</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        </span>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head" data-toggle="section-properties"><span class="hollow" ></span>Platform</a>
+                                            <ul class="first">
+                                                <li><span class="hollow"></span>
+                                                    <a href="#q1"  class="ellipsis head " data-toggle="text-field">Q. Question with numeric textbox</a>
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"  ><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head" data-toggle="section-properties"><span class="hollow"></span>Design</a>
+                                            <ul class="first">
+                                                <li><span class="hollow"></span>
+                                                    <a href="#q2" class="ellipsis head" data-toggle="numeric-input">Q. Which platform will the app be built on? </a>
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#q3" class="ellipsis head" data-toggle="numeric-input">Q. How many screens will your app have? </a>
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+												<li><span class="hollow"></span>
+                                                    <a href="#q4" class="ellipsis head" data-toggle="numeric-slider">Q. Question with a numeric textbox.
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head" data-toggle="section-properties"><span class="hollow"></span>UI UX</a>
+                                            <ul class="first">
+                                                <li><span class="hollow"></span>
+                                                    <a href="#q5" class="ellipsis head" data-toggle="open">Q. How many approximate number of screens will your app have?</a>
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action " title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#q6" class="ellipsis head"> Q. Question with a numeric textbox.</a>
+                                                    <a href="javascript:void(0);" class="sublist-action add-question" title="Add"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab" >
+                                        <a href="#res" class="section-head" data-toggle="result-page"> <span class="circle"></span>Result Page </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="material-icons corner">arrow_drop_down_circle</i><i class="material-icons  main-ic">settings</i>Configure</a>
+                                </h4>
+                            </div>
+                          <!--<div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    dfsadfsaf
+                                </div>
+                            </div>-->
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="material-icons corner">arrow_drop_down_circle</i><i class="material-icons  main-ic">equalizer</i>Analyze</a>
+                                </h4>
+                            </div>
+                           <!-- <div id="collapseThree" class="panel-collapse collapse">
+                                <div class="panel-body">
+                                    sfdsfggasdf
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="ed-sidebar-topsection hide">
+                    <span>Pages</span>
+                    <div class="page-add">
+                        <label>Add</label>
+                        <a href="javascript:void(0);"><i class="material-icons">add_circle_outline</i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Editor Left sidebar end -->
+    <!-- Editor Right Template section start -->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 no-padding">
+        <div class="editor-template-tabs">
+            <div class="template-section" id="build">
+                <section class="landing-page main-bg">
+                    <header>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12 logo text-left">
+                                <a href="#">
+                                    <img src="assets/template/images/logo.png" alt="Company Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Header Section End-->
+                    <div class="main-section ">
+                        <!-- Content Section-->
+                        <a data-toggle="landing"><div class="landing-page" data-section="landing">
+                            <h1 class="main-head">Heading Goes here</h1>
+                            <h2 class="sub-head">Optional sub heading goes here</h2>
+                            <p class="description">
+                                Desription of the calculator also optional and not mandatory. Desription of the calculator also optional and not mandatory.
+                            </p>
+                            <a href="#section2" class="btn prime-action page-scroll ">Get Started</a>
+                        </div></a>
+                    </div>
+                </section>
+                <section>
+					<div>
+						<div class="questions-header " >
+							<header>
+								<div class="col-md-12 col-sm-12 col-xs-12 p-right0">
+									<div class="col-md-10 col-sm-6 col-xs-12 logo sec1">
+										<a href="#">
+											<img src="assets/template/images/logo.png" alt="Company Logo">
+										</a>
+									</div>
+									<div class="col-md-2 col-sm-6 col-xs-12 right-sec">
+										<i class=" material-icons">zmdi_info</i>
+										<p>your app estimate</p>
+										<span>$500 - $1500</span>
+									</div>
+								</div>
+							</header>
+						</div>
+					</div>
+				</section>
+                <section>
+					<div>
+						<div class="questions">
+							<div class=" col-md-8 col-md-offset-2">
+								<div class="col-md-12" id="q1">
+									<a data-toggle="section-properties"><div class="question-head def">Platform </div>
+									<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+									</div></a>
+									<a data-toggle="numeric-input"><div class="section-head "><div class="question-section">
+										<div class="question-components">
+											<div class="check-comp">
+												Question with a numeric textbox.</div>
+												<div class="section-desc"></div>
+												<label class="check-icon">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="checklist1">
+													<label for="checklist1"> </label>
+													<div> Android</div>
+												</label>
+												<label class="check-icon checklist-icon">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="checklist2">
+													<label for="checklist2"> </label>
+													<div> Android</div>
+												</label>
+												<label class="check-icon checklist-icon">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="checklist3">
+													<label for="checklist3"> </label>
+													<div> Android</div>
+												</label>
+												<label class="check-icon checklist-icon last">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="checklist4">
+													<label for="checklist4"> </label>
+													<div> Android</div>
+												</label>
+											</div>
+										</div>
+									</div></a>
+									<div class="col-md-12 text-center">
+										<button class="btn prime-action sliding-next" data-slide="3">Next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<div class="questions">
+							<div class=" col-md-8 col-md-offset-2">
+								<div class="col-md-12 " id="q2" >
+									<a data-toggle="section-properties"><div class="question-head def">Design </div>
+									<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you! </div> </a>
+									<a data-toggle="numeric-input"><div class="question-section">
+										<div class="question-components">
+											<div class="check-comp">
+												<div class="section-head">Which platform will the app be built on? <i class="fa fa-question-circle-o" aria-hidden="true"></i> 
+													<div class="help-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. </div>
+												</div>
+												
+												<div class="section-desc test"></div>
+												<label class="check-icon ic">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="check5">
+													<label for="check5"><i class="material-icons">devices</i> </label>
+													<div>Responsive</div>
+												</label>
+												<label class="check-icon ic">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="check6">
+													<label for="check6"><i class="material-icons">android</i> </label>
+													<div>Android</div>
+												</label>
+												<label class="check-icon ic">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="check7">
+													<label for="check7"> <i class="material-icons">tablet</i> </label>
+													<div>Tablet</div>
+												</label>
+												<label class="check-icon ic last">
+													<input type="checkbox" value="Value1 " name="checkbox1" id="check8">
+													<label for="check8"><i class="material-icons">desktop_mac</i> </label>
+													<div>Desktop</div>
+												</label>
+											</div>
+										</div>
+									</div> </a>
+									<div class="col-md-12 text-center">
+										<button class="btn prime-action sliding-next" data-slide="4">Next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<div class="questions">
+							<div class=" col-md-8 col-md-offset-2">
+								<div class="col-md-12 " data-slide="4" id="q3">
+									<a data-toggle="section-properties"><div class="question-head">UI UX </div>
+									<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+									</div> </a>
+									<a data-toggle="numeric-input"><div class="question-section">
+										<div class="question-components">
+											<div class="">
+												<div class="section-head">Question with a numeric textbox.</div>
+												<div class="section-desc"></div>
+												<div class="input-field">
+													<input id="last_name" type="number">
+												</div>
+											</div>
+										</div>
+										<div class="question-components">
+											<div>
+												<div class="section-head">How many approximate number of screens will your app have? <i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
+												<div class="section-desc"></div>
+												<div class="range-slider">
+													<div class="well1">
+														<input id="ex13" type="text"/>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="question-components">
+											<div class="pull-left file-outer">
+												<div class="section-head">Question with a numeric textbox.</div>
+												<div class="section-desc"></div>
+												<div class="file-field input-field">
+													<input type="file">
+													<div class="file-path-wrapper">
+														<input class="file-path validate" type="text" placeholder="File upload"><span class="input-group-addon input-icon"><i class="material-icons">cloud_upload</i></span>
+													</div>
+												</div>
+											</div>
+										</div></a>
+									</div>
+									<div class="col-md-12 text-center">
+										<button class="btn prime-action sliding-next" data-slide="5" >Next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+					<div>
+						<div class="questions">
+							<div class=" col-md-8 col-md-offset-2">
+								<div class="col-md-12 " id="q4" >
+									<a data-toggle="section-properties"><div class="question-head">Design</div>
+									<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+									</div></a>
+									<a data-toggle="numeric-input"><div class="question-section">
+										<div class="question-components">
+												<div class="">
+													<div class="section-head">Question with a numeric textbox.</div>
+													<div class="section-desc"></div>
+													<div class="input-field">
+														<input  type="text">
+													</div>
+												</div>
+											</div>
+										<div class="question-components">
+											<div class="">
+												<div class="section-head">Question with a numeric textbox.</div>
+												<div class="section-desc"></div>
+												<div class="date">
+													<input type="text" class=""><span class="input-group-addon input-icon"><i class="material-icons">event</i></span>
+												</div>
+											</div>
+										</div>
+										<div class="question-components">
+											<div class="date-picker-outer">
+												<div class="section-head">Question with a numeric textbox.</div>
+												<div class="section-desc"></div>
+												<div class="date col-md-6 col-sm-6 col-xs-6 ">
+													<input type="text" class=""><span class="input-group-addon input-icon"><i class="material-icons">event</i></span>
+												</div>
+												 <div class="date col-md-6 col-sm-6 col-xs-6 pr0">
+													<input type="text" class=""><span class="input-group-addon input-icon"><i class="material-icons">event</i></span>
+												</div>
+											</div>
+										</div>
+										
+									</div>
+									</a>
+									<div class="col-md-12 text-center">
+										<button class="btn prime-action sliding-next" data-slide="6">Next</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section>
+			<div>
+				<div class="questions">
+					<div class=" col-md-8 col-md-offset-2">
+						 <div class="col-md-12 " id="q5" >
+							<a data-toggle="section-properties"><div class="question-head">Design</div>
+							<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+							</div></a>
+							<div class="question-section">
+							  <a data-toggle="numeric-input"> <div class="question-components">
+									<div>
+										<div class="section-head">How many approximate number of screens will your app have? <i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
+										<div class="section-desc"></div>
+										<div class="range-slider">
+											<div class="well1">
+												<input id="step" type="text"/>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div class="question-components">
+									<div>
+										<div class="section-head">How many approximate number of screens will your app have? <i class="fa fa-question-circle-o" aria-hidden="true"></i></div>
+										<div class="section-desc"></div>
+										<div class="range-slider">
+											<div class="well1">
+												<input id="step" type="text"/>
+											</div>
+										</div>
+									</div>
+								</div>
+							<!--	<div class="question-components">
+									<div class="">
+										<div class="section-head">Question with a numeric textbox.</div>
+										<div class="section-desc"></div>
+									<div class="control-group">
+										<i class="select-icon fa fa-lock"></i>
+										<select id="select-beast" class="demo-default" data-placeholder="Select Security Option">
+											<option value="0">Select Security Option</option>
+											<option value="1">Not worried about security right now</option>
+											<option value="2">    I want some basic security measures</option>
+											<option value="3">I want to encrypt communication between my servers (SSL)</option>
+											<option value="4"> I want to secure it from hacker attacks and vulnerabilities</option>
+											50k-100k</option>
+										</select>
+									</div>
+									</div>
+								</div>-->
+								 </a>
+							</div>
+							<div class="col-md-12 text-center">
+								<button class="btn prime-action sliding-next" data-slide="7">Next</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div class="questions">
+					<div class=" col-md-8 col-md-offset-2">
+						<div class="col-md-12 " id="q6" >
+							<a data-toggle="section-properties"><div class="question-head">Design</div>
+							<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+							</div></a>
+							<a data-toggle="numeric-slider"><div class="question-section">
+								<div class="section-head">Question with a numeric textbox.</div>
+								<div class="section-desc"></div>
+							   <div class="question-components">
+									<div >
+										<div class="counter" >
+											<div type='button' value='-' class='qtyminus' field='quantity' ><i class="material-icons">remove_circle_outline</i></div>
+											<input type='text' name='quantity' value='0' class='qty' />
+											<div type='button' value='-' class='qtyplus' field='quantity' ><i class="material-icons">add_circle_outline</i></div>
+										</div>
+									</div>
+								</div>
+								<div class="question-components">
+									<div class="">
+										<div class="section-head">Question with a numeric textbox.</div>
+										<div class="section-desc"></div>
+										<div class="switch-outer text-right ">
+											<div class="switch-que">Activity feeds or user walls</div>
+											<div class="pull-right">
+												<div class="switch ">
+													<input id="cmn-toggle-6" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+													<label for="cmn-toggle-6"></label>
+												 </div>
+											 </div>
+										</div>
+										<div class="switch-outer">
+											<div class="switch-que">Shopping Cart</div>
+											<div class="pull-right">
+												<div class="switch">
+													<input id="cmn-toggle-1" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+													<label for="cmn-toggle-1"></label>
+												 </div>
+											 </div>
+										</div>
+										<div class="switch-outer">
+											<div class="switch-que">Referral system</div>
+											<div class="pull-right">
+												<div class="switch">
+													<input id="cmn-toggle-2" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+													<label for="cmn-toggle-2"></label>
+												 </div>
+											</div>
+										</div>
+										<div class="switch-outer last">
+											<div class="switch-que">Rating & reviews</div>
+											<div class="pull-right">
+												<div class="switch">
+													<input id="cmn-toggle-4" class="cmn-toggle cmn-toggle-round-flat" type="checkbox">
+													<label for="cmn-toggle-4"></label>
+												 </div>
+											 </div>
+										</div>
+									</div>
+								</div>
+								</div></a>
+							<div class="col-md-12 text-center">
+								<button class="btn prime-action sliding-next" data-slide="8">Next</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section>
+			<div>
+				<div class="questions">
+					<div class=" col-md-8 col-md-offset-2">
+						 <div class="col-md-12 " >
+							<a data-toggle="section-properties"><div class="question-head">Design</div>
+							<div class="question-subhead">Tell us a little bit more about project, so we can find the perfect teams for you!
+							</div></a>
+							<div class="question-section">
+							<a data-toggle="numeric-input">
+								<div class="question-components">
+									<div class="check-comp">
+										<div class="section-head">Question with a numeric textbox.</div>
+										<div class="section-desc"></div>
+										<label class="radio-icon">
+											<div class="radio-btn ">
+												<input type="radio" value="value-1" id="rc1" name="rc1" />
+												<label for="rc1" onclick>IOS</label>
+											</div>
+										</label>
+										<label class="radio-icon">
+											<div class="radio-btn">
+												<input type="radio" value="value-2" id="rc2" name="rc1" />
+												<label for="rc2" onclick>Android</label>
+											</div>
+										</label>
+										<label class="radio-icon">
+											<div class="radio-btn">
+												<input type="radio" value="value-3" id="rc3" name="rc1" />
+												<label for="rc3" onclick>Windows</label>
+											</div>
+										</label>
+										<label class="radio-icon last">
+											<div class="radio-btn ">
+												<input type="radio" value="value-4" id="rc4" name="rc1" />
+												<label for="rc4" onclick>Hybrid</label>
+											</div>
+										</label>
+									</div>
+								</div>
+								</a>
+							</div>
+							<div class="col-md-12 text-center">
+								<button class="btn prime-action sliding-next" data-slide="8">Next</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section  style="margin-top:40px; float:left;" class="bhtemp"  data-template="result-page" id="res">
+			<section class="top-head">
+				<div>
+					<div class="mid-width">
+						<h4>Your heading goes here </h4> 
+					</div>
+				</div>
+				<div>
+					<div class="share-link">
+						<ul>
+							<li><h6>Share link</h6></li>
+							<li><a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+							<li><a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+							<span><li></li></span>
+							<span><a href="#"><i class="fa fa-undo" aria-hidden="true"></i></a></span>
+						</ul>
+					</div>
+				</div>
+			</section>
+			<a data-toggle="result-page">
+			<div class="left-section" >	
+				<section class="result-full-section ">
+					<div>
+						<div class="small-top-sec">
+							<h4>$45,320</h4>
+						</div>
+					</div>	
+					<div>
+						<div class="small-top-sec">
+							<h6>RESULT 01 HEADING</h6>
+							<h6 class="grey-color">Eastern Europe, Middle East, Central & South America. Eastern Europe,Middle East, Central & South America, Middle East, Central & South America</h6>
+						</div>
+					</div>	
+				</section>
+				<section class="result-small-section ">
+					<div>
+						<div class="small-top-sec">
+							<h4>$45,320</h4>
+						</div>
+					</div>	
+					<div>
+						<div class="small-top-sec">
+							<h6>RESULT 01 HEADING</h6>
+							<h6 class="grey-color">New York , Canada, Western Europe & Australia</h6>
+						</div>
+					</div>	
+				</section>
+				<section class="result-small-section ">
+					<div>
+						<div class="small-top-sec">
+							<h4>$45,320</h4>
+						</div>
+					</div>	
+					<div>
+						<div class="small-top-sec">
+							<h6>RESULT 01 HEADING</h6>
+							<h6 class="grey-color">New York , Canada, Western Europe & Australia</h6>
+						</div>
+					</div>	
+				</section>
+				<section class="result-small-section last">
+					<div>
+						<div class="small-top-sec">
+							<h4>$45,320</h4>
+						</div>
+					</div>	
+					<div>
+						<div class="small-top-sec">
+							<h6>RESULT 01 HEADING</h6>
+							<h6 class="grey-color">New York , Canada, Western Europe & Australia</h6>
+						</div>
+					</div>	
+				</section>
+				<section class="cta-outer">
+					<div>
+						<div class="mid-inner">
+							<input type="text" class="" placeholder="Name ">
+							<input type="email" class="" placeholder="Email ">
+						</div>
+					</div>
+				</section>
+				<section class="cta-outer">
+					<div>
+						<a href="#" class="bordered-btn">CTA Button</a>
+					</div>
+				</section>
+				<section class="bottom-section">
+					<div>
+						<div >Disclaimer Text. The prices suggested are rough estimates based on developer survey. Actual prices may differ due to requirements</div>
+					</div>
+				</section>
+			</div>
+		<!--Right Section-->
+		<div class="right-section">
+			<div class="internal-sec">
+				<div class="full-width">
+					<div class="res">
+						<h3 class > <i class="material-icons">assignment</i> <span>Summary</span> </h3>
+					</div>
+				</div>
+				<div class="full-width">
+					<h4>This is a question with a numeric textbox a long question with a long question</h4>
+					<h5>$24000</h5>
+				</div>
+				<div class="full-width">
+					<h4>This is a question with a tiny q </h4>
+					<h5>Tenesse</h5>
+				</div>
+				<div class="full-width">
+					<h4>This a question with a numeric textbox a long question with a long question</h4>
+					<h5>Its a answer with a long text with a long text and really long long answer.</h5>
+				</div>
+				<div class="full-width">
+					<h4>This is a question with a tiny q </h4>
+					<h5>Tenesse</h5>
+				</div>
+				<div class="full-width">
+					<h4>This is a question with a tiny q </h4>
+					<h5>Tenesse</h5>
+				</div>	
+			</div>
+		</div>
+		</a>
+		</section>
+		
+            </div>
+			
+        </div>
+    </div>
+    <!-- Editor Right Template section end  -->
+    <!-- Editor Properties start -->
+    <!--landing  layout start -->
+    <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas affix position-right">
+        <div class="sidebar-layout side-scroll">
+            <div class="main-side " for="landing page properties" data-section="landing">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Landing Page Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details"><span class="form-label">Heading:</span>
+                            <textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Button:</span>
+                            <input type="text" class="detail-text" placeholder="Get Started" />
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Logo:</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class="landing-inputfile div-check">
+                                <div class="col-xs-12 no-padding">
+                                    <div class="input-group">
+                                        <input type="text" class="file-input" placeholder="No file" readonly>
+                                        <label class="input-group-btn">
+                                            <span class="btn btn-default btn-flat btn-basic2 btn-upload">
+                                        UPLOAD <input type="file" style="display: none;">
+                                    </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details lead-parent">
+                            <div class="form-label">Lead Generation:</div>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+                                    <div class="input-group">
+                                        <label class="check">
+                                            <input type="checkbox" value="" name="manadatory" id="manadatory11">
+                                            <label for="manadatory11"> </label>*
+                                        </label>
+                                        <select class="select-default" data-width="100px">
+											<option value="1" selected>Name</option>
+											<option value="AF">Email</option>
+											<option value="AX">Phone</option>
+											<option value="AL">Text</option>                              
+										</select>
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                    </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                </div>
+                                <div class="input_fields_wrap">
+                                    <div class="lead-gen ">
+                                        <div class="input-group">
+                                            <label class="check">
+                                                <input type="checkbox" value="" name="manadatory" id="manadatory21">
+                                                <label for="manadatory21"> </label>*
+                                            </label>
+                                            <select class="select-default"  data-width="100px">
+												<option value="1" selected>Name</option>
+												<option value="AF">Email</option>
+												<option value="AX">Phone</option>
+												<option value="AL">Text</option>                              
+											</select>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                        </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 no-padding"><a href="#" class="default add_field_button">Add Another Field</a></div>
+                            </div>
+                        </div>
+                        <div class="type-details color-select">
+                            <span class="form-label">Theme Color:</span>
+                            <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div>
+                        </div>
+                        <div class="type-details background-select">
+                            <span class="form-label">Change Background:</span>
+                            <span>Replace the background image</span>
+                            <button type="button" class="btn btn-default btn-flat btn-basic2 btn-basic3"><i class="material-icons">image</i> CHANGE BACKGROUND</button>
+                    <!--        <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="type-details setting-details">
+                        <span class="form-label">Settings:</span>
+                        <div class="col-xs-12 no-padding setting-detail-box">
+                            <span>Powered by Venture Pact</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 no-padding setting-detail-box">
+                            <span>Privacy Policy</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default btn-flat btn-basic2"><i class="material-icons">image</i> CHANGE TEMPLATE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="result page properties" data-section="result-page">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Result Page Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding result-area-tab">
+                        <div class="type-details border-none"><span class="form-label">Heading:</span>
+                            <textarea class="wysiwyg"></textarea>
+                        </div>
+						<div class="col-md-12 text-center double-tab">
+							<div class="result-section">
+								<div class="result-tab text-left res-tab1">Result 1
+									<span class="arrow-move">
+										<a href="#"><i class="material-icons">keyboard_arrow_up</i></a><a href="#"> <i class="material-icons">keyboard_arrow_down</i></a>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="type-details">
+						<span class="form-label">Formula:</span>
+                            <div class="input-group col-md-12 no-padding">
+                                <input type="text" class="file-input" placeholder="Q1 + Q2 + Q3">
+                                <label class="input-group-btn">
+									<span class="btn btn-default btn-flat btn-basic2 btn-upload" data-toggle="modal" data-target="#myModal">
+										EDIT
+									</span>
+                                </label>
+                            </div>
+
+                            <div class="type-details-sub">
+                                <span class="form-label">Description:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input class="show-check" type="checkbox" checked name="properties-checkbox" data-size="mini" data-on-color="blue">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                                <div class="div-check">
+									<textarea class="wysiwyg"></textarea>
+								</div>
+                            </div>
+                             <div class="type-details-sub">
+                            <div class="form-label">Unit of Variable:</div>
+								<div class="col-md-12 no-padding">
+									<div class="input-group input-drop">
+										<select class="select-default" data-width="82px">
+											<option>Prefix</option>
+											<option>Postfix</option>
+										</select>
+										<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="value">
+									</div>
+								</div>
+                                </div>
+                                 <div class="type-details-sub">
+                                <div class="form-label">Style of result:</div>
+                                <div class="col-md-12 no-padding double-tab">
+                                    <label class="radio-box">
+                                        <input type="radio" value="0" name="range" class="">
+                                        <div>
+                                            <label for="checklist5"> </label> Fixed</div>
+                                    </label>
+                                    <label class="radio-box">
+                                        <input type="radio" value="1" name="range" class="range-check">
+                                        <div>
+                                            <label for="checklist5"> </label> Range</div>
+                                    </label>
+                                    <div class="range col-md-12 no-padding div-check">
+                                        <div class="input-group">
+                                            <span class="form-label">
+                                            Lower range</span>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                            <select class="select-default" data-width="82px">
+                                                <option>Number</option>
+                                                <option>Decimal</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="form-label">
+                                            Upper range</span>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                            <select class="select-default" data-width="82px">
+                                                <option>Number</option>
+                                                <option>Decimal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+							<div class="type-details">
+								<button type="button" class="btn btn-default btn-flat btn-basic2 btn-center"><i class="material-icons">add_circle_outline</i> &nbsp; ADD ANOTHER RESULT</button>
+							</div>
+							<div class="type-details">
+								<span class="form-label">Button:</span>
+								<input type="text" class="detail-text" placeholder="Get Started" />
+								<input type="text" class="detail-text" placeholder="http://" />
+							</div>
+                        <div class="type-details lead-parent">
+                            <div class="form-label">Lead Generation:</div>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+                                    <div class="input-group">
+                                        <label class="check">
+                                            <input type="checkbox" value="" name="manadatory" id="manadatory11">
+                                            <label for="manadatory11"> </label>*
+                                        </label>
+                                        <select class="select-default" data-width="100px">
+                                            <option>Name</option>
+                                            <option>Text</option>
+                                            <option>Email</option>
+                                            <option>Password</option>
+                                        </select>
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Type here...">
+                                    </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                </div>
+                                <div class="input_fields_wrap">
+                                    <div class="lead-gen ">
+                                        <div class="input-group">
+                                            <label class="check">
+                                                <input type="checkbox" value="" name="manadatory" id="manadatory21">
+                                                <label for="manadatory21"> </label>*
+                                            </label>
+                                            <select class="select-default" data-width="100px">
+                                                <option>Email</option>
+                                                <option>Name</option>
+                                                <option>Email</option>
+                                                <option>Password</option>
+                                            </select>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Type here...">
+                                        </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 no-padding  "><a href="#" class="default add_field_button">Add Another Field</a></div>
+                            </div>
+                        </div>
+                        <div class="type-details share">
+                            <span class="form-label">Share:</span>
+                            <div class="col-xs-12 no-padding">
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic1" checked>
+                                    <label for="ic1"><i class="fa fa-facebook"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic2" checked>
+                                    <label for="ic2"><i class="fa fa-twitter"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic3" checked>
+                                    <label for="ic3"><i class="fa fa-linkedin"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic4" checked>
+                                    <label for="ic4"><i class="fa fa-pinterest-p"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic5" checked>
+                                    <label for="ic5">Email </label>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="type-details background-select">
+                            <span class="form-label">Background:</span>
+                            <span>Change Background Color</span>
+                            <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div>
+                        </div>
+                        <div class="type-details setting-details">
+                            <span class="form-label">Settings:</span>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Summary</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Share Result Link</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Redo Calculation</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Disclaimer</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding details-area-tab hide">
+                        <div class="result-section">
+                            <div class="result-tab">Result 1
+                                <span class="arrow-move">
+									<a href="#"><i class="material-icons">keyboard_arrow_up</i></a><a href="#"> <i class="material-icons">keyboard_arrow_down</i></a>
+								</span>
+							</div>
+                            <div class="type-details">
+                                <span class="form-label">Formula:</span>
+                                <div class="input-group col-md-12 no-padding">
+                                    <input type="text" class="file-input" placeholder="Q1 + Q2 + Q3">
+                                    <label class="input-group-btn">
+                                        <span class="btn btn-default btn-flat btn-basic2 btn-upload">
+                                        EDIT
+                                    </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="type-details result-style">
+                                <div class="form-label">Style of result:</div>
+                                <div class="col-md-12 no-padding double-tab">
+                                    <label class="radio-box">
+                                        <input type="radio" value="0" name="range" class="">
+                                        <div>
+                                            <label for="checklist5"> </label> Fixed</div>
+                                    </label>
+                                    <label class="radio-box">
+                                        <input type="radio" value="1" name="range" class="range-check">
+                                        <div>
+                                            <label for="checklist5"> </label> Range</div>
+                                    </label>
+                                    <div class="range col-md-12 no-padding div-check">
+                                        <div class="input-group">
+                                            <span class="form-label">
+                                            Lower range</span>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                            <select class="select-default" data-width="82px">
+                                                <option>Number</option>
+                                                <option>Decimal</option>
+                                            </select>
+                                        </div>
+                                        <div class="input-group">
+                                            <span class="form-label">Upper range</span>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                            <select class="select-default" data-width="82px">
+                                                <option>Number</option>
+                                                <option>Decimal</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="type-details">
+                                <div class="form-label">Unit of Variable:</div>
+									<div class="col-md-12 no-padding">
+										<div class="input-group input-drop">
+											<select class="select-default" data-width="82px">
+												<option>Prefix</option>
+												<option>Postfix</option>
+											</select>
+											<input type="text" class="form-control" aria-label="Text input with dropdown button">
+										</div>
+									</div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-center add">
+                            <button type="button" class="btn btn-default btn-flat btn-basic2"><i class="material-icons">add_circle_outline</i> ADD ANOTHER TEMPLATE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="numeric-input" data-section="numeric-input">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Question Properties:
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                      <div class="type-details">
+                            <div class="col-md-12 no-padding horz-group">
+                                <span class="form-label">Type:</span>
+                                    <div class="form-label">
+                                        <switch>
+                                            <select class="form-control" data-width="fit">
+			                                    <option value="text_area">Numeric
+                                                </option><option value="numerictextfield" >Numeric Field
+                                                </option><option value="emailfield" >Email Field
+                                                </option><option value="textfield" >Text Field
+                                                </option><option value="selectbox" >Select Box
+                                                </option><option value="checkbox">CheckBox
+                                                </option><option value="radio_button">Radio Button
+                                                </option><option value="header" >Header
+                                                </option><option value="logo">Logo
+                                                </option><option value="click_button">Button
+                                                </option><option value="slider" >Range Slider
+                                                </option><option value="date_picker" >Date Picker
+                                                </option><option value="counter" >Counter
+                                                </option><option value="switchbox" >Switch Box
+                                                </option>
+			                                </select>
+                                        </switch>
+                                    </div>
+                                </div>
+                            </div>
+                        <div class="type-details">
+							<span class="form-label">Question Title:</span>
+							<textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <div class="lan-description">
+                                <span class="form-label">Description:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input class="show-check" type="checkbox" checked name="properties-checkbox" data-size="mini" data-on-color="blue">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 no-padding text-group div-check">
+                                    <input class="form-text" type="text" placeholder="help text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <div class="col-xs-12 no-padding text-group horz-group">
+                                <span class="col-md-4 no-padding form-label">Placeholder:</span>
+                                <div class="col-md-7 no-padding horz-control">
+                                    <input class="form-text" type="text" placeholder="this is placeholder">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group ">
+                                <span class=" col-md-4 no-padding form-label">Min Value:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                             <div class="col-xs-12 no-padding text-group ">
+                                <span class="col-md-4 no-padding form-label">Max Value:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                         </div>
+                          <div class="type-details">
+                            <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1" class="form-text">
+                                <label for="check1" class="check"> </label>
+                                Mark as Mandatory
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="numeric-slider" data-section="numeric-slider">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Question Properties:
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details">
+                            <div class="col-md-12 no-padding horz-group">
+                                <span class="form-label">Type:</span>
+                                    <div class="form-label">
+                                        <switch>
+                                            <select class="form-control" data-width="fit">
+			                                    </option><option value="checkbox">CheckBox
+                                                <option value="text_area">Text Area
+                                                </option><option value="numerictextfield" >Numeric Field
+                                                </option><option value="emailfield" >Email Field
+                                                </option><option value="textfield"> Text Field
+                                                </option><option value="selectbox">Select Box
+                                                </option><option value="radio_button">Radio Button
+                                                </option><option value="header">Header
+                                                </option><option value="logo">Logo
+                                                </option><option value="click_button">Button
+                                                </option><option value="slider">Range Slider
+                                                </option><option value="date_picker">Date Picker
+                                                </option><option value="counter" >Counter
+                                                </option><option value="switchbox">Switch Box
+                                                </option>
+			                                </select>
+                                        </switch>
+                                    </div>
+                                </div>
+                            </div>
+                                                    <div class="type-details">
+                        <span class="form-label">Question Title:</span>
+                        <textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <div class="lan-description">
+                                <span class="form-label">Description:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input class="show-check" type="checkbox"  checked name="properties-checkbox" data-size="mini" data-on-color="blue">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 no-padding text-group div-check">
+                                    <input class="form-text" type="text" placeholder="help text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <div class="col-xs-12 no-padding text-group ">
+                                <span class="col-md-4 no-padding form-label">Min Value:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group ">
+                                <span class="col-md-4 no-padding form-label">Max Value:</span>
+                                <div class="col-md-4  no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="col-md-4 no-padding form-label">No. of Intervals:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="col-md-4 no-padding form-label">Scale:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                                <div class="help-tip">
+                                    <i class="material-icons">help</i>
+                                    <div class="help-checktip">Scale property is denoting what scale of text slider is required</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="col-md-4 no-padding form-label">Default Value:</span>
+                                <div class="col-md-4 no-padding horz-control">
+                                    <input type="text" class="form-text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1" class="form-text">
+                                <label for="check1" class="check"> </label>
+                                Mark as Mandatory
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="text-input" data-section="text-field">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Question Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details">
+                            <div class="col-md-12 no-padding horz-group">
+                                <span class="form-label">Type:</span>
+                                    <div class="form-label">
+                                        <switch>
+                                            <select class="form-control" data-width="fit">
+                                                <option value="text_area">Numeric
+                                                </option><option value="numerictextfield" >Numeric Field
+                                                </option><option value="emailfield" >Email Field
+                                                </option><option value="textfield" >Text Field
+                                                </option><option value="selectbox" >Select Box
+                                                </option><option value="checkbox">CheckBox
+                                                </option><option value="radio_button">Radio Button
+                                                </option><option value="header" >Header
+                                                </option><option value="logo">Logo
+                                                </option><option value="click_button">Button
+                                                </option><option value="slider" >Range Slider
+                                                </option><option value="date_picker" >Date Picker
+                                                </option><option value="counter" >Counter
+                                                </option><option value="switchbox" >Switch Box
+                                                </option>
+                                            </select>
+                                        </switch>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="type-details">
+                        <span class="form-label">Question Title:</span>
+                        <textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <div class="lan-description">
+                                <span class="form-label">Description:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input class="show-check" type="checkbox" checked name="properties-checkbox" data-size="mini" data-on-color="blue">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 no-padding text-group div-check">
+                                    <input class="form-text" type="text" placeholder="help text">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="type-details">
+                            <div class="col-xs-12 no-padding text-group horz-group">
+                                <span class="col-md-4 no-padding form-label">Placeholder:</span>
+                                <div class="col-md-7 no-padding horz-control">
+                                    <input class="form-text" type="text" placeholder="this is placeholder">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1" class="form-text">
+                                <label for="check1" class="check"> </label>
+                                Mark as Mandatory
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="open choices" data-section="open">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Question Properties:
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details">
+                            <div class="col-md-12 no-padding horz-group">
+                                <span class="form-label">Type:</span>
+                                    <div class="form-label">
+                                        <switch>
+                                            <select class="form-control" data-width="fit">
+			                                    </option><option value="checkbox">CheckBox
+                                                <option value="text_area">Text Area
+                                                </option><option value="numerictextfield" >Numeric Field
+                                                </option><option value="emailfield" >Email Field
+                                                </option><option value="textfield"> Text Field
+                                                </option><option value="selectbox">Select Box
+                                                </option><option value="radio_button">Radio Button
+                                                </option><option value="header">Header
+                                                </option><option value="logo">Logo
+                                                </option><option value="click_button">Button
+                                                </option><option value="slider">Range Slider
+                                                </option><option value="date_picker">Date Picker
+                                                </option><option value="counter" >Counter
+                                                </option><option value="switchbox">Switch Box
+                                                </option>
+			                                </select>
+                                        </switch>
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Question Title:</span>
+                            <textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <div class="lan-description">
+                                <span class="form-label">Description:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input class="show-check" type="checkbox" checked name="properties-checkbox" data-size="mini" data-on-color="blue">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                                <div class="col-xs-12 no-padding text-group div-check">
+                                    <input class="form-text" type="text" placeholder="help text">
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="type-details">
+                            <span class="form-label">Options:</span>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="no-padding form-label">1:</span>
+                                <div class="col-md-5 no-padding ">
+                                    <input type="text" class="form-text" placeholder="value">
+                                </div>
+                                <div class="col-md-5">
+                                     <input type="text" class="form-text" placeholder="1">
+                                </div>
+                                <!-- More button -->
+                                <div class="btn-group icon-options">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Delete</a></li>
+                                        <li><a href="#">Set as Default</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="no-padding form-label">2:</span>
+                                <div class="col-md-5 no-padding ">
+                                    <input type="text" class="form-text" placeholder="value">
+                                </div>
+                                <div class="col-md-5">
+                                     <input type="text" class="form-text" placeholder="1">
+                                </div>
+                                <!-- More button -->
+                                <div class="btn-group icon-options">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Delete</a></li>
+                                        <li><a href="#">Set as Default</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="no-padding form-label">3:</span>
+                                <div class="col-md-5 no-padding ">
+                                    <input type="text" class="form-text" placeholder="value">
+                                </div>
+                                <div class="col-md-5">
+                                     <input type="text" class="form-text" placeholder="1">
+                                </div>
+                                <!-- More button -->
+                                <div class="btn-group icon-options">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Delete</a></li>
+                                        <li><a href="#">Set as Default</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <span class="no-padding form-label">4:</span>
+                                <div class="col-md-5 no-padding ">
+                                    <input type="text" class="form-text" placeholder="value">
+                                </div>
+                                <div class="col-md-5">
+                                     <input type="text" class="form-text" placeholder="1">
+                                </div>
+                                <!-- More button -->
+                                <div class="btn-group icon-options">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Delete</a></li>
+                                        <li><a href="#">Set as Default</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding text-group">
+                                <div class="col-md-10">
+                                    <a href="#" class="default">Add Option</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <label class="check">
+                                <input type="checkbox" value="mandatory" name="checkbox1" id="check3">
+                                <label for="check3"> </label>
+                                Mark as Mandatory
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide" for="questionner properties" data-section="questionner">
+				<div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Questionner Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding result-area-tab">
+                        <div class="type-details setting-details border-none">
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Show Result in Real Time:</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox" checked>
+                                        <span class="lever ml"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div class="main-side hide" for="section properties" data-section="section-properties">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Section Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details"><span class="form-label">Heading:</span>
+                            <textarea class="wysiwyg"></textarea>
+                        </div>
+						<div class="type-details lead-parent">
+                            <div class="form-label">Lead Generation:</div>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+                                    <div class="input-group icon-list">
+                                        <!--<select class="select-default" data-width="100px">
+											<option value="1" ><img src="assets/images/icon1.png" height="20px" width="20px" >Device</option>
+											<option value="AF"><i class="material-icons">&#xE326;</i></option>
+											<option value="AX"><i class="material-icons">&#xE326;</i></option>
+											<option value="AL"><i class="material-icons">&#xE326;</i></option>
+										</select> -->
+										<img src="assets/images/icon-dd.png" height="33px" width="62px" style="float:left" >
+                                        <button type="button" class="btn btn-default btn-flat btn-basic2 btn-basic3" style="margin-left:10px;">CHANGE ICON</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details border-none">
+                            <span class="form-label">Button:</span>
+                            <input type="text" class="detail-text" placeholder="Get Started" />
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--landing layout end -->
+	<!--Modal -->
+	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+	  <div class="modal-dialog modal-lg" role="document">
+		<div class="modal-content">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">X</button>
+		  <div class="modal-body">
+			<img src="assets/images/formula-modal.png">
+		  </div>
+		  
+		</div>
+	  </div>
+	</div>
+	<!--Modal end-->
+    <!-- Editor Properties end -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/bootstrap-select.js"></script>
+    <script src="assets/js/responsive-tabs.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.3.0/tinycolor.js"></script>
+    <script src="assets/js/bootstrap.colorpickersliders.js"></script>
+    <script src="assets/js/wysiwyg.js"></script>
+    <script src="assets/js/custom.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".a1").click(function(){
+				$("sec1").slideUp();
+			});
+			$(".btn2").click(function(){
+				$("p").slideDown();
+			});
+			//page scroll
+			$('a[href^="#"]').on('click',function (e) {
+				e.preventDefault();
+				var target = this.hash;
+				var $target = $(target);
+				$('html, body').stop().animate({
+					'scrollTop': $target.offset().top
+				}, 900, 'swing', function () {
+					window.location.hash = target;
+				});
+			});
+		});		
+</script>
+<script type="text/javascript">
+        (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = '//api.usersnap.com/load/'+
+                '135cb6f0-dc65-4634-b7d8-df48f82e76b1.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
+
+</html>

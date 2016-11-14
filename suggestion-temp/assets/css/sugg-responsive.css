@@ -1,0 +1,465 @@
+/*################### Feature Page responsive css start ###################*/
+@media (min-width: 320px) and (max-width:767px) {
+	.question-page{
+		height:100%;
+	}
+	.left-section{
+		display:none !important;
+	}
+	.header-logo{
+		width:100% !important;
+	}
+	.template-divided-canvas .right-section{
+		width:100%;
+	}
+	.main-head{
+		font-size: 30px;
+		text-transform: none;
+		margin-bottom: 60px;
+		padding: 20px;
+		line-height: 1.3em;
+	}
+	.sub-head{
+		display:none;
+	}
+	.question-footer{
+		width:100% !important;
+	}
+	.section-head{
+		width: 100%;
+		font-size: 20px;
+		/* margin-top: 35px; */
+		padding: 0 30px;
+		margin-bottom: 20px;
+	}
+	.section-desc{
+		width:100%;
+		font-size:14px;
+		margin-bottom: 50px;
+		padding: 0 20px;
+	}
+	.template-divided-canvas .question-components {
+		margin-bottom: 0px;
+		width: 100%;
+		display: inline-block;
+	}
+	.single-img-question-components .component-container {
+		padding: 0 30px;
+	}
+	.images-wrap {
+		float: left;
+		width: 100%;
+		padding-left:40px;
+		padding-right:40px;
+	}
+	.next-step{
+		top:42%;
+		right:0;
+		font-size: 18px;
+		padding: 5px 10px;
+		display:none;
+	}
+	.prev-step {
+		left: 0;
+		top: 42%;
+		font-size: 18px;
+		padding: 5px 10px;
+		display:none;
+	}
+	.xs-img-hover{
+		width: 34vw;
+		height: 34vw;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	.sm-img-hover{
+		width: 34vw;
+		height: 34vw;
+		margin-right: 5px;
+		margin-bottom: 5px;
+	}
+	.md-img-hover{
+		width:34vw;
+		height:34vw;
+		margin-right:5px;
+		margin-bottom:5px;
+	}
+	.lg-img-hover{
+		width:34vw;
+		height:34vw;
+		margin-right:5px;
+		margin-bottom:5px;
+	}
+	.xlg-img-hover{
+		width: 75vw;
+		height: 50vw;
+		margin-right:5px;
+		margin-bottom:5px;
+	}
+	/* .pic-selector input:checked +.xs-img-hover{
+		border:none;
+	}
+	.pic-selector input:checked +.sm-img-hover{
+		border:none;
+	}
+	.pic-selector input:checked +.md-img-hover{
+		border:none;
+	}
+	.pic-selector input:checked +.lg-img-hover{
+		border:none;
+	}
+	.pic-selector input:checked +.xlg-img-hover{
+		border:none;
+	} */
+	.pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
+		font-size: 24px;
+		height: 24px;
+		width: 24px;
+		padding: 3px;
+		top: 40%;
+		left: 40%;
+		padding-top: 0px;
+	}
+	.pic-selector input[type="radio"]:checked + label.sm-img-hover::after {
+		font-size: 24px;
+		height: 24px;
+		width: 24px;
+		padding: 3px;
+		top: 40%;
+		left: 40%;
+		padding-top: 0px;
+	}
+	.pic-selector input[type="radio"]:checked + label.md-img-hover::after {
+		font-size: 24px;
+		height: 24px;
+		width: 24px;
+		padding: 3px;
+		top: 40%;
+		left: 40%;
+		padding-top: 0px;
+	}
+	.pic-selector input[type="radio"]:checked + label.lg-img-hover::after {
+		font-size: 24px;
+		height: 24px;
+		width: 24px;
+		padding: 3px;
+		top: 34%;
+		left: 40%;
+		padding-top: 0px;
+	}
+	.pic-selector input[type="radio"]:checked + label.xlg-img-hover::after {
+		font-size: 24px;
+		height: 24px;
+		width: 24px;
+		padding: 3px;
+		top: 45%;
+		left: 45%;
+		padding-top: 0px;
+	}
+	.pagination-circle{
+		/* display:block; */
+	}
+	.section-container{
+		width:100%;
+		margin: 50px 0px;
+	}
+	.component-container{
+		width:100%;
+		margin-left:0px;
+		padding:0px 30px;
+	}
+	.radio-icon{
+		width:50%;
+		margin-bottom: 50px;
+	}
+	.radio-icon label {
+		width: 36px;
+		height: 36px;
+		border: 3px solid #333333;
+		margin-bottom: 15px;
+	}
+	.radio-icon input[type="radio"]:checked + label {
+		border: 3px solid #327fff;
+	}
+	.radio-icon label::after{
+		top:5px;
+	}
+	.ic i {
+		font-size: 30px;
+		line-height: 1;
+		cursor: pointer;
+	}
+	.check-icon label {
+		width: 36px;
+		height: 36px;
+		border: 3px solid #333333;
+		margin-bottom: 15px;
+	}
+	.custom-checkbox .check-icon label {
+		width: 100%;
+		height: 100%;
+		border:none !important;
+		margin-bottom: 15px;
+	}
+	.check-icon {
+		width: 50%;
+		margin-bottom: 50px;
+		margin-left: 0;
+	}
+	.check-icon label::after {
+		display: inline-block;
+		position: relative;
+		top: -4px;
+		font-size: 30px;
+		color: #fff;
+	}
+	.range{
+		display:none;
+	}
+	.slider.slider-horizontal {
+		width: 100%;
+		margin-top: 30px;
+	}
+	.text-field-style {
+		padding: 0 20px;
+		width: 100%;
+		margin: 0;
+	}
+	.result-carousal{
+		top:10px;
+	}
+	input[type=text].ans-text {
+		font-size: 18px;
+		color: #333;
+	}
+	input[type=text].ans-text::-webkit-input-placeholder{
+		font-size: 18px;
+		color: #333;
+	}
+	.test{
+		display:block;
+	}
+	.select-style-res{
+		margin: 0;
+		width: 100% !important;
+	}
+	.selectize-control.single .selectize-input{
+		width:100%;
+	}
+	.single-img-question-components .radio-icon {
+		width: 49%;
+    }
+	.rs-hide{
+		display:none !important;
+	}
+	.rs-show{
+		display:block !important;
+	}
+	.main .result-page{
+		background:none !important;
+	} 
+	.main .result-page .right-section{
+		background: rgba(237,237,237,0.95) !important;
+		display: table;
+	}
+	.main .result-page .right-section .main-head {
+		font-size: 18px;
+		text-transform: none;
+		margin-bottom: 0;
+		padding: 20px;
+		line-height: 1.3em;
+		text-transform: uppercase;
+	}
+	.main .result-page .sub-head {
+		font-size: 14px;
+		margin-bottom: 0;
+		color: #327fff;
+		margin-top: 10px;
+		font-family: raleway;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-bottom: 0;
+		display: block;
+	}
+	.main .result-page .description {
+		font-family: raleway;
+		font-size: 14px;
+		padding: 10px 20px;
+	}
+	.custom-form {
+		width: 80%;
+		margin: 0 auto;
+	}
+	.custom-form input{
+		font-size:14px;
+		height: 40px;
+	}
+	.result-page .prime {
+		padding: 12px 18px;
+	}
+	.result-footer {
+		float: left;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.share-link {
+		text-align: center;
+		float: left;
+		width: 100%;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+	.share-link span {
+		margin-right: 10px;
+	}
+
+	.disc-text {
+		font-size: 12px;
+		color: #333333;
+		opacity: 0.6;
+		margin-top: 50px;
+		line-height: 18px;
+		padding: 0 20px;
+	}
+	.label-text{
+		padding-left:0px;
+	}
+	.single-img-question-components{
+		margin-bottom:0px;
+		margin-top:50px;
+	}
+	img.single-img {
+		width: 100%;
+		margin-left: 0px;
+		max-width: 100%;
+	}
+	.result-page .template-divided-canvas .right-section {
+		min-height: 70vh;
+		color: #fff;
+	} 
+	.swiper-pagination {
+		display:block;
+	}
+}
+	
+	@media (min-width:768px) and (max-width:992px){
+		.next-step {
+			position: absolute;
+			right: 10px;
+		}
+		.prev-step{
+			left:10px;
+		}
+		.single-img-question-components .radio-icon{
+			width:140px;
+		}
+		.radio-icon{
+			width:145px;
+		}
+		.xs-img-hover{
+			width: 35vw;
+			height: 35vw;
+		}
+		.sm-img-hover{
+			width: 35vw;
+			height: 35vw;
+		}
+		.md-img-hover{
+			width: 35vw;
+			height: 35vw;
+		}
+		.xlg-img-hover{
+			width: 70vw;
+			height: 30vw;
+		}
+		.section-head {
+			padding: 70px 10% 17px;
+		}
+		.lg-img-hover {
+			width: 70vw;
+			height: 30vw;
+		}
+		.slider.slider-horizontal {
+			width: 78%;
+			float: left;
+		}
+		.check-icon {
+			width: 145px;
+		}
+		.component-container {
+			width: 100%;
+			float: left;
+			padding: 0 12%;
+		}
+	}
+	@media (min-width: 993px) and (max-width:1025px){
+		.next-step {
+			position: absolute;
+			right: 60px;
+			top: 50%;
+			font-size: 18px;
+			padding: 10px 15px;
+		}
+		.prev-step {
+			position: absolute;
+			left: 60px;
+			top: 50%;
+			font-size: 18px;
+			padding: 10px 15px;
+		}
+		.slider.slider-horizontal {
+			width: 79%;
+			float: left;
+		}
+		.xs-img-hover{
+			width:20vw;
+			height:20vw;
+		}
+		.md-img-hover{
+			width:20vw;
+			height:20vw;
+		}
+		.sm-img-hover{
+			width:20vw;
+			height:20vw;
+		}
+		.lg-img-hover {
+			width: 60vw;
+			height: 30vw;
+		}
+		.xlg-img-hover{
+			width:60vw;
+			height:30vw;
+		}
+		.single-img-question-components .radio-icon {
+			width: 140px;
+	    }
+	   .radio-icon {
+			width: 140px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: normal;
+			cursor: pointer;
+			float: left;
+		}
+		.check-icon {
+			width: 140px;
+			text-align: center;
+			font-size: 18px;
+			font-weight: normal;
+			cursor: pointer;
+			float: left;
+		}
+	}
+	@media (min-width: 992px){
+		.section-container {
+			width: 970px;
+		}
+		
+	}
+	@media (min-width: 1200px){
+		.section-container {
+			width: 1170px;
+		}
+	}
+/*################### Feature Page responsive css end ###################*/

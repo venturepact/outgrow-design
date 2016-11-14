@@ -1,0 +1,778 @@
+@font-face {
+    font-family: 'raleway';
+    src: url('../fonts/raleway/Raleway-Regular.eot');
+    src: url('../fonts/raleway/Raleway-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/raleway-regular-webfont.woff2') format('woff2'), url('../fonts/raleway/raleway-regular-webfont.woff') format('woff'), url('../fonts/raleway/Raleway-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-med';
+    src: url('../fonts/raleway/Raleway-Medium.eot');
+    src: url('../fonts/raleway/Raleway-Medium.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/Raleway-Medium-webfont.woff2') format('woff2'), url('../fonts/raleway/Raleway-Medium-webfont.woff') format('woff'), url('../fonts/raleway/Raleway-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway/Raleway-Bold.eot');
+    src: url('../fonts/raleway/Raleway-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway/Raleway-Bold-webfont.woff2') format('woff2'), url('../fonts/raleway/Raleway-Bold-webfont.woff') format('woff'), url('../fonts/raleway/Raleway-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'raleway';
+}
+
+
+/***************************
+Components style
+***************************/
+
+.np{
+	padding:0px !important;
+}
+/*Button */
+
+
+.prime {
+    background-color: #E22963;
+    color: #fff;
+    border-radius: 0px;
+    outline: none;
+    padding: 15px 23px;
+    width: 165px;
+    font-size: 18px;
+    margin: 0px 15px;
+    position: relative;
+}
+
+.btn.prime i {
+    vertical-align: middle;
+}
+
+.btn.prime:hover,
+.btn.prime:focus,
+.btn.prime:active {
+    color: #fff;
+    outline: none;
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18),0 4px 15px 0 rgba(0,0,0,0.15);
+}
+.btn-lg.prime{
+	width:300px;
+	    font-size: 24px;;
+}
+.ripple{
+  overflow:hidden;
+}
+
+.ripple-effect{
+  position: absolute;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: white;
+
+    
+  animation: ripple-animation 2s;
+}
+
+@keyframes ripple-animation {
+    from {
+      transform: scale(1);
+      opacity: 0.4;
+    }
+    to {
+      transform: scale(100);
+      opacity: 0;
+    }
+}
+/* Checkbox with icons */
+
+.check-icon {
+    width: 170px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.check-icon input[type="checkbox"] {
+    left: -9999px;
+    position: absolute;
+}
+
+.check-icon label {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    border: 6px solid #999999;
+    border-radius: 3px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.check-icon input[type="checkbox"]:checked + label {
+    background-color: #E22963;
+    border: none;
+}
+
+.check-icon label::after {
+    display: inline-block;
+    position: relative;
+    top: -2px;
+    font-size: 41px;
+    color: #fff;
+}
+
+.check-icon input[type="checkbox"]:checked + label::after {
+    font-family: "Material Icons";
+    content: "\e5ca";
+}
+
+
+/* Checkbox with icons */
+
+.checklist-icon {
+    text-align: left;
+    width: 30%;
+    margin: 6px 2%;
+}
+
+.checklist-icon div {
+    background-color: #Ccc;
+    padding: 10px 15px 15px 15px;
+    line-height: 34px;
+}
+
+.checklist-icon label {
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    border: 3px solid #767676;
+    position: relative;
+    top: 8px;
+    margin: 0px 10px 0px 0px;
+}
+
+.check-icon input[type="checkbox"]:checked + div {
+    background-color: #E22963;
+    border: none;
+    color: #fff;
+}
+
+.checklist-icon input[type="checkbox"]:checked + div label {
+    background-color: #fff;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.checklist-icon label::after {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+    left: 2px;
+    top: -3px;
+    font-size: 21px;
+    color: #E22963;
+        font-weight: 700;
+}
+
+.checklist-icon input[type="checkbox"]:checked + div label::after {
+    font-family: "Material Icons";
+    content: "\e5ca";
+}
+
+
+/* Checkbox with ic icon class */
+
+.ic label {
+    content: none;
+    border: none;
+    height: auto;
+    width: auto;
+}
+
+.ic input[type="checkbox"]:checked + label::after {
+    content: none;
+}
+
+.ic input[type="checkbox"]:checked + label {
+    color: #E22963;
+    background: none;
+}
+
+.ic i {
+    font-size: 55px;
+        line-height: 1;
+}
+
+
+/* Radio with icons */
+
+.radio-icon {
+    width: 170px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: normal;
+	
+}
+
+.radio-icon input[type="radio"] {
+    left: -9999px;
+    position: absolute;
+}
+
+.radio-icon label {
+    content: "";
+    display: block;
+    width: 54px;
+    height: 54px;
+    top: -8px;
+    border: 6px solid #999999;
+    border-radius: 50%;
+    margin: 0 auto;
+        margin-bottom: 25px;
+}
+
+.radio-icon input[type="radio"]:checked + label {
+    border: 6px solid #E22963;
+}
+
+.radio-icon label::after {
+    display: inline-block;
+    position: relative;
+    width: 16px;
+    height: 16px;
+left: 0px;
+    top: 12px;
+    font-size: 21px;
+    color: #fff;
+}
+
+.radio-icon input[type="radio"]:checked + label::after {
+    content: "";
+width: 18px;
+    height: 18px;
+    background: #E22963;
+    border-radius: 10px;
+}
+
+
+/* Switch */
+
+.switch label {
+    cursor: pointer;
+        margin-bottom: 15px;
+}
+
+.switch label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label input[type=checkbox][disabled]+.lever:after,
+.switch label input[type=checkbox][disabled]:checked+.lever:after {
+    background-color: #E22963;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    border: 3px solid #E22963;
+}
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 41px;
+    border: 3px solid #818181;
+    border-radius: 25px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+    margin: 0 16px;
+}
+
+.switch label .lever:after {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: #818181;
+    border-radius: 21px;
+    left: 7px;
+    top: 5px;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #E22963;
+    left: 43px;
+}
+
+
+/*input*/
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 5rem;
+    width: 100%;
+    font-size: 16px;
+    margin: 0 0 15px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 2px solid #E22963;
+    box-shadow: 0 1px 0 0 #E22963;
+}
+
+.input-icon {
+    color: initial;
+    position: absolute;
+    right: 30px;
+    top: 10px;
+    font-size: 16px;
+    background: none;
+    border: none;
+}
+
+
+/*Datepicker Materialize like look */
+
+.datepicker-dropdown:before,
+.datepicker-dropdown:after {
+    content: none;
+}
+
+.datepicker-dropdown {
+    width: 290px;
+    padding: 20px 15px !important;
+}
+
+.table-condensed>tbody>tr>td,
+.table-condensed>tbody>tr>th,
+.table-condensed>tfoot>tr>td,
+.table-condensed>tfoot>tr>th,
+.table-condensed>thead>tr>td,
+.table-condensed>thead>tr>th {
+    padding: 10px;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled:hover.active,
+.datepicker table tr td.active.disabled:hover.disabled,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled:hover[disabled],
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active:hover.active,
+.datepicker table tr td.active:hover.disabled,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active:hover[disabled],
+.datepicker table tr td.active[disabled] {
+    background-color: #E22963;
+    border-radius: 27px;
+    background-image: none;
+}
+
+.datepicker table tr td.day.focused,
+.datepicker table tr td.day:hover {
+    border-radius: 50%;
+}
+
+.datepicker td,
+.datepicker th {
+    line-height: 15px;
+}
+
+
+/*Select Picker */
+
+.selectize-control.single .selectize-input {
+    border-color: #b8b8b8;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #9e9e9e;
+    outline: none;
+    width: 100%;
+    padding: 0;
+    border-radius: 0px;
+}
+
+.selectize-dropdown-content {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+.selectize-dropdown.single {
+    border: none;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    will-change: width, height;
+}
+
+.selectize-dropdown [data-selectable],
+.selectize-dropdown .optgroup-header {
+    padding: 14px 16px;
+}
+
+.selectize-dropdown [data-selectable] {
+    font-size: 15px;
+}
+
+
+/* Range slider */
+
+.slider-selection {
+    background: none;
+    background-color: #30B6D1;
+    box-shadow: none;
+}
+
+.slider-track-low,
+.slider-track-high {
+    background: #E22962;
+}
+
+.slider-handle {
+    background-color: #fff;
+    background-image: none;
+    box-shadow: none;
+    border: 6px solid #333;
+}
+
+.tooltip-inner {
+    padding: 10px 15px;
+    font-size: 15px;
+    background-color: #E22962;
+    border-radius: 35px;
+}
+.tooltip.top .tooltip-arrow {
+    border-top-color: #E22962;
+}
+.slider .tooltip.top {
+    margin-top: -56px;
+}
+
+.slider.slider-horizontal {
+    width: 70%;
+}
+
+.slider.slider-horizontal .slider-track {
+    height: 8px;
+}
+
+.slider.slider-horizontal .slider-selection,
+.slider.slider-horizontal .slider-track-low,
+.slider.slider-horizontal .slider-track-high {
+    top: 1px;
+}
+
+.slider-tick.in-selection,
+.slider-tick {
+    background-image: none;
+    background: #fff;
+    border: 6px solid pink;
+}
+
+.slider-selection.tick-slider-selection {
+    background-image: none;
+    background-color: pink;
+}
+.range{
+    font-size: 18px;
+    position: relative;
+    top: 29px;
+    right: -41px;
+}
+.range-max{
+    right: 60px;
+	}
+
+/*File Upload*/
+
+.file-field {
+    position: relative;
+}
+
+.input-field {
+    position: relative;
+    margin-top: 1rem;
+}
+
+.file-field input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+
+/* Numeric spinner */
+
+.spinner {
+    background: #EBEBEB;
+    border-radius: 33px;
+    padding: 20px;
+    width: 250px;
+}
+
+.spin-icon-btn {
+    background: none;
+    border: none;
+    float: left;
+}
+
+.spinner.input-group .form-control {
+    float: left;
+    width: 65%;
+    border: none;
+}
+
+.spinner input[type=text]:focus:not([readonly]) {
+    border-bottom: none;
+    box-shadow: none;
+}
+
+
+/*Progress Bar */
+
+.progress-bar-success {
+    background-color: #f13286;
+    border-radius: 20px;
+}
+
+.progress {
+    margin: 0px 60px 15px 60px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 2px solid #fff;
+    height: 38px;
+}
+
+.progress-bar-striped,
+.progress-striped .progress-bar {
+    background-image: -webkit-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+    background-image: linear-gradient(135deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
+}
+
+
+/***************************
+Theme style
+***************************/
+.template-divided-canvas label{
+	font-weight:normal;
+}
+.right-section {
+    background: #30B6D1;
+    display: table;
+}
+
+.logo {
+    font-size: 29px;
+    padding: 20px 0px 50px 0px;
+}
+.header-logo{
+	font-size:48px;
+	color:#999999;
+}
+.header-logo i{
+	float:left;
+}
+.header-logo span {
+    font-size: 18px;
+    color: #666666;
+    float: left;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.template-divided-canvas .right-section {
+    min-height: 100vh;
+    color: #fff;
+}
+
+.section-head {
+    font-size: 24px;
+    padding: 45px 15px 30px 15px;
+    line-height: normal;
+    color: #333;
+}
+
+.section-desc {
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 80px;
+}
+.left-section {
+    min-height: 100vh;
+    font-family: 'raleway-med';
+   /*  padding: 0px 45px; */
+}
+
+.template-divided-canvas .question-components {
+    margin-bottom: 150px;
+        width: 100%;
+    display: inline-block;
+}
+
+.result-title {
+    font-size: 36px;
+    margin: 0px auto 0px auto;
+    line-height: normal;
+}
+
+.result-amount {
+    font-size: 36px;
+    margin: 5px 0px 15px 0px;
+	    font-family: 'raleway-bold';
+}
+
+
+.pagination-circle {
+    border-radius: 50px;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    background: #80deea;
+    margin: 15px 3px;
+    cursor: pointer;
+}
+
+.pagination-circle.active {
+    background: #fff;
+}
+
+.result-carousal {
+    font-family: 'raleway';
+    font-size: 14px;
+    margin-bottom: 30px;
+    width: 100%;
+    float: left;
+	margin-top:40px;
+}
+.feature-label{
+	text-align:right;
+	font-size:18px;
+	line-height:34px;
+	    margin-right: 80px;
+}
+.center{
+	display: table-cell;
+    vertical-align: middle;
+}
+.center img{
+	margin:0 auto;
+	margin-left:90px;
+}
+.sub-head{
+	font-size:24px;
+	    margin-bottom: 25px;
+}
+.description{
+    padding: 0% 13% 70px 13%;
+}
+.landing-page .left-section{
+	    display: table;
+}
+ul{
+	    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+	color:#333;
+}
+a:hover, a:focus, a:active{
+	text-decoration:none;
+	color:#333;
+}
+.question-footer li {
+    float: left;
+    margin-right: 30px;
+}
+.question-footer {
+position:fixed;
+   bottom:0px;
+   height:30px;
+   float: left;
+   width: 49%;
+   margin-left: -14px;
+}
+.question-footer li:after {
+    content: "-";
+    position: relative;
+    left: 15px;
+}
+.answer-panel{
+	text-align: left;
+    padding: 0px 20px;
+}
+.answer{
+	font-family: 'raleway-bold';
+	 margin-bottom: 30px;
+}
+.question{
+   
+    margin-bottom: 8px;
+
+}
+.result-left{
+	margin-top:60px;
+}
+.result-page .description {
+    padding: 5% 16%;
+}

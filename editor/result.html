@@ -1,0 +1,2552 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editor</title>
+    <!-- css start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <!--<link rel="stylesheet" href="assets/css/bootstrap-select.css">-->
+    <link rel="stylesheet" href="assets/css/selectize.default.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.colorpickersliders.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="assets/css/wysiwyg.css">
+    <link rel="stylesheet" href="assets/css/mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <!-- Bootstrap Material Design : CSS -->
+  	<link href="assets/css/custom-material.css" rel="stylesheet">
+  	<link href="assets/bootstrap-material/css/ripples.min.css" rel="stylesheet">  
+
+
+    <!-- template css -->
+    <link href="assets/template/css/fonts.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/template/css/style.css">
+    <!-- css end -->
+	 <!-- Analytic css -->
+	<link rel="stylesheet" href="assets/css/analytics.css">
+	<link rel="stylesheet" href="assets/css/daterangepicker.css">
+</head>
+
+<body>
+    <!-- Editor header start-->
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid nav-padding">
+            <div class="navbar-header editor-navheader col-sm-3 col-md-2">
+                <button aria-controls="navbar" aria-expanded="false" data-target="#navbar" data-toggle="collapse" class="navbar-toggle collapsed"
+                    type="button">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand navbar-logopadding">
+                    <img src="assets/images/logo.png" />
+                </a>
+            </div>
+            <div class="navbar-collapse collapse" id="navbar">
+                <input type="text" class="ed-projectname" contenteditable="true" value="This is the project name" placeholder="This is the project name"
+                />
+                <div class="navbar-rightside">
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic btn-menu"><i class="material-icons">donut_large</i></button>
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic">PREVIEW</button>
+                    <button type="button" class="btn btn-default btn-sm btn-flat btn-basic">PUBLISH</button>
+                    <div class="btn-group navbar-leftside">
+                        <div class="col-xs-12 no-padding">
+                            <label><i class="material-icons blue-text">account_box</i> Pratham</label>
+                            <div class="btn-group">
+                                <div class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <label><i class="material-icons">help_outline</i></label>
+                                </div>
+                                <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Name</a></li>
+                                    <li><a href="#">Email</a></li>
+                                    <li><a href="#">Phone</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- Editor header end-->
+    <!-- Editor Left sidebar start -->
+    <section class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 editor-sidebar sidebar">
+                <div class="editor-accordion">
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default box-build">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne"> <i class="material-icons corner">arrow_drop_down_circle</i> <i class="material-icons main-ic">dashboard</i>                                        Build</a>
+                                </h4>
+                            </div>
+                            <div id="collapseOne" class="panel-collapse collapse in">
+                                <div class="panel-body panel-scroll">
+                                    <div class="ed-sidebar editor-tab" data-toggle="landing">
+                                        <span class="visible-parent"><a href="#" class="section-head build-page"><span class="circle"></span>Landing
+                                        Page</a>
+                                        <a href="#" class="visible"><i class="material-icons">visibility</i></a></span>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab" data-toggle="question">
+                                        <span class="add-visible-parent"><a href="#" class="section-head"><span class="circle">&nbsp;</span>Questionner</a>
+                                        <div class="btn-group icon-options  add-options pull-right">
+                                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <i class="material-icons">add_circle_outline</i>
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li>
+                                                    <a href="#"> <i class="material-icons add-options-i">playlist_add</i>Add Section</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#"> <i class="material-icons add-options-i">sort</i>Add Question</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        </span>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head"><span class="hollow"></span>Platform</a>
+                                            <ul>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#" class="ellipsis head">Q. Which paltform will</a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head"><span class="hollow"></span>Platform</a>
+                                            <ul>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#" class="ellipsis head">Q. Which paltform will</a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#" class="ellipsis head">Q. Which paltform will</a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="ed-sidebar-sub">
+                                            <a href="#" class="sub-head"><span class="hollow"></span>Platform</a>
+                                            <ul>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#" class="ellipsis head">Q. Which paltform will</a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                                <li><span class="hollow"></span>
+                                                    <a href="#" class="ellipsis head">Q. Which paltform will</a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">add_circle_outline</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Duplicate"><i class="material-icons">filter_none</i></a>
+                                                    <a href="javascript:void(0);" class="sublist-action" title="Delete"><i class="material-icons">clear</i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab" data-toggle="result">
+                                        <a href="#" class="section-head"> <span class="circle"></span>Result Page </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><i class="material-icons corner">arrow_drop_down_circle</i><i class="material-icons  main-ic">settings</i>Configure</a>
+                                </h4>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse">
+                                <div class="panel-body panel-scroll">
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#b-setting" data-toggle="tab" class="section-head gen-setting"><span class="circle"></span>General & SEO Settings
+                                            <label class="ed-sidebar-subhead ellipsis">Basic Settings</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#email-setting" data-toggle="tab" class="section-head gen-setting"><span class="circle">&nbsp;</span>Email
+                                            <label class="ed-sidebar-subhead ellipsis">that will be sent to the user</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#integration-setting" data-toggle="tab" class="section-head gen-setting"> <span class="circle"></span>Integrations
+                                            <label class="ed-sidebar-subhead ellipsis">Send data to 500+ web apps</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#cal-setting" data-toggle="tab" class="section-head gen-setting"> <span class="circle"></span>Share Your Calculator
+                                            <label class="ed-sidebar-subhead ellipsis">Generate a url and share it</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#popup-setting" data-toggle="tab" class="section-head gen-setting"> <span class="circle"></span>Launch in a popup
+                                            <label class="ed-sidebar-subhead ellipsis">Open it in a web page</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#code-setting" data-toggle="tab" class="section-head gen-setting"> <span class="circle"></span>embedded Code
+                                            <label class="ed-sidebar-subhead ellipsis">Generate it in your domain</label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><i class="material-icons corner">arrow_drop_down_circle</i><i class="material-icons  main-ic">equalizer</i>Analyze</a>
+                                </h4>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse">
+                                 <div class="panel-body panel-scroll">
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#overview" data-toggle="tab" class="section-head gen-setting"><span class="circle"></span>Overview
+                                            <label class="ed-sidebar-subhead ellipsis">View all visits and conversion data</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#user-detail" data-toggle="tab" class="section-head gen-setting"><span class="circle">&nbsp;</span>User Details
+                                            <label class="ed-sidebar-subhead ellipsis">View all data of your visitors</label>
+                                        </a>
+                                    </div>
+                                    <div class="ed-sidebar editor-tab">
+                                        <a href="#traffic" data-toggle="tab" class="section-head gen-setting"> <span class="circle"></span>Traffic Details
+                                            <label class="ed-sidebar-subhead ellipsis">View all data of your visitors</label>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ed-sidebar-topsection hide">
+                    <span>Pages</span>
+                    <div class="page-add">
+                        <label>Add</label>
+                        <a href="javascript:void(0);"><i class="material-icons">add_circle_outline</i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Editor Left sidebar end -->
+    <!-- Editor Right Template section strat -->
+    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 no-padding">
+        <div class="config-template-tabs ">
+            <div class="template-section" id="build">
+                <div class="tab-content tabs-wrapper col-md-12 np">
+                    <div class="tab-pane" id="b-setting">
+                        <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+                            <!-- Nav tabs -->
+                            <div class="col-xs-12 text-center">
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#gen-settings" aria-controls="myProfile" role="tab" data-toggle="tab">General Settings</a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#seo-settings" aria-controls="companies" role="tab" data-toggle="tab">SEO Settings</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content tab-sub-content">
+                                <div role="tabpanel" class="tab-pane my-profile active" id="gen-settings">
+                                    <div class="col-md-12 np">
+                                        
+                                        <div class="form-group label-floating">
+                                            <label class="control-label" for="inputName">Calculator Name</label>
+                                            <input class="form-control" id="inputName" type="text">
+                                        </div>
+                                        <div class="form-group label-floating">
+                                            <label class="control-label" for="inputName">Browser Title</label>
+                                            <input class="form-control" id="inputName" type="text">
+                                        </div>
+										
+                                        <div class="form-group">
+                                            <input type="file" id="inputFile4">
+                                            <div class="input-group">
+                                                <label class="g-upload-label">Favicon</label>
+                                                <input type="text" readonly="" class="form-control upload-placeholder" placeholder="No icon uploaded">
+												<span class="input-group-btn input-group-sm">
+													<button type="button" class="g-upload-btn">
+														upload
+													</button>
+												</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 np g-setting-outr">
+                                            <label class="g-setting-label">Settings</label>
+                                            <div class="col-xs-12 np">
+                                                <span class="form-label">Make the Calculator Public:</span>
+                                                <div class="switch">
+                                                    <label>
+                                                        <input type="checkbox" class="show-check" checked>
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 np">
+                                                <span class="form-label">Show Outgrow logo:</span>
+                                                <div class="switch">
+                                                    <label>
+                                                        <input type="checkbox" class="show-check" checked>
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane my-profile" id="seo-settings">
+                                    <div class="col-xs-12 np seo-setting-outr">
+                                        <div class="col-xs-12 np">
+                                            <span class="form-label">Seo Index Settings:</span>
+                                            <div class="switch">
+                                                <label>
+                                                    <input type="checkbox" class="show-check" checked>
+                                                    <span class="lever"></span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group label-static">
+                                            <label for="si5i" class="control-label seo-static-label">Description</label>
+                                            <textarea type="email" class="form-control material-textarea" id="si5i" placeholder="Type the description here"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="file" id="inputFile4">
+											<div class="input-group">
+                                                <label class="g-upload-label">Image</label>
+                                                <input type="text" readonly="" class="form-control upload-placeholder" placeholder="No icon uploaded">
+												<span class="input-group-btn input-group-sm">
+													<button type="button" class="g-upload-btn">
+														upload
+													</button>
+												</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 general-helppanel">
+                            <div class="col-xs-12 np text-center">
+                                <label class="g-helpicon">
+                                    <i class="material-icons">lightbulb_outline</i>
+                                </label>
+                            </div>
+                            <h5>Whats this URL for?</h5>
+                            <p>Share this URL with your respondents so they can visit your calc and answer your questions.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="email-setting">
+                        <div class="col-xs-12 col-sm-12 np">
+                            <!-- Nav tabs -->
+                            <div class="col-xs-12 email-tabs">
+                                <ul class="nav nav-tabs nav-justified" role="tablist">
+                                    <li role="presentation" class="active">
+                                        <a href="#email1" aria-controls="" role="tab" data-toggle="tab">When the user finishes the calculator <i class="material-icons">keyboard_arrow_right</i></a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#email2" aria-controls="" role="tab" data-toggle="tab">When the user recommends the calulator to someone <i class="material-icons">keyboard_arrow_right</i></a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#email3" aria-controls="" role="tab" data-toggle="tab">Email to Admin when someone uses the calculator <i class="material-icons">keyboard_arrow_right</i></a>
+                                    </li>
+                                    <li role="presentation">
+                                        <a href="#email4" aria-controls="" role="tab" data-toggle="tab">Summary report of the calculator usage <i class="material-icons">keyboard_arrow_right</i></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="tab-content tab-sub-content my-emailsetting col-sm-offset-3 col-sm-8">
+                                <div role="tabpanel" class="tab-pane my-profile active" id="email1">
+                                    <div class="col-md-12 np">
+                                        <h3 class="email-heading">Email Settings</h3>
+                                        <div class="form-group">
+                                            <div class="email-replto-input">
+                                                <label class="g-upload-label">Reply to</label>
+                                                <input type="text" id="email-replyto-selectize"  />
+                                                <!--<input type="text" class="form-control upload-placeholder email-replyto-effect">-->
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="email-select-outr">
+                                                <label class="g-upload-label">Subject</label>
+                                                <input type="text" class="form-control upload-placeholder" placeholder="Add subject here">
+                                                <select id="select-code-language" class="email-selectize" placeholder="Add Variable">
+                                                    <option value="txt">Text</option>
+                                                    <option value="md">Dropdown</option>
+                                                    <option value="html">Radio</option>
+                                                    <option value="php">Checkbox</option>
+                                                    <option value="python">Input</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 np email-setting-outr">
+                                            <label class="g-setting-label">MessagE</label>
+                                            <div class="col-xs-12 np">
+                                                <textarea id="froala-editor"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-12 np g-setting-outr">
+                                            <label class="g-setting-label">Settings</label>
+                                            <div class="col-xs-12 np">
+                                                <span class="form-label">Send result email</span>
+                                                <div class="switch">
+                                                    <label>
+                                                        <input type="checkbox" class="show-check" checked>
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-12 np">
+                                                <span class="form-label">Send Result as an attachment</span>
+                                                <div class="switch">
+                                                    <label>
+                                                        <input type="checkbox" class="show-check" checked>
+                                                        <span class="lever"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane my-profile" id="email2">
+                                    email 2
+                                </div>
+                                <div role="tabpanel" class="tab-pane my-profile" id="email3">
+                                    email 3
+                                </div>
+                                <div role="tabpanel" class="tab-pane my-profile" id="email4">
+                                    email 4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="integration-setting">
+                        <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+                            <div class="col-xs-12 integration-top">
+                                <h3>Ingerations</h3>
+                                <p>Our integration with Zapier helps you easily push data you collect on outgrow to over<br>500 services.</p>
+                            </div>
+                            <div class="col-xs-12 np">
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/google-sheet.jpg" />
+                                        <p>Save new Calc entries to a Google Sheets spreadsheet</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/mail-chimp.jpg" />
+                                        <p>Create MailChimp subscribers from outgrow entries</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/trello.jpg" />
+                                        <p>Create Trello cards <br>from new Typeform entries</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/google-sheet.jpg" />
+                                        <p>Save new Calc entries to a Google Sheets spreadsheet</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/mail-chimp.jpg" />
+                                        <p>Create MailChimp subscribers from outgrow entries</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                                <div class="col-sm-4 col-xs-12">
+                                    <a href="javascript:void(0);" class="integration-box">
+                                        <img src="assets/images/trello.jpg" />
+                                        <p>Create Trello cards <br>from new Typeform entries</p>
+                                        <label>Use this zap</label>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 general-helppanel">
+                            <div class="col-xs-12 np text-center">
+                                <label class="g-helpicon">
+                                    <i class="material-icons">lightbulb_outline</i>
+                                </label>
+                            </div>
+                            <h5>More Integration</h5>
+                            <p>Find out more about outgrow integrations by Zapier or <a href="">Create your Own now</a></p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="cal-setting">
+                        <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+                            <div class="col-xs-12 np integration-top">
+                                <h3>Share your calculator</h3>
+                            </div>
+                            <div class="col-xs-12 np share-groupbox">
+                                <label>Your Calculator Lives in this URL:</label>
+                                <div class="col-xs-12 np my-profile">
+                                    <div class="form-group label-floating">
+                                        <input class="form-control" id="inputName" type="text">
+                                    </div>
+                                    <a href="javascript:void(0);">Copy Link</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 np share-groupsocial">
+                                <label>Share on social media or send by email:</label>
+                                <div class="col-xs-12 np">
+                                    <a href="javascript:void(0);" title="Facebook"><i class="fa fa-facebook share-icon" aria-hidden="true"></i></a>
+                                    <a href="javascript:void(0);" title="Twitter"><i class="fa fa-twitter share-icon" aria-hidden="true"></i></a>
+                                    <a href="javascript:void(0);" title="LinkedIn"><i class="fa fa-linkedin share-icon" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="col-sm-2 general-helppanel">
+                            <div class="col-xs-12 np text-center">
+                                <label class="g-helpicon">
+                                    <i class="material-icons">lightbulb_outline</i>
+                                </label>
+                            </div>
+                            <h5>Whats this URL for?</h5>
+                            <p>Share this URL with your respondents so they can visit your calc and answer your questions.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="popup-setting">
+                        <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+                            <div class="col-xs-12 integration-top">
+                                <h3>Launch In a Popup</h3>
+                            </div>
+                            <div class="col-xs-12 popup-choose">
+                                <h4>How would you like your pop-up served?</h4>
+                            </div>
+							<div class="col-sm-12 np popup-choose">
+								<ul>
+									<li class="col-sm-4">
+										<input type="radio" id="f-option" name="selector2" checked="checked">
+										<label for="f-option" class="check">
+											<i class="material-icons">computer</i>
+											<p>Classic</p>
+										</label>
+									</li>
+									<li class="col-sm-4">
+										<input type="radio" id="f-option2" name="selector2">
+										<label for="f-option2" class="check">
+											<img src="assets/images/drawer-icon.png" />
+											<p>Drawer</p>
+										</label>
+									</li>
+								</ul>
+							</div>
+                            <div class="col-xs-12 np popup-choose">
+								<div class="col-xs-12 popup-choose">
+									<h4>In Form of a?</h4>
+								</div>
+                                <div class="col-sm-12 np popup-choose">
+                                    <ul>
+                                        <li class="col-sm-4">
+                                            <input type="radio" id="f-option3" name="selector" checked="checked">
+                                            <label for="f-option3" class="check">
+                                                <i class="material-icons">play_circle_outline</i>
+                                                <p>Button</p>
+                                            </label>
+                                        </li>
+                                        <li class="col-sm-4">
+                                            <input type="radio" id="f-option4" name="selector">
+                                            <label for="f-option4" class="check">
+                                                <i class="material-icons">repeat</i>
+                                                <p>Link</p>
+                                            </label>
+                                        </li>
+                                        <li class="col-sm-4">
+                                            <label  class="buttonlink col-xs-12">
+                                                <input type="text" placeholder="Add text here" />
+                                                <p>Button/Link Text</p>
+                                            </label>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-sm-12 np popup-copypaste">
+                                <div class="col-sm-12 np popup-copypaste-top">
+                                    <h4>Copy and paste this piece of code and place in your website</h4>
+                                    <a href="javascript:void(0);">Launch Demo</a>
+                                    <div class="col-sm-12 copypaste-box">
+										<div class="copypaste-box-scroll">
+											<pre>
+												<code>&lt;a class="typeform-share button" href="https://arshiya1.typeform.com/to/l3oP4Z" data-mode="2" target="_blank"&gt;Launch me!&lt;/a&gt;<br />
+	&lt;script&gt;(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'share.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}id=id+'_';if(!gi.call(d,id)){qs=ce.call(d,'link');qs.rel='stylesheet';qs.id=id;qs.href=b+'share-button.css';s=gt.call(d,'head')[0];s.appendChild(qs,s)}})()&lt;/script&gt;
+												</code>
+											</pre>
+										</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 general-helppanel">
+                            <div class="col-xs-12 np text-center">
+                                <label class="g-helpicon">
+                                    <i class="material-icons">lightbulb_outline</i>
+                                </label>
+                            </div>
+                            <h5>What’s this code for?</h5>
+                            <p>Use this code to generate a popup window on your blog/website where your typeform will load. You can choose to launch the popup overlay from either a button or a link.</p>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="code-setting">
+                        <div class="col-xs-12 col-sm-7 col-sm-offset-1 np">
+                            <div class="col-xs-12 integration-top np">
+                                <h3>Embed in a web page</h3>
+                            </div>
+                            <div class="col-xs-12 np">
+                                <div class="col-sm-12 np embed-codeoutr">
+                                    <div class="col-sm-12 np embed-codeoutr-top">
+                                        <h4>Embed code</h4>
+                                        <a href="javascript:void(0);">Get the Code</a>
+                                        <a href="javascript:void(0);">Launch Demo</a>
+                                        <div class="col-sm-12 embed-codeoutr-box">
+                                            <div class="col-sm-8 embed-codeoutr-box-left np">
+                                                <div class="col-xs-12 np">
+                                                    <h4>On large screens</h4>
+                                                    <p>
+                                                        Your calc gets loaded in an iframe wherever you put the code, filling the width of its parent element.
+                                                    </p>
+                                                </div>
+                                                <div class="col-xs-12 np">
+                                                    <h4>On small screens</h4>
+                                                    <p>
+                                                        Your calc still gets loaded in an iframe, but expands to fill the entire window area when activated.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 embed-codeoutr-box-right">
+                                                <img src="assets/images/code-icon.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-12 np embed-codeoutr-top">
+                                        <h4>Full page code</h4>
+                                        <a href="javascript:void(0);">Get the Code</a>
+                                        <a href="javascript:void(0);">Launch Demo</a>
+                                        <div class="col-sm-12 embed-codeoutr-box">
+                                            <div class="col-sm-8 embed-codeoutr-box-left np">
+                                                <div class="col-xs-12 np">
+                                                    <h4>On all screens</h4>
+                                                    <p>
+                                                        Your Calc gets loaded in an iframe, taking up the entire window area. (Basically, the same as it looks on your domain.outgrow.com.)
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-4 embed-codeoutr-box-right">
+                                                <img src="assets/images/code-icon.png" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-2 general-helppanel">
+                            <div class="col-xs-12 np text-center">
+                                <label class="g-helpicon">
+                                    <i class="material-icons">lightbulb_outline</i>
+                                </label>
+                            </div>
+                            <h5>Type of code embed?</h5>
+                            <p>Embed this calc on your own website, or anywhere you can insert HTML. OR Make this calc a page on your website. Make it your whole website, even.</p>
+                        </div>
+                    </div>
+					
+					 <div class="tab-pane" id="overview">
+                        <div class="col-md-12 col-sm-12 col-xs-12 ">
+							<div class="col-md-6 col-sm-12 col-xs-12 ">
+								<div class="graph-val"><span class="red"></span> India (55%)</div>
+								<div class="graph-val"><span class="blue"></span> India (55%)</div>
+							</div>
+							<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
+								<div class="dp-outer ">
+									<i class="material-icons icon-left">date_range</i>
+									<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
+									<i class="material-icons icon-right">keyboard_arrow_down</i>
+								</div>
+							</div>
+						 </div>
+						<div class="col-md-12 col-sm-12 col-xs-12 ">
+							<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+							<div id="chart_div"></div>-->
+							 <div id="area-example" style="height: 300px; width:1080px !important;"></div>
+						</div>
+						<div class="col-md-12 col-sm-12 col-xs-12 analytics-mt20">
+							<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+								<h6><i class="material-icons">people</i> Unique/  TotalVisitors</h6>
+								<h4>2/4</h4>
+								<div class="pull-left">
+									<!--<div id="chart_div1" style="width: 160px; height:30px;"></div>-->
+									<div id="chart-container"></div>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+								<h6><i class="material-icons">person_add</i> Conversions</h6>
+								<h4>3</h4>
+								<div class="pull-left">
+									<!--<div id="chart_div2" style="width: 160px; height:30px;"></div>-->
+									<div id="chart-container1"></div>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+								<h6><i class="material-icons">trending_up</i> Coversion Rate</h6>
+								<h4>60%</h4>
+								<div class="pull-left">
+									<!--<div id="chart_div3" style="width: 160px; height:30px;"></div>-->
+									<div id="chart-container2"></div>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+								<h6><i class="material-icons">query_builder</i> Avg Length of Visit</h6>
+								<h4>10 Sec</h4>
+								<div class="pull-left">
+									<!--<div id="chart_div4" style="width: 160px; height:30px;"></div>-->
+									<div id="chart-container3"></div>
+								</div>
+							</div>
+							<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
+								<h6><i class="material-icons">record_voice_over</i> Avg. Responses</h6>
+								<h4>2/4</h4>
+								<div class="pull-left">
+									<!--<div id="chart_div5" style="width: 160px; height:30px;"></div>-->
+									<div id="chart-container4"></div>
+								</div>
+							</div>
+						</div>
+                     </div>
+					  <div class="tab-pane" id="user-detail">
+                       <div class="col-md-12 col-sm-12 col-xs-12 ">
+									<div class="col-md-6 col-sm-12 col-xs-12 np details-heading">Lifetime Statistics</div>
+									<div class="col-md-6 col-sm-12 col-xs-12  np">
+										<div class="dp-outer ">
+											<i class="material-icons icon-left">date_range</i>
+											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
+											<i class="material-icons icon-right">keyboard_arrow_down</i>
+										</div>
+									</div>
+								 </div>
+                                <div class="col-md-12 col-sm-12 col-xs-12 details-mt20">
+                                   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">people</i> 5</h4>
+										<h6>Avg. Referrals Made</h6>
+								   </div>
+								   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">person_add</i> 5</h4>
+										<h6>Avg. Questions Answered</h6>
+								   </div>
+								   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">timeline</i> 5</h4>
+										<h6>Avg. Result</h6>
+								   </div>
+								   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">public</i> 5</h4>
+										<h6>Most Viewed On</h6>
+								   </div>
+								   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">schedule</i> 5</h4>
+										<h6>Avg, Length of Visit</h6>
+								   </div>
+								   <div class="col-md-2 col-sm-12 col-xs-12 details-box-outer">
+										<h4><i class="material-icons">near_me</i> 5</h4>
+										<h6>Most Visited Via</h6>
+								   </div>
+                                </div>
+								
+								<div class="col-md-12 col-sm-12 col-xs-12 details-table-outer" >
+									<div class="table-responsive">
+									<table id="myTable" class="display table" cellspacing="0" width="100%"></table>
+									
+								</div>
+								</div>
+                     </div>
+					  <div class="tab-pane" id="traffic">
+                         <div class="col-md-12 col-sm-12 col-xs-12 ">
+									<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
+										<div class="dp-outer ">
+											<i class="material-icons icon-left">date_range</i>
+											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
+											<i class="material-icons icon-right">keyboard_arrow_down</i>
+										</div>
+									</div>
+								 </div>
+							   <div class="col-md-12 col-sm-12 col-xs-12 ">
+									<div class=" traffic-graph-outer">
+										<div class="col-md-5 col-sm-12 col-xs-12 np">
+											<h4>Top Geographies</h4>
+											<h6><span class="red"></span> India (55%)</h6>
+											<h6><span class="green"></span> Australia (20%)</h6>
+											<h6><span class="sky"></span> U.S.A (15%)</h6>
+										</div>
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<div id="regions_div" ></div>
+										</div>
+									</div>
+									<div class="traffic-graph-outer">
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<h4>Devices</h4>
+											<h6><span class="orange"></span> Desktop Computers (55%)</h6>
+											<h6><span class="ex-light-green"></span> Laptops (30%)</h6>
+											<h6><span class="sky"></span> Mobile Phones & Tablets (15%)</h6>
+										</div>
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<div id="piechart" class="chart-position" ></div>
+										</div>
+									</div>
+							   </div>
+							    <div class="col-md-12 col-sm-12 col-xs-12 ">
+									<div class="traffic-graph-outer">
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<h4>Traffic Sources</h4>
+											<h6><span class="orange"></span> Direct Access (55%)</h6>
+											<h6><span class="ex-light-green"></span> Facebook (20%)</h6>
+											<h6><span class="sky"></span> Twitter (15%)</h6>
+										</div>
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<div id="piechart1" class="chart-position" ></div>
+										</div>
+									</div>
+									<div class="traffic-graph-outer">
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<h4>Browser</h4>
+											<h6><span class="orange"></span> Chrome Os Desktop (55%)</h6>
+											<h6><span class="ex-light-green"></span> Safari (Iphone) (30%)</h6>
+											<h6><span class="sky"></span> Firefox (Android) (15%)</h6>
+										</div>
+										<div class="col-md-6 col-sm-12 col-xs-12 np">
+											<div id="piechart2" class="chart-position" ></div>
+										</div>
+									</div>
+							   </div>
+                     </div>
+                    </div>
+                
+                </div>
+                <section class="landing-page main-bg" data-section="landing">
+                    <header>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="col-md-6 col-sm-6 col-xs-12 logo">
+                                <a href="#">
+                                    <img src="assets/template/images/logo.png" alt="Company Logo">
+                                </a>
+                            </div>
+                        </div>
+                    </header>
+                    <!-- Header Section End-->
+                    <div class="main-section ">
+                        <!-- Content Section-->
+                        <div class="landing-page" data-section="landing">
+                            <h1 class="main-head">Heading Goes here</h1>
+                            <h2 class="sub-head">Optional sub heading goes here</h2>
+                            <p class="description">
+                                Desription of the calculator also optional and not mandatory. Desription of the calculator also optional and not mandatory.
+                            </p>
+                            <a href="#section2" class="btn prime-action page-scroll ">Get Started</a>
+                        </div>
+                    </div>
+                </section>
+                <section class="question-page hide" data-section="question"></section>
+                <section class="result-page hide" data-section="result"></section>
+
+            </div>
+        </div>
+    </div>
+    <!-- Editor Right Template section end  -->
+    <!-- Editor Properties start -->
+    <!--landing layout start -->
+    <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas affix position-right">
+        <div class="sidebar-layout side-scroll">
+            <div class="main-side hide" for="landing page properties">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Landing Page Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-xs-12 no-padding">
+                        <div class="type-details"><span class="form-label">Heading:</span>
+                            <textarea class="wysiwyg"></textarea>
+                            <div class="heading-box hide">
+                                <div class="heading-box-top">
+                                    <select class="select-default" data-width="fit" data-style="landing-dropdown">
+                                        <option>H1</option>
+                                        <option>H2</option>
+                                        <option>H3</option>
+                                        <option>H4</option>
+                                        <option>H5</option>
+                                        <option>H6</option>
+                                    </select>
+                                    <ul class="heading-editor">
+                                        <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                                        <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                                    </ul>
+                                </div>
+                                <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Button:</span>
+                            <input type="text" class="detail-text" placeholder="Get Started" />
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Logo:</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class="landing-inputfile div-check">
+                                <div class="col-xs-12 no-padding">
+                                    <div class="input-group">
+                                        <input type="text" class="file-input" placeholder="No file" readonly>
+                                        <label class="input-group-btn">
+                                            <span class="btn btn-default btn-flat btn-basic2 btn-upload">
+                                        UPLOAD <input type="file" style="display: none;">
+                                    </span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details lead-parent">
+                            <div class="form-label">Lead Generation:</div>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+                                    <div class="input-group">
+                                        <label class="check">
+                                            <input type="checkbox" value="" name="manadatory" id="manadatory11">
+                                            <label for="manadatory11"> </label>*
+                                        </label>
+                                        <select class="select-default" data-width="100px">
+                                            <option>Name</option>
+                                            <option>Text</option>
+                                            <option>Email</option>
+                                            <option>Password</option>
+                                        </select>
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                    </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                </div>
+                                <div class="input_fields_wrap">
+                                    <div class="lead-gen ">
+                                        <div class="input-group">
+                                            <label class="check">
+                                                <input type="checkbox" value="" name="manadatory" id="manadatory21">
+                                                <label for="manadatory21"> </label>*
+                                            </label>
+                                            <select class="select-default" data-width="100px">
+                                                <option>Email</option>
+                                                <option>Name</option>
+                                                <option>Email</option>
+                                                <option>Password</option>
+                                            </select>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                        </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 no-padding"><a href="#" class="default add_field_button">Add Another Field</a></div>
+                            </div>
+                        </div>
+                        <div class="type-details color-select">
+                            <span class="form-label">Theme Color:</span>
+                            <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div>
+                        </div>
+                        <div class="type-details background-select">
+                            <span class="form-label">Background Image:</span>
+                            <span>Replace the background imgage</span>
+                            <button type="button" class="btn btn-default btn-flat btn-basic2 btn-basic3"><i class="material-icons">image</i> REPLACE IMAGE</button>
+                            <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type-details setting-details">
+                        <span class="form-label">Settings:</span>
+                        <div class="col-xs-12 no-padding setting-detail-box">
+                            <span>Powered by Venture Pact</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 no-padding setting-detail-box">
+                            <span>Privacy Policy</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="button" class="btn btn-default btn-flat btn-basic2"><i class="material-icons">image</i> CHANGE TEMPLATE</button>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side" for="result page properties">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Result Page Properties
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector editor">
+                    <div class="col-md-12 text-center double-tab">
+                        <button class="btn result-prop result-area">Results</button>
+                        <button class="btn result-prop details-area">Details</button>
+                    </div>
+                    <div class="col-xs-12 no-padding result-area-tab">
+                        <div class="type-details"><span class="form-label">Heading:</span>
+                            <textarea class="wysiwyg"></textarea>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Section:</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class="div-check">
+                                <textarea class="wysiwyg"></textarea>
+                            </div>
+                            <div class="col-md-12 no-padding add"><a href="#" class="default add_field_button">Add Another Section</a></div>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Button:</span>
+                            <input type="text" class="detail-text" placeholder="Get Started" />
+                            <input type="text" class="detail-text" placeholder="http://" />
+                        </div>
+                        <div class="type-details lead-parent">
+                            <div class="form-label">Lead Generation:</div>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox" class="show-check" checked>
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+                                    <div class="input-group">
+                                        <label class="check">
+                                            <input type="checkbox" value="" name="manadatory" id="manadatory11">
+                                            <label for="manadatory11"> </label>*
+                                        </label>
+                                        <select class="select-default" data-width="100px">
+                                            <option>Name</option>
+                                            <option>Text</option>
+                                            <option>Email</option>
+                                            <option>Password</option>
+                                        </select>
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Type here...">
+                                    </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                </div>
+                                <div class="input_fields_wrap">
+                                    <div class="lead-gen ">
+                                        <div class="input-group">
+                                            <label class="check">
+                                                <input type="checkbox" value="" name="manadatory" id="manadatory21">
+                                                <label for="manadatory21"> </label>*
+                                            </label>
+                                            <select class="select-default" data-width="100px">
+                                                <option>Email</option>
+                                                <option>Name</option>
+                                                <option>Email</option>
+                                                <option>Password</option>
+                                            </select>
+                                            <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Type here...">
+                                        </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 no-padding  "><a href="#" class="default add_field_button">Add Another Field</a></div>
+                            </div>
+                        </div>
+                        <div class="type-details share">
+                            <span class="form-label">Share:</span>
+                            <div class="col-xs-12 no-padding">
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic1">
+                                    <label for="ic1"><i class="fa fa-facebook"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic2">
+                                    <label for="ic2"><i class="fa fa-twitter"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic3">
+                                    <label for="ic3"><i class="fa fa-linkedin"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic4">
+                                    <label for="ic4"><i class="fa fa-pinterest-p"></i> </label>
+                                </label>
+                                <label class="check-icon ic">
+                                    <input type="checkbox" name="icon-select" id="ic5">
+                                    <label for="ic5">Email </label>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="type-details background-select">
+                            <span class="form-label">Background Image:</span>
+                            <span>Change Background Color</span>
+                            <div class="color-parent"><span class="color-dot"> </span>
+                                <input type="text" class="form-control color-picker" value="#A6FF00" data-color-format="hex">
+                                <div class="picker-image"><img src="assets/images/color-picker.png"></div>
+                            </div>
+                        </div>
+                        <div class="type-details setting-details">
+                            <span class="form-label">Settings:</span>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Summary</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Share Result Link</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Redo Calculation</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 no-padding setting-detail-box">
+                                <span>Disclaimer</span>
+                                <div class="switch">
+                                    <label>
+                                        <input type="checkbox">
+                                        <span class="lever"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding details-area-tab">
+                        <div class="result-section">
+                            <div class="result-tab">Result 1
+                                <span class="arrow-move">
+                        <a href="#"><i class="material-icons">keyboard_arrow_up</i></a><a href="#"> <i class="material-icons">keyboard_arrow_down</i></a></span></div>
+                            <div class="type-details">
+                                <span class="form-label">Formula:</span>
+                                <div class="input-group col-md-12 no-padding">
+                                    <input type="text" class="file-input" placeholder="Q1 + Q2 + Q3">
+                                    <label class="input-group-btn">
+                                    <span class="btn btn-default btn-flat btn-basic2 btn-upload" data-toggle="modal" data-target="#formula-modal">
+                                        EDIT
+                                    </span>
+                                </label>
+                                </div>
+                            </div>
+                            <div class="type-details result-style">
+                                <div class="form-label">Style of result:</div>
+                                <div class="col-md-12 no-padding double-tab">
+                                    <label class="radio-box">
+            <input type="radio" value="0" name="range" class="">
+            <div>
+                <label for="checklist5"> </label> Fixed</div>
+                                </label>
+                                <label class="radio-box">
+            <input type="radio" value="1" name="range" class="range-check">
+            <div>
+                <label for="checklist5"> </label> Range</div>
+                            </label>
+                            <div class="range col-md-12 no-padding div-check">
+                                <div class="input-group">
+                                    <span class="form-label">
+                                            Lower range</span>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                    <select class="select-default" data-width="82px">
+                                            <option>Number</option>
+                                            <option>Decimal</option>
+                                        </select>
+                                </div>
+                                <div class="input-group">
+                                    <span class="form-label">
+                                            Upper range</span>
+                                    <input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="Value">
+                                    <select class="select-default" data-width="82px">
+                                            <option>Number</option>
+                                            <option>Decimal</option>
+                                        </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="type-details">
+                        <div class="form-label">Unit of Variable:</div>
+                        <div class="col-md-12 no-padding">
+                            <div class="input-group input-drop">
+                                <select class="select-default" data-width="82px">
+                                        <option>Prefix</option>
+                                        <option>Postfix</option>
+                                    </select>
+                                <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 text-center add"><button type="button" class="btn btn-default btn-flat btn-basic2"><i class="material-icons">add_circle_outline</i> ADD ANOTHER TEMPLATE</button></div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="numeric-input">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question Properties:
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                    <div class="btn-detail-size col-xs-12 no-padding">
+                        <span class="col-md-2 no-padding form-label">Type:</span>
+                        <div class="col-md-5">
+                            <select class="select-default" data-width="fit">
+                                        <option>Numeric Type</option>
+                                        <option>Text</option>
+                                        <option>Email</option>
+                                        <option>Password</option>
+                                    </select>
+                        </div>
+                    </div>
+                </div>
+                <p class="type-head">Question:</p>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="col-md-3 no-padding form-label">Placeholder:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class=" col-md-3 no-padding form-label">Min Value:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class="col-md-3 no-padding form-label">Max Value:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="numeric-slider">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question Properties:
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                    <div class="btn-detail-size col-xs-12 no-padding">
+                        <span class="col-xs-2 no-padding">Type:</span>
+                        <select class="select-default" data-width="fit">
+                                    <option>Numeric Slider</option>
+                                    <option>Text</option>
+                                    <option>Email</option>
+                                    <option>Password</option>
+                                </select>
+                    </div>
+                </div>
+                <p class="type-head">Question:</p>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class="no-padding form-label">Min Value:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class="no-padding form-label">Max Value:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">No. of Intervals:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">Scale:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                        <div class="help-tip">
+                            <i class="material-icons">help</i>
+                            <div class="help-checktip">Scale property is denoting what scale of text slider is required</div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">Default Value:</span>
+                        <div class="col-md-5">
+                            <input type="text" class="form-text">
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check2">
+                                <label for="check2"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="open choices">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question Properties:
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                    <div class="btn-detail-size col-xs-12 no-padding">
+                        <span class="col-xs-2 no-padding">Type:</span>
+                        <select class="select-default" data-width="fit">
+                                    <option>Multi Select</option>
+                                    <option>Text</option>
+                                    <option>Email</option>
+                                    <option>Password</option>
+                                </select>
+                    </div>
+                </div>
+                <p class="type-head">Question:</p>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group icon-group ">
+                        <span class="no-padding form-label">Icons:</span>
+                        <div class="col-md-5">
+                            <label class="radio-icon ic">
+                                        <input type="radio" name="icon-select" id="ic1">
+                                        <label for="ic1"><i class="material-icons">landscape</i> </label>
+                            </label>
+                            <label class="radio-icon ic">
+                                        <input type="radio" name="icon-select" id="ic2">
+                                        <label for="ic2"><i class="material-icons">landscape</i> </label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <p class="type-head">Options:</p>
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class="no-padding form-label"><span class="default-label">D</span></span>
+                        <div class="col-md-10">
+                            <input type="text" class="form-text">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Delete</a></li>
+                                <li><a href="#">Set as Default</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group ">
+                        <span class="no-padding form-label">1:</span>
+                        <div class="col-md-10">
+                            <input type="text" class="form-text">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">2:</span>
+                        <div class="col-md-10">
+                            <input type="text" class="form-text">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">3:</span>
+                        <div class="col-md-10">
+                            <input type="text" class="form-text">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 no-padding text-group">
+                        <span class="no-padding form-label">4:</span>
+                        <div class="col-md-10">
+                            <a href="#" class="default">Add Option</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="mandatory" name="checkbox1" id="check3">
+                                <label for="check3"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="text-input">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question1
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="type-details">
+                <div class="btn-detail-size col-xs-12 no-padding">
+                    <span class="col-xs-2 no-padding">Type:</span>
+                    <select class="select-default" data-width="fit">
+                                <option>Email</option>
+                                <option>Text</option>
+                                <option>Email</option>
+                                <option>Password</option>
+                            </select>
+                </div>
+            </div>
+            <div class="col-xs-12 no-padding">
+                <p class="type-head">Question:</p>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group ">
+                        <div class=" placeholder-text">
+                            <input type="text" class="form-text" placeholder="Placeholder Text">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="toggle">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question1
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                    <div class="btn-detail-size col-xs-12 no-padding">
+                        <span class="col-xs-2 no-padding">Type:</span>
+                        <select class="select-default" data-width="220px">
+                                    <option>Name</option>
+                                    <option>Text</option>
+                                    <option>Email</option>
+                                    <option>Password</option>
+                                </select>
+                    </div>
+                </div>
+                <p class="type-head">Question:</p>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group ">
+                        <p class="type-head">Define two values:</p>
+                        <div class="col-xs-12 no-padding form-group"><span class="no-padding form-label">1:</span>
+                            <div class="col-md-4">
+                                <input type="text" class="form-text">
+                            </div>
+                            <a href="#" class="default"> Set as Default</a></div>
+                        <div class="col-xs-12 no-padding form-group"><span class="no-padding form-label">2:</span>
+                            <div class="col-md-4">
+                                <input type="text" class="form-text">
+                            </div>
+                            <a href="#" class="default"> Set as Default</a></div>
+                        <div class="col-xs-12 no-padding form-group"><span class="no-padding form-label">3:</span>
+                            <div class="col-md-4">
+                                <input type="text" class="form-text">
+                            </div>
+                            <a href="#" class="default"> Set as Default</a></div>
+                        <div class="col-xs-12 no-padding form-group"><span class="no-padding form-label">4:</span>
+                            <div class="col-md-4">
+                                <input type="text" class="form-text">
+                            </div>
+                            <a href="#" class="default"> Set as Default</a></div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                Question1
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                    <p class="type-head">Question:</p>
+                    <input type="text" class="form-text" placeholder="placeholder">
+                </div>
+                <div class="heading-box">
+                    <div class="heading-box-top">
+                        <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                        <ul class="heading-editor">
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                        </ul>
+                    </div>
+                    <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                </div>
+                <div class="lan-description">
+                    <span>Description:</span>
+                    <div class="desc-switch">
+                        <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                    </div>
+                </div>
+                <div class="type-details">
+                    <div class="col-xs-12 no-padding text-group ">
+                        <div class=" placeholder-text">
+                            <input type="text" class="form-text" placeholder="placeholder">
+                        </div>
+                        <!-- More button -->
+                        <div class="btn-group  icon-options">
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-side hide" for="icons">
+        <div class="sidebar-topselector">
+            <div class="card-layout">
+                <select class="select-default" data-width="fit">
+                            <option>Material Icon</option>
+                            <option>Font Awesome</option>
+                        </select>
+            </div>
+        </div>
+        <div class="sidebar-bottomselector">
+            <div class="type-details">
+            </div>
+            <div class="col-xs-12 no-padding">
+                <div class="type-details">
+                </div>
+                <div class="type-details">
+                    <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label> Mark as Mandatory
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <!--landing layout end -->
+    <!-- Start: Modal Formula -->
+    <div id="formula-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xlg">
+            <!-- Modal content-->
+            <div class="modal-content modal-bg">
+                <!-- <div class="modal-header">			
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+	       			 <h4 class="modal-title">Login</h4>
+				</div> -->
+                <div class="modal-body">
+                    <button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">clear</i></button>
+                    <div class="col-md-12 np">
+                        <div class="col-xs-12 col-sm-7 formula-left">
+                            <div class="col-xs-12 np">
+                                <h3 class="formula-left-heading">Formula Builder -</h3>
+                                <label class="formula-left-subheading">&nbsp;Result 1 </label>
+                                <i class="material-icons formula-heading-editing">create</i>
+                            </div>
+                            <div class="col-xs-12 formula-output">
+                                <ul>
+                                    <li class="for-output-box">Q1
+                                        <div class="for-output-boxdetail">
+                                            <i class="boxdetail-uptip"></i>
+                                            <h6>OPTIONS:</h6>
+                                            <div class="input-detail">
+                                                <p>Want the team to work daily on the project</p>
+                                                <input type="text" placeholder="10" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work weakely on the project</p>
+                                                <input type="text" placeholder="20" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work monthly on the project</p>
+                                                <input type="text" placeholder="30" />
+                                            </div>
+                                            <div class="input-detail2">
+                                                <p>By how much does this question impact the result</p>
+                                                <label>Result from</label>
+                                                <div class="col-xs-6 np text-center">
+                                                    <span>250</span>
+                                                    <span>to</span>
+                                                    <span>290</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="for-output-sign">+</li>
+                                    <li class="for-output-value">200</li>
+                                    <li class="for-output-sign">+</li>
+                                    <li class="for-output-box">Q2
+                                        <div class="for-output-boxdetail">
+                                            <i class="boxdetail-uptip"></i>
+                                            <h6>OPTIONS:</h6>
+                                            <div class="input-detail">
+                                                <p>Want the team to work daily on the project</p>
+                                                <input type="text" placeholder="10" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work weakely on the project</p>
+                                                <input type="text" placeholder="20" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work monthly on the project</p>
+                                                <input type="text" placeholder="30" />
+                                            </div>
+                                            <div class="input-detail2">
+                                                <p>By how much does this question impact the result</p>
+                                                <label>Result from</label>
+                                                <div class="col-xs-6 np text-center">
+                                                    <span>250</span>
+                                                    <span>to</span>
+                                                    <span>290</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="for-output-sign">+</li>
+                                    <li class="for-output-box">Q3
+                                        <div class="for-output-boxdetail">
+                                            <i class="boxdetail-uptip"></i>
+                                            <h6>OPTIONS:</h6>
+                                            <div class="input-detail">
+                                                <p>Want the team to work daily on the project</p>
+                                                <input type="text" placeholder="10" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work weakely on the project</p>
+                                                <input type="text" placeholder="20" />
+                                            </div>
+                                            <div class="input-detail">
+                                                <p>Want the team to work monthly on the project</p>
+                                                <input type="text" placeholder="30" />
+                                            </div>
+                                            <div class="input-detail2">
+                                                <p>By how much does this question impact the result</p>
+                                                <label>Result from</label>
+                                                <div class="col-xs-6 np text-center">
+                                                    <span>250</span>
+                                                    <span>to</span>
+                                                    <span>290</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-xs-12 np formula-resulttable">
+                                <div class="col-xs-12 np">
+                                    <label>Showing the result based on random selection of the answers</label>
+                                    <a href="javascript:void(0);"><i class="material-icons">autorenew</i>  Refresh</a>
+                                </div>
+                                <div class="formula-tabledata col-xs-12">
+                                    <div class="for-horzscroll">
+                                        <table>
+                                            <tbody>
+                                                <tr>
+                                                    <th>Q1</th>
+                                                    <th>Q2</th>
+                                                    <th>Q3</th>
+                                                    <th>Q4</th>
+                                                    <th>Q5</th>
+                                                    <th>Q5</th>
+                                                    <th>Q5</th>
+                                                    <th>Q5</th>
+                                                    <th>Q5</th>
+                                                    <th>Q5</th>
+                                                </tr>
+                                                <tr>
+                                                    <td>I wan to build an ISO app</td>
+                                                    <td>I wan to build an Android app</td>
+                                                    <td>1</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                    <td>Joint</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 formula-tabledata-result">
+                                    <span>Result:</span>
+                                    <span>$30</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-5 formula-right">
+                            <div class="col-xs-12 np text-center">
+                                <h3 class="formula-right-heading">Drag and drop questions to build your formula</h3>
+                            </div>
+                            <div class="col-xs-12 formula-question-outr">
+                                <div class="formula-questions">
+                                    <div class="formula-question-box disable">
+                                        Q1. What platform do you want to build on?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q2. How complex is your app?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q3. Do you have the design ready?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q4. How many screens do they have?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q5. How many screens do they have?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q6. What platform do you want to build on?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q7. How many screens do they have?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q8. What platform do you want to build on?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q9. How many screens do they have?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q10. How complex is your app?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q1. What platform do you want to build on?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q2. How complex is your app?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q3. Do you have the design ready?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q4. How many screens do they have?
+                                    </div>
+                                    <div class="formula-question-box">
+                                        Q5. How many screens do they have?
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <div class="col-xs-9 formula-footer-left">
+                        <label>Final Result will be betweem: </label>
+                        <ul>
+                            <li>$250</li>
+                            <li>to </li>
+                            <li>$280</li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-3 np formula-footer-right">
+                        <a href="javascript:void(0);">Apply Formula</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End: Modal Formula -->
+    <!-- Editor Properties end -->
+    <script src="assets/js/jquery-2.2.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/jquery.slimscroll.js"></script>
+    <script src="assets/js/mCustomScrollbar.concat.min.js"></script>
+    <!--<script src="assets/js/bootstrap-select.js"></script>-->
+    <script src="assets/js/selectize.js"></script>
+    <script src="assets/js/responsive-tabs.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinycolor/1.3.0/tinycolor.js"></script>
+    <script src="assets/js/bootstrap.colorpickersliders.js"></script>
+    <script src="assets/js/wysiwyg.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <!-- Bootstrap Material Design : jQuery -->
+  	<script type="text/javascript" src="assets/bootstrap-material/js/material.min.js"></script>
+  	<script type="text/javascript" src="assets/bootstrap-material/js/ripples.min.js"></script>  
+	  <!-- Analytics.js -->
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="assets/js/fusioncharts.js"></script> 
+	<script type="text/javascript" src="assets/js/fusioncharts.widgets.js"></script>
+	<script type="text/javascript" src="assets/js/moment.js"></script>
+	<script type="text/javascript" src="assets/js/daterangepicker.js"></script> 
+	  
+	  
+  	<script>
+	  	$.material.init();
+		
+		<!-- data table -->
+		
+		var dataSet = [
+    [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
+    [ "Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750" ],
+    [ "Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000" ],
+    [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
+    [ "Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700" ],
+    [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
+    [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
+    [ "Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900" ],
+    [ "Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
+    [ "Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600" ],
+    [ "Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560" ],
+    [ "Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000" ],
+    [ "Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600" ],
+    [ "Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500" ],
+    [ "Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750" ],
+    [ "Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500" ],
+    [ "Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000" ],
+    [ "Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500" ],
+    [ "Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000" ],
+    [ "Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500" ],
+    [ "Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000" ],
+    [ "Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000" ],
+    [ "Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450" ],
+    [ "Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600" ],
+    [ "Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000" ],
+    [ "Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575" ],
+    [ "Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650" ],
+    [ "Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850" ],
+    [ "Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000" ],
+    [ "Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000" ],
+    [ "Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400" ],
+    [ "Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500" ],
+    [ "Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000" ],
+    [ "Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500" ],
+    [ "Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050" ],
+    [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
+];
+ 
+   
+        $(document).ready(function() {
+		 $('#myTable').DataTable( {
+				data: dataSet,
+				columns: [
+					{ title: "Name" },
+					{ title: "Position" },
+					{ title: "Office" },
+					{ title: "Extn." },
+					{ title: "Start date" },
+					{ title: "Salary" }
+				]
+			} );
+	
+	
+			
+				$(".vd").click(function (event) {
+				event.stopPropagation();
+
+				// Set the effect type
+				var effect = 'slide';
+
+				// Set the options for the effect type chosen
+				var options = { direction: 'right' };
+
+				// Set the duration (default: 400 milliseconds)
+				var duration = 700;
+
+				$('.user-detail-outer').toggle(effect, options, duration);
+			});
+			
+			$(window).click(function() { //Hide the menus if visible 
+				$(".user-detail-outer").fadeOut();
+			}); 
+			
+			// date picker
+			$('.input-daterange-datepicker').daterangepicker({
+			  buttonClasses: ['btn', 'btn-sm'],
+					applyClass: 'btn-danger',
+                cancelClass: 'btn-inverse'
+			});		
+		}); 	
+		
+		
+			//Morris charts snippet - js
+
+$.getScript('http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',function(){
+$.getScript('http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js',function(){
+
+  Morris.Area({
+    element: 'area-example',
+    data: [
+      { y: '1.1.', a: 10, b: 90 },
+      { y: '2.1.', a: 75,  b: 65 },
+      { y: '3.1.', a: 50,  b: 40 },
+      { y: '4.1.', a: 75,  b: 65 },
+      { y: '5.1.', a: 50,  b: 40 },
+      { y: '6.1.', a: 75,  b: 65 },
+      { y: '7.1.', a: 100, b: 90 }
+    ],
+    xkey: 'y',
+    ykeys: ['a', 'b'],
+    labels: ['Series A', 'Series B'], 
+	fillOpacity: 0.4,
+	  hideHover: 'auto',
+	  behaveLikeLine: true,
+	  resize: true,
+	  pointFillColors: ['#fb545b'],
+	  pointStrokeColors: ['#269fd8'],
+	  lineColors: ['#fb545b', '#269fd8'],
+  });
+  
+});
+});	
+ 
+ /*small graphs*/
+FusionCharts.ready(function () {
+    var sparkchart = new FusionCharts({
+        type: 'sparkcolumn',
+        renderAt: 'chart-container',
+        width: '88%',
+        height: '50',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "chartTopMargin": "0",
+                "chartBottomMargin": "0",
+                "chartRightMargin": "0",
+                "numberPrefix": "$",
+                "showBorder": "0",
+                "canvasBorderThickness": "0",
+                "bgColor": "#ffffff",                                                
+                "plotFillColor": "#0075c2",
+                "highColor": "#1aaf5d",
+                "lowColor": "#8e0000",
+                "showHoverEffect": "1"                
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "value": "783000"
+                        },
+                        {
+                            "value": "601000"
+                        },
+                        {
+                            "value": "515000"
+                        },
+                        {
+                            "value": "315900"
+                        },
+                        {
+                            "value": "388000"
+                        },
+                        {
+                            "value": "433000"
+                        },
+                        {
+                            "value": "910000"
+                        },
+                        {
+                            "value": "798000"
+                        },
+                        {
+                            "value": "483300"
+                        },
+                        {
+                            "value": "562000"
+                        },
+                        {
+                            "value": "359400"
+                        },
+                        {
+                            "value": "485000"
+                        }
+                    ]
+                }
+            ]
+        }
+    })
+    .render();
+});
+
+FusionCharts.ready(function () {
+    var sparkchart = new FusionCharts({
+        type: 'sparkcolumn',
+        renderAt: 'chart-container1',
+        width: '88%',
+        height: '50',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "chartTopMargin": "0",
+                "chartBottomMargin": "0",
+                "chartRightMargin": "0",
+                "numberPrefix": "$",
+                "showBorder": "0",
+                "canvasBorderThickness": "0",
+                "bgColor": "#ffffff",                                                
+                "plotFillColor": "#0075c2",
+                "highColor": "#1aaf5d",
+                "lowColor": "#8e0000",
+                "showHoverEffect": "1"                
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "value": "783000"
+                        },
+                        {
+                            "value": "601000"
+                        },
+                        {
+                            "value": "515000"
+                        },
+                        {
+                            "value": "315900"
+                        },
+                        {
+                            "value": "388000"
+                        },
+                        {
+                            "value": "433000"
+                        },
+                        {
+                            "value": "910000"
+                        },
+                        {
+                            "value": "798000"
+                        },
+                        {
+                            "value": "483300"
+                        },
+                        {
+                            "value": "562000"
+                        },
+                        {
+                            "value": "359400"
+                        },
+                        {
+                            "value": "485000"
+                        }
+                    ]
+                }
+            ]
+        }
+    })
+    .render();
+});
+
+FusionCharts.ready(function () {
+    var sparkchart = new FusionCharts({
+        type: 'sparkcolumn',
+        renderAt: 'chart-container2',
+        width: '88%',
+        height: '50',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "chartTopMargin": "0",
+                "chartBottomMargin": "0",
+                "chartRightMargin": "0",
+                "numberPrefix": "$",
+                "showBorder": "0",
+                "canvasBorderThickness": "0",
+                "bgColor": "#ffffff",                                                
+                "plotFillColor": "#0075c2",
+                "highColor": "#1aaf5d",
+                "lowColor": "#8e0000",
+                "showHoverEffect": "1"                
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "value": "783000"
+                        },
+                        {
+                            "value": "601000"
+                        },
+                        {
+                            "value": "515000"
+                        },
+                        {
+                            "value": "315900"
+                        },
+                        {
+                            "value": "388000"
+                        },
+                        {
+                            "value": "433000"
+                        },
+                        {
+                            "value": "910000"
+                        },
+                        {
+                            "value": "798000"
+                        },
+                        {
+                            "value": "483300"
+                        },
+                        {
+                            "value": "562000"
+                        },
+                        {
+                            "value": "359400"
+                        },
+                        {
+                            "value": "485000"
+                        }
+                    ]
+                }
+            ]
+        }
+    })
+    .render();
+});
+
+
+FusionCharts.ready(function () {
+    var sparkchart = new FusionCharts({
+        type: 'sparkcolumn',
+        renderAt: 'chart-container3',
+        width: '88%',
+        height: '50',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "chartTopMargin": "0",
+                "chartBottomMargin": "0",
+                "chartRightMargin": "0",
+                "numberPrefix": "$",
+                "showBorder": "0",
+                "canvasBorderThickness": "0",
+                "bgColor": "#ffffff",                                                
+                "plotFillColor": "#0075c2",
+                "highColor": "#1aaf5d",
+                "lowColor": "#8e0000",
+                "showHoverEffect": "1"                
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "value": "783000"
+                        },
+                        {
+                            "value": "601000"
+                        },
+                        {
+                            "value": "515000"
+                        },
+                        {
+                            "value": "315900"
+                        },
+                        {
+                            "value": "388000"
+                        },
+                        {
+                            "value": "433000"
+                        },
+                        {
+                            "value": "910000"
+                        },
+                        {
+                            "value": "798000"
+                        },
+                        {
+                            "value": "483300"
+                        },
+                        {
+                            "value": "562000"
+                        },
+                        {
+                            "value": "359400"
+                        },
+                        {
+                            "value": "485000"
+                        }
+                    ]
+                }
+            ]
+        }
+    })
+    .render();
+});
+
+
+
+
+FusionCharts.ready(function () {
+    var sparkchart = new FusionCharts({
+        type: 'sparkcolumn',
+        renderAt: 'chart-container4',
+        width: '88%',
+        height: '50',
+        dataFormat: 'json',
+        dataSource: {
+            "chart": {
+                "chartTopMargin": "0",
+                "chartBottomMargin": "0",
+                "chartRightMargin": "0",
+                "numberPrefix": "$",
+                "showBorder": "0",
+                "canvasBorderThickness": "0",
+                "bgColor": "#ffffff",                                                
+                "plotFillColor": "#0075c2",
+                "highColor": "#1aaf5d",
+                "lowColor": "#8e0000",
+                "showHoverEffect": "1"                
+            },
+            "dataset": [
+                {
+                    "data": [
+                        {
+                            "value": "900000"
+                        },
+                        {
+                            "value": "601000"
+                        },
+                        {
+                            "value": "515000"
+                        },
+                        {
+                            "value": "315900"
+                        },
+                        {
+                            "value": "388000"
+                        },
+                        {
+                            "value": "433000"
+                        },
+                        {
+                            "value": "910000"
+                        },
+                        {
+                            "value": "798000"
+                        },
+                        {
+                            "value": "483300"
+                        },
+                        {
+                            "value": "562000"
+                        },
+                        {
+                            "value": "359400"
+                        },
+                        {
+                            "value": "485000"
+                        }
+                    ]
+                }
+            ]
+        }
+    })
+    .render();
+});
+
+	google.charts.load('current', {packages: ['corechart', 'line']});
+	google.charts.setOnLoadCallback(drawChart);
+			  function drawChart() {
+
+				var data = google.visualization.arrayToDataTable([
+				  ['Task', 'Hours per Day'],
+				  ['',5],
+				  ['', 10],
+				  ['',9],
+				]);
+				
+				var options = {
+				  'width':250,  'height':320,
+				  backgroundColor: 'transparent',
+				  legend: 'none',
+				  colors: ['#f38630', '#69d2e7', '#e0e4cc']
+				  
+				};
+
+				var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+				chart.draw(data, options);
+				var chart = new google.visualization.PieChart(document.getElementById('piechart1'));
+				chart.draw(data, options);
+				var chart = new google.visualization.PieChart(document.getElementById('piechart2'));
+				chart.draw(data, options);
+			  }
+			  
+			   google.charts.setOnLoadCallback(drawRegionsMap);
+
+			  function drawRegionsMap() {
+
+				var data = google.visualization.arrayToDataTable([
+				  ['Country', 'Popularity'],
+				  ['Germany', 200],
+				  ['United States', 300],
+				  ['Brazil', 400],
+				  ['Canada', 500],
+				  ['France', 600],
+				  ['India', 600],
+				  ['RU', 700]
+				]);
+				var options = {'width':250,  'height':180,
+				 colors: ['#ce5050', '#f17a52', '#f9de71']
+				 };
+
+				var chart = new google.visualization.GeoChart(document.getElementById('regions_div'));
+				chart.draw(data, options);
+			  }
+			  
+	</script>
+    <script type="text/javascript">
+        (function() {
+        var s = document.createElement("script");
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = '//api.usersnap.com/load/'+
+                '135cb6f0-dc65-4634-b7d8-df48f82e76b1.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+        })();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,133 @@
+<html>
+
+<head>
+    <title>First template</title>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/fonts.css" rel="stylesheet">
+    <link href="css/bootstrap-datepicker.min.css" rel="stylesheet">
+    <link href="css/selectize.default.css" rel="stylesheet">
+    <link href="css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="template001">
+    <div class="responsive-menu">
+        <span class="title">Resize Template: </span>
+        <div class="icon-block">
+            <a href="#" data-screen="desktop"><i class="material-icons">desktop_mac</i> <span>|</span></a>
+            <a href="#" data-screen="tablet"><i class="material-icons">tablet_mac</i><span>|</span> </a>
+            <a href="#" data-screen="mobile"><i class="material-icons">smartphone</i></a>
+        </div>
+    </div>
+    <div id="main-profile" class="">
+        <iframe src="http://outgrow.us/design/page/" align="middle"></iframe>
+    </div>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/bootstrap-slider.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/counter.js"></script>
+    <script>
+    $(document).on("click", ".responsive-menu a", function() {
+        var value = $(this).data("screen");
+        console.log(value);
+        if (value == "desktop") {
+            $("iframe").removeClass().addClass("desktop");
+        } else if (value == "tablet") {
+            $("iframe").removeClass().addClass("tablet");
+            // $("#main-profile").addClass("tablet");
+        } else if (value == "mobile") {
+            $("iframe").removeClass().addClass("mobile");
+        }
+        var width = 600;
+        var height = 400;
+        window.resizeBy(width, height);
+        window.moveTo(((screen.width - width) / 2), ((screen.height - height) / 2));
+
+
+    })
+
+
+    $(document).ready(function() {
+        $('.date').datepicker({});
+        $('#select-beast').selectize({
+            create: true,
+            sortField: {
+                field: 'text',
+                direction: 'asc'
+            },
+            dropdownParent: 'body'
+        });
+        $(".getdetailed").click(function() {
+            $(".page8").removeClass("hide");
+            $("#navbar").css("display", "none");
+            $('body').css("overflow", "hidden");
+        });
+
+        $(".close-map").click(function() {
+            $(".page8").addClass("hide");
+            $("#navbar").css("display", "block");
+            $('body').css("overflow", "scroll");
+        });
+
+
+        $(".sliding-next").click(function() {
+            $(this).hide();
+            /* next slide section to show*/
+            var slideNumber = $(this).data('slide');
+            $(".page" + slideNumber).addClass("show");
+            var divToShow = $('.page' + slideNumber);
+            $('html, body').animate({
+                scrollTop: divToShow.offset().top
+            }, 1000);
+            $('.slide-dot' + (slideNumber - 1)).addClass('pc-inside-light-new').removeClass('pc-inside-new');
+            $('.slide-dot' + slideNumber).addClass('pc-inside-new').removeClass('pc-inside-light-new');
+
+        });
+        $('div[class*="slide-dot"]').click(function(e) {
+            $('.pc-inside-new').addClass('pc-inside-light-new').removeClass('pc-inside-new');
+            $(this).addClass('pc-inside-new').removeClass('pc-inside-light-new');
+
+            var slideNumber = $(this).data('slide');
+            var divToShow = $('.slider' + slideNumber);
+            $('html, body').animate({
+                scrollTop: divToShow.offset().top - 25
+            }, 1000);
+
+        });
+        //Checkbox div color change on checked
+        $('input[type=checkbox]').on('change', function() {
+            var div = $(this).closest('.check-icon');
+            $(this).is(":checked") ? div.addClass("gray-bg") : div.removeClass("gray-bg");
+        });
+
+        //Radio button div color change on checked
+        $('input:radio').click(function() {
+            $('input:radio[name=' + $(this).attr('name') + ']').parent().removeClass('active');
+            $(this).parent().addClass('active');
+        });
+
+        //for range slider
+        $("#ex13").slider({
+            ticks: [0, 1, 2, 3, 12345],
+            ticks_labels: ['0', '', '', '', '12345'],
+            //ticks_snap_bounds: 30,
+            //value: 200
+        });
+        $("#step").slider({
+            ticks: [0, 1, 2, 3, 4],
+            ticks_labels: ['Poor', '', '', '', 'Great'],
+            ticks_snap_bounds: 30,
+            value: 200
+        });
+    });
+    </script>
+</body>
+
+</html>

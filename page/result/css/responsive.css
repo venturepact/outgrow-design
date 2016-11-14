@@ -1,0 +1,18 @@
+@media only screen and (max-width: 1024px) and (orientation: portrait) {
+    .top-head{ width:100%; text-align:center; }
+	.share-link{text-align:center; width:88%;}
+	.result-top-section {width:100%;}
+	.result-small-section {width:100%;}
+	.right-section{width:100%;box-shadow:none;}
+	.cta-outer{width:100%;}
+	
+	
+	}
+	@media only screen and (max-width: 1024px) and (orientation: landscape) {
+    
+	}
+	@media only screen and (max-width: 1366px) and (min-width:1200px) {
+	
+	}
+	@media only screen and (min-width:1366){
+	}

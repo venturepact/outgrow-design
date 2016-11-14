@@ -1,0 +1,136 @@
+/*################### Homepage responsive css start ###################*/
+
+@media (min-width: 320px) and (max-width:768px) {
+	#pricing .section-1-right {
+		padding-left: 0px;
+		margin-left: 30px;
+		margin-top: 100px;
+	}
+	#pricing .billing-grey {
+		margin-top: -60px;
+	}
+	#pricing .section-1-left .btn-buildcal{
+		padding:15px;
+		font-size:16px;
+	}
+	#pricing .section-2-heading {
+		font-family: montserratultra_light;
+		margin-top: -70px;
+		margin-bottom: 0px;
+	}
+	#pricing .accordion{
+		margin-top:-60px;
+	}
+	#pricing .container-faqs {
+		width: 280px;
+		margin: 0 10px;
+	}
+	#pricing .accordion-section-title{
+		font-size:20px;
+	}
+	#pricing .accordion-section-title:before{
+		margin-left: -2px;
+		margin-right: 8px;
+		width:19px;
+	}
+	#pricing .accordion-section-content{
+		margin-left:35px;
+	}
+}
+
+@media (min-width: 440px) and (max-width:768px) {
+	#pricing .container-faqs {
+		width: 440px;
+		margin: 0 10px;
+	}
+	#pricing .section-1-right{
+		margin-left:45px;
+	}
+}
+@media (min-width: 600px) and (max-width:768px) {
+	#pricing .container-faqs {
+		width: 560px;
+		margin: 0 auto;
+	}
+	#pricing .section-1-right{
+		margin-left:60px;
+	}
+}
+@media (min-width: 768px) and (max-width:1024px){
+	#pricing .navbar-right {
+		float: left !important;
+		margin-left: -14px;
+	}
+	#pricing .custom-navbar.navbar-default .navbar-nav > li {
+		margin-right: 0px;
+	}
+	#pricing .section1-left-cell{
+		height:50px;
+	}
+}
+@media (min-width: 1024px) and (max-width:1200px) {
+	#pricing .section-1-right {
+		margin-left: -10px;
+	}
+	#pricing .billing-grey{
+		width:240px;
+	}
+	#pricing .billing-grey-top{
+		padding:20px 10px;
+	}
+	#pricing .billing-white{
+		width:240px;
+		margin-right: -34px;
+	}
+	#pricing .navbar-right {
+		float: left !important;
+		margin-left: -14px;
+	}
+	#pricing .container-fluid > .navbar-header{
+		margin-left:-30px;
+	}
+	#pricing .custom-navbar.navbar-default .navbar-nav > li > a{
+		padding-top: 15px;
+		padding-left: 35px;
+	}
+	#pricing .custom-navbar.navbar-default .navbar-nav > li{
+		margin-right:0px;
+	}
+	#pricing .container-faqs {
+		width: 830px;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1200px) and (max-width:1280px) {
+	#pricing .section-1-right {
+		margin-left: 0px;
+	}
+}
+	@media (min-width: 767px) and (max-width:768px) {
+	#pricing .col-sm-4{
+		width:100%;
+		float:left;
+	}
+	#pricing .section-1-right {
+		margin-left: 150px;
+	}
+	#pricing .custom-navbar.navbar-default .navbar-nav > li {
+		margin-right: 0px;
+	}
+	#pricing .navbar-right {
+		float: left !important;
+		margin-left: 15px;
+	}
+}
+@media (min-width: 1480px) and (max-width:1800px) {
+	
+}
+@media (min-width: 1810px) and (max-width:1920px) {
+
+}
+@media (min-width: 1480px) and (max-width:1920px) {
+	
+}
+
+/*################### Homepage responsive css end ###################*/
