@@ -474,7 +474,7 @@ a, input, textarea, button:focus{outline: none;}
 
 .pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
     font-family: "Material Icons";
-    content: "\f269";
+    content: "check_circle";
     position: absolute; 
     color: #f3d455;
     font-size: 36px;
@@ -483,9 +483,14 @@ a, input, textarea, button:focus{outline: none;}
     left: 40%;
     text-rendering: optimizeLegibility;
 }
-.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
+.pic-selector input[type="radio"]:checked + label.xs-img-hover::before {
     font-family: "Material Icons";
     content: "\f269";
+}
+
+.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
+    font-family: "Material Icons";
+    content: "check_circle";
     position: absolute; 
     color: #f3d455;
     font-size: 36px;
@@ -493,6 +498,10 @@ a, input, textarea, button:focus{outline: none;}
     top: 40%;
     left: 40%;
     text-rendering: optimizeLegibility;
+}
+.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::before {
+    font-family: "Material Icons";
+    content: "check_circle";
 }
 
 .text-overlay {
