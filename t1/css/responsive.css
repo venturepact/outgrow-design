@@ -350,6 +350,9 @@
     .t1-slider-nav a.go {
         right: -75px;
     }
+    .t1-result-leadform-inner{
+        width: 70%;
+    }
 
 
 }

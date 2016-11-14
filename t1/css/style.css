@@ -481,6 +481,7 @@ a, input, textarea, button:focus{outline: none;}
     font-weight: normal;
     top: 40%;
     left: 40%;
+    text-rendering: optimizeLegibility;
 }
 .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
     font-family: "Material Icons";
@@ -491,6 +492,7 @@ a, input, textarea, button:focus{outline: none;}
     font-weight: normal;
     top: 40%;
     left: 40%;
+    text-rendering: optimizeLegibility;
 }
 
 .text-overlay {
@@ -595,7 +597,7 @@ a, input, textarea, button:focus{outline: none;}
 .t1-result-topheading{
     font-size: 24px;
     color: #fff;
-    font-family: montserratregular;
+    font-family: montserratlight;
     float: left;
     width: 80%;
     margin-bottom: 25px;
