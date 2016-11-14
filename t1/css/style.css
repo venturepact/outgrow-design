@@ -474,7 +474,7 @@ a, input, textarea, button:focus{outline: none;}
 
 .pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
     font-family: "Material Icons";
-    content: "check_circle";
+    content: "\f269";
     position: absolute; 
     color: #f3d455;
     font-size: 36px;
@@ -485,7 +485,7 @@ a, input, textarea, button:focus{outline: none;}
 }
 .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
     font-family: "Material Icons";
-    content: "check_circle";
+    content: "\f269";
     position: absolute; 
     color: #f3d455;
     font-size: 36px;
