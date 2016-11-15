@@ -377,166 +377,152 @@ a, input, textarea, button:focus{outline: none;}
 /* start: xs-img-wrapper */
 
 .pic-selector {
-    /* width: 990px;
-    margin: 0 auto;*/
-}
+           /* width: 990px;
+            margin: 0 auto;*/
+        }
 
-.pic-selector input{
-    margin:0;
-    padding:0;
-    -webkit-appearance:none;
-        -moz-appearance:none;
-            appearance:none;
-}
+        .pic-selector input{
+            margin:0;
+            padding:0;
+            -webkit-appearance:none;
+               -moz-appearance:none;
+                    appearance:none;
+            opacity: 0;
+        }
 
-/*.pic-selector-2 input{
-    position:absolute;
-    z-index:999;
-}*/
+        /*.pic-selector-2 input{
+            position:absolute;
+            z-index:999;
+        }*/
 
-.pic-selector input:active +.xs-img-hover{
-    /*opacity: .9;*/
-    /*border: 2px solid rgba(255,255,255,0.8);*/
-}
+        .pic-selector input:active +.xs-img-hover{
+            /*opacity: .9;*/
+            border: 5px solid rgba(255,255,255,0.8);
+        }
 
-.pic-selector input:checked +.xs-img-hover{
-    /*-webkit-filter: none;
-        -moz-filter: none;
-            filter: none;*/
+        .pic-selector input:checked +.xs-img-hover{
+            /*-webkit-filter: none;
+               -moz-filter: none;
+                    filter: none;*/
 
-    /*border: 2px solid rgba(255,255,255,0.8);*/
-}
+            border: 5px solid rgba(255,255,255,0.8);
+        }
 
-.xs-img-hover{
-    position: relative;
-    cursor:pointer;
-    background-size:cover;
-    background-repeat:no-repeat;
-    display:inline-block;
-    width:150px;
-    height:150px;
-    /*margin-right: 2px;
-    margin-bottom: 2px;*/
-    border: 2px solid #d9dad3;
-    -webkit-transition: all 100ms ease-in;
-        -moz-transition: all 100ms ease-in;
-            transition: all 100ms ease-in;
-    /*-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
-        -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
-            filter: brightness(1.8) grayscale(1) opacity(.7);*/
+        .xs-img-hover{
+            position: relative;
+            cursor:pointer;
+            background-size:cover;
+            background-repeat:no-repeat;
+            display:inline-block;
+            width:150px;
+            height:150px;
+            margin-right: 3px;
+            margin-bottom: 3px;
+            border: 5px solid #fff;
+            -webkit-transition: all 100ms ease-in;
+               -moz-transition: all 100ms ease-in;
+                    transition: all 100ms ease-in;
+            /*-webkit-filter: brightness(1.8) grayscale(1) opacity(.7);
+               -moz-filter: brightness(1.8) grayscale(1) opacity(.7);
+                    filter: brightness(1.8) grayscale(1) opacity(.7);*/
 
-    /*display: table;
-    float: left;
-    text-align: center; */   
+            /*display: table;
+            float: left;
+            text-align: center; */   
 
-    overflow: hidden;
-    cursor: pointer;
+            overflow: hidden;
+            cursor: pointer;
 
-}
+        }
 
-.xs-img-hover:hover{
-    /*-webkit-filter: brightness(0.5) grayscale(.5) opacity(.9);
-        -moz-filter: brightness(0.5) grayscale(.5) opacity(.9);
-            filter: brightness(0.5) grayscale(.5) opacity(.9);*/
-}
+        .xs-img-hover:hover{
+            /*-webkit-filter: brightness(0.5) grayscale(.5) opacity(.9);
+               -moz-filter: brightness(0.5) grayscale(.5) opacity(.9);
+                    filter: brightness(0.5) grayscale(.5) opacity(.9);*/
+        }
 
-.pic-selector label.xs-img-hover span.img-overlay:hover {
-    /*background: rgba(0,0,0,0.5);
-    float: left;
-    width: 190px;
-    height: 190px;
-    position: relative;*/
+        .pic-selector label.xs-img-hover:hover span.img-overlay {
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            left: 0px;
+            background: rgba(0,0,0,0.5);
+            transition: all .5s;
+        }
 
-    height: 100%;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    left: 0px;
-    background: rgba(0,0,0,0.5);
-    transition: all .5s;
-}
+        .pic-selector label.xs-img-hover span.img-overlay:hover {
+            /*background: rgba(0,0,0,0.5);
+            float: left;
+            width: 190px;
+            height: 190px;
+            position: relative;*/
 
-.pic-selector input:active +.xs-img-hover span.img-overlay {
-    background: rgba(0,0,0,0.5);
-    float: left;
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            left: 0px;
+            background: rgba(0,0,0,0.5);
+            transition: all .5s;
+        }
 
-.pic-selector input:checked +.xs-img-hover span.img-overlay {
-    background: rgba(0,0,0,0.5);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-}
+        .pic-selector input:active +.xs-img-hover span.img-overlay {
+            background: rgba(0,0,0,0.5);
+            float: left;
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
 
-.pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
-    font-family: "Material Icons";
-    content: "check_circle";
-    position: absolute; 
-    color: #f3d455;
-    font-size: 36px;
-    font-weight: normal;
-    top: 40%;
-    left: 40%;
-    text-rendering: optimizeLegibility;
-}
-.pic-selector input[type="radio"]:checked + label.xs-img-hover::before {
-    font-family: "Material Icons";
-    content: "\f269";
-}
+        .pic-selector input:checked +.xs-img-hover span.img-overlay {
+            background: rgba(0,0,0,0.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0;
+        }
 
-.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
-    font-family: "Material Icons";
-    content: "check_circle";
-    position: absolute; 
-    color: #f3d455;
-    font-size: 36px;
-    font-weight: normal;
-    top: 40%;
-    left: 40%;
-    text-rendering: optimizeLegibility;
-}
-.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::before {
-    font-family: "Material Icons";
-    content: "\f269";
-} 
+        .pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
+            font-family: "Material Icons";
+            content: "check_circle";
+            position: absolute; 
+            color: #fff;
+            font-size: 36px;
+            font-weight: normal;
+           /* height: 36px;
+            width: 36px;
+            background: #fff;
+            border-radius: 50%;
+            padding: 2px;*/
+            top: 40%;
+            left: 40%;
+        }
 
-.text-overlay {
-    /*background: url(../img/text-overlay.png) repeat-x;*/
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000fff+0,000000+100&0+0,1+100 */
-    background: -moz-linear-gradient(top,  rgba(0,15,255,0) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(top,  rgba(0,15,255,0) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom,  rgba(0,15,255,0) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000fff', endColorstr='#000000',GradientType=0 ); /* IE6-9 */
+        .text-overlay {
+            background: url(../img/text-overlay.png) repeat-x;
+            height: 70px;
+            width: 100%;
+            bottom: 0;
+            position: absolute;
+            left: 0px;
+            text-align: left;
+        }
 
-    height: 70px;
-    width: 100%;
-    bottom: 0;
-    position: absolute;
-    left: 0px;
-    text-align: left;
-}
+        .pic-selector label.xs-img-hover .text-overlay span {
+            font-size: 14px;
+            font-family: 'raleway';
+            color: #fff;
+            bottom: 0;
+            position: absolute;
+            padding-left: 5px;
+            font-weight: normal;
+        }
 
-.pic-selector label.xs-img-hover .text-overlay span {
-    font-size: 12px;
-    font-family: montserratlight;
-    color: #fff;
-    bottom: 2px;
-    position: absolute;
-    padding-left: 5px;
-}
-
-.images-wrap {
-    float: left;
-    width: 100%;
-}
-
-
-
-
+        .images-wrap {
+            float: left;
+            width: 100%;
+        }
 
 /* start: xs radio images */
 .img1{
