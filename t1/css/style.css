@@ -416,8 +416,8 @@ a, input, textarea, button:focus{outline: none;}
             display:inline-block;
             width:150px;
             height:150px;
-            margin-right: 3px;
-            margin-bottom: 3px;
+            /*margin-right: 3px;
+            margin-bottom: 3px;*/
             border: 2px solid #fff;
             -webkit-transition: all 100ms ease-in;
                -moz-transition: all 100ms ease-in;
@@ -482,21 +482,21 @@ a, input, textarea, button:focus{outline: none;}
             position: absolute;
             left: 0;
         }
-
-        .pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
+        .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::before {
+            font-family: "Material Icons";
+            content: "\f269";
+            opacity: 0;
+        }
+        .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
             font-family: "Material Icons";
             content: "check_circle";
-            position: absolute; 
+            position: absolute;
             color: #f3d455;
             font-size: 36px;
             font-weight: normal;
-           /* height: 36px;
-            width: 36px;
-            background: #fff;
-            border-radius: 50%;
-            padding: 2px;*/
             top: 40%;
             left: 40%;
+            text-rendering: optimizeLegibility;
         }
 
         .text-overlay {
