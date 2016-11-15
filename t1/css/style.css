@@ -488,6 +488,13 @@ a, input, textarea, button:focus{outline: none;}
 .pic-selector input[type="radio"]:checked + label.xs-img-hover::before {
     font-family: "Material Icons";
     content: "\f269";
+    position: absolute; 
+    color: #f3d455;
+    font-size: 36px;
+    font-weight: normal;
+    top: 40%;
+    left: 40%;
+    text-rendering: optimizeLegibility;
 }
 
 .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
@@ -504,6 +511,13 @@ a, input, textarea, button:focus{outline: none;}
 .pic-selector input[type="checkbox"]:checked + label.xs-img-hover::before {
     font-family: "Material Icons";
     content: "\f269";
+    position: absolute; 
+    color: #f3d455;
+    font-size: 36px;
+    font-weight: normal;
+    top: 40%;
+    left: 40%;
+    text-rendering: optimizeLegibility;
 } 
 
 .text-overlay {
