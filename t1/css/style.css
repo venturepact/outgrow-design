@@ -357,7 +357,7 @@ a, input, textarea, button:focus{outline: none;}
     float: left;
     width: 100%;
 }
-.t1-ques-component input{
+.t1-ques-component input.t1-input{
     float: left;
     color: #666e78;
     font-size: 16px;
