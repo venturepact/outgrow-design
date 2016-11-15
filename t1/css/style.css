@@ -371,6 +371,10 @@ a, input, textarea, button:focus{outline: none;}
 }
 .t1-ques-component .pic-selector input{
     border: none;
+    opacity: 0;
+    padding: 0;
+    margin: 0;
+    display: none;
 }
 /* start : radio btns with picture question */
 
