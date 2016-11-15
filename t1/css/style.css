@@ -419,8 +419,8 @@ a, input, textarea, button:focus{outline: none;}
     display:inline-block;
     width:150px;
     height:150px;
-    /*margin-right: 2px;
-    margin-bottom: 2px;*/
+    margin-right: 3px;
+    margin-bottom: 3px;
     border: 2px solid #d9dad3;
     -webkit-transition: all 100ms ease-in;
         -moz-transition: all 100ms ease-in;
