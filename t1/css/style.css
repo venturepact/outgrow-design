@@ -378,9 +378,9 @@ a, input, textarea, button:focus{outline: none;}
 }
 /* start : radio btns with picture question */
 
-    /* start: xs-img-wrapper */
+/* start: xs-img-wrapper */
 
-        .pic-selector {
+ .pic-selector {
            /* width: 990px;
             margin: 0 auto;*/
         }
@@ -529,40 +529,7 @@ a, input, textarea, button:focus{outline: none;}
         }
 
 
-        /* start: xs radio images */
-            .img1{
-                background: url("../img/1.jpg") no-repeat;
-            }
-
-            .img2{
-                background: url("../img/2.jpg") no-repeat;
-            }
-
-            .img3{
-                background: url("../img/3.jpg") no-repeat;
-            }
-
-            .img4{
-                background: url("../img/201w.gif") no-repeat;
-            }
-
-            .img5{
-                background: url("../img/5.jpg") no-repeat;
-            }
-
-            .img6{
-                background: url("../img/6.jpg") no-repeat;
-            }
-
-            .img7{
-                background: url("../img/7.jpg") no-repeat;
-            }
-
-            .img8{
-                background: url("../img/8.jpg") no-repeat;
-            }
-
-        /* end: xs radio images */
+/* start: xs radio images */
 .img1{
     background: url("../images/q1.jpg") no-repeat;
     background-size: cover;
