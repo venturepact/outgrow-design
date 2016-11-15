@@ -393,22 +393,22 @@ a, input, textarea, button:focus{outline: none;}
             appearance:none;
 }
 
-/*.pic-selector-2 input{
+.pic-selector-2 input{
     position:absolute;
     z-index:999;
-}*/
+}
 
 .pic-selector input:active +.xs-img-hover{
-    /*opacity: .9;*/
-    /*border: 2px solid rgba(255,255,255,0.8);*/
+    opacity: .9;
+    border: 2px solid rgba(255,255,255,0.8);
 }
 
 .pic-selector input:checked +.xs-img-hover{
-    /*-webkit-filter: none;
+    -webkit-filter: none;
         -moz-filter: none;
-            filter: none;*/
+            filter: none;
 
-    /*border: 2px solid rgba(255,255,255,0.8);*/
+    border: 2px solid rgba(255,255,255,0.8);
 }
 
 .xs-img-hover{
