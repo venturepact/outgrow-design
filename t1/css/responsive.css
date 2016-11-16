@@ -17,6 +17,15 @@
     .t1-logo a{
         float: none;
     }
+    .t1-landing{
+        width: 100% !important;
+    }
+    .t1-question{
+        width: 100% !important;
+    }
+    .t1-result{
+        width: 100% !important;
+    }
     .t1-landing-top {
         position: fixed;
         top: 10px;
@@ -69,7 +78,7 @@
         width: 85%;
     }
     .t1-slider{
-        padding-bottom: 120px;
+        padding-bottom:80px;
     }
     .t1-slider-question{
         padding: 20px;
@@ -77,13 +86,14 @@
     }
     .t1-question-resultheading{
         font-size: 16px;
+        margin-bottom: 5px;
     }
     .t1-question-liveresult{
-        font-size: 30px;
-        margin-bottom: 40px;
+        font-size: 26px;
+        margin-bottom: 5px;
     }
     .t1-slider-pagination{
-        top: -34px;
+        top: -22px;
     }
     .pic-selector{
         text-align: center;
@@ -213,8 +223,8 @@
         margin-bottom: 10px;
     }
     .xs-img-hover{
-        width: 30vw;
-        height: 30vw;
+        width: 15vw;
+        height: 15vw;
     }
     
 }
@@ -231,8 +241,8 @@
         margin-left: 10px;
     }
     .xs-img-hover{
-        width: 30vh;
-        height: 30vh;
+        width: 15vw;
+        height: 15vw;
     }
 }
 
@@ -317,6 +327,9 @@
     .t1-logo a img{
         max-width: 70%;
     }
+    .pic-selector label.xs-img-hover .text-overlay span{
+        display: none;
+    }
     
 }
 
@@ -336,7 +349,7 @@
         padding: 30px;
     }
     .t1-question-liveresult{
-        margin-bottom: 50px;
+        margin-bottom: 5px;
     }
     .t1-slider-pagination {
         top: -40px;
@@ -360,6 +373,10 @@
     .t1-landing-leadform .t1-leadform-field {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .xs-img-hover {
+        width: 15vw;
+        height: 15vw;
     }
 }
 
@@ -390,6 +407,10 @@
         font-size: 14px;
         padding: 10px 40px;
     }
+    .xs-img-hover {
+        width: 15vw;
+        height: 15vw;
+    }
 }
 
 
@@ -414,6 +435,10 @@
     .landing-btn {
         font-size: 14px;
         padding: 10px 40px;
+    }
+    .xs-img-hover{
+        width: 10vw;
+        height: 10vw;
     }
 }
 
