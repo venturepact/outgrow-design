@@ -298,7 +298,7 @@ label {
         font-family: montserratregular;
         margin-top: 0;    
         margin-bottom: 32px;
-}
+    }
 
     .modal-video-full-block{
         float: left;
@@ -336,6 +336,7 @@ label {
     .modal-bottom-bar {
         float: left;
         width: 100%;
+        height: 40px;
         background: #fb5f66;
         -moz-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.28);
         -webkit-box-shadow: inset 0px 5px 10px -2px rgba(0,0,0,0.28);
@@ -440,6 +441,7 @@ label {
         .responsive-menu-icon i.material-icons {
             color: #fff;
             margin-top: 8px;
+            font-size: 24px;
         }
 
         .responsive-menu-list{
@@ -501,10 +503,14 @@ label {
         margin-top: 0px;
     }
 
-
 /* End: Modal Video */
 
 /* start: responsive css */
+    @media screen and (min-width: 320px) and (max-width: 320px){
+        #video-modal button.close.btn-close{
+            top: -90px;
+        }
+    }
 
     @media (max-width: 767px) {
         #video-modal .modal-sidebar{
@@ -533,7 +539,7 @@ label {
 
         #video-modal button.close.btn-close {
             right: -20px;
-            top: -90px;
+            top: -30px;
         }
 
         .modal-bottom-bar .nav-tabs {
@@ -579,6 +585,53 @@ label {
         #video-modal .tab-content .img-table {
             min-height: 161px;
         }
+
+    }
+
+    @media screen and (min-width: 480px) and (max-width: 480px){
+        #video-modal .tab-content .img-table {
+            min-height: 244px;
+        }
+
+        /*#video-modal button.close.btn-close{
+            top: -30px;
+        }*/
+
+    }
+
+    @media screen and (min-width: 640px) and (max-width: 640px){
+        #video-modal .tab-content .img-table {
+            min-height: 334px;
+        }
+
+        /*#video-modal button.close.btn-close {
+            top: -40px;
+        }*/
+
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1024px){
+        #video-modal .modal-dialog-video {
+            width: auto;
+            margin: 120px auto;
+            padding: 30px;
+        }
+
+        #video-modal .tab-content .img-table {
+            min-height: 334px;
+        }
+
+        .modal-bottom-bar .nav-tabs {
+            padding-left: 0px;
+        }
+
+        .modal-bottom-bar .nav-tabs > li > a{
+            padding: 10px 9px;
+        }
+
+        /*#video-modal button.close.btn-close {
+            right: -20px;
+        }*/
 
     }
 
