@@ -409,7 +409,7 @@ label {
         .modal-bottom-bar .nav-tabs > li.active > a:focus {
             background: none;
             border: none;
-            color: #fff;
+            color: #f6c1c3;
             cursor: pointer;
         }
 
