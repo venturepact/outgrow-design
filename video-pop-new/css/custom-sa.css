@@ -145,9 +145,9 @@ label {
         margin: 0px;
     }
 
-    #video-modal .modal-dialog-video{
+    #video-modal .modal-dialog-video {
         width: 720px;
-        margin: 120px auto;
+        margin: 100px auto;
     }
 
     #video-modal .modal-content {
@@ -379,7 +379,7 @@ label {
 
         .modal-bottom-bar .nav-tabs {
             border-bottom: none;
-            padding-left: 15px;
+            padding-left: 18px;
         }
 
         .modal-bottom-bar .nav > li > a {
@@ -394,6 +394,7 @@ label {
             font-size: 13px;
             color: #fff;
             transition: .3s all;
+            padding: 10px 12px;
         }
 
         .modal-bottom-bar .nav-tabs > li > a i.material-icons {
@@ -457,6 +458,7 @@ label {
 
         .modal-bottom-bar .nav-tabs > li > a span.number {
             display: inline-block;
+            margin-right: 5px;
         }
 
     /* end: nav tabs */
@@ -493,6 +495,7 @@ label {
 
         #video-modal button.close.btn-close {
             right: -20px;
+            top: -50px;
         }
 
         .modal-bottom-bar .nav-tabs {
@@ -509,12 +512,13 @@ label {
             bottom: 0px;
             background: #fb5f66;
             width: 100%;
-            padding-top: 10px;
+            padding-top: 5px;
         }
 
         .modal-bottom-bar .responsive-menu-list .nav-tabs {
             display: block;
             width: 100%;
+            padding-left: 0px;
         }
 
         .modal-bottom-bar .responsive-menu-list .nav-tabs > li {
@@ -524,7 +528,7 @@ label {
         .modal-bottom-bar .responsive-menu-list .nav-tabs > li a,
         .modal-bottom-bar .responsive-menu-list .nav-tabs > li a i.material-icons{
             font-size: 14px;
-            line-height: 20px;
+            /*line-height: 20px;*/
         }
 
     }
