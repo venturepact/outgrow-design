@@ -421,9 +421,9 @@ label {
             background: none;
         }
 
-        .modal-bottom-bar .nav-tabs > li > a:hover {
+        .modal-bottom-bar .nav-tabs > li > a:hover {            
+            color: #f6c1c3;
             /*border: none;
-            color: #fff;
             font-size: 14px;*/
         }
 
