@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body, html {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+iframe {
+    width: 500px;
+    height: 500px;
+}
+
+
+iframe.fullScreen {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+</style>
+</head>
+<body>
+
+<iframe src="https://outgrowbizz.outgrow.co/testing23"></iframe><br />
+<button onclick="makeFullScreen()">Make Full Screen</button>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.js"></script>
+
+
+<script>
+
+function makeFull(element) {
+	// Supports most browsers and their versions.
+	var requestMethod = element.requestFullScreen || element.webkitRequestFullScreen || element.mozRequestFullScreen || element.msRequestFullscreen;
+
+	if (requestMethod) { // Native full screen.
+		requestMethod.call(element);
+	} 
+	else if (typeof window.ActiveXObject !== "undefined") { // Older IE.
+		var wscript = new ActiveXObject("WScript.Shell");
+		if (wscript !== null) {
+			wscript.SendKeys("{F11}");
+		}
+	}
+}
+
+
+
+
+function makeFullScreen() {
+	var windowSize = $(window).width();
+	var elem;
+    if(windowSize < 768){
+		document.getElementsByTagName("iframe")[0].className = "fullScreen";
+		elem = document.body;
+		makeFull(elem);
+	}
+}
+
+
+</script>
+
+</body>
+</html>
+
+
+.result-centre-outer .recom-section .cta-outer .input-section .input-outer:nth-last-child(1):nth-child(odd) {float:left;width:100%;position: relative; }
