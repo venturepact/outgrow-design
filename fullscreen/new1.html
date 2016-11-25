@@ -1,0 +1,25 @@
+<html lang="en">
+    <head>
+        <title>iframes</title>
+    </head>
+    <body>
+      <div id="container">
+        <iframe id="ifr1" src="https://sahilverma.rely.co/temp2" style="width:45%;margin:0">a</iframe>
+      </div>
+      <script>
+        var dv = document.getElementById('container'),
+            ifr1 = document.getElementById('ifr1'); 
+            swapWidth = function(id){
+                if(id === 'ifr1'){
+                    ifr1.style.width = '100%';
+					ifr1.style.height = '100%';
+                }
+            };
+        dv.onmouseover = function(ev){
+            ev = ev || window.event;
+            var elm = ev.target || ev.srcElement;
+            swapWidth(elm.id);
+        };
+      </script>
+    </body>
+</html>
