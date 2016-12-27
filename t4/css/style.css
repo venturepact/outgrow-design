@@ -800,24 +800,26 @@ a, input, textarea, button:focus{outline: none;}
 
 .t4-landing{width: 100vw; height: 100vh; max-width: 100%; position: relative;display: table;background: url(../images/main-bg.jpg) no-repeat center center fixed;background-size: cover;}
 .landing-content-right{ background: rgba(237,237,237,0.95); height: 100vh; float: right; width:50%; position: relative; display: table;}
+.landing-mid{margin: 0 auto;width: 75%;text-align: center;}
 .t4-landing-inner{display: table-cell;vertical-align: middle; height: 100%;}
 .t4-overlay{background: rgba(0,0,0,0.3); float: left; width:100%;}
 .t4-landing-top{position: absolute;top: 30px; left: 38%;}
-.t4-logo{width: 190px;float: left;}
-.t4-logo a{float: left;}
-.t4-logo a img{max-width: 100%;max-height: 45%;}
+.landing-logo{width: 190px;float: left;}
+.landing-logo a{float: left;}
+.landing-logo a img{max-width: 100%;max-height: 45%;}
+.landing-button-outer{float: left;width: 100%;text-align: center;}
 .main-heading{color: #666666;font-size: 42px;text-transform: uppercase;margin-bottom: 15px; color: #666;font-family: raleway-bold;}
 .landing-subheading{color:rgba(51,51,51,0.7);font-size: 22px; font-family: raleway;margin-bottom: 40px;}
 .landing-leadform{width: 80%; margin: 0 auto; display: inline-block;}
 .landing-leadform .leadform-field{display: inline-block; width:85%;float: none;margin-bottom: 20px;}
 .landing-leadform .leadform-field input{loat: left;width: 88%; border:2px solid rgba(102,102,102,0.4); color: #666;font-size: 16px; font-family: montserratregular;padding: 10px;background: none;}
-.landing-btn{color: #fff; font-size: 16px; font-family: raleway-med; width: auto; padding:16px 50px;background: rgba(50,127,257,0.9); border: none;cursor: pointer;text-transform: uppercase;
+.landing-btn-top{color: #fff; font-size: 16px; font-family: raleway-med; width: auto; padding:16px 50px;background: rgba(50,127,257,0.9); border: none;cursor: pointer;text-transform: uppercase;
 position:relative}
-.landing-btn i{ top:14px; right:20px; position:absolute;}
-.landing-bot{position: absolute;bottom: 10px;right: 36%;}
+.landing-btn-top i{ top:14px; right:20px; position:absolute;}
+.landing-bot{position: absolute;bottom: 10px;right: 40px;}
 .footerlogo{float: right; width: auto;}
 .footerlogo p{float: left; color: #fff;font-size: 12px; margin-top: 8px;margin-right: 5px;text-shadow: 1px 2px 3px #333;}
-
+.footerlogo a{float: left;}
 .result-mid-outer{float: right; width: 70%; height: 100vh; background: rgba(237,237,237,0.95); display: table; padding:0 30px; position: relative;}
 .result-inner{ display: table-cell;vertical-align: middle;height: 100%;}
 .result-topheading{font-size: 24px;color: #666666;font-family: raleway-bold;float: left; width: 100%; margin-bottom: 25px; text-align: center; text-transform: uppercase;}
@@ -833,25 +835,14 @@ position:relative}
 .result-leadform-inner{float: left; width: 60%; margin-left: 20%;}
 .leadform-field{float: left; width: 48%; margin-bottom: 40px; margin-right: 2%;}
 .result-leadform-inner input{float: left;width: 100%;border: none;border-bottom:2px solid rgba(40,50,58,0.4);color: #28324e;font-size: 16px;font-family: raleway;padding-bottom: 5px;padding-top: 5px; background: none;}
-
 .leadform-btnoutr{float: left;width: 100%;margin-bottom: 20px; text-align: center;}
-.result-leadform-btn{
-    border: none;
-    background: rgba(50,127,257,0.9);
-    color: #ffffff;
-    font-size: 14px;
-    font-family: raleway-med;
-    text-align: center;
-    text-transform: uppercase;
-    padding: 15px 35px;
-    cursor: pointer; position: relative;
-}
+.result-leadform-btn{border: none; background: rgba(50,127,257,0.9); color: #ffffff; font-size: 14px; font-family: raleway-med; text-align: center; text-transform: uppercase;padding: 15px 35px; cursor: pointer; position: relative;}
 .result-leadform-btn i{ top:11px; right:6px; position:absolute;}
 .result-disclaimer{float: left;width: 60%; color: rgba(51,51,51,0.4);font-size: 12px; font-family: raleway-bold; margin-bottom: 5px; margin-left: 20%; text-align: center; margin-top: 15px;}
 .social-links{width: auto;list-style: none; position:absolute; bottom:10px; left:30px;}
 .social-links li{float: left; width: auto;}
 .social-links li a{float: left;width: auto;font-size: 18px;margin-left: 10px; color: rgba(40,50,78,0.7);}
-.t1-social-links li p{float: left;width: auto;font-size: 12px;font-family: montserratlight;margin-left: 10px;color: rgba(40,50,78,0.7);line-height: 25px;}
+.social-links li p{float: left;width: auto;font-size: 12px;font-family: raleway;margin-left: 10px;color: rgba(40,50,78,0.7);line-height: 25px;}
 
 
 
