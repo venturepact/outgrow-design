@@ -685,15 +685,7 @@ a, input, textarea, button:focus{outline: none;}
     float: left;
     width: 100%;
 }
-.t1-result-leadform-heading{
-    color:#666e78;
-    font-size: 16px;
-    font-family: montserratregular;
-    float: left;
-    width: 100%;
-    margin-bottom: 25px;
-    margin-top: 40px;
-}
+
 .t1-result-leadform-inner{
     float: left;
     width: 50%;
@@ -826,13 +818,41 @@ position:relative}
 .footerlogo{float: right; width: auto;}
 .footerlogo p{float: left; color: #fff;font-size: 12px; margin-top: 8px;margin-right: 5px;text-shadow: 1px 2px 3px #333;}
 
-.result-mid-outer{float: right; width: 75%; height: 100vh; background: rgba(237,237,237,0.95); display: table; padding:30px;}
+.result-mid-outer{float: right; width: 70%; height: 100vh; background: rgba(237,237,237,0.95); display: table; padding:0 30px; position: relative;}
 .result-inner{ display: table-cell;vertical-align: middle;height: 100%;}
 .result-topheading{font-size: 24px;color: #666666;font-family: raleway-bold;float: left; width: 100%; margin-bottom: 25px; text-align: center; text-transform: uppercase;}
 .result-full-container{float: left;width: 100%; text-align: center;}
 .result-full-section{float: left;width: 100%;}
-.result-small-section{float: left;width: 30%;margin-top: 40px; margin-right: 20px; text-align: center;}
+.result-small-section{float: left;width: 31%;margin-top: 40px; margin-right: 20px; text-align: center;}
 .result-small-container{float: left;width: 100%;}
+.result-value{float: left;width: 100%;color: #28324e;font-size: 30px;font-family: raleway;margin-bottom: 15px;}
+.result-heading{float: left;width: 100%;color: #666e78;font-size: 14px;font-family: raleway;text-transform: uppercase;margin-bottom: 0px;}
+.result-subheading{float: left; width: 100%;color: #666e78;font-size: 14px;font-family: raleway;margin-bottom: 0px;}
+.result-leadform-heading{color:#666666;font-size: 16px;font-family: raleway;float: left;width: 100%;margin-bottom: 25px;margin-top: 40px; text-align: center; text-transform: uppercase;}
+.result-leadform{float: left; width: 100%;}
+.result-leadform-inner{float: left; width: 60%; margin-left: 20%;}
+.leadform-field{float: left; width: 48%; margin-bottom: 40px; margin-right: 2%;}
+.result-leadform-inner input{float: left;width: 100%;border: none;border-bottom:2px solid rgba(40,50,58,0.4);color: #28324e;font-size: 16px;font-family: raleway;padding-bottom: 5px;padding-top: 5px; background: none;}
+
+.leadform-btnoutr{float: left;width: 100%;margin-bottom: 20px; text-align: center;}
+.result-leadform-btn{
+    border: none;
+    background: rgba(50,127,257,0.9);
+    color: #ffffff;
+    font-size: 14px;
+    font-family: raleway-med;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px 35px;
+    cursor: pointer; position: relative;
+}
+.result-leadform-btn i{ top:11px; right:6px; position:absolute;}
+.result-disclaimer{float: left;width: 60%; color: rgba(51,51,51,0.4);font-size: 12px; font-family: raleway-bold; margin-bottom: 5px; margin-left: 20%; text-align: center; margin-top: 15px;}
+.social-links{width: auto;list-style: none; position:absolute; bottom:10px; left:30px;}
+.social-links li{float: left; width: auto;}
+.social-links li a{float: left;width: auto;font-size: 18px;margin-left: 10px; color: rgba(40,50,78,0.7);}
+.t1-social-links li p{float: left;width: auto;font-size: 12px;font-family: montserratlight;margin-left: 10px;color: rgba(40,50,78,0.7);line-height: 25px;}
+
 
 
 
