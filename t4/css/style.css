@@ -826,7 +826,7 @@ position:relative}
 .footerlogo{float: right; width: auto;}
 .footerlogo p{float: left; color: #fff;font-size: 12px; margin-top: 8px;margin-right: 5px;text-shadow: 1px 2px 3px #333;}
 
-.result-mid-outer{float: right; width: 75%; height: 100vh; background: rgba(237,237,237,0.95); display: table;}
+.result-mid-outer{float: right; width: 75%; height: 100vh; background: rgba(237,237,237,0.95); display: table; padding:30px;}
 .result-inner{ display: table-cell;vertical-align: middle;height: 100%;}
 .result-topheading{font-size: 24px;color: #666666;font-family: raleway-bold;float: left; width: 100%; margin-bottom: 25px; text-align: center; text-transform: uppercase;}
 .result-full-container{float: left;width: 100%; text-align: center;}
