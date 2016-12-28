@@ -1,0 +1,50 @@
+@media (min-width: 0px) and (max-width: 767px){
+   
+
+}
+@media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
+    
+    
+}
+@media (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
+   
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    
+}
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
+    
+}
+
+@media (min-width: 768px) and (max-width: 1023px) and (orientation: landscape){
+    
+}
+
+
+@media (min-width: 1024px) and (max-width: 1365px) and (orientation: landscape){
+    .sec1-text{
+        font-size: 62px;
+        line-height: normal;
+        margin-left: 0px;
+    }
+    .sec1-button{
+        margin-left: 0px;
+    }
+}   
+
+@media (min-width: 1680px) and (max-width: 1920px){
+    .sec-container{
+        margin: 0 auto;
+        margin-top: 160px;
+        width: 1280px;
+    }
+    .sec1-text{
+        font-size: 72px;
+        line-height: normal;
+    }
+    .sec2-bg .sec-container{
+        margin: 0 auto;
+        width: 1280px;
+    }
+}
