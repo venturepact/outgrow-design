@@ -1,0 +1,12 @@
+.choosetem-topsec {margin-top: 72px;padding-top: 25px; text-align: center;background: #f6f8f9;}
+.choosetem-topsec h3 {font-size: 30px;font-family: montserratbold !important;color: rgba(251, 95, 102, 0.8); margin-top: 0px;}
+.choosetem-topsec p { color: rgba(102, 105, 109, 0.8); font-family: montserratlight;font-size: 14px;line-height: 18px;margin: 0 auto; width: 65%; padding-bottom:10px;}
+.template-outer-main{ float: left; width:100%;}
+.template-outer-light{ float: left; width:100%;background: #f6f8f9 ; min-height: 150px; padding:35px; }
+.template-outer{ float: left; width:100%; min-height: 150px; padding:35px; }
+.template-content h4{ float: left; color:#fb5f66; font-size: 36px; text-align: center; width:100%; font-family: montserratlight !important; margin-bottom: 15px; }
+.template-content p{color:#66696d; font-family: montserratlight;font-size: 14px;line-height: 18px;}
+
+.template-content ul {list-style: none;padding: 0; margin-top: 20px;}
+.template-content ul li {padding-left: 20px;margin-bottom:10px;}
+/*.template-content ul li:before {content: "\f00c"; font-family: FontAwesome;display: inline-block; margin-left: -1.3em; width: 1.3em;  margin-right: 5px;}*/
