@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/owl.carousel.css" />
     <link rel="stylesheet" href="css/selectize.default.css" />
 </head>
 <body>
@@ -25,6 +26,11 @@
                 </div>
             </div>
         </section>
+        <div class="logo-top hide">
+            <a href="javascript:void(0);">
+                <img src="images/logo.png" alt="logo" />
+            </a>
+        </div>
         <section class="sec-outr sec2-bg hide">
             <div class="sec">
                 <div class="sec-container">
@@ -38,7 +44,7 @@
                         into?
                     </div>
                     <div class="sec-catergory">
-                        <select id="select-beast" class="demo-default" data-placeholder="Choose Category">
+                        <select class="demo-default selectize-category" data-placeholder="Choose Category">
                             <option value="0">Choose Category</option>
                             <option value="1">Category 1</option>
                             <option value="2">Category 2</option>
@@ -53,35 +59,136 @@
             <div class="sec">
                 <div class="sec-container">
                     <div class="sec2-step">
-                        <span>1/3</span>
+                        <span>2/3</span>
                     </div>
                     <div class="sec2-text">
-                        Which category<br>
-                        does your<br>
-                        company fall<br>
-                        into?
+                        Select<br>
+                        Sub-Category
                     </div>
                     <div class="sec-catergory">
-                        <select id="select-beast" class="demo-default" data-placeholder="Choose Category">
-                            <option value="0">Choose Category</option>
+                        <select class="demo-default selectize-category-input" data-placeholder="Choose Sub Category">
+                            <option value="0">Sub Category</option>
+                            <option value="1">Sub Category 1</option>
+                            <option value="2">Sub Category 2</option>
+                            <option value="3">Sub Category 3</option>
+                            <option value="4">Sub Category 4</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-outr sec4-bg hide">
+            <div class="sec">
+                <div class="sec-container">
+                    <div class="sec2-step">
+                        <span>3/3</span>
+                    </div>
+                    <div class="sec2-text">
+                        Your Email
+                    </div>
+                    <div class="sec-catergory">
+                        <input type="text" class="sec-input" placeholder="johnwatson@sh.com" />
+                    </div>
+                    <div class="butn-outr">
+                        <button type="submit" class="sec-button">Show me my ideas!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="sec-outr sec5-bg hide">
+            <div class="sec">
+                <div class="sec-fullwidth">
+                    <div class="sec2-text">
+                        Here you go!s
+                    </div>
+                </div>
+                <div class="sec-cat-main">
+                    <div class="sec-cate-1">
+                        <select class="demo-default selectize-category-result" data-placeholder="Choose Category">
+                            <option value="0">Category</option>
                             <option value="1">Category 1</option>
                             <option value="2">Category 2</option>
                             <option value="3">Category 3</option>
                             <option value="4">Category 4</option>
                         </select>
                     </div>
+                    <div class="sec-cate-1">
+                        <select class="demo-default selectize-category-result" data-placeholder="Choose Sub Category">
+                            <option value="0">Sub Category</option>
+                            <option value="1">Sub Category 1</option>
+                            <option value="2">Sub Category 2</option>
+                            <option value="3">Sub Category 3</option>
+                            <option value="4">Sub Category 4</option>
+                        </select>
+                    </div>
+                    <div class="sec-cate-1">
+                        <button type="submit" class="sec-button-update">Update</button>
+                    </div>
+                </div>
+                <div class="sec-cat-list">
+                    <h3>Top of the funnel</h3>
+                    <div class="sec-cat-carousel">
+                        <div class="owl-container">
+                            <div class="owl-demo">
+                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-cat-list">
+                    <h3>Middle of the funnel</h3>
+                    <div class="sec-cat-carousel">
+                        <div class="owl-container">
+                            <div class="owl-demo">
+                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec-cat-list">
+                    <h3>Bottom of the funnel</h3>
+                    <div class="sec-cat-carousel">
+                        <div class="owl-container">
+                            <div class="owl-demo">
+                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
+                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/selectize.min.js"></script>
     <script>
         $(document).ready(function(){
-            var step_no = 1;
+            
             $(".sec1-button").click(function(){
                 //$(".sec1-bg").hide();
                 $(".sec2-bg").removeClass("hide");
+                $(".logo-top").removeClass("hide");
                 $('html, body').animate({
                     scrollTop: $('.sec2-bg').offset().top
                 }, 1000);
@@ -91,23 +198,78 @@
 
             });
 
-            $('#select-beast').selectize({
+            $('.selectize-category').selectize({
                 create: false,
-                sortField: 'text'
+                sortField: 'text',
+                onChange:function(){
+                    $(".sec3-bg").removeClass("hide");
+                    $('html, body').animate({
+                        scrollTop: $('.sec3-bg').offset().top
+                    }, 1000);
+                    setTimeout(function(){
+                        $(".sec2-bg").addClass("hide");
+                    }, 1000)
+                }
+            });
+
+            $('.selectize-category-input').selectize({
+                create: false,
+                sortField: 'text',
+                onChange:function(){
+                    $(".sec4-bg").removeClass("hide");
+                    $('html, body').animate({
+                        scrollTop: $('.sec4-bg').offset().top
+                    }, 1000);
+                    setTimeout(function(){
+                        $(".sec3-bg").addClass("hide");
+                    }, 1000)
+                }
+            });
+
+            $(".sec-button").click(function(){
+                //$(".sec1-bg").hide();
+                $(".sec5-bg").removeClass("hide");
+                $(".logo-top").removeClass("hide");
+                $('html, body').animate({
+                    scrollTop: $('.sec5-bg').offset().top
+                }, 1000);
+                setTimeout(function(){
+                    $(".sec4-bg").addClass("hide");
+                }, 1000)
+
+            });
+
+            $('.selectize-category-result').selectize({
+                create: false,
+                sortField: 'text',
+            });
+
+            // owl carousel start js
+
+            $(".owl-demo").owlCarousel({
+ 
+                //autoPlay: 3000, //Set AutoPlay to 3 seconds
+            
+                items : 4,
+                itemsDesktop : [1366,3],
+                itemsDesktopSmall : [979,2]
+            
             });
 
 
         });
 
-        $(window).scroll(function() {
-            //alert($(this).scrollTop());
-            if ($(this).scrollTop() > 655) {
-                $(".logo").addClass("fixed");
-            }
-            else {
-                $(".logo").removeClass("fixed");
-            }
-        });
+        // $(window).scroll(function() {
+        //     //alert($(this).scrollTop());
+        //     if ($(this).scrollTop() > 655) {
+        //         $(".logo-top").addClass("fixed");
+        //         $(".logo-top").removeClass("hide");
+        //     }
+        //     else {
+        //         $(".logo-top").removeClass("fixed");
+        //         $(".logo-top").removeClass("hide");
+        //     }
+        // });
 
         
 
