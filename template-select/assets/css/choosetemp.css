@@ -1,10 +1,17 @@
+@font - face {
+    font-family: 'montserratultra_light';
+    src: url(.. / fonts / montserrat - ultralight - webfont.woff2) format('woff2'), url(.. / fonts / montserrat - ultralight - webfont.woff) format('woff'), url(.. / fonts / montserrat - ultralight - webfont.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal
+}
+
 .choosetem-topsec {margin-top: 72px;padding-top: 25px; text-align: center;background: #f6f8f9; padding-bottom: 10px;}
 .choosetem-topsec h3 {font-size: 30px;font-family: montserratbold !important;color: rgba(251, 95, 102, 0.8); margin-top: 0px;}
 .choosetem-topsec p { color: rgba(102, 105, 109, 0.8); font-family: montserratlight;font-size: 14px;line-height: 18px;margin: 0 auto; width: 65%; padding-bottom:10px;}
 .template-outer-main{ float: left; width:100%;}
 .template-outer-light{ float: left; width:100%;background: #f6f8f9 ; min-height: 450px; padding:35px; }
 .template-outer{ float: left; width:100%; min-height: 450px; padding:35px; }
-.template-content h4{ float: left; color:#fb5f66; font-size: 36px; text-align: center; width:100%; font-family: montserratlight !important; margin-bottom: 15px; }
+.template-content h4{ float: left; color:#fb5f66; font-size: 36px; text-align: center; width:100%; font-family: montserratultra_light !important; margin-bottom: 15px; }
 .template-content p{color:#66696d; font-family: montserratlight;font-size: 14px;line-height: 18px;}
 
 .template-content ul {list-style: none;padding: 0; margin-top: 20px; float: left; }
@@ -17,21 +24,27 @@
 .img-1{ position: absolute; top:0; left:22% ;width:70%;}
 .img-2{ position: absolute; top:127px; left:10%; width:50%; }
 .img-3{ position: absolute; top:45px; right:-50px; width:50%; }
+.img-4{position: absolute;top: 0;left: -40px;width: 70%;}
+.img-5 { position: absolute; top: 127px;left: 25%;width: 60%;}
 
-/*@keyframes dropHeader {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+@media (min-width: 1680px) and (max-width: 1920px){
+
+.template-imgouter{min-height: 520px;}
+.template-content{ margin-top: 6.5%;}
+.img-2 { width: 49%;}
+
+}
+@media (min-width: 150px) and (max-width: 767px){
+
+  .template-imgouter{min-height: 250px; padding: 20px !important; width: 80%; margin-left: 7%;}
+  .template-content{min-height: 250px; padding: 20px !important;}
+  
 }
 
-header {
-  background: #ccc;
-  padding: 30px;
-  animation-name: dropHeader;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-out;
-  animation-duration: 0.6s;
-}*/
+@media (min-width: 768px) and (max-width: 1024px){
+
+  .template-imgouter{min-height: 250px; padding: 20px !important;  }
+  .template-content{min-height: 250px; padding: 20px !important;}
+  
+}
