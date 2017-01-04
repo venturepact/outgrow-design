@@ -37,14 +37,45 @@
 }
 @media (min-width: 150px) and (max-width: 767px){
 
-  .template-imgouter{min-height: 250px; padding: 20px !important; width: 80%; margin-left: 7%;}
-  .template-content{min-height: 250px; padding: 20px !important;}
+  .template-imgouter{min-height: 230px; padding: 20px !important; width: 100%; order:1;}
+  .template-content{min-height: 250px; padding: 20px !important; order:2;}
+  .template-outer-light { display:flex; flex-direction: column; padding:30px 10px; }
+  .template-outer { padding:10px; }
+  .choosetem-topsec h3 {font-size: 24px;}
+  .choosetem-topsec p{ width:100%;}
+  .img-1 {position: absolute;top: 0;left: 11%;width: 80%;}
+  .img-2 { position: absolute;top: 77px;left: -5%;width: 60%;}
+  .img-3 {position: absolute;top: 40px;right: -42px;width: 60%;}
+  .template-content{ padding: 0 !important;}
+  .template-content ul li i {float: left;font-size: 16px;padding-right: 10px;width: 22px;margin-top: 2px;}
+  .img-4 {position: absolute;top: 30px;left: -15px;width: 90%;}
+  .img-5 {position: absolute;top: 103px;left: 25%; width: 80%;}
+  .template-outer .template-imgouter { min-height: 250px;} 
   
 }
 
-@media (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 0px) and (max-width: 767px) and (orientation: landscape) {
+  .template-imgouter{min-height: 320px; padding: 20px !important; width: 100%; order:1;}
+  .template-content{min-height: 250px; padding: 20px !important; order:2;}
+  .template-outer-light { display:flex; flex-direction: column; padding:30px 10px; }
+  .template-outer { padding:10px; }
+  .choosetem-topsec h3 {font-size: 24px;}
+  .choosetem-topsec p{ width:100%;}
+  .img-1 {position: absolute;top: 0;left: 11%;width: 80%;}
+  .img-2 { position: absolute;top: 77px;left: -5%;width: 58%;}
+  .img-3 {position: absolute;top: 40px;right: -42px;width: 58%;}
+  .template-content{ padding: 0 !important;}
+  .template-content ul li i {float: left;font-size: 16px;padding-right: 10px;width: 22px;margin-top: 2px;}
+  .img-4 {position: absolute;top: 30px;left: -15px;width: 80%;}
+  .img-5 {position: absolute;top: 103px;left: 25%; width: 75%;}
+  .template-outer .template-imgouter { min-height: 350px;} 
 
-  .template-imgouter{min-height: 250px; padding: 20px !important;  }
-  .template-content{min-height: 250px; padding: 20px !important;}
+}
+
+@media (min-width: 768px) and (max-width: 990px){
+
+  .template-imgouter{min-height: 370px; padding: 20px !important; width: 80%; margin-left: 7%;  order:1;  }
+  .template-content{min-height: 250px; padding: 20px !important; order:2;}
+  .template-outer-light { display:flex; flex-direction: column; padding:10px; }
   
 }
