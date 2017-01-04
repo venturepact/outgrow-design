@@ -1,7 +1,10 @@
 @media (min-width: 0px) and (max-width: 767px){
+   body{
+       overflow-y: scroll;
+   }
    .sec-container{
         margin: 0 auto;
-        margin-top: 70px;
+        margin-top: 100px;
         width:100%;
     }
     .sec2-bg .sec-container{
@@ -17,11 +20,24 @@
         position: absolute;
         top: -17px;
     }
+    .sec1-text{
+        width: 90%;
+        margin-left: 20px;
+    }
     .sec-catergory{
         width: 80%;
     }
-    .sec2-text{
-        font-size: 34px;
+    .sec1-text span{
+        background: #f4f4f4;
+        font-size: 44px;
+        line-height: 74px;
+        margin-left: 20px;
+        padding: 5px 10px;
+    }
+    .sec1-button{
+        background: #f4f4f4;
+        padding: 15px 60px;
+        margin-left: 20px;
     }
     .sec-catergory .selectize-control.single .selectize-input{
         font-size: 14px;
@@ -74,6 +90,24 @@
     .sec-button-update{
         margin-top: 15px;
     }
+    .sec-cate-1 .selectize-control.single .selectize-dropdown{
+        top: 54px !important;
+    }
+    .sec-cat-carousel{
+        float: left;
+        width: 90%;
+        padding-left: 20px;
+    }
+    .sec-cat-carousel .owl-controls{
+        bottom: -40px;
+        left: 0;
+        top: inherit;
+        right: inherit;
+    }
+    .xs-img-hover{
+        width: 35vw;
+        height: 35vw;
+    }
 
 }
 @media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
@@ -90,9 +124,59 @@
         margin-top: 70px;
         width:100%;
     }
+    .sec2-bg .sec-container{
+        margin: 0 auto;
+        width: 90%;
+    }
     .sec-cate-1{
         width: 28%;
         text-align: center;
+    }
+    .sec1-text{
+        width: 90%;
+        margin-left: 20px;
+    }
+    .sec1-text span{
+        background: #f4f4f4;
+        font-size: 60px;
+        line-height: 96px;
+        margin-left: 20px;
+        padding: 5px 10px;
+    }
+    .sec1-button{
+        background: #f4f4f4;
+        margin-left: 20px;
+    }
+    .sec2-step{
+        position: relative;
+        top: 0px;
+        left: 0px;
+        margin-bottom: 25px;
+    }
+    .sec3-bg .sec-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .sec4-bg .sec-container{
+        margin: 0 auto;
+        width: 90%;
+    }
+    .sec-catergory input.sec-input{
+        font-size: 14px;
+    }
+    .sec-button{
+        font-size: 14px;
+        padding: 15px 45px;
+        margin-top: 30px;
+    }
+    .sec-cate-1 .selectize-control.single .selectize-input{
+        margin-top: 15px;
+    }
+    .sec-button-update{
+        margin-top: 15px;
+    }
+    .sec-cate-1 .selectize-control.single .selectize-dropdown{
+        top: 54px !important;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
@@ -103,7 +187,7 @@
     
 }
 @media (min-width: 1024px) and (max-width: 1365px){
-    .sec1-text{
+    .sec1-text span{
         font-size: 62px;
         line-height: normal;
         margin-left: 0px;
@@ -124,15 +208,60 @@
 @media (min-width: 1680px) and (max-width: 1920px){
     .sec-container{
         margin: 0 auto;
-        margin-top: 160px;
+        margin-top: 130px;
         width: 1280px;
     }
     .sec1-text{
-        font-size: 72px;
-        line-height: normal;
+        margin-left: 20px;
+    }
+    .sec1-text span{
+        font-size: 92px;
+        line-height: 106px;
+    }
+    .sec1-button{
+        padding: 23px 100px;
+        float: left;
+        border: 2px solid #0f0e0e;
+        color: #0f0e0e;
+        font-family: montserratbold;
+        text-decoration: none;
+        font-size: 26px;
+        text-transform: uppercase;
+        margin-left: 20px;
+        margin-top: 25px;
+        background: #f4f4f4;
+        box-shadow: -4px -1px 16px rgba(0,0,0,0.4);
     }
     .sec2-bg .sec-container{
         margin: 0 auto;
         width: 1280px;
     }
+    .sec-cat-carousel .owl-controls{
+        right: 56px;
+    }
+    .sec-cate-1 .selectize-control.single .selectize-input{
+        padding: 20px;
+    }
+    .sec-button-update{
+        padding: 18px 70px;
+    }
+    .sec2-text{
+        font-size: 58px;
+    }
+    .sec-catergory .selectize-control.single .selectize-input{
+        padding: 20px;
+    }
+    .sec-catergory input.sec-input{
+        padding: 20px;
+    }
+    .sec-button{
+        padding: 18px 100px;
+    }
+    .sec-catergory .selectize-control.single .selectize-dropdown{
+        top: 101px !important;
+    }
+    .sec-cate-1 .selectize-control.single .selectize-dropdown{
+        top: 94px !important;
+    }
+    
 }

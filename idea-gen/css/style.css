@@ -80,6 +80,7 @@ body {
     font-size: 14px;
     color: #666e78;
     font-family: montserratregular;
+    overflow: hidden;
 }
 a, input, textarea, button:focus{outline: none;}
 a:hover,
@@ -133,13 +134,21 @@ a:focus {
 }
 .sec1-text{
     float: left;
-    width: 100%;
+    width: 100%;    
+}
+.sec1-text span{
     font-family: abril_fatfaceregular;
-    font-size: 62px;
-    line-height: 70px;
-    margin-left: 20px;
+    font-size: 66px;
     color: #0f0e0e;
-    text-shadow: -5px -4px 6px #fff;
+    line-height: 70px;
+    text-align: left;
+    word-break: break-word;
+    display: inline;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    /*-webkit-text-stroke: 2px rgba(255,255,255,0.5);*/
+    color: #0f0e0e;
+    text-shadow: -5px -4px 5px rgba(255,255,255,1);
 }
 .sec1-button{
     padding: 15px 100px;
@@ -150,8 +159,9 @@ a:focus {
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
-    margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 20px;
+    background: #f4f4f4;
+    box-shadow: -7px -5px 16px rgba(0,0,0,0.4);
 }
 .sec1-button:hover{
     background: #0f0e0e;
@@ -235,7 +245,7 @@ a:focus {
     border-width: 0 7px 10px 7px;    
 }
 .sec-catergory .selectize-control.single .selectize-dropdown{
-    top: 90px !important;
+    top: 91px !important;
     border: 2px solid #0f0e0e;
     border-top: 0;
 }
@@ -298,7 +308,7 @@ a:focus {
     vertical-align: top;
 }
 .sec5-bg{
-    background: url(../images/sec2-bg.jpg) no-repeat fixed bottom center;
+    background: #ded8d3;
     background-size: cover;
     height: auto;
     position: absolute;
@@ -310,7 +320,7 @@ a:focus {
     float:left;
     width: 100%;
     text-align: center;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 .sec-cat-main{
     float: left;
@@ -324,7 +334,7 @@ a:focus {
     margin-left: 10px;
 }
 .sec-cate-1 .selectize-control.single .selectize-input{
-    padding: 10px;
+    padding: 15px;
     font-size: 14px;
     line-height: normal;
     border: 1px solid #0f0e0e;
@@ -353,7 +363,7 @@ a:focus {
     border-width: 0 5px 5px 5px;    
 }
 .sec-cate-1 .selectize-control.single .selectize-dropdown{
-    top: 74px !important;
+    top: 84px !important;
     border: 1px solid #0f0e0e;
     border-top: 0;
 }
@@ -366,7 +376,7 @@ a:focus {
     color: #0f0e0e;
 }
 .sec-button-update{
-    padding: 8px 70px;
+    padding: 13px 70px;
     float: left;
     color: #fff;
     background: #0f0e0e;
@@ -388,7 +398,7 @@ a:focus {
     float: left;
     width: 100%;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 .sec-cat-list h3{
     float: left;
@@ -398,14 +408,41 @@ a:focus {
     font-weight: normal;
     padding-left: 40px;
     width: 95%;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 .sec-cat-carousel{
     float: left;
     width: 96%;
     padding-left: 40px;
 }
-
+.build-btn{
+    float: left;
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+}
+.build-btn a{
+    padding: 13px 70px;
+    float: none;
+    color: #fff;
+    background: #fb6c73;
+    font-family: montserratlight;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-top: 35px;
+    text-align: center;
+    line-height: 18px;
+    border: 2px solid #fff;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 6px 9px 12px -2px rgba(0,0,0,0.5);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.build-btn a:hover{
+    background: #fb5f66;
+}
 .owl-container{
     margin-right: auto;
     margin-left: auto;
@@ -414,6 +451,53 @@ a:focus {
 .owl-carousel .owl-item img{
     max-width: 100%;
 }
+.owl-carousel .owl-item{
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.sec-cat-carousel .owl-controls{
+    position: absolute;
+    top: -40px;
+    right: 30px;
+}
+.sec-cat-carousel .owl-controls .owl-buttons{
+    width: 100px;
+    float: left;
+}
+
+.sec-cat-carousel .owl-controls .owl-buttons .owl-prev{
+    float: left;
+    width: 35px;
+    text-align: center;
+    margin-left: 4px;
+    padding-top: 3px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #969696;
+    color: rgba(0,0,0,0.7);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.sec-cat-carousel .owl-controls .owl-buttons .owl-prev:hover{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
+
+.sec-cat-carousel .owl-controls .owl-buttons .owl-next{
+    float: left;
+    width: 35px;
+    margin-left: 4px;
+    text-align: center;
+    padding-top: 3px;
+    background: rgba(255,255,255,0.3);
+    border: 1px solid #969696;
+    color: rgba(0,0,0,0.7);
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+.sec-cat-carousel .owl-controls .owl-buttons .owl-next:hover{
+    background: rgba(0,0,0,0.5);
+    color: #fff;
+}
 
 
 
@@ -421,12 +505,247 @@ a:focus {
 
 
 
+/* start: xs-img-wrapper */
+.pic-selector input{
+    margin:0;
+    padding:0;
+    -webkit-appearance:none;
+        -moz-appearance:none;
+            appearance:none;
+}
+
+
+.pic-selector label.control{
+    position: relative;
+    cursor:pointer;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-position: center top;
+    border: 2px solid #d9dad3;
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 0px;
+    margin: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    margin: 0;
+    display: flex;
+
+
+}
+.pic-selector label.control .check-set.control__indicator{
+    background: none !important;
+    position: initial;
+    border: none;
+    height: inherit;
+    width: inherit;
+    left: 0 !important;
+    top: 0;
+}
+.pic-selector label.control .control__indicator{
+    background: none !important;
+    position: initial;
+    border: none;
+    height: inherit;
+    width: inherit;
+    left: 0 !important;
+    top: 0;
+}
+
+
+.xs-img-hover{
+    position: relative;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 378px;
+    height: 239px;
+    box-shadow: 6px 9px 12px -2px rgba(0,0,0,0.5);
+    -webkit-transition: all 100ms ease-in;
+    -moz-transition: all 100ms ease-in;
+    transition: all 100ms ease-in;
+    overflow: hidden;
+    cursor: pointer;
+    border: 2px solid rgba(224,219,214,1);
+
+}
+
+
+.pic-selector label.xs-img-hover span.img-overlay:hover {
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    left: 0px;
+    background: rgba(0,0,0,0.5);
+    transition: all .5s;
+}
+
+.pic-selector input:active +.xs-img-hover span.img-overlay {
+    background: rgba(0,0,0,0.5);
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.pic-selector input:checked +.xs-img-hover span.img-overlay {
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+}
+
+.pic-selector input[type="radio"]:checked + label.xs-img-hover::after {
+    font-family: "Material Icons";
+    content: "done";
+    position: absolute;
+    font-size: 26px;
+    font-weight: normal;
+    top: 13px;
+    right: 13px;
+    text-rendering: optimizeLegibility;
+    color: #fb5f66;
+    background: #fff;
+    border-radius: 50%;
+}
+.pic-selector input[type="radio"]:checked + label.xs-img-hover::before {
+    font-family: "Material Icons";
+    content: "\f023";
+    position: absolute;
+    font-size: 30px;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+    opacity: 0;
+    top: 13px;
+    right: 13px;
+    color: #fb5f66;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::after {
+    font-family: "Material Icons";
+    content: "done";
+    position: absolute;
+    font-size: 30px;
+    font-weight: normal;
+    top: 13px;
+    right: 13px;
+    text-rendering: optimizeLegibility;
+    color: #fb5f66;
+    background: #fff;
+    border-radius: 50%;
+}
+.pic-selector input[type="checkbox"]:checked + label.xs-img-hover::before {
+    font-family: "Material Icons";
+    content: "\f023";
+    position: absolute;
+    font-size: 26px;
+    font-weight: normal;
+    top: 13px;
+    right: 13px;
+    text-rendering: optimizeLegibility;
+    color: #fb5f66;
+    background: #fff;
+    border-radius: 50%;
+    opacity: 0;
+}
+.images-wrap {
+    float: left;
+    width: 100%;
+}
+.pic-selector .xs-img-hover span.click-outr{
+    float: right;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #fb5f66;
+    border-radius: 50%;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+.img1{
+    background: url("../images/i1.jpg") no-repeat;
+}
+
+.img2{
+    background: url("../images/i2.jpg") no-repeat;
+}
+
+.img3{
+    background: url("../images/i3.jpg") no-repeat;
+}
+
+.img4{
+    background: url("../images/i4.jpg") no-repeat;
+}
+
+.img5{
+    background: url("../images/i5.jpg") no-repeat;
+}
+
+.img6{
+    background: url("../images/i6.jpg") no-repeat;
+}
+
+.img7{
+    background: url("../images/i7.jpg") no-repeat;
+}
+
+.img8{
+    background: url("../images/i8.jpg") no-repeat;
+}
 
 
 
 
+div.parallax-container {
+	position: relative;
+	width: 100%;
+	height: 250px;
+	overflow: hidden;
+	background: #333;
+}
+div.parallax-container div.parallax {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 2500px;
+	text-align: center;
+	height: 250px;
+	font-weight: bold;
+}
+.parallax1 {
+	color: #555;
+	font-size: 250px;
+	line-height: 80%;
+}
+.parallax2 {
+	color: #999;
+	font-size: 100px;
+	line-height: 320%;
+}
+.parallax3 {
+	color: #fff;
+	font-size: 50px;
+	line-height: 760%;
+}
 
 
 
 
-
+.mouse-bg {
+left: 0;
+right: 0;
+bottom: 0;
+top: 0;
+position: relative !important;
+z-index: 9 !important;
+}

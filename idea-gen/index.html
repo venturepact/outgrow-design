@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="main-outr">
-        <section class="sec-outr sec1-bg">
+        <section class="sec-outr sec1-bg mouse-bg" id="foreground">
             <div class="sec">
                 <div class="logo">
                     <a href="javascript:void(0);">
@@ -18,9 +18,11 @@
                 </div>
                 <div class="sec-container">
                     <div class="sec1-text">
-                        Generate Ideas <br>
-                        for Quiz or <br>
-                        Calculator.
+                        <span id="background" class="mouse-bg">
+                            Generate Ideas <br>
+                            for Quiz or <br>
+                            Calculator.
+                        </span>
                     </div>
                     <a class="sec1-button" href="javascript:void(0);">Get Started</a>
                 </div>
@@ -129,15 +131,41 @@
                     <h3>Top of the funnel</h3>
                     <div class="sec-cat-carousel">
                         <div class="owl-container">
-                            <div class="owl-demo">
-                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
+                            <div class="owl-demo pic-selector">
+                                <div class="item">
+                                    <input checked="checked" id="xs-img1" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img1" for="xs-img1">
+                                        <span class="click-outr"></span>
+                                    </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img2" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img2" for="xs-img2"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img3" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img3" for="xs-img3"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img4" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img4" for="xs-img4"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img5" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img5" for="xs-img5"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img6" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img6" for="xs-img6"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img7" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img7" for="xs-img7"><span class="click-outr"></span>                                       </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img8" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img8" for="xs-img8"><span class="click-outr"></span>                                        </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -146,15 +174,39 @@
                     <h3>Middle of the funnel</h3>
                     <div class="sec-cat-carousel">
                         <div class="owl-container">
-                            <div class="owl-demo">
-                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
+                            <div class="owl-demo pic-selector">
+                                <div class="item">
+                                    <input checked="checked" id="xs-img11" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img5" for="xs-img11"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img12" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img6" for="xs-img12"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img13" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img7" for="xs-img13"> <span class="click-outr"></span>                                       </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img14" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img8" for="xs-img14"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img15" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img1" for="xs-img15"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img16" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img2" for="xs-img16"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img17" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img3" for="xs-img17"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img18" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img4" for="xs-img18"><span class="click-outr"></span>                                        </label>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -163,28 +215,61 @@
                     <h3>Bottom of the funnel</h3>
                     <div class="sec-cat-carousel">
                         <div class="owl-container">
-                            <div class="owl-demo">
-                            <div class="item"><img src="images/i8.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i7.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i6.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i5.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i4.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i3.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i2.jpg" alt="Owl Image"></div>
-                            <div class="item"><img src="images/i1.jpg" alt="Owl Image"></div>
+                            <div class="owl-demo pic-selector">
+                                <div class="item">
+                                    <input checked="checked" id="xs-img21" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img7" for="xs-img21"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img22" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img8" for="xs-img22"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input id="xs-img23" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img6" for="xs-img23"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img24" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img1" for="xs-img24"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img25" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img2" for="xs-img25"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img26" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img3" for="xs-img26"><span class="click-outr"></span>                                        </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img27" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img4" for="xs-img27"> <span class="click-outr"></span>                                       </label>
+                                </div>
+                                <div class="item">
+                                    <input  id="xs-img28" type="checkbox" name="xs-img" value="xs-img1" />
+                                    <label class="xs-img-hover img img5" for="xs-img28"><span class="click-outr"></span>                                        </label>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+            <div class="build-btn">
+                <a href="javascript:void(0);">Build Selection <span>(6)</span></a>
             </div>
         </section>
     </div>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.js"></script>
     <script type="text/javascript" src="js/selectize.min.js"></script>
+    <script type="text/javascript" src="js/mouse.parallax.js"></script>
     <script>
         $(document).ready(function(){
             
+
+            $('#background').mouseParallax({ moveFactor: 5 });
+            $('#foreground').mouseParallax({ moveFactor: 1 });
+
+
             $(".sec1-button").click(function(){
                 //$(".sec1-bg").hide();
                 $(".sec2-bg").removeClass("hide");
@@ -228,14 +313,21 @@
 
             $(".sec-button").click(function(){
                 //$(".sec1-bg").hide();
-                $(".sec5-bg").removeClass("hide");
+                //$(".sec5-bg").removeClass("hide");
+                $(".sec5-bg").fadeIn("slow", function() {
+                    $(this).removeClass("hide");
+                });
+                $(".sec4-bg").fadeOut("slow", function() {
+                    $(this).addClass("hide");
+                });
                 $(".logo-top").removeClass("hide");
-                $('html, body').animate({
-                    scrollTop: $('.sec5-bg').offset().top
-                }, 1000);
-                setTimeout(function(){
-                    $(".sec4-bg").addClass("hide");
-                }, 1000)
+                // $('html, body').animate({
+                //     scrollTop: $('.sec5-bg').offset().top
+                // }, 1000);
+                // setTimeout(function(){
+                //     $(".sec4-bg").addClass("hide");
+                // }, 1000);
+                $('body').css('overflow-y','scroll');
 
             });
 
@@ -249,10 +341,16 @@
             $(".owl-demo").owlCarousel({
  
                 //autoPlay: 3000, //Set AutoPlay to 3 seconds
-            
+               
                 items : 4,
                 itemsDesktop : [1366,3],
-                itemsDesktopSmall : [979,2]
+                itemsDesktopSmall : [979,2],
+                navigation:true,
+                navigationText: [
+                "<i class='material-icons'>keyboard_arrow_left</i>",
+                "<i class='material-icons'>keyboard_arrow_right</i>"
+                ],
+                
             
             });
 
