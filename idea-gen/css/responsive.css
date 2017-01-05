@@ -103,10 +103,17 @@
         left: 0;
         top: inherit;
         right: inherit;
+        width: 54px;
+        margin: 0 auto;
+        position: relative;
     }
     .xs-img-hover{
-        width: 35vw;
-        height: 35vw;
+        width: 90%;
+        height: 0;
+        padding-bottom: 70%;
+    }
+    .sec5-bg{
+        padding-bottom: 50px;
     }
 
 }
