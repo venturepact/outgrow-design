@@ -777,3 +777,21 @@ z-index: 9 !important;
     padding: 20px;
     word-break: break-word;
 }
+
+@media (max-width: 767px) {
+    .overlay-outer {
+        height: 100%;
+    }
+    .overlay{
+        font-size: 20px;
+        font-family: montserratbold;
+        line-height: 24px;        
+    }
+        
+}
+@media screen and (min-width: 480px) and (max-width: 480px) {
+    /*.overlay-outer {
+        height: 238px;
+    }*/
+    .xs-img-hover{padding-bottom: 57% !important;}
+}
