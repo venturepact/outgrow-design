@@ -778,6 +778,13 @@ z-index: 9 !important;
     word-break: break-word;
 }
 
+.selectize-input .item {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 90%;
+}
+
 @media (max-width: 767px) {
     .overlay-outer {
         height: 100%;
@@ -787,7 +794,7 @@ z-index: 9 !important;
         font-family: montserratbold;
         line-height: 24px;        
     }
-        
+
 }
 @media screen and (min-width: 480px) and (max-width: 480px) {
     /*.overlay-outer {
