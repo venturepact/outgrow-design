@@ -8,7 +8,7 @@
         width:100%;
     }
     .sec2-bg .sec-container{
-        margin: 0 auto;
+        margin: 50px auto;
         width: 90%;
     }
     .logo-top{
@@ -37,7 +37,7 @@
     .sec1-button{
         background: #f4f4f4;
         padding: 15px 60px;
-        margin-left: 20px;
+        margin-left: 40px;
     }
     .sec-catergory .selectize-control.single .selectize-input{
         font-size: 14px;
@@ -57,7 +57,7 @@
     }
     .sec2-step{
         position: relative;
-        top: 0px;
+        top: 30px;
         left: 0px;
         margin-bottom: 25px;
     }
@@ -103,7 +103,7 @@
         left: 0;
         top: inherit;
         right: inherit;
-        width: 54px;
+        width: 100px;
         margin: 0 auto;
         position: relative;
     }
@@ -115,7 +115,23 @@
     .sec5-bg{
         padding-bottom: 50px;
     }
+    .overlay-outer {
+        height: 100%;
+    }
+    .overlay{
+        font-size: 20px;
+        line-height: 24px;        
+    }
+    .sec2-text {
+        font-size: 44px;
+    }
+}
 
+@media screen and (min-width: 480px) and (max-width: 480px) {
+    /*.overlay-outer {
+        height: 238px;
+    }*/
+    .xs-img-hover{padding-bottom: 57% !important;}
 }
 @media (min-width: 0px) and (max-width: 767px) and (orientation: portrait) {
     
@@ -152,7 +168,7 @@
     }
     .sec1-button{
         background: #f4f4f4;
-        margin-left: 20px;
+        margin-left: 40px;
     }
     .sec2-step{
         position: relative;
@@ -184,6 +200,22 @@
     }
     .sec-cate-1 .selectize-control.single .selectize-dropdown{
         top: 54px !important;
+        width: 100% !important;
+    }
+    .xs-img-hover{
+        width: 85%;
+        height: 0;
+        padding-bottom: 66%;
+    }
+    .overlay{
+        font-size: 24px;
+        line-height: 28px;
+    }
+    .sec-catergory .selectize-control.single .selectize-dropdown {
+        width: 100% !important;
+    }
+    .sec-cat-carousel {
+        padding-left: 35px;
     }
 }
 @media (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
@@ -200,11 +232,20 @@
         margin-left: 0px;
     }
     .sec1-button{
-        margin-left: 0px;
+        margin-left: 5px;
     }
     .sec-cate-1{
         width: 20%;
         text-align: center;
+    }
+    .xs-img-hover{    
+        width: 84%;
+        height: 0;
+        padding-bottom: 74%;
+    }
+    .overlay{
+        font-size: 24px;
+        line-height: 28px;
     }
 }
 
