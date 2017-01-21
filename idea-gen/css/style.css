@@ -811,14 +811,14 @@ span.alert.alert-danger {
     float: left;
     width: 100%;
     text-align: center;
-    background: rgba(255,255,255,0.7);
+    background: rgba(222,216,211,0.8);
     position: fixed;
     height: 100%;
     display: table;
     z-index: 9;
 }
 .loader-plan {
-    color: #fb5f66;
+    color: #0f0e0e;
     text-align: center;
     -webkit-animation-name: spin;
     -webkit-animation-duration: 2s;
