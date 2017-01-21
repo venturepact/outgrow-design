@@ -817,7 +817,7 @@ span.alert.alert-danger {
     display: table;
     z-index: 9;
 }
-.loader-plan {
+.loader-anim {
     color: #0f0e0e;
     text-align: center;
     -webkit-animation-name: spin;
