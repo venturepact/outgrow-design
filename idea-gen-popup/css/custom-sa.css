@@ -138,11 +138,10 @@ label {
 /*Idea Gen Modal Css*/
 
 .scrollbar {
-	margin-left: 30px;
+	
 	float: left;
-	background: #F5F5F5;
 	overflow-y: auto;
-	margin-bottom: 25px;
+	
 }
 
 .force-overflow
@@ -164,8 +163,8 @@ label {
 
 #style-4::-webkit-scrollbar-thumb
 {
-	background-color: #ccc;
-	border: 2px solid #fff;
+	background-color: #dcdcdc;
+	border: 2px solid #fafafa;
 }
 
 
@@ -181,15 +180,15 @@ label {
 
 #ideaGen .modal-content {border-radius: 0px; float: left; width: 100%;height: 100%; box-shadow: none; border: none;background: transparent;  }
 #ideaGen .content-area{width:100%; float: left; background:#fff; position:relative; overflow-y: auto;}
-#ideaGen .content-area .inner-section{ float: left; width:96%; margin:0 2%; background: #fafafa; min-height: 250px; margin-bottom: 2%; max-height: 450px; padding: 20px;}
-#ideaGen .content-area .inner-section .left-section{ float: left; width: 34%; min-height: 20px;}
+#ideaGen .content-area .inner-section{ float: left; width:96%; margin:0 2%; background: #fafafa; min-height: 250px; margin-bottom: 2%; padding: 20px; padding-bottom:0;}
+#ideaGen .content-area .inner-section .left-section{ float: left; width: 33%; }
 #ideaGen .content-area .inner-section .left-section .img-outer{ float: left; box-shadow: 0 4px 5px 1px rgba(0,0,0,.2); width: 300px; }
 #ideaGen .content-area .inner-section .left-section .img-outer img{ float: left;  width:100%;}
 #ideaGen .content-area .inner-section .left-section .text-outer{ float: left; width: 100%; padding-right: 10px; margin-top: 15px; margin-bottom: 5px; }
 #ideaGen .content-area .inner-section .left-section .text-outer h5{ float: left;  font-size: 14px; text-transform: uppercase; color: #fb5f66; }
 #ideaGen .content-area .inner-section .left-section .text-outer .disc-text{ float: left; font-size: 12px; line-height: 20px;}
 
-#ideaGen .content-area .inner-section .right-section{ float: left; width: 65%; min-height: 20px;}
+#ideaGen .content-area .inner-section .right-section{ float: left; width: 67%; max-height: 450px; overflow-y: auto; }
 #ideaGen .content-area .inner-section .right-section .img-outer-right{ float: left; width: 170px; height:170px;  box-shadow: 0 4px 5px 1px rgba(0,0,0,.1); margin: 30px; margin-right: 0; margin-top: 0; border:2px solid #fff; transition: border-color 0.5s ease; position: relative;}
 #ideaGen .content-area .inner-section .right-section .img-outer-right:hover{ border-color:  #fb5f66;}
 #ideaGen .content-area .inner-section .right-section .img-outer-right .mid-text{position: absolute;padding: 10px;text-align: center;top: 27%; font-size: 14px; text-transform: uppercase;}
