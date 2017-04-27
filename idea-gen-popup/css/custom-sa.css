@@ -193,11 +193,13 @@ label {
 #ideaGen .content-area .inner-section .right-section .img-outer-right:hover{ border-color:  #fb5f66;}
 #ideaGen .content-area .inner-section .right-section .img-outer-right .mid-text{position: absolute;padding: 10px;text-align: center;top: 27%; font-size: 14px; text-transform: uppercase;}
 #ideaGen .content-area .inner-section .right-section .img-outer-right img{ float: left;  width: 100%; }
+.button-link{ float: right;padding: 0 10px; font-size: 14px;color: #fff; text-transform: uppercase; background: #e0464d; padding: 10px 30px; line-height: 30px;}
+.button-link:hover{ float: right;padding: 0 10px; font-size: 14px;color: #fff; text-transform: uppercase; background: #e0464d; padding: 10px 30px; line-height: 30px;}
 
 
 
 
-#ideaGen .modal-footer{ background: #fb5f66; float: left; width:80px; border: none; width:100%; min-height: 50px;}
+#ideaGen .modal-footer{ background: #fb5f66; float: left; width:80px; border: none; width:100%; min-height: 50px; padding: 0;}
  
 
  
