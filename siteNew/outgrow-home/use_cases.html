@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>Outgrow: Calculator Examples</title>
+
+	<link href='https://www.filepicker.io/api/file/Ay8X8PhXTdaClFdhsLeR' rel='shortcut icon'>
+    <!-- css start -->
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+	<!-- homepage css -->
+    <link rel="stylesheet" href="css/custom-sa.css">
+    <link rel="stylesheet" href="css/sahil-hover.css">
+	<link rel="stylesheet" href="css/home-responsive.css">
+	<link rel='stylesheet' href='css/stylesheet.min.css' type='text/css' media='all'  />
+	<link rel='stylesheet' href='css/js_composer.mina752.css?ver=4.11.2.1' type='text/css' media='all' />
+    <!--<script  type='text/javascript' src='js/jquerycad0.js'></script>  -->
+	<!-- useCase css -->
+	<link rel="stylesheet" href="css/useCase.css">
+
+	<link href="css/animated-masonry-gallery.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="css/useCase-responsive.css">
+
+
+	<!-- Plugin css-->
+
+	<link rel="stylesheet" href="css/animations.css" type="text/css">
+
+	<!-- Plugin ends -->
+
+	<!-- Analytics Tracking Snippets Starts -->
+
+	<!-- Google Tag Manager -->
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-PDL5P5M');</script>
+	<!-- End Google Tag Manager -->
+
+	<!-- Analytics Tracking Snippets Ends -->
+	<!-- Schema Org Markup JSON LD -->
+	<script type="text/javascript"async defer>
+		var schemaA = document.createElement('script');
+		schemaA.type = 'application/ld+json';
+		schemaA.text = JSON.stringify({
+			"@context": "http://schema.org",
+			"@type": "WebSite",
+			"name": "Outgrow",
+			"alternateName": "Outgrowco",
+			"url": window.location.origin
+		});
+		var schemaB = document.createElement('script');
+		schemaB.type = 'application/ld+json';
+		schemaB.text = JSON.stringify({
+			"@context": "http://schema.org",
+			"@type": "Organization",
+			"name": "Outgrow",
+			"url": window.location.origin,
+			"logo": "https://outgrow.co/images/logo.png",
+			"email": "mailto:p@outgrow.co",
+			"sameAs": [
+				"https://www.facebook.com/OutgrowCo",
+				"https://twitter.com/outgrowco",
+				"https://www.linkedin.com/company/outgrow.co"
+			],
+			"contactPoint": [{
+				"@type": "ContactPoint",
+				"telephone": "+1-949-791-7659",
+				"contactType": "Customer Service and Support"
+			}],
+			"address": {
+				"@type": "PostalAddress",
+				"streetAddress": "401 Park Avenue",
+				"addressLocality": "New York",
+				"addressRegion": "NY",
+				"postalCode": "10016-8808",
+				"addressCountry": "US"
+			},
+			"telephone": "+1-949-791-7659",
+			"aggregateRating": {
+				"@type": "AggregateRating",
+				"ratingValue": "9.9",
+				"bestRating": "10",
+				"worstRating": "9.8",
+				"ratingCount": "20"
+			}
+		});
+		document.querySelector('head').appendChild(schemaA);
+		document.querySelector('head').appendChild(schemaB);
+	</script>
+</head>
+
+<body class="" >
+	<!-- Google Tag Manager (noscript) -->
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PDL5P5M"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+    <!-- svg code -->
+    <!--<svg id="route" xmlns="http://www.w3.org/2000/svg" version="1.1" width="1000" height="7293" viewBox="0 0 294.152 7293.492">
+    <path id="path" fill="none" stroke="#fb5f66" stroke-width="3" stroke-linecap="round" d="M689.606,397.606l-684,0l0,428l651,0l0,378l-4,0l0,-374l-651,0l0,-436l684,0l0,-390l4,0l0,394Z" />
+    </svg>-->
+    <!--<svg id="route" xmlns="http://www.w3.org/2000/svg" version="1.1" width="294" height="7293" viewBox="0 0 294.152 7293.492">
+    <path id="path" fill="none" stroke="#fb5f66" stroke-width="3" stroke-linecap="round" d="M157.656 7.212c0 0 100.344 178.906 100.344 321.913 0 271.418-220.792 286.061-220.792 407.951 0 121.889 240.638 175.278 240.638 249.546 0 57.827-52.157 57.26-55.559 127.03 -3.892 79.807 13.039 89.348 12.094 158.324 -0.944 68.977-77.071 136.497-115.275 179.528 -36.022 40.573-93.084 86.74-108.851 132.131 -13.381 38.524-19.24 132.253 67.276 164.471 86.516 32.217 178.575 58.708 207.387 133.319 28.812 74.611-41.038 146.05-92.111 183.308 -51.074 37.257-164.657 113.385-145.163 169.133 19.493 55.748 150.832 34.69 150.832 134.983s49.134 71.002 49.134 135.254 -36.851 200.126-36.851 247.37c0 47.243 50.41 99.401 50.41 172.157 0 72.756-45.686 154.016-45.686 235.275 0 114.331 22.678 205.04 23.622 280.63 1.469 117.537-190.866 112.442-190.866 222.048 0.945 113.385 182.567 178.233 187.958 295.748 13.138 286.299-153.376 635.527-186.667 782.361 -22.621 99.773-19.622 232.261 101.765 229.205 45.046-1.134 78.928-36.449 81.196-76.231 2.034-35.705-34.017-76.437-89.575-66.8 -59.712 10.357-91.345 60.498-106.016 136.087 -7.235 37.278-11.828 98.358-12.739 160.63 -2.394 163.629 76.938 201.007 105.149 220.85 14.682 10.326 106.274 49.377 103.748 94.15 -3.969 70.318-200.126 101.541-196.725 159.904 3.402 58.363 73.126 72.615 65.764 149.072 -7.37 76.535-80.933 101.479-80.933 180.85 0 121.324 78.098 200.126 71.295 283.465 -6.422 78.672-56.126 159.184-38.551 227.904 21.565 84.326 197.38 62.931 192.756 153.072 -3.386 65.994-171.22 82.799-212.599 141.732 -37.417 53.291-1.928 159.781 22.678 235.275 24.944 76.535 89.368 238.621 111.541 297.914"/>
+    </svg>
+    <!-- svg code -->
+<!-- Homepage header start-->
+    <nav class="navbar custom-navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="images/logo.png" /></a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+					<li><a href="why_calculators.html"></a></li>
+					<li><a href="features.html">Features</a></li>
+					<li><a href="pricing.html">Pricing</a></li>
+					<li><a href="examples.html">Examples</a></li>
+					<li id="anchorParent" class="signUp signUp-style res-nav-hide"></li>
+				</ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+    <!-- Homepage header end-->
+
+	<!--  top section-->
+	<section class="section rs-hide">
+		<div class="col-md-12 col-xs-12 col-sm-12 np">
+			<div class="container">
+				<div class="collage-outer ">
+					<div class="collage-hollow repeat animated bounceIn slow go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">settings</i>
+							</span>
+							<div class="collage-text text-center">Services
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-first animated bounceInUp go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">cloud_queue</i>
+							</span>
+							<div class="collage-text text-center">SaaS
+							</div>
+						</div>
+					</div>
+					<div class="collage-hollow h-sec animated bounceInRight go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">local_library</i>
+							</span>
+							<div class="collage-text text-center">Education
+							</div>
+						</div>
+					</div>
+					<div class="collage-hollow h-third animated bounceInDown go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">local_hospital</i>
+							</span>
+							<div class="collage-text text-center">Healthcare
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-sec animated bounceInLeft go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">domain</i>
+							</span>
+							<div class="collage-text text-center">Construction
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-third animated fadeInDown go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">airplanemode_active</i>
+							</span>
+							<div class="collage-text text-center">Travel & Hospitality
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-fourth animated fadeInUp go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">monetization_on</i>
+							</span>
+							<div class="collage-text text-center">Finance
+							</div>
+						</div>
+					</div>
+					<div class="collage-hollow h-fourth animated growIn go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">send</i>
+							</span>
+							<div class="collage-text text-center">Manufacturing
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-fifth animated fadeInDown go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">speaker_notes</i>
+							</span>
+							<div class="collage-text text-center">Publishing
+							</div>
+						</div>
+					</div>
+					<div class="collage-solid s-sixth animated fadeInRight go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">toys</i>
+							</span>
+							<div class="collage-text text-center">Real Estate & Home Furnishing
+							</div>
+						</div>
+					</div>
+					<div class="collage-hollow h-fifth animated bounceIn slow go">
+						<div class="hvr-grow">
+							<span class="mat-icon">
+								<i class="material-icons">more_horiz</i>
+							</span>
+							<div class="collage-text text-center">Others
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="section">
+		<div class="container">
+			<div class="useCase-heading">
+				Calculator Examples, topics
+			</div>
+		</div>
+	</section>
+    <!--  section end-->
+
+	<!-- tab-section Start -->
+	<section class="tab-section">
+		<div class="container-fluid">
+				<!-- Nav tabs -->
+			<ul class="nav nav-tabs" role="tablist">
+				<li role="presentation" class="tab-title active">
+					<a href="#industry" aria-controls="industry" role="tab" data-toggle="tab">
+						<i class="material-icons">done</i> BY Industry
+					</a>
+				</li>
+				<li role="presentation" class="tab-title">
+					<a href="#category" aria-controls="category" role="tab" data-toggle="tab">
+						<i class="material-icons">done</i> BY Category
+					</a>
+				</li>
+			</ul>
+
+			  <!-- Tab panes -->
+			<div class="tab-content usecase">
+				<div role="tabpanel" class="tab-pane active" id="industry">
+					<div class="gallery">
+						<div class="gallery-header hide">
+							<div class="gallery-header-center">
+								<div id="gallery-header-center-left">
+								</div>
+
+							</div>
+						</div>
+						<div class="gallery-content">
+							<div class="gallery-content-center">
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner1.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner1.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner2.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner2.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner3.jpg" class= />
+											</div>
+
+										</div>
+									</div>
+									<div class="img-outer-text">
+										<h4>Savings Calculators</h4>
+										<p>See how much you will spend on </br>building this in house.</p>
+										<p> See ow much it will cost to do it </br> manually</p>
+									</div>
+								</div>
+
+								<div class=" abc" >
+									<div class="img-outer">
+										<img src="images/collag3-big.jpg">
+										<div class="portfolio-hover">
+											<div class="action-btn hide">
+												<a href="#">
+													<i class="material-icons">link</i>
+												</a>
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner3.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner4.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner4.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner5.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner5.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner6.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner6.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner7.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner7.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner8.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner8.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc">
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner9.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner9.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-industry abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner10.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner10.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div role="tabpanel" class="tab-pane" id="category">
+					<div class="gallery">
+						<div class="gallery-header hide">
+							<div class="gallery-header-center">
+								<div class="gallery-header-center-left">
+								</div>
+							</div>
+						</div>
+						<div class="gallery-content">
+							<div class="gallery-content-center">
+								<div class="abc cost">
+
+								</div>
+								<div class=" abc" >
+									<div class="img-outer">
+										<img src="images/collag1.jpg">
+										<div class="portfolio-hover">
+											<div class="action-btn hide">
+												<a href="#">
+													<i class="material-icons">link</i>
+												</a>
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner1.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner2.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner2.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner3.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner3.jpg" class= img-pos" />
+											</div>
+										</div>
+									</div>
+									<div class="img-outer-text">
+										<h4>Diagnostic calculators</h4>
+										<p>What is your digital quotient? </p>
+										<p>How valuable in my brand?</p>
+									</div>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner4.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner4.jpg" class= img-pos" />
+											</div>
+										</div>
+
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner5.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner5.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner6.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner6.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner7.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner7.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner8.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner8.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc">
+									<section class="section section-usecase1">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner9.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-5 section-usecase1-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase1-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner9.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+								<div class="usecase-category abc" >
+									<section class="section section-usecase2">
+										<div class="container img-container-right mobile-container">
+											<div class="col-xs-12 col-sm-5 section-usecase2-left">
+												<span class=" mk-in-viewport full-visible hide">
+													<i class="material-icons icon-style">format_paint</i>
+												</span>
+												<h4 class="">
+													Customize as
+													per your
+													Brand
+												</h4>
+												<div class="sec9-test section-usecase2-new">
+													<span class="">
+														<i class="material-icons">trending_up</i>
+														<span>Conversion </span>
+													</span>
+													<span class="">
+														<i class="material-icons">ac_unit</i>
+														<span>Engagement</span>
+													</span>
+													<span class="">
+														<i class="material-icons">devices</i>
+														<span>All screen sizes </span>
+													</span>
+												</div>
+												<span class="">
+													<!-- <i class="material-icons">format_paint</i> -->
+													<span>Add your logo and brand's colors to customize the look and feel! </span>
+												</span>
+
+											</div>
+											<div class="col-xs-12 col-sm-7 np rs-hide box-shadow">
+												<img src="images/banner10.jpg" class= />
+											</div>
+											<div class="col-xs-12 col-sm-8 np rs-show box-shadow">
+												<img src="images/banner10.jpg" class= img-pos" />
+											</div>
+										</div>
+									</section>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- tab-section end -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Use Case page js -->
+	<script type="text/javascript" src="js/jquery.isotope.min.js"></script>
+
+	<script type="text/javascript" src="js/animated-masonry-gallery.js"></script>
+
+	<script type="text/javascript" src='js/css3-animate-it.js'></script>
+	<!--<script type="text/javascript">
+	//Usersnap
+	(function() {
+	var s = document.createElement("script");
+	s.type = "text/javascript";
+	s.async = true;
+	s.src = '//api.usersnap.com/load/'+
+			'261ef3ad-9942-4aa6-8418-c67c79aa25fe.js';
+	var x = document.getElementsByTagName('script')[0];
+	x.parentNode.insertBefore(s, x);
+	})();
+	</script>-->
+</body>
+</html>

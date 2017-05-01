@@ -1,0 +1,154 @@
+/*################### Feature Page responsive css start ###################*/
+@media (min-width: 320px) and (max-width:768px) {
+	.usecase .section-usecase1-left {
+		padding: 0;
+	}
+	.usecase .section-usecase1-left .section-usecase1-new span i{
+		margin-right:10px;
+	}
+	.gallery-content-center .abc{
+		margin-left:0px;
+	}
+	.usecase .section-usecase2-left {
+		padding: 0;
+	}
+	.usecase .section-usecase2-left .section-usecase2-new span i{
+		margin-right:10px;
+	}
+	.useCase-heading{
+		margin-top:10px;
+		text-transform: none;
+		line-height: normal;
+		font-size: 24px;
+		text-align: center;
+	}
+	.section-usecase1 {
+		margin-top: 0px;
+		margin-bottom: 30px !important;
+	}
+	.section-usecase2 {
+		margin-top: 0px;
+		margin-bottom: 30px !important;
+	}
+	.res-tab{
+		width:180px;
+	}
+	.usecase .gallery-content-center .abc{
+		margin-top:30px;
+	}
+}
+	@media (min-width:480px) and (max-width: 768px){
+	.section-usecase1 {
+		margin-top: 0px;
+		margin-bottom: 60px !important;
+	}
+	.section-usecase2 {
+		margin-top: 0px;
+		margin-bottom: 60px !important;
+	}
+	
+}
+@media (min-width:768px) and (max-width:768px){
+	.container.mobile-container {
+		padding: 0 10px;
+	}
+	.section-usecase2-left {
+		padding: 0;
+		width: 96%;
+	}
+	.usecase .section-usecase1-left {
+		padding: 0;
+		width:96%;
+	}
+	.usecase .img-res{
+		width:96%;
+	}
+	.gallery-content{
+		margin-top:50px !important;
+	}
+}
+@media (min-width: 769px) and (max-width:990px) {
+	.useCase-heading{
+		margin-top: 30px;
+	}
+	.usecase .section-usecase1-left{
+		padding-left:15px;
+		padding-right:50px;
+	}
+}
+@media (min-width: 1024px) and (max-width:1250px) {
+	.collage-outer{
+		margin-left:-10px;
+		margin-right:-10px;
+	}
+	.collage-solid.s-first {
+		top: -62px;
+		left: 16%;
+	}
+	.collage-hollow.h-sec {
+		left: 16%;
+		top: 42%;
+	}
+	.collage-hollow.h-third {
+		left: 32%;
+		top: 0%;
+	}
+	.collage-solid.s-fourth {
+		top: -30%;
+		left: 51%;
+	}
+	.collage-solid.s-third {
+		top: 83px;
+		left: 48%;
+	}
+	.collage-hollow.h-fourth {
+		top: -32%;
+		left: 67%;
+	}
+	.collage-solid.s-fifth {
+		top: -58%;
+		left: 83%;
+	}
+	.collage-hollow.h-fifth {
+		top: 15%;
+		left: 85%;
+	}
+	.collage-solid.s-sixth {
+		top: 42%;
+		left: 69%;
+	}
+	
+	.container-fluid > .navbar-header{
+		margin-left:-30px;
+	}
+	/*.custom-navbar.navbar-default .navbar-nav > li > a{
+		padding-top: 15px;
+		padding-left: 35px;
+	}*/
+	.custom-navbar.navbar-default .navbar-nav > li{
+		margin-right:0px;
+	}
+	.usecase .gallery-content-center .abc {
+		width: 100%;
+		float: left;
+		margin-left: 0;
+	}
+	.usecase .section-usecase2-left h4{
+		margin-top:0px;
+	}
+}
+@media (max-width: 1250px) and (min-width: 1024px){
+	
+}
+@media (min-width: 1480px) and (max-width:1800px) {
+	
+}
+@media (min-width: 1810px) and (max-width:1920px) {
+	
+}
+@media (min-width: 1480px) and (max-width:1920px) {
+	
+}
+
+
+/*################### Feature Page responsive css end ###################*/

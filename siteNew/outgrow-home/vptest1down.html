@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0"/>
+    <title>VenturePact Online Test</title>
+    <style>
+    	#no-test {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 99vh;
+			font-family: monospace;
+    	}
+    	.ins {
+    		color: #f07762;
+    	}
+
+    	.ins-cont {
+    		padding-left: 0;
+    		list-style-type: none;
+    	}
+
+    	.ins-cont li {
+    		padding-bottom: 10px;
+    	}
+
+    	.butom {
+    		color: rgba(0,0,0,0.6);
+    		font-weight: 600;
+    		padding: 8px 10px;
+    		background: #f2f2f2;
+    		border: 0.2em solid #d3d3d3;
+    		cursor: pointer;
+    	}
+    </style>
+</head>
+
+<body>
+	<div id="app">
+		<div id="no-test">
+			<div class="par-cont">
+				<h2 class="ins">PLEASE WAIT ... </h2>
+			</div>
+		</div>
+
+		<div class="icalc" id='58f58d8f249b6cb879701115' data-url='https://career.outgrow.co/58f58d8f249b6cb879701115' data-width='100%'>
+
+		</div>
+	</div>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src='//outgrow.co/js/nloader.js'></script>
+	<script>
+		$(document).ready(function () {
+
+
+			initIframe('58f58d8f249b6cb879701115');
+		});
+
+		$(window).blur(function(e) {
+			// createCookie('vptest', { testLocked: true }, 1/12);
+			// window.location.reload(true);
+		});
+
+		function setCookie() {
+			createCookie('vptest', { testLocked: false }, 1/12);
+			$(document).find('.butom').html('Please wait ... ');
+			setTimeout(function () {
+				window.location.reload(true)
+			}, 3000);
+			setTimeout(function () {
+				createCookie('vptest', { testLocked: true }, 1/12);
+				window.location.reload(true);
+			}, 35*60*1000);
+		}
+
+		function createCookie(name, data, days = null) {
+		    data = JSON.stringify(data);
+		    let nameString = name+"="+data;
+		    let date = new Date();
+		    date.setTime(date.getTime() + days*24*60*60*1000);
+		    let expireString = "; expires="+date.toUTCString();
+		    document.cookie = nameString + expireString;
+		}
+
+		function readCookie(name) {
+	        let allCookies = document.cookie.split(';');
+	        for (let i=0; i < allCookies.length; i++) {
+	            let cookie = allCookies[i];
+	            if (cookie) {
+	                let cookieName = cookie.split('=')[0].trim();
+	                let cookieValue = cookie.split('=')[1].trim();
+	                if (name === cookieName) return JSON.parse(cookieValue);
+	            }
+	        }
+	        return null;
+	    }
+	</script>
+</body>
+</html>
