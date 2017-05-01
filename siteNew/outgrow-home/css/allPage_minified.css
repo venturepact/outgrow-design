@@ -3330,7 +3330,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-5-left span span{text-align:left;float:right;text-transform:uppercase;font-size: 12px;}
 	/*.section-5-left span i{float:left;margin-top:4px}*/
 	.section-5-right{margin-top:0;border:none}
-	.section-5{margin-top:0;margin-bottom:50px;padding: 0px 20px;}
+	.section-5{margin-top:0;margin-bottom:50px;}
 	.section-5-left span{margin-bottom: 15px;margin-top: 10px;}
 	.section-10,.section-6{margin-bottom:50px}
 	.sec5-2-1{width:100%;float:left;margin-top:0;margin-left:0px}
@@ -3504,6 +3504,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		.rs-hide-int-mob {display: none !important;}		
 		.sec-outgrowMagic img.thumb-calc {margin-right: 20px;}
 		.tab-inner-frame {border: none !important;}
+		.sec-outgrowMagic{padding: 0px 20px;}
 
 	/* end: homepage responsive by arti */
 
