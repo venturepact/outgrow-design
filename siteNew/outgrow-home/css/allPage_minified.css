@@ -3505,6 +3505,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		.sec-outgrowMagic img.thumb-calc {margin-right: 20px;}
 		.tab-inner-frame {border: none !important;}
 		.sec-outgrowMagic{padding: 0px 20px;}
+		img.img-playIcon {width: 13%;}
 
 	/* end: homepage responsive by arti */
 
@@ -3834,7 +3835,9 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		.sec-outgrowMagic {padding: 20px;}
 		.tab-outer-frame {right: 0px !important;}
 		.sec-outgrowMagic img.thumb-calc {margin-right: 20px;}
+		img.img-playIcon {width: 13%;}
 	/* homepage res changes by Arti */
+
 }
 @media (min-width:910px) and (max-width:989px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:560px}
@@ -14955,7 +14958,7 @@ body ul.wpb_thumbnails-fluid li:after,body ul.wpb_thumbnails-fluid li:before{dis
     position: absolute;
     background: #fff;
     width: 500px;
-    height: 280px;
+    height: 300px;
     right: 135px;
     top: 192px;
     border-radius: 10px;
@@ -14998,7 +15001,7 @@ body ul.wpb_thumbnails-fluid li:after,body ul.wpb_thumbnails-fluid li:before{dis
 .float-table-inner {
     float: left;
     width: 100%;
-    line-height: 30px;
+    line-height: 36px;
 }
 .label-left {
     width: 47%;
@@ -15007,10 +15010,11 @@ body ul.wpb_thumbnails-fluid li:after,body ul.wpb_thumbnails-fluid li:before{dis
 	font-family: montserratlight;
 }
 .label-right {
-    font-family: montserratsemibold;
+    font-family: montserratregular;
     width: 47%;
     float: left;
     text-align: left;
+	font-size: 16px;
 }
 span.colon {
     width: 6%;
@@ -15210,6 +15214,16 @@ span.icon-webcam {
 .scroll-wrapper {
     white-space: nowrap;
     overflow-x: scroll;
+}
+
+img.video-img {
+    position: relative;
+    right: 0;
+}
+img.img-playIcon {
+    position: absolute;
+    top: 38%;
+    left: 44%;
 }
 
 /*end: new css by Arti */
