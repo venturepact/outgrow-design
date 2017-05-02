@@ -2594,7 +2594,7 @@ label.control-label {
 .footer-social ul li{display:inline-block;padding-left:10px;padding-right:10px}
 .footer-social ul li a{float:left;color:#62696d;font-size:14px;font-family:montserratregular}
 .footer-social ul li a:hover{color:#fb5f66}
-.footer-copyright i{position:relative;top:2px;font-size:14px;margin-right:5px}
+.footer-copyright i{position:relative;top:2px;font-size:14px;margin-right:5px;color:#62696d;}
 .footer-copyright span{margin-right:10px;font-size:14px;color:#62696d}
 .slider-sa{min-height:530px}
 #feature .section-7 .slider-sa,#feature .section-f1 .slider-sa{min-height:400px;padding-right:0}

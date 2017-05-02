@@ -1809,7 +1809,7 @@ label {
 .section-14 {
 	float: left;
 	width: 100%;
-	background: #62696d;
+	background: #fafafa;
 	margin: 0;
 	padding-top: 30px;
 	padding-bottom: 10px;
@@ -1847,7 +1847,7 @@ label {
 	left: -30px
 }
 .footer-copyright p, .footer-link ul li a {
-	font-family: montserratlight;
+	font-family: montserratregular;
 	font-size: 14px
 }
 .footer-img, .footer-link {
@@ -1859,7 +1859,7 @@ label {
 .footer-link h4 {
 	float: left;
 	width: 100%;
-	color: #fff;
+	color: #fb5f66;
 	font-size: 18px;
 	margin-bottom: 20px;
 	text-transform: uppercase
@@ -1895,10 +1895,10 @@ label {
 .footer-link ul li a {
 	float: left;
 	width: auto;
-	color: #bdc5c8
+	color: #62696d;
 }
 .footer-link ul li a:hover {
-	color: #fff
+	color: #fb5f66;
 }
 .footer-copyright {
 	margin-top: 15px;
@@ -1924,14 +1924,14 @@ label {
 }
 .footer-img-text {
 	font-size: 12px;
-	color: #bdc5c8;
+	color: #62696d;
 	margin-top: 5px
 }
 .footer-img-text a {
-	color: #bdc5c8
+	color: #62696d;
 }
 .footer-img-text a:hover {
-	color: #fff
+	color: #fb5f66;
 }
 .footer-social {
 	margin-top: 25px
@@ -1947,23 +1947,24 @@ label {
 }
 .footer-social ul li a {
 	float: left;
-	color: #bdc5c8;
+	color: #62696d;
 	font-size: 14px;
-	font-family: montserratlight
+	font-family: montserratregular;
 }
 .footer-social ul li a:hover {
-	color: #fff
+	color: #fb5f66
 }
 .footer-copyright i {
 	position: relative;
 	top: 2px;
 	font-size: 14px;
-	margin-right: 5px
+	margin-right: 5px;
+	color: #62696d;
 }
 .footer-copyright span {
 	margin-right: 10px;
 	font-size: 14px;
-	color: #bdc5c8
+	color: #62696d
 }
 .slider-sa {
 	min-height: 470px
