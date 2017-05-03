@@ -7188,4 +7188,37 @@ select:-webkit-autofill {
         }
     
     /* End: Modal setup-payment */	
-	
+    .version-text{ float: left; line-height: 30px; color: #62696d; text-transform: uppercase; font-size: 13px;}
+    .funnel-outer{ float: left; width:80%; background: #fff; margin-top: 20px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-bottom: 3px solid #d4d4d4;}
+    .funnel-outer .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; }
+    .funnel-outer .header-text.text-right{ text-align: right; }
+    .funnel-outer .funnel-small-outer{ float: left; width:20%; padding: 10px; text-align: center; border-right:2px solid #f2f2f2; }
+    .funnel-outer .funnel-small-outer:last-child{  border-right:none; }
+    .funnel-outer .funnel-small-outer i{ font-size: 30px; margin-bottom: 10px;}
+    .funnel-outer .funnel-small-outer h5{ font-size: 18px; margin-bottom: 0; margin-top: 0; color:#62696d;}
+    .funnel-outer .funnel-small-outer span{ font-size: 12px; text-transform: uppercase;}
+    .funnel-outer .mb10{ margin-bottom: 10px;}  
+    .funnel-outer .graph-outer{ float: left; width:100%; margin-top: 10px;}
+    .light-red{color: #fe8c75;}
+    .yellow{color: #f9ce4f;}
+    .light-blue{ color:#68bce4}
+    .p-green{color:#7ecf7a;}
+    .light-green{color:#5fcfb3;}
+    .chart {width: 100%;  min-height: 300px;}
+    .funnel-outer-graph{ float: left; width:80%; background: #fff; margin-top: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-bottom: 3px solid #68bce4;}
+    .funnel-outer-graph .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; }
+    .funnel-outer-graph .graph-outer{ float: left; width:100%; margin-top: 10px;}
+
+    @media (min-width:0px) and (max-width:768px) {
+
+    .funnel-outer .funnel-small-outer{ width:100%; }
+    .funnel-outer .funnel-small-outer{ border-right:none;  border-bottom:2px solid #f2f2f2; padding-bottom: 80px;  }
+    .funnel-outer .header-text{ text-align: center; width:100%; }
+    .funnel-outer .header-text.text-right{ text-align: center; }
+        
+    }
+
+
+
+
+    /*Funnel Design css  */

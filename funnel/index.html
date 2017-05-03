@@ -275,7 +275,7 @@
 		 
 		   <!-- Start: wrapper -->
         <section class="wrapper">
-            <div class="col-md-12 col-sm-12 col-xs-12 np">
+            <div class="col-md-12 col-sm-12 col-xs-12 np"  style="background:#f6f8f9;">
                 <!-- Start: Left Sidebar -->
                 <div class="left-sidebar analytics-left-side col-md-3 col-sm-3 col-xs-3 np">
                     <div id="" class="tabbable tabs-left">
@@ -310,6 +310,17 @@
                                     <div class="left-sidebar-title">
                                         <h6 >Traffic Details</h6>
                                         <span class="">Get deeper insights about your visitors</span>
+                                    </div>
+                                </a>
+                            </li>
+							 <li class="">
+                                <a href="#funnel" data-toggle="tab">
+                                    <span class="left-sidebar-icon noti-icon">									
+										<i class="material-icons">filter_list</i>
+									</span>
+                                    <div class="left-sidebar-title">
+                                        <h6 >Funnel Visualisation</h6>
+                                        <span class="">Get deeper insights about your calculator’s traffic data</span>
                                     </div>
                                 </a>
                             </li>
@@ -862,6 +873,79 @@
 							   </div>
                             </div>
                             <!-- End: traffic (3) -->
+
+							   <!-- Start: finnel (4) -->
+                            <div class="tab-pane" id="funnel">
+                               <div class="col-md-12 col-sm-12 col-xs-12 ">
+								   <div class="col-md-3 col-sm-12 col-xs-12">
+									   	<div class="version-text">Funnel Version</div>
+										<div class="dp-outer ">
+											<i class="material-icons icon-left">date_range</i>
+											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
+											<i class="material-icons icon-right">keyboard_arrow_down</i>
+										</div>
+								   </div>
+									<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
+										
+									</div>
+								 </div>
+							    <div class="col-md-12 col-sm-12 col-xs-12 ">
+									<div class="funnel-outer">
+										<div class="col-md-12 col-sm-12 col-xs-12 np mb10">
+											<div class="col-md-6 col-sm-12 col-xs-12 header-text ">
+												User engagement across Quiz 
+											</div>
+											<div class="col-md-6 col-sm-12 col-xs-12 header-text text-right">
+												Total visits: 25,800
+											</div>
+										</div>
+								<div class="col-md-12 col-sm-12 col-xs-12 np">		
+									<div class="funnel-small-outer">
+										<i class="material-icons light-red">visibility</i>
+										<h5>8520</h5>
+										<span class="light-red">Unique Visits</span>
+									</div>
+									<div class="funnel-small-outer">
+										<i class="material-icons yellow">touch_app</i>
+										<h5>85%</h5>
+										<span class="yellow">Started: 5820</span>
+									</div>
+									<div class="funnel-small-outer">
+										<i class="material-icons light-blue">flag</i>
+										<h5>38%</h5>
+										<span class="light-blue">completed: 5780</span>
+									</div>
+									<div class="funnel-small-outer">
+										<i class="material-icons p-green">face</i>
+										<h5>20%</h5>
+										<span class="p-green">leads: 400</span>
+									</div>
+									<div class="funnel-small-outer">
+										<i class="material-icons light-green">thumb_up</i>
+										<h5>20%</h5>
+										<span class="light-green">Engagement: 400</span>
+									</div>
+								</div>
+								<div class="graph-outer">
+									 <div id="chart_div" class="chart"></div>
+								</div>
+							   </div>
+							   <div class="funnel-outer-graph">
+										<div class="col-md-12 col-sm-12 col-xs-12 np mb10">
+											<div class="col-md-6 col-sm-12 col-xs-12 header-text ">
+												Questions engagement
+											</div>
+											<div class="col-md-6 col-sm-12 col-xs-12 header-text text-right">
+												
+											</div>
+										</div>
+							
+								<div class="graph-outer">
+									 <div id="chart_div-1" class="chart"></div>
+								</div>
+							   </div>
+                            </div>
+                            <!-- End: traffic (4) -->
 
                            
                         </div>
@@ -1495,7 +1579,95 @@ FusionCharts.ready(function () {
 				chart.draw(data, options);
 			  }
 			  
+			//   google combo graph
+
+			    google.charts.load('current', {'packages':['corechart']});
+				google.charts.setOnLoadCallback(drawVisualization);
+
+				function drawVisualization() {
+					// Some raw data (not necessarily accurate)
+					var data = google.visualization.arrayToDataTable([
+					['Month', 'Bolivia',  'Average'],
+					['2004/05',  600,   600 ],
+					['2005/06',  400,   400],
+					['2006/07',  200,   200],
+					['2007/08',  100,   100],
+					['2008/09',  100,   100]
+				]);
+
+				var options = {
+				bar: {groupWidth: '50'},
+				legend: {position: 'none'},
+				hAxis: { textPosition: 'none',gridlines: {color: 'transparent'} },
+				vAxis: {gridlines: {color: 'transparent'},textPosition:'none', baselineColor: '#fff',},
+				seriesType: 'bars',
+				series: {1: {type: 'line'}},
+				pointSize: 10,
+				// colors: ['#68bce4','#fe8c75', ],
+				chartArea: {'width': '100%', 'height': '100%'},
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
+				chart.draw(data, options);
+			}
+
+
+
+			//   google bar graph
+			google.charts.load('current', {packages: ['corechart', 'bar']});
+			google.charts.setOnLoadCallback(drawBasic);
+
+			function drawBasic() {
+
+				var data = google.visualization.arrayToDataTable([
+					['Q', '2010 Population',],
+					['Q1', 8175000],
+					['Q2', 3792000],
+					['Q3', 2695000],
+					['Q4', 2099000],
+					['Q5', 1526000],
+					['Q6', 8175000],
+					['Q7', 3792000],
+					['Q8', 2695000],
+					['Q9', 2099000],
+					['Q10', 1526000],
+					['Q11', 8175000],
+					['Q12', 3792000],
+					['Q13', 2695000],
+					['Q14', 2099000],
+					['Q15', 1526000],
+					['Q16', 8175000],
+					['Q17', 3792000],
+					['Q18', 2695000],
+					['Q19', 2099000],
+					['Q20', 1526000]
+				]);
+
+				var options = {
+					chartArea: {'width': '100%', 'height': '80%'},
+					hAxis: {
+					minValue: 0,
+					gridlines: {color: 'transparent'}
+					},
+					vAxis: {
+					textPosition: 'none', baselineColor: '#fff',gridlines: {color: 'transparent'}
+					},
+					legend: {position: 'none'},
+					bar: {groupWidth: '50'},
+					colors: ['#68bce4' ],
+					
+				};
+
+				var chart = new google.visualization.ColumnChart(document.getElementById('chart_div-1'));
+
+				chart.draw(data, options);
+				}
+			
         </script>
+
+		
+
+
 		<script type="text/javascript">
         (function() {
         var s = document.createElement("script");
