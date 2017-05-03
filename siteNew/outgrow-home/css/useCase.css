@@ -189,7 +189,7 @@ body{background:#fff !important;}
 	float: left;
     width: 100%;
     text-align: center;
-    color:#dfe3e6;
+    color:#dfe3e6 !important;
     font-size: 48px;
     line-height: 40px;
     font-family:montserratbold;
