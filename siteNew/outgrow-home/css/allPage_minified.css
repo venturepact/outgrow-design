@@ -1,7 +1,7 @@
 .label,sub,sup{vertical-align:baseline}
 hr,img{border:0}
 body,figure{margin:0}
-.custom-navbar .signUp-style a{border-radius:20px;background:#fb5f66;color:#fff!important;padding:6px 10px;line-height:1;margin-top:11px;font-size:12px!important;border: 2px solid #f8434b !important;}
+.custom-navbar .signUp-style a{border-radius:20px;background:#fb5f66;color:#fff!important;padding:6px 10px;line-height:1;margin-top:13px;font-size:12px!important;border: 2px solid #f8434b !important;}
 .custom-navbar .signUp-style a:hover,.custom-navbar .signUp-style a:focus{
 	opacity: 1;
     background: #fb757b !important;
@@ -1027,7 +1027,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-fixed-bottom{bottom:0;margin-bottom:0;border-width:1px 0 0}
 .navbar-brand{float:left;height:50px;padding:15px;font-size:18px;line-height:20px}
 .navbar-brand:focus,.navbar-brand:hover{text-decoration:none}
-.navbar-brand>img{display:block}
+.navbar-brand>img{display:block; width: 90%;}
 @media (min-width:768px){
 	.container-fluid>.navbar-collapse,.container-fluid>.navbar-header,.container>.navbar-collapse,.container>.navbar-header{margin-right:0;margin-left:0}
 	.navbar-fixed-bottom,.navbar-fixed-top,.navbar-static-top{border-radius:0}
@@ -1038,7 +1038,7 @@ select[multiple].input-group-sm>.form-control,select[multiple].input-group-sm>.i
 .navbar-toggle .icon-bar{display:block;width:22px;height:2px;border-radius:1px}
 .navbar-toggle .icon-bar+.icon-bar{margin-top:4px}
 .navbar-nav{margin:7.5px -15px}
-.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:20px}
+.navbar-nav>li>a{padding-top:10px;padding-bottom:10px;line-height:25px}
 @media (max-width:767px){
 	.navbar-nav .open .dropdown-menu{position:static;float:none;width:auto;margin-top:0;background-color:transparent;border:0;-webkit-box-shadow:none;box-shadow:none}
 	.navbar-nav .open .dropdown-menu .dropdown-header,.navbar-nav .open .dropdown-menu>li>a{padding:5px 15px 5px 25px}
@@ -2176,8 +2176,8 @@ label.control-label {
     } 
 }*/
 
-.navbar-brand{padding:0;margin-left:30px!important;margin-top:5px}
-.custom-navbar.navbar-default{background:#fff;border:none;padding:10px 25px 10px 10px;z-index:999;-webkit-transition: .5s ease-in-out;transition: .5s ease-in-out}
+.navbar-brand{padding:0;margin-left:30px!important;padding-top: 10px;}
+.custom-navbar.navbar-default{background:#fff;border:none;padding:0px 25px 0px 10px;z-index:999;-webkit-transition: .5s ease-in-out;transition: .5s ease-in-out;border-bottom: 1px solid #eff0f0;}
 .custom-navbar.navbar-default .navbar-nav>li{margin-right:20px}
 .custom-navbar.navbar-default .navbar-nav>li>a{font-size:14px;color:#62696d;text-transform:uppercase}
 .custom-navbar.navbar-default .navbar-nav>li>a.active,.custom-navbar.navbar-default .navbar-nav>li>a:hover{color:#fb5f66}
@@ -2274,7 +2274,7 @@ label.control-label {
     border: 2px solid #fb5f66;
     transition: .5s ease-in-out;
     line-height: normal;
-    box-shadow: -9px 9px 20px 0px rgba(0,0,0,0.45);
+    box-shadow: 9px 9px 20px 0px rgba(0,0,0,0.45);
     margin-top: 50px;
 	border-radius: 25px;
 	display: inline-flex;
@@ -2361,17 +2361,19 @@ label.control-label {
 .section-5-left span span{color:#62696d;font-size:14px;text-align:left;width:85%;float:left;display:block;margin:0}
 .section-5-left span i{font-size:24px;color:#bec5c9;position:relative;margin-right:10px;float:left}
 .section-5 .btn-buildcal{
-	background: #f8434b;
-    border: 2px solid #f8434b;
+	background: #fb5f66;
+    border: 2px solid #fb5f66;
     color: #fff;
     float: none;
-    font-size: 14px;
+    font-size: 15px;
     text-transform: uppercase;
-    padding: 7px 40px;
-    margin-top: 90px;
+    padding: 10px 30px;
+    margin-top: 80px;
     -webkit-transition: .5s ease-in-out;
     transition: .5s ease-in-out;
-    box-shadow: -9px 9px 20px 0px rgba(0,0,0,0.45);
+    box-shadow: 9px 9px 20px 0px rgba(0,0,0,0.45);
+    border-radius: 50px;
+    line-height: normal;
 }
 .section-5 .btn-buildcal:hover{
     background: #fb757b;
@@ -15046,10 +15048,15 @@ span.colon {
     border: 2px solid #fb5f66;
     transition: .5s ease-in-out;
     line-height: normal;
-    box-shadow: -9px 9px 20px 0px rgba(0,0,0,0.45);
+    box-shadow: 9px 9px 20px 0px rgba(0,0,0,0.45);
     border-radius: 25px;
     display: inline-flex;
 	text-transform: uppercase;
+}
+.section-startFreeTrial-btn .btn-buildcal:hover {
+    background: #fb757b;
+    color: #fff;
+    border-color: #f8434b;
 }
 .btn-buildcal img {
     margin-right: 10px;
@@ -15219,12 +15226,22 @@ span.icon-webcam {
 img.video-img {
     position: relative;
     right: 0;
+    width: 100%;
+    float: right;
 }
 img.img-playIcon {
     position: absolute;
     top: 38%;
     left: 44%;
 }
+section.section.sec-targetedSale-title {
+	margin-top: 50px;
+    margin-bottom: 30px;
+}
+.sec-integrations{
+	margin-top: 15px;
+}
+
 
 /*end: new css by Arti */
 
