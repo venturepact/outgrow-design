@@ -7212,7 +7212,7 @@ select:-webkit-autofill {
     @media (min-width:0px) and (max-width:768px) {
 
     .funnel-outer .funnel-small-outer{ width:100%; }
-    .funnel-outer .funnel-small-outer{ border-right:none;  border-bottom:2px solid #f2f2f2; padding-bottom: 80px;  }
+    .funnel-outer .funnel-small-outer{ border-right:none;  border-bottom:2px solid #f2f2f2; padding:20px;   }
     .funnel-outer .header-text{ text-align: center; width:100%; }
     .funnel-outer .header-text.text-right{ text-align: center; }
         
