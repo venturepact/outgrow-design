@@ -219,40 +219,45 @@ function initRefersionCookie () {
     		initRefersionCookie();
     	}, 5000);
     }
-  }
+}
 
-  function createCookie(name ,value, days, domain) {
-        var expires = "";
-        var domain  = window.location.host;
-        if (days) {
-            var date = new Date();
-            date.setTime(date.getTime()+(days*24*60*60*1000));
-            expires = "; expires="+date.toUTCString();
-        }
-        document.cookie = name+"="+value+expires+"; domain="+domain+"; path=/";
+function createCookie(name ,value, days, domain) {
+    var expires = "";
+    var domain  = window.location.host;
+    if (days) {
+        var date = new Date();
+        date.setTime(date.getTime()+(days*24*60*60*1000));
+        expires = "; expires="+date.toUTCString();
     }
+    document.cookie = name+"="+value+expires+"; domain="+domain+"; path=/";
+}
 
-    function setUTMRefCookie() {
-	    let search = window.location.search;
+function setUTMRefCookie() {
+	let search = window.location.search;
 
-	    if ('' !== search && !readCookie('utm_ref')) {
-	      search = search.split('?')[1];
-	      let utmRefCookie = {
-	        'ref': 'UNKNOWN',
-	        'utm_source': 'UNKNOWN',
-	        'utm_medium': 'UNKNOWN',
-	        'utm_campaign': 'UNKNOWN',
-	      };
-	      let queryParams = search.split('&');
-	      queryParams.forEach(param => {
-	        let key = param.split('=')[0];
-	        let value = param.split('=')[1];
-	        if ('ref' === key || 'utm_source' === key || 'utm_medium' === key || 'utm_campaign' === key)
-	          utmRefCookie[key] = value;
-	      })
-	      if ('UNKNOWN' === utmRefCookie.ref) {
-	        utmRefCookie.ref = document.referrer ? document.referrer : 'DIRECT';
-	      }
-	      createCookie('utm_ref', JSON.stringify(utmRefCookie), 365);
-	    }
+	if ('' !== search && !readCookie('utm_ref')) {
+	  search = search.split('?')[1];
+	  let utmRefCookie = {
+	    'ref': 'UNKNOWN',
+	    'utm_source': 'UNKNOWN',
+	    'utm_medium': 'UNKNOWN',
+	    'utm_campaign': 'UNKNOWN',
+	  };
+	  let queryParams = search.split('&');
+	  queryParams.forEach(param => {
+	    let key = param.split('=')[0];
+	    let value = param.split('=')[1];
+	    if ('ref' === key || 'utm_source' === key || 'utm_medium' === key || 'utm_campaign' === key)
+	      utmRefCookie[key] = value;
+	  })
+	  if ('UNKNOWN' === utmRefCookie.ref) {
+	    utmRefCookie.ref = document.referrer ? document.referrer : 'DIRECT';
 	  }
+	  createCookie('utm_ref', JSON.stringify(utmRefCookie), 365);
+	}
+}
+
+function display(url) {
+	console.log('Display called', url)
+	jQuery('.hrefTarget').empty().append('<iframe src="'+url+'"></iframe>');
+}

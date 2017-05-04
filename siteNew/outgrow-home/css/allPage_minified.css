@@ -15085,7 +15085,8 @@ span.colon {
     border: 2px solid #e1e1e1;
     border-radius: 25px;
     padding: 20px;*/
-	right: -9px;
+	/*right: -9px;*/
+	right: 5px;
 }
 .tab-inner-frame {
     background: #fff;
@@ -15108,7 +15109,7 @@ span.icon-webcam {
 }
 .sec-outgrowMagic img.thumb-calc{
 	box-shadow: 0px 11px 24px rgba(0,0,0,.28);
-    margin-bottom: 40px;
+    margin-bottom: 27px;
 }
 .tab-inner-frame iframe{
     width: 100%;
