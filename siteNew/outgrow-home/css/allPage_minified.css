@@ -15252,14 +15252,33 @@ section.section.sec-targetedSale-title {
     border: 2px solid #e1e1e1;
     border-radius: 25px;
     padding: 45px 23px 23px;
-    width: 900px;
+    width: 950px;
     margin: 0 auto;
+	cursor: pointer;
 }
 .video-img-inner {
     background: #fff;
-    min-height: 405px;
-    border: 2px solid #e1e1e1;
+    min-height: 475px;
+    /*border: 2px solid #e1e1e1;*/
     position: relative;
+}
+img.video-img{
+	-webkit-transform: scale(1);
+    transform: translateY(0px);
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+}
+.video-img-wrapper:hover .video-img {
+	-webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+}
+.overflow-hidden{
+    overflow: hidden;
+    position: relative;
+    right: 0;
+    left: 0;
+    width: 100%;
+    border: 2px solid #e1e1e1;
 }
 .video-img-wrapper span.icon-webcam {
     position: absolute;
