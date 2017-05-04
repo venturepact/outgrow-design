@@ -156,27 +156,27 @@
 		</div><!-- /.container-fluid -->
 	</nav>
 	<!-- Homepage header end-->
-	<!-- Homepage section 1 new start by Arti -->
+	<!-- Homepage section 1 start-->
 	<section class="section section-1">
 		<div class="container-fluid">
-			<div class="col-md-12 col-xs-12 col-sm-12 section-1-left text-center">
+			<div class="col-md-5 col-xs-12 col-sm-6 section-1-left">
 				<div class="section1-left-cell">
 					  <h4 class="mk-animate-element fade-in">
 						eBooks, blogs & whitepapers giving average results?
 					</h4>
 					<h3 class="mk-animate-element fade-in section1-firsthead">
-						Boost your marketing with highly <br/>converting <b>calculators</b> and viral <b>quizzes</b>.
+						Boost your marketing with highly converting <b>calculators</b> and viral <b>quizzes</b>.
 					</h3>
 					<div class="form-group mk-animate-element fade-in hide">
 						<input type="text" placeholder="Email Address" />
 					</div>
 					<!-- Video buttons-->
 					<div class="col-md-12 col-sm-12 col-xs-12 np">
-						<div class="col-md-12 col-xs-12 col-sm-12 np text-center" id="btnBuildCalc1">
+						<div class="col-xs-12 col-sm-6 np" id="btnBuildCalc1">
 
 
 						</div>
-						<div class="col-md-12 col-xs-12 col-sm-12 np text-center" id="video-link">
+						<div class="col-xs-12 col-sm-6 np" id="video-link">
 						</div>
 					</div>
 				<!-- Claim your Domain CTA -->
@@ -202,37 +202,56 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 rs-show np text-center">
-				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
-						<span class="icon-webcam"></span>
-						<span class="icon-rectangular-box"></span>
+			<div class="col-xs-12 col-sm-6 rs-show np">
+				<!--<div class="sec1-box-left">
+					<div class="sec1-box1 mk-animate-element left-to-right">
+						<img src="images/new-collag1.jpg" />
 					</div>
-					<div class="video-img-inner">
-						<img class="video-img" src="images/video-img-big.jpg" />
-						<span class="img-overlay"></span>
-						<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-						<span class="video-playIcon"><span class="inside-circle">></span></span>
+					<div class="sec1-box2  mk-animate-element left-to-right">
+						<img src="images/new-collag4_edited.jpg" />
 					</div>
 				</div>
-			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 np rs-hide text-center hide-height" id="coding">
+				<div class="sec1-box-right">
+					<div class="sec1-box3  mk-animate-element right-to-left">
+						<img src="images/homepage-soccer1.jpg" />
+					</div>
+				</div>-->
+				<!--<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>-->
 				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
-						<span class="icon-webcam"></span>
-						<span class="icon-rectangular-box"></span>
+					<img class="video-img" src="images/video-img.jpg" />
+					<img class="img-playIcon" src="images/video-img-playIcon.png" />
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-7 section-1-right rs-hide">
+				<!--<div class="collag-right rs-hide">
+					<a class="collag1 mk-animate-element fade-in" href="javascript:void(0);">
+						<div class="collag1-img"></div>
+					</a>
+				</div>
+				<div class="collag-left rs-hide">
+					<div class="col-sm-12">
+						<a class="collag3 mk-animate-element fade-in" href="javascript:void(0);">
+							<div class="collag3-img"></div>
+						</a>
 					</div>
-					<div class="video-img-inner">
-						<img class="video-img" src="images/video-img-big.jpg" />
-						<span class="img-overlay"></span>
-						<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-						<span class="video-playIcon" onclick="changec()"><span class="inside-circle">></span></span>
+					<div class="col-sm-12">
+						<a class="collag4 mk-animate-element fade-in" href="javascript:void(0);">
+							<div class="collag4-img"></div>
+						</a>
 					</div>
+				</div>-->
+				<!--<div class="embed-responsive embed-responsive-16by9">
+					<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+				</div>-->
+				<div class="video-img-wrapper">
+					<img class="video-img" src="images/video-img.jpg" />
+					<img class="img-playIcon" src="images/video-img-playIcon.png" />
 				</div>
 			</div>
 		</div>
 	</section>
-	<!-- Homepage section 1 new end by Arti -->
 
 	<section class="section section-3 sec-craftedTemps">
 		<div class="container-fluid">
@@ -1752,18 +1771,9 @@
 		});
 		appendParamsToUrl();
 		var query_params = location.search.split('=');
-		createCookie('referralCode',query_params[1],3);		
+		createCookie('referralCode',query_params[1],3);
 		
 	});
-
-	function changec() {
-		var xDiv = document.getElementById('coding');
-		
-		if (xDiv.style.height == '') 
-			xDiv.style.height = '500px'
-		else 
-			xDiv.style.height = ''
-	}
 
 	function appendParamsToUrl() {
 		var param = '';
