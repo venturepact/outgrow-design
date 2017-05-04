@@ -7204,7 +7204,7 @@ select:-webkit-autofill {
     .light-blue{ color:#68bce4}
     .p-green{color:#7ecf7a;}
     .light-green{color:#5fcfb3;}
-    .chart {width: 100%;  min-height: 300px;}
+    .chart {width: 100%;  min-height: 300px; float: left;}
     .funnel-outer-graph{ float: left; width:80%; background: #fff; margin-top: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-bottom: 3px solid #68bce4;}
     .funnel-outer-graph .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; }
     .funnel-outer-graph .graph-outer{ float: left; width:100%; margin-top: 10px;}

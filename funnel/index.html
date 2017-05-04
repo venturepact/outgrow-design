@@ -1586,25 +1586,26 @@ FusionCharts.ready(function () {
 
 				function drawVisualization() {
 					// Some raw data (not necessarily accurate)
-					var data = google.visualization.arrayToDataTable([
-					['Month', 'Bolivia',  'Average'],
-					['2004/05',  600,   600 ],
-					['2005/06',  400,   400],
-					['2006/07',  200,   200],
-					['2007/08',  100,   100],
-					['2008/09',  100,   100]
+				var data = google.visualization.arrayToDataTable([
+					['Month', 'Bolivia',{ role: 'style' } ,  'Average'],
+					['a',  600,'#fe7c60',   600 ],
+					['b',  400, '#f8c82d',   400],
+					['2006/07',  200 ,'#68bce4',   200],
+					['2007/08',  100 ,'#7ecf7a',   100],
+					['2008/09',  100 ,'#5fcfb3',   100]
 				]);
 
 				var options = {
-				bar: {groupWidth: '50'},
-				legend: {position: 'none'},
-				hAxis: { textPosition: 'none',gridlines: {color: 'transparent'} },
-				vAxis: {gridlines: {color: 'transparent'},textPosition:'none', baselineColor: '#fff',},
-				seriesType: 'bars',
-				series: {1: {type: 'line'}},
-				pointSize: 10,
-				// colors: ['#68bce4','#fe8c75', ],
-				chartArea: {'width': '95%', 'height': '95%'},
+					bar: {groupWidth: '50'},
+					legend: {position: 'none'},
+					hAxis: { textPosition: 'none',gridlines: {color: 'transparent'} },
+					vAxis: {gridlines: {color: 'transparent'},textPosition:'none', baselineColor: '#fff',},
+					seriesType: 'bars', 
+					series: {1: {type: 'line'}},
+					pointSize: 10,
+					colors: ['','#fb5f66'],
+					chartArea: {'width': '100%', 'height': '100%'},
+					backgroundColor: { fill:'transparent' }
 				};
 
 				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
