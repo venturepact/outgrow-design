@@ -2293,7 +2293,7 @@ label.control-label {
 .section-1-left .btn-buildcal.red i{display:inline-block;float:left;margin-right:10px;font-size:20px}
 .section-1-left .btn-bottominfo{float:left;width:100%;text-align:center;margin-top:12px;margin-bottom: 30px;}
 .section-1-left .btn-bottominfo span{float:none;width:100%;color:#4a4a4a;font-size:13px;font-family:montserratregular;text-align:left;text-transform:uppercase}
-.section-1-left .btn-bottominfo label{float:none;width:100%;color:#62696d;font-size:12px;font-family:montserratregular}
+.section-1-left .btn-bottominfo label{float:none;width:100%;color:#62696d;font-size:12px;font-family:montserratregular;cursor: text;}
 .mt7{margin-top:7%!important}
 .section-1-right{padding-right:45px;padding-left:35px}
 .collag-left{float:left;width:69%}
@@ -2364,21 +2364,23 @@ label.control-label {
 .section-5-left span i{font-size:24px;color:#bec5c9;position:relative;margin-right:10px;float:left}
 .section-5 .btn-buildcal{
 	background: #fb5f66;
-    border: 2px solid #fb5f66;
     color: #fff;
-    float: none;
     font-size: 15px;
-    text-transform: uppercase;
-    padding: 10px 30px;
-    margin-top: 80px;
-    -webkit-transition: .5s ease-in-out;
+    padding: 12px 25px 12px 35px;
+    border: 2px solid #fb5f66;
     transition: .5s ease-in-out;
-    box-shadow: 9px 9px 20px 0px rgba(0,0,0,0.45);
-    border-radius: 50px;
     line-height: normal;
+    box-shadow: 0px 9px 18px 0px rgba(251,108,115,0.99);
+    margin-top: 80px;
+    border-radius: 50px;
+    display: inline-flex;
+    float: none;
+    font-family: montserratregular;
+	text-transform: uppercase;
+	line-height: 24px;
 }
 .section-5 .btn-buildcal:hover{
-    background: #fb757b;
+	background: #fb757b;
     color: #fff;
     border-color: #f8434b;
 }
@@ -2390,11 +2392,11 @@ label.control-label {
 .section-5 .btn-buildcal p {
     float: left;
     margin: 0 10px 0 0;
-    line-height: 30px;
+    /*line-height: 30px;*/
 }
 .section-5 .btn-buildcal i {
     position: relative;
-    top: 3px;
+    top: 0px;
 }
 .sec5-2{position:absolute;top:19px;right:45px}
 .section-6{margin-top:60px;margin-bottom:70px}
@@ -15046,11 +15048,11 @@ span.colon {
     background: #fb5f66;
     color: #fff;
     font-size: 15px;
-    padding: 12px 30px;
+    padding: 12px 35px;
     border: 2px solid #fb5f66;
     transition: .5s ease-in-out;
     line-height: normal;
-    box-shadow: 9px 9px 20px 0px rgba(0,0,0,0.45);
+    box-shadow: 0px 9px 18px 0px rgba(251,108,115,0.99);
     border-radius: 25px;
     display: inline-flex;
 	text-transform: uppercase;
@@ -15066,11 +15068,12 @@ span.colon {
 .section-startFreeTrial-btn label{
 	float: none;
     width: 100%;
-    color: #8a8a8a;
+    color: #62696d;
     font-size: 12px;
     font-family: montserratregular;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	cursor: text;
 }
 .tab-outer-frame {
     background: #fff;
