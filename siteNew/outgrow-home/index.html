@@ -202,7 +202,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main">
+			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs">
 				<div class="video-img-wrapper">
 					<div class="col-md-12 np text-center">
 						<span class="icon-webcam"></span>
@@ -213,7 +213,7 @@
 							<img class="video-img" src="images/video-img-big.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="changec()"><span class="inside-circle">></span></span>
+							<span class="video-playIcon" onclick="changeRes()"><span class="inside-circle">></span></span>
 						</div>
 					</div>
 				</div>
@@ -1768,6 +1768,16 @@
 		else 
 			xDiv.style.height = ''
 	}
+
+	function changeRes() {
+		var xDiv = document.getElementById('video-main-rs');
+		
+		if (xDiv.style.height == '') 
+			xDiv.style.height = '552px'
+		else 
+			xDiv.style.height = ''
+	}
+
 
 	function appendParamsToUrl() {
 		var param = '';
