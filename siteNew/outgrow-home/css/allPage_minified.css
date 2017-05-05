@@ -8350,6 +8350,10 @@ aside #lang_sel img.iclflag,aside #lang_sel_click img.iclflag,footer #lang_sel i
 }
 @media (max-width:480px){
 	.carousel:not(.advanced_responsiveness) .carousel-inner h2.large span{font-size:.3em!important}
+	.rs-hide-int-res {display: none !important;}
+	.rs-hide-int-mob {display: block !important;}
+	.rs-hide-int-mob img.int-box-shadow {box-shadow: none;max-width: none;}
+	
 }
 @media (max-width:320px){
 	.carousel:not(.advanced_responsiveness) .carousel-inner h2.large span{font-size:.2em!important}
@@ -15142,9 +15146,9 @@ span.colon {
 .tab-inner-frame {
     background: #fff;
     /*min-height: 480px;*/
-    border: 2px solid #e1e1e1;
+    /*border: 2px solid #e1e1e1;*/
 	position: relative;
-	min-height: 100vh;
+	/*min-height: 100vh;*/
     padding: 0;
 }
 span.icon-webcam {
@@ -15164,11 +15168,11 @@ span.icon-webcam {
 }
 .tab-inner-frame iframe{
     width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-	border: none;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	border: 2px solid #e1e1e1 !important;
 }
 .sec-outgrowMagic {
     height: 100vh;
