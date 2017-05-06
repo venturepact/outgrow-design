@@ -3290,7 +3290,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-13{padding-top: 40px;margin-bottom: 50px;padding-bottom: 0;}
 	.res-nav-show{display:block!important}
 	.res-nav-hide{display:none!important}
-	.section-1{margin-top:0px}
+	.section-1{margin-top:0px; padding-top:25px;}
 	.section-1-left{/*padding-left:20px;padding-right:20px;margin-bottom: 40px;*/}
 	.section-1-left input{width:100%}
 	.section1-left-cell{height:21vh}
