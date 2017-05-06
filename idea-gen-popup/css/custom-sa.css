@@ -238,6 +238,49 @@ a.button-link:focus{ color: #fff; }
 #ideaGen .content-area .inner-section .right-section .img-outer-right1 .mid-text{ display:table-cell;padding: 10px;text-align: center; font-size: 14px; text-transform: uppercase; vertical-align: middle;}
 #ideaGen .content-area .inner-section .right-section .img-outer-right1 a{ display: table; width:100%; height: 100%;}
  
+
+
+
+
+
+/*intigration Popup*/
+
+#intigration-popup button.close.btn-close { position: absolute; top: 10px; right: 8px; opacity: 0.9; z-index: 9;}
+#intigration-popup button.close.btn-close i.material-icons{font-size: 24px;color: #fff;text-shadow: none;}
+#intigration-popup .modal-dialog-idea {width: 1024px;margin: 50px auto;}
+#intigration-popup button.close.btn-close:hover {opacity: 1;}
+#intigration-popup .modal-header{ background: #fb5f66; border-bottom: none;}
+#intigration-popup .modal-body {position: relative; padding: 0 }
+#intigration-popup .modal-title{ font-size: 14px; text-transform: uppercase; color: #fb5f66; position: relative; padding-left: 25px;}
+#intigration-popup .modal-title i{ position: absolute;left:0; top:0px; font-size:18px; }
+
+#intigration-popup .modal-content {border-radius: 0px; float: left; width: 100%;height: 100%; box-shadow: none; border: none;background: transparent;  }
+#intigration-popup .content-area{width:100%; float: left; background:#fff; position:relative; overflow-y: auto;}
+#intigration-popup .content-area .inner-section{ float: left; width:96%; margin:0 2%; background: #fafafa; min-height: 250px; margin-bottom: 2%; padding: 20px; padding-bottom:0;}
+#intigration-popup .content-area .inner-section .left-section{ float: left; width: 33%; }
+#intigration-popup .content-area .inner-section .left-section .img-outer{ float: left; box-shadow: 0 4px 5px 1px rgba(0,0,0,.2); width: 300px; }
+#intigration-popup .content-area .inner-section .left-section .img-outer img{ float: left;  width:100%;}
+#intigration-popup .content-area .inner-section .left-section .text-outer{ float: left; width: 100%; padding-right: 10px; margin-top: 15px; margin-bottom: 5px; }
+#intigration-popup .content-area .inner-section .left-section .text-outer h5{ float: left;  font-size: 14px; text-transform: uppercase; color: #fb5f66; }
+#intigration-popup .content-area .inner-section .left-section .text-outer .disc-text{ float: left; font-size: 12px; line-height: 20px;}
+
+#intigration-popup .content-area .inner-section .right-section{ float: left; width: 67%; max-height: 450px; overflow-y: auto; }
+#intigration-popup .content-area .inner-section .right-section .img-outer-right{ float: left; width: 170px; height:170px;  box-shadow: 0 4px 5px 1px rgba(0,0,0,.1); margin: 30px; margin-right: 0; margin-top: 0; border:2px solid #fff; transition: border-color 0.5s ease; position: relative; background:url(../images/base-bg.jpg); background-repeat: no-repeat; display: table;  }
+#intigration-popup .content-area .inner-section .right-section .img-outer-right:hover{ border-color:  #fb5f66;}
+#intigration-popup .content-area .inner-section .right-section .img-outer-right .mid-text{ display:table-cell;padding: 10px;text-align: center; font-size: 14px; text-transform: uppercase; vertical-align: middle;}
+#intigration-popup .content-area .inner-section .right-section .img-outer-right a{ display: table; width:100%; height: 100%;}
+#intigration-popup .modal-footer{ background: #fb5f66; float: left; width:80px; border: none; width:100%; min-height: 50px; padding: 0; transition: background-color 0.5s ease;}
+.button-link{ float: right;padding: 0 10px; font-size: 14px;color: #fff; text-transform: uppercase; background: #e0464d; padding: 10px 30px; line-height: 30px;}
+.button-link:hover{ color: #fff; background-color: #dd2a33; }
+a.button-link:focus{ color: #fff; }
+
+ 
+
+ #intigration-popup .content-area .inner-section .right-section .img-outer-right1{ float: left; width: 170px; height:170px;  box-shadow: 0 4px 5px 1px rgba(0,0,0,.1); margin: 30px; margin-right: 0; margin-top: 0; border:2px solid #fff; transition: border-color 0.5s ease; position: relative; background:url(../images/base-bg1.jpg); background-repeat: no-repeat;  }
+ #intigration-popup .content-area .inner-section .right-section .img-outer-right1:hover{ border-color:  #fb5f66;}
+#intigration-popup .content-area .inner-section .right-section .img-outer-right1 .mid-text{ display:table-cell;padding: 10px;text-align: center; font-size: 14px; text-transform: uppercase; vertical-align: middle;}
+#intigration-popup .content-area .inner-section .right-section .img-outer-right1 a{ display: table; width:100%; height: 100%;}
+ 
  
 
 	
