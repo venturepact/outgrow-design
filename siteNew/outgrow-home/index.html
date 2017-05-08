@@ -202,6 +202,22 @@
 					</div>
 				</div>
 			</div>
+			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs-mob">
+				<div class="video-img-wrapper">
+					<div class="col-md-12 np text-center">
+						<span class="icon-webcam"></span>
+						<span class="icon-rectangular-box"></span>
+					</div>
+					<div class="overflow-hidden">
+						<div class="video-img-inner">
+							<img class="video-img" src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon" onclick="changeHeightMob()"><span class="inside-circle">></span></span>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs">
 				<div class="video-img-wrapper">
 					<div class="col-md-12 np text-center">
@@ -210,7 +226,7 @@
 					</div>
 					<div class="overflow-hidden">
 						<div class="video-img-inner">
-							<img class="video-img" src="images/video-img-big.jpg" />
+							<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
 							<span class="video-playIcon" onclick="changeHeightRes()"><span class="inside-circle">></span></span>
@@ -226,7 +242,8 @@
 					</div>
 					<div class="overflow-hidden">
 						<div class="video-img-inner">
-							<img class="video-img" src="images/video-img-big.jpg" />
+							<img class="video-img" src="images/video-thumbnail.jpg" />
+							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
 							<span class="video-playIcon" onclick="changeHeightWeb()"><span class="inside-circle">></span></span>
@@ -743,49 +760,21 @@
 	<!-- Homepage section 6 end-->
 
 	<!-- Homepage The Outgrow Magic -->
-	<section class="section section-5 sec-outgrowMagic-title">
-		<div class="container mobile-container">
-			<h1 class="section-2-heading mk-animate-element scale-up">
-				 The Outgrow Magic
-			</h1>
-			<h5 class="section-2-subheading mk-animate-element scale-up">
-				 Get inspired by some of our most successful calculators & quizzes!
-			</h5>
-		</div>
-	</section>
+	<div class="section-main">
+		<section class="section section-5 sec-outgrowMagic-title">
+			<div class="container mobile-container">
+				<h1 class="section-2-heading mk-animate-element scale-up">
+					The Outgrow Magic
+				</h1>
+				<h5 class="section-2-subheading mk-animate-element scale-up">
+					Get inspired by some of our most successful calculators & quizzes!
+				</h5>
+			</div>
+		</section>
 
-	<section class="section section-5 sec-outgrowMagic">
-		<div class="container-fluid np">
-			<div class="col-xs-12 col-sm-12 np rs-show">
-				<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
-					<span class="icon-webcam"></span>
-					<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
-						<iframe src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container rs-hide">
-				<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc')">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
-				 </a>
-				<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator')">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
-				 </a>
-				 <a href="javascript:void(0);" target="_blank">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-				 </a>
-				 <!--<a href="javascript:void(0);" target="_blank">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-				 </a>
-				 <a href="javascript:void(0);" target="_blank">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-				 </a>
-				 <a href="javascript:void(0);" target="_blank">
-					<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-				 </a>-->
-			</div>
-			<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show scroll-wrapper">
-				<div class="col-md-12 np">
+		<section class="section section-5 sec-outgrowMagic">
+			<div class="container-fluid np">
+				<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container rs-hide">
 					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc')">
 						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
 					</a>
@@ -805,20 +794,53 @@
 						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
 					</a>-->
 				</div>
-			</div>
-			<div class="col-xs-12 col-sm-9 np push-left rs-hide">
-				<!--<div id="sticky-anchor"></div>-->
-				<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
-					<span class="icon-webcam"></span>
-					<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
-						<iframe src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>
+				<div class="col-xs-12 col-sm-12 col-md-9 np">
+					<!--<div id="sticky-anchor"></div>-->
+					<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
+						<span class="icon-webcam"></span>
+						<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
+							<!--<iframe src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>-->
+							<div><div id='58f866f5feba750011a15191' data-url='//sahilverma.rely.co/58f866f5feba750011a15191?vHeight=1' data-width='100%'></div></div>
+						</div>
+					</div>
+					<!--<div id="sticky-anchor"></div>
+					<div id="sticky">This will stay at top of page</div>-->
+				</div>
+				
+				<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show scroll-wrapper scrollbar">
+					<div class="col-md-12 np">
+						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc')">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
+						</a>
+						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator')">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
+						</a>
+						<a href="javascript:void(0);" target="_blank">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						</a>
+						<!--<a href="javascript:void(0);" target="_blank">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						</a>
+						<a href="javascript:void(0);" target="_blank">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						</a>
+						<a href="javascript:void(0);" target="_blank">
+							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						</a>-->
 					</div>
 				</div>
-				<!--<div id="sticky-anchor"></div>
-				<div id="sticky">This will stay at top of page</div>-->
+				<div class="col-xs-12 col-sm-12 np rs-show hide">
+					<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
+						<span class="icon-webcam"></span>
+						<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
+							<!--<iframe src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>-->
+							<!--<div><div id='58f866f5feba750011a15191' data-url='//sahilverma.rely.co/58f866f5feba750011a15191?vHeight=1' data-width='100%'></div></div>-->
+						</div>
+					</div>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 	<!-- Homepage The Outgrow Magic -->
 
 	<!-- Homepage section 7 start-->
@@ -1494,35 +1516,83 @@
 	<!--section Hyper targeted sales -->
 
 	<!--section testimonial -->
-	<section class="section section-7-top">
-		<div class="container mobile-container">
-			<h1 class="section-2-heading mk-animate-element scale-up">
-				 Check what our users have to say!
-			</h1>
-		</div>
-	</section>
-	<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials">
-		<div class="swiper-container mk-animate-element scale-up">
-			<div class="swiper-wrapper">
-				<div class="swiper-slide">
-					<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
-				</div>
-				<div class="swiper-slide">
-					<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
-				</div>
-				<div class="swiper-slide">
-					<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
-				</div>
-				<div class="swiper-slide">
-					<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
-				</div>
-				<div class="swiper-slide">
-					<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
-				</div>
+	<div class="section-main">
+		<section class="section section-7-top">
+			<div class="container mobile-container">
+				<h1 class="section-2-heading mk-animate-element scale-up">
+					Check what our users have to say!
+				</h1>
 			</div>
-			<!-- Add Pagination -->
+		</section>
+		<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials rs-show-less480 ">
+			<div class="swiper-container mk-animate-element scale-up">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-responsive.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-responsive.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-responsive.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-responsive.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-responsive.jpg" alt="" class="qode-lazy-image" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+			</div>
+			<div class="swiper-pagination"></div>
 		</div>
-		<div class="swiper-pagination"></div>
+		<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials rs-show rs-hide-less480">
+			<div class="swiper-container mk-animate-element scale-up">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials rs-hide">
+			<div class="swiper-container mk-animate-element scale-up">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+					<div class="swiper-slide">
+						<img src="images/img-testimonial-1.jpg" alt="" class="qode-lazy-image" />
+					</div>
+				</div>
+				<!-- Add Pagination -->
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
 	</div>
 	<!--section testimonial -->
 
@@ -1631,11 +1701,13 @@
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/plans.js"></script>
 	<script src="js/footer.js"></script>
+	<script src='http://rely.co/js/nloader.js'></script>
 	<script>
 	  	jQuery.material.init();
 	</script>
 	<script>
 	 jQuery(document).ready(function() {
+		 initIframe('58f866f5feba750011a15191');
 		 //youtube video
 		 jQuery('.close').click(function(){
 			jQuery('iframe.outgrow-video').attr('src', jQuery('iframe.outgrow-video').attr('src'));
@@ -1762,7 +1834,16 @@
 		var xDiv = document.getElementById('video-main');
 
 		if (xDiv.style.height == '')
-			xDiv.style.height = '552px'
+			xDiv.style.height = '630px'
+		else
+			xDiv.style.height = ''
+		
+	}
+
+	function changeHeightMob() {
+		var xDiv = document.getElementById('video-main-rs-mob');
+		if (xDiv.style.height == '')
+			xDiv.style.height = '200px'
 		else
 			xDiv.style.height = ''
 	}
@@ -1770,7 +1851,7 @@
 	function changeHeightRes() {
 		var xDiv = document.getElementById('video-main-rs');
 		if (xDiv.style.height == '')
-			xDiv.style.height = '390px'
+			xDiv.style.height = '460px'
 		else
 			xDiv.style.height = ''
 	}
@@ -1841,29 +1922,29 @@
 
 	</script>
 	<script>
-		function sticky_relocate() {
-			var window_top = jQuery(window).scrollTop();
-			var window_bottom = window_top + jQuery(window).height();
-			var div_top = jQuery('#sticky-anchor').offset().top;
-			var outgrowMagic = jQuery('.sec-outgrowMagic').offset().top + jQuery('.sec-outgrowMagic').outerHeight(true);
-			if (window_top > div_top) {
-				jQuery('#sticky').addClass('stick');
-				jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-			} else {
-				jQuery('#sticky').removeClass('stick');
-				jQuery('#sticky-anchor').height(0);
-			}
-			console.log(window_bottom,outgrowMagic);
-			if (window_bottom >= outgrowMagic) {
-				jQuery('#sticky').removeClass('stick');
-				//jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-			}
-		}
+		// function sticky_relocate() {
+		// 	var window_top = jQuery(window).scrollTop();
+		// 	var window_bottom = window_top + jQuery(window).height();
+		// 	var div_top = jQuery('#sticky-anchor').offset().top;
+		// 	var outgrowMagic = jQuery('.sec-outgrowMagic').offset().top + jQuery('.sec-outgrowMagic').outerHeight(true);
+		// 	if (window_top > div_top) {
+		// 		jQuery('#sticky').addClass('stick');
+		// 		jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
+		// 	} else {
+		// 		jQuery('#sticky').removeClass('stick');
+		// 		jQuery('#sticky-anchor').height(0);
+		// 	}
+		// 	console.log(window_bottom,outgrowMagic);
+		// 	if (window_bottom >= outgrowMagic) {
+		// 		jQuery('#sticky').removeClass('stick');
+		// 		//jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
+		// 	}
+		// }
 
-		jQuery(function() {
-			jQuery(window).scroll(sticky_relocate);
-			sticky_relocate();
-		});
+		// jQuery(function() {
+		// 	jQuery(window).scroll(sticky_relocate);
+		// 	sticky_relocate();
+		// });
 
 	</script>
 
