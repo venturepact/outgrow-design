@@ -782,13 +782,13 @@
 		<section class="section section-5 sec-outgrowMagic">
 			<div class="container-fluid np">
 				<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container rs-hide">
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc')">
+					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc?vHeight=1')">
 						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
 					</a>
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator')">
+					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator?vHeight=1')">
 						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
 					</a>
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC')">
+					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC?vHeight=1')">
 						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
 					</a>
 					<!--<a href="javascript:void(0);" target="_blank">
@@ -806,7 +806,7 @@
 					<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
 						<span class="icon-webcam"></span>
 						<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
-							<iframe src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>
+							<iframe id="og-iframe" src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>
 						</div>
 					</div>
 					<!--<div id="sticky-anchor"></div>
@@ -815,13 +815,13 @@
 				
 				<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show scroll-wrapper scrollbar">
 					<div class="col-md-12 np">
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc')">
+						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc?vHeight=1')">
 							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator')">
+						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator?vHeight=1')">
 							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC')">
+						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC?vHeight=1')">
 							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
 						</a>
 						<!--<a href="javascript:void(0);" target="_blank">
@@ -1734,7 +1734,7 @@
 	<script src="js/jquery.counterup.min.js"></script>
 	<script src="js/plans.js"></script>
 	<script src="js/footer.js"></script>
-	<script src='http://rely.co/js/nloader.js'></script>
+	<script src="js/loader/resizer.js"></script>
 	<script>
 	  	jQuery.material.init();
 	</script>
@@ -2123,6 +2123,12 @@
 })(window, jQuery);
   </script>
 	<script type="text/javascript">
+	var iframes = iFrameResize({
+        log: false,
+        autoResize: true,
+        enablePublicMethods: true,
+        checkOrigin: false,
+    },'#og-iframe');
 	    myVid=document.getElementById("player");
 	    myVid.muted=true;
 	</script>

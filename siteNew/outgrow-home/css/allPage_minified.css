@@ -15227,7 +15227,7 @@ span.colon {
     /*min-height: 480px;*/
     /*border: 2px solid #e1e1e1;*/
 	/*position: relative;*/
-	height: 100vh;
+	/*height: 70vh*/;
     padding: 0;
 }
 span.icon-webcam {
@@ -15247,7 +15247,7 @@ span.icon-webcam {
 }
 .tab-inner-frame iframe{
     width: 100%;
-    height: 100%;
+    height: 70vh;
     /*position: absolute;
     left: 0;
     top: 0;*/
