@@ -265,6 +265,6 @@ function setUTMRefCookie() {
 // }
 
 function display(url) {
-	console.log('Display called', url)
-	jQuery('.hrefTarget').empty().append('<iframe src="'+url+'"></iframe>');
+	console.log('Display called', url);
+	jQuery('.hrefTarget').empty().append('<iframe id="og-iframe" src="'+url+'"></iframe>');
 }
