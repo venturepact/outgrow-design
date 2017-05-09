@@ -3563,7 +3563,8 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		left: -125px !important;
 		top: -175px !important;
 		position: relative;
-	}
+	}	
+	.sec-outgrowMagic img.thumb-calc{width: 80%;}
 }
 @media (min-width:375px) and (max-width:375px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:230px;padding:0}
@@ -3631,6 +3632,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.sec4-2{height:445px;top:-30px}
 	.w100{width:100%}
 	.ebook-img {width: 45%;}
+	.qode-expanding-images .qode-expanding-images-inner {max-width: 50% !important;}
 }
 @media (min-width:690px) and (max-width:768px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:440px}
@@ -4758,7 +4760,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 			width: 25%;
 			padding-top: 15%;
 			display: block;
-		}
+		}		
 	/* homapage responsive changes by Arti */
 }
 @media only screen and (max-width:1200px){
@@ -15227,7 +15229,7 @@ span.colon {
     /*min-height: 480px;*/
     /*border: 2px solid #e1e1e1;*/
 	/*position: relative;*/
-	/*height: 70vh*/;
+	height:80vh;
     padding: 0;
 }
 span.icon-webcam {
@@ -15245,13 +15247,12 @@ span.icon-webcam {
 	box-shadow: 0px 11px 24px rgba(0,0,0,.28);
     margin-bottom: 27px;
 }
-.tab-inner-frame iframe{
+.tab-inner-frame iframe {
     width: 100%;
-    height: 70vh;
-    /*position: absolute;
-    left: 0;
-    top: 0;*/
-	border: 2px solid #e1e1e1 !important;
+    height: 100%;
+    /* border: 2px solid #e1e1e1 !important; */
+    box-shadow: 0px 11px 24px rgba(0,0,0,.28);
+    border: none;
 }
 .sec-outgrowMagic {
     /*height: 90vh;*/
@@ -15592,7 +15593,36 @@ iframe.outgrow-video {
 
 	/* fade in images */
 
+	/* Preloader */
 
+	.preloader {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: #fff;
+		/* change if the mask should be a color other than white */
+		z-index: 9999;
+		/* makes sure it stays on top */
+	}
+
+	.status {
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 50%;
+		/* centers the loading animation horizontally on the screen */
+		top: 50%;
+		/* centers the loading animation vertically on the screen */
+		background-image: url("../images/logoAnim.gif");
+		/* path to your loading animation */
+		background-repeat: no-repeat;
+		background-position: center;
+		margin: -100px 0 0 -100px;
+		/* is width and height divided by two */
+	}
+	/* Preloader : end */
 
 
 /*end: new css by Arti */
