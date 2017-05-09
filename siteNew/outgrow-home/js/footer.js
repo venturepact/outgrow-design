@@ -257,9 +257,14 @@ function setUTMRefCookie() {
 	}
 }
 
-function display(hash) {
-	console.log('Hash received', hash);
-	jQuery('.hrefTarget > div').empty();
-	jQuery('.hrefTarget > div').prop('id', hash).attr('data-url', 'https://outgrow1.outgrow.co/'+hash+'?vHeight=1')
-	initIframe(hash);
+// function display(hash) {
+// 	console.log('Hash received', hash);
+// 	jQuery('.hrefTarget > div').empty();
+// 	jQuery('.hrefTarget > div').prop('id', hash).attr('data-url', 'https://outgrow1.outgrow.co/'+hash+'?vHeight=1')
+// 	initIframe(hash);
+// }
+
+function display(url) {
+	console.log('Display called', url)
+	jQuery('.hrefTarget').empty().append('<iframe src="'+url+'"></iframe>');
 }
