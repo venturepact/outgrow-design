@@ -1,4 +1,4 @@
- font kit start */
+
 @font-face {
     font-family: 'robotobold';
     src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'),
@@ -7190,9 +7190,9 @@ select:-webkit-autofill {
     /* End: Modal setup-payment */	
     .version-text{ float: left; line-height: 30px; color: #62696d; text-transform: uppercase; font-size: 13px;}
     .funnel-outer{ float: left; width:80%; background: #fff; margin-top: 20px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-bottom: 3px solid #d4d4d4;}
-    .funnel-outer .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; }
+    .funnel-outer .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; text-transform: uppercase; }
     .funnel-outer .header-text.text-right{ text-align: right; }
-    .funnel-outer .funnel-small-outer{ float: left; width:20%; padding: 10px; text-align: center; border-right:2px solid #f2f2f2; }
+    .funnel-outer .funnel-small-outer{ float: left; width:20%; padding: 10px; text-align: center; /*border-right:2px solid #f2f2f2; */position: relative; }
     .funnel-outer .funnel-small-outer:last-child{  border-right:none; }
     .funnel-outer .funnel-small-outer i{ font-size: 30px; margin-bottom: 10px;}
     .funnel-outer .funnel-small-outer h5{ font-size: 18px; margin-bottom: 0; margin-top: 0; color:#62696d;}
@@ -7206,7 +7206,7 @@ select:-webkit-autofill {
     .light-green{color:#5fcfb3;}
     .chart {width: 100%;  min-height: 300px; float: left;}
     .funnel-outer-graph{ float: left; width:80%; background: #fff; margin-top: 30px;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; border-bottom: 3px solid #68bce4;}
-    .funnel-outer-graph .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; }
+    .funnel-outer-graph .header-text{ float: left;padding:10px; font-size: 14px; color:#bec5c9; text-transform: uppercase; }
     .funnel-outer-graph .graph-outer{ float: left; width:100%; margin-top: 10px;}
 
     @media (min-width:0px) and (max-width:768px) {
@@ -7218,7 +7218,12 @@ select:-webkit-autofill {
         
     }
 
-
+.i-position{position: absolute; top: 65px; right: -13px; color:#bec5c9;}
+ @media (max-width:1024px) {}
+  @media (min-width:0px) and (max-width:1023px) { 
+      
+      .i-position{display:none}
+  }
 
 
     /*Funnel Design css  */
