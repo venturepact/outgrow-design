@@ -209,11 +209,11 @@
 						<span class="icon-rectangular-box"></span>
 					</div>
 					<div class="overflow-hidden">
-						<div class="video-img-inner">
+						<div class="video-img-inner video-img-inner-mob">
 							<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="changeHeightMob()"><span class="inside-circle">></span></span>
+							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>
 						</div>
 					</div>
 				</div>
@@ -225,11 +225,11 @@
 						<span class="icon-rectangular-box"></span>
 					</div>
 					<div class="overflow-hidden">
-						<div class="video-img-inner">
+						<div class="video-img-inner video-img-inner-res">
 							<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="changeHeightRes()"><span class="inside-circle">></span></span>
+							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>
 						</div>
 					</div>
 				</div>
@@ -241,12 +241,12 @@
 						<span class="icon-rectangular-box"></span>
 					</div>
 					<div class="overflow-hidden">
-						<div class="video-img-inner">
+						<div class="video-img-inner video-img-inner-web">
 							<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="changeHeightWeb()"><span class="inside-circle">></span></span>
+							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>
 						</div>
 					</div>
 				</div>
@@ -273,10 +273,10 @@
 										<img class='qode-frame-image' src='images/img-craftedtemp-tab.png'
 											alt='laptop frame' />
 										<div class="fadein">
-											<img id="f1" src='images/img-craftedtemp-tab01.png'>
-											<img id="f2" src='images/img-craftedtemp-tab02.png'>
-											<img id="f3" src='images/img-craftedtemp-tab03.png'>
 											<img id="f4" src='images/img-craftedtemp-tab04.png'>
+											<img id="f3" src='images/img-craftedtemp-tab03.png'>
+											<img id="f2" src='images/img-craftedtemp-tab02.png'>
+											<img id="f1" src='images/img-craftedtemp-tab01.png'>
 										</div>
 									</div>
 									<div class='qode-side-images'>
@@ -1740,7 +1740,18 @@
 	</script>
 	<script>
 	 jQuery(document).ready(function() {
-		 initIframe('58f866f5feba750011a15191');
+		 // simple slider js //
+		console.log('Before slider');
+		var swiper = new Swiper('.swiper-container', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true
+		});
+		console.log('After slider');
+
+		var swiper = new Swiper('.swiper-container-first', {
+			pagination: '.swiper-pagination',
+			paginationClickable: true
+		});
 		 //youtube video
 		 jQuery('.close').click(function(){
 			jQuery('iframe.outgrow-video').attr('src', jQuery('iframe.outgrow-video').attr('src'));
@@ -1847,24 +1858,22 @@
 			time: 1000
 		});
 
-		// simple slider js //
-		var swiper = new Swiper('.swiper-container', {
-			pagination: '.swiper-pagination',
-			paginationClickable: true
-		});
-
-		var swiper = new Swiper('.swiper-container-first', {
-			pagination: '.swiper-pagination',
-			paginationClickable: true
-		});
+		
 		appendParamsToUrl();
 		var query_params = location.search.split('=');
 		createCookie('referralCode',query_params[1],3);
 
 	});
 
-	function changeHeightWeb() {		
-		jQuery(".video-img-inner").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
+	function attachVid(type) {
+		if ('web' === type) changeHeightWeb();
+		if ('mob' === type) changeHeightMob();
+		if ('res' === type) changeHeightRes();
+	}
+
+	function changeHeightWeb() {	
+		console.log('Web');	
+		jQuery(".video-img-inner-web").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 		var xDiv = document.getElementById('video-main');
 
 		if (xDiv.style.height == '')
@@ -1874,21 +1883,23 @@
 	}
 
 	function changeHeightMob() {
+		console.log('Mob');
+		jQuery(".video-img-inner-mob").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 		var xDiv = document.getElementById('video-main-rs-mob');
 		if (xDiv.style.height == '')
 			xDiv.style.height = '260px';
 		else
 			xDiv.style.height = '';
-		jQuery(".video-img-inner").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 	}
 
 	function changeHeightRes() {
+		console.log('Res');
+		jQuery(".video-img-inner-res").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 		var xDiv = document.getElementById('video-main-rs');
 		if (xDiv.style.height == '')
 			xDiv.style.height = '460px';
 		else
 			xDiv.style.height = '';
-		jQuery(".video-img-inner").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 	}
 
 
@@ -1930,6 +1941,38 @@
 
 	</script>
 	<script>
+		jQuery(window).resize(function () {
+			console.log(jQuery(window).width())
+			if (jQuery(window).width() > 768) {
+				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>`);
+
+				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>`);
+			}
+			if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
+				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>`);
+
+				jQuery('.video-img-inner-web').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>`);
+			}
+			if (jQuery(window).width() <= 320) {
+				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>`);
+
+				jQuery('.video-img-inner-web').empty(`<img class="video-img" src="images/video-thumbnail.jpg" />
+							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
+							<span class="img-overlay"></span>
+							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>`);
+			}
+		})
 		jQuery(window).scroll(function() {
 			if (jQuery(this).scrollTop() > 70) {
 				jQuery("nav").addClass('nav-boxshadow');
