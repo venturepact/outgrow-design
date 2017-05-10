@@ -274,3 +274,14 @@ function display(url) {
         checkOrigin: false,
     },'#og-iframe');
 }
+jQuery(window).load(function () {
+	jQuery('img').each(function(){
+		console.log('Changing attr');
+		jQuery(this).attr('src',jQuery(this).attr('data-src'));
+	});
+	jQuery('.outgrow-video').each(function(){
+		jQuery(this).attr('src',jQuery(this).attr('data-src'));
+		//myVid	= document.getElementById("player");
+		//myVid.muted	=	true;
+	});
+})

@@ -2276,7 +2276,7 @@ label.control-label {
     line-height: normal;
     box-shadow: 0px 9px 18px 0px rgba(251,108,115,0.99);
     margin-top: 35px;
-	border-radius: 25px;
+	border-radius: 50px;
 	display: inline-flex;
 	float: none;
 	font-family: montserratregular;
@@ -3299,7 +3299,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-1-left .btn-buildcal.red i{display:inline-block;float:none;position:relative;margin-right:10px;top:5px;font-size:20px}
 	.section-1-left .btn-buildcal.red{width:100%;font-size:15px;padding:10px}
 	.img-bottom-text{top:10px}
-	.section-1-left .btn-bottominfo{width:96%;text-align:center}
+	.section-1-left .btn-bottominfo{width:100%;text-align:center}
 	.section-1-right{padding-left:0}
 	.sec1-box-left{float:left;width:100%;margin-top:40px;padding:0 20px}
 	.sec1-box1,.sec1-box2{width:45%;left:-1px;margin-bottom:2px;position:relative}
@@ -3488,7 +3488,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 
 	/* homepage responsive by arti */
 		.section.sec-integrations {margin-bottom: 50px;}
-		.sec-outgrowMagic .tab-outer-frame {right: 0; padding: 0px;}
+		.sec-outgrowMagic .tab-outer-frame {right: 0; padding: 0px; display: none;}
 		.sec-integration-title {margin-bottom: 30px;}
 		.sec-integrations .section-2-heading {margin-bottom: 30px;}
 		.sec-targetedSale .float-wrapper {height: auto; 
@@ -3508,7 +3508,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		section.sec-craftedTemps .full_section_inner {padding-top: 0px !important; padding-bottom: 35px !important;width:100% !important;}
 		.rs-hide-int-res {display: block !important;}
 		.rs-hide-int-mob {display: none !important;}		
-		.sec-outgrowMagic img.thumb-calc {margin-right: 20px;}
+		.sec-outgrowMagic img.thumb-calc {margin-right: 0px;}
 		.tab-inner-frame {border: none !important;}
 		.sec-outgrowMagic{padding: 0px 20px; /*height: auto !important;*/}
 		img.img-playIcon {width: 13%;}
@@ -3554,6 +3554,11 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		font-size: 18px;
 		border: 1px solid #fb6c73;
 	}
+	#video-main-rs-mob .inside-circle i.material-icons {
+		position: relative;
+		top: 0px;
+		font-size: 14px;
+	}
 	#video-main-rs-mob .video-img-wrapper .video-img-inner {
 		min-height: 110px;
 	}
@@ -3564,7 +3569,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		top: -175px !important;
 		position: relative;
 	}	
-	.sec-outgrowMagic img.thumb-calc{width: 80%;}
+	.sec-outgrowMagic img.thumb-calc{width: 85%;}
 }
 @media (min-width:375px) and (max-width:375px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:230px;padding:0}
@@ -3687,6 +3692,14 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		padding-bottom: 50px !important;
 	}
 	#video-main-rs.hide-height{padding-top: 0px;}
+	.calc-links a {
+		width: auto !important;
+		float: none !important;
+	}
+	.sec-outgrowMagic img.thumb-calc {
+		margin-right: 8px;
+		margin-bottom: 30px;
+	}
 }
 @media(min-width:320px) and (max-width:767px){
 	.menu-outer{display:none}
@@ -3734,7 +3747,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section1-left-cell{height:21vh}
 	.section-1-left .btn-buildcal i,.section-1-left .btn-buildcal.red i{display:inline-block;float:none;vertical-align:middle;margin-right: 2px;}
 	.section-1-left .video-btn{padding:12px;margin-left:10px;    font-size: 14px;}
-	.section-1-left .btn-bottominfo{width:96%}
+	.section-1-left .btn-bottominfo{width:100%}
 	.section-1-right{padding-left:0}
 	.sec1-box-left{float:left;width:100%;margin-top:0;padding:0 20px}
 	.sec1-box1,.sec1-box2{width:45%;left:-1px;margin-bottom:2px;position:relative}
@@ -3899,7 +3912,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.navbar-right{margin-top:10px}
 	.circle-value{float:left;margin-top:15px;width:100px}
 	.footer-img2{min-height:170px;float:left;margin-bottom:15px}
-	.section-1-left .btn-buildcal,.section-1-left .btn-buildcal.red{padding:13px 0px !important;font-size:12px;}
+	.section-1-left .btn-buildcal,.section-1-left .btn-buildcal.red{/*padding:13px 0px !important;font-size:12px;*/}
 	.section-1-left .btn-buildcal i{margin-right:3px;}
 	.section-1-left .video-btn{padding:10px 11px}
 	.section-4-left span span,.section-5-left span span{width:75%}
@@ -3923,7 +3936,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-1-left .video-btn{padding:13px;margin-left: 10px;font-size: 15px;}
 	.section-1-left .btn-buildcal{font-size: 15px;}
 	.section-1-left .btn-buildcal i{margin-right: 3px;}
-	.section-1-left .btn-bottominfo{width:94%}
+	.section-1-left .btn-bottominfo{width:100%}
 	.section-4-left{padding-left:0}
 	.section-7-left,.section-9-left{padding-left:50px}
 	.section-4-left span span,.section-5-left span span{width:80%}
@@ -3955,7 +3968,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	}
 	}
 @media (min-width:1281px) and (max-width:1350px){
-	.section-1-left .btn-buildcal{padding: 13px 14px !important;}
+	.section-1-left .btn-buildcal{/*padding: 13px 14px !important;*/}
 }
 @media (max-width:1366px){
 	.billing-grey-top h3.plan-title{font-size:20px}
@@ -4049,8 +4062,8 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-1-left .btn-buildcal.red{padding:15px 25px;font-size:14px}
 	.section-1-left .btn-buildcal.red i{font-size:20px}
 	
-	.sec3-box2 h3 {font-size: 21px;}
-	.sec3-box3 h3, .sec3-box4 h3{font-size: 21px;}
+	.sec3-box2 h3 {font-size: 19px;}
+	.sec3-box3 h3, .sec3-box4 h3{font-size: 19px;}
 	.sec3-box1inner h4 {font-size: 15px;}
 }
 @media only screen and (max-width:1023px){
@@ -4681,7 +4694,12 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		padding-top: 2px;
 		font-size: 24px;
 		border: 1px solid #fb6c73;
-	}			
+	}		
+	.video-img-inner span.inside-circle i{	
+		position: relative;
+		top: 0px;
+		font-size: 16px;
+	}
 	.fadein {
 		display: block !important;
 		left: -195px;
@@ -15245,14 +15263,14 @@ span.icon-webcam {
 }
 .sec-outgrowMagic img.thumb-calc{
 	box-shadow: 0px 11px 24px rgba(0,0,0,.28);
-    margin-bottom: 27px;
 }
 .tab-inner-frame iframe {
     width: 100%;
     height: 100%;
-    /* border: 2px solid #e1e1e1 !important; */
+    border: 2px solid #e1e1e1 !important; 
     box-shadow: 0px 11px 24px rgba(0,0,0,.28);
     border: none;
+	min-height: 80vh;
 }
 .sec-outgrowMagic {
     /*height: 90vh;*/
@@ -15477,10 +15495,14 @@ span.inside-circle {
     left: 10px;
     top: 10px;
     color: #fb6c73;
-    padding-top: 2px;
+    padding-top: 0px;
     border: 2px solid #fb6c73;
     font-size: 50px;
     font-family: montserratlight;
+}
+.inside-circle i.material-icons {
+    position: relative;
+    top: -3px;
 }
 span.img-overlay {
     background: rgba(0,0,0,0.5);
@@ -15594,36 +15616,114 @@ iframe.outgrow-video {
 	/* fade in images */
 
 	/* Preloader */
+		.preloader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: #fff;
+			/* change if the mask should be a color other than white */
+			z-index: 9999;
+			/* makes sure it stays on top */
+		}
 
-	.preloader {
-		position: fixed;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		background-color: #fff;
-		/* change if the mask should be a color other than white */
-		z-index: 9999;
-		/* makes sure it stays on top */
-	}
-
-	.status {
-		width: 200px;
-		height: 200px;
-		position: absolute;
-		left: 50%;
-		/* centers the loading animation horizontally on the screen */
-		top: 50%;
-		/* centers the loading animation vertically on the screen */
-		background-image: url("../images/logoAnim.gif");
-		/* path to your loading animation */
-		background-repeat: no-repeat;
-		background-position: center;
-		margin: -100px 0 0 -100px;
-		/* is width and height divided by two */
-	}
+		.status {
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			/* centers the loading animation horizontally on the screen */
+			top: 50%;
+			/* centers the loading animation vertically on the screen */
+			background-image: url("../images/logoAnim.gif");
+			/* path to your loading animation */
+			background-repeat: no-repeat;
+			background-position: center;
+			margin: -100px 0 0 -100px;
+			/* is width and height divided by two */
+		}
 	/* Preloader : end */
 
+
+	/* Start: Modal embed */
+		.calcEmbed-modal {
+			padding: 0px !important;
+			background: rgba(0,0,0,0.6);
+		}
+
+		.calcEmbed-modal .modal-xlg{
+			float: left;
+			width: 100%;
+			margin: 0px;
+		}
+
+		.calcEmbed-modal .modal-dialog-video {
+			margin: 0px auto;
+			width: 100%;
+			/*margin: 0 auto;
+			position: fixed;
+			top: 0;
+			left: 0;*/
+		}
+		.calcEmbed-modal iframe {
+			width: 100%;
+			height: 100vh;
+			border: none;
+		}
+		.calcEmbed-modal .modal-content {
+			border-radius: 0px;
+			/* border: 1px solid #e9eef0; */
+			float: left;
+			width: 100%;
+			height: 100%;
+			box-shadow: none;
+			border: none;
+			background: transparent;
+		}
+		.calcEmbed-modal .modal-header {
+			padding: 20px 25px;
+			border-bottom: none;
+		}
+		.calcEmbed-modal .modal-logo{
+			margin-bottom: 50px;
+			margin-top: 40px;
+		}
+		.calcEmbed-modal .modal-body {
+			position: relative;
+			padding: 0px;
+			float: left;
+			width: 100%;
+		}
+		.calcEmbed-modal button.close.btn-close {
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			opacity: 0.9;
+			z-index: 9;
+			height: 35px;
+			width: 35px;
+			background: rgba(0,0,0,0.4);
+			border-radius: 50%;
+		}
+		.calcEmbed-modal button.close.btn-close i.material-icons{
+			font-size: 24px;
+			color: #fff;
+			text-shadow: none;
+			vertical-align: middle;
+		}
+		.calcEmbed-modal button.close.btn-close:hover {
+			opacity: 1;
+		}
+	/* End: Modal embed */
+
+	.calc-links a {
+		float: left;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.calc-links a{border: 2px solid transparent;}
+	.calc-links a.active img {border: 2px solid #fb5f66;}
 
 /*end: new css by Arti */
 
