@@ -405,6 +405,15 @@ address,blockquote .small,blockquote footer,blockquote small,dd,dt,pre{line-heig
 	.section-8 .slider-sa{
 		min-height:630px;
 	}
+	/* homepage responsive css by Arti */
+		.swiper-slide.swiper-slide-prev {
+			padding: 68px 0px !important;
+		}
+		.swiper-slide.swiper-slide-next {
+			padding: 68px 0px !important;
+		}
+
+	/* end: homepage responsive css by Arti */
 }
 .small,small{font-size:85%}
 .mark,mark{padding:.2em;background-color:#fcf8e3}
@@ -3570,6 +3579,20 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		position: relative;
 	}	
 	.sec-outgrowMagic img.thumb-calc{width: 85%;}
+	.swiper-slide.swiper-slide-active {
+		width: 60% !important;
+		margin-right: 10px !important;
+	}
+	div.swiper-slide.swiper-slide-prev {
+		padding: 40px 0px !important;
+		width: 20% !important;
+		margin-right: 10px !important;
+	}
+	div.swiper-slide.swiper-slide-next {
+		padding: 40px 0px !important;
+		width: 20% !important;
+		margin-right: 10px !important;
+	}
 }
 @media (min-width:375px) and (max-width:375px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:230px;padding:0}
@@ -3638,6 +3661,12 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.w100{width:100%}
 	.ebook-img {width: 45%;}
 	.qode-expanding-images .qode-expanding-images-inner {max-width: 50% !important;}
+	.swiper-slide.swiper-slide-prev {
+		padding: 68px 0px !important;
+	}
+	.swiper-slide.swiper-slide-next {
+		padding: 68px 0px !important;
+	}
 }
 @media (min-width:690px) and (max-width:768px){
 	.section-7 .slider-sa,.section-8 .slider-sa,.section-9 .slider-sa{min-height:440px}
@@ -3897,6 +3926,15 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		img.img-playIcon {width: 13%;}
 		#video-main-rs{display: none !important;}
 		.sec-craftedTemps .full_section_inner{margin: 40px auto 0px !important;}
+		.tab-inner-frame iframe{display: none;}
+		.calc-links a {
+			width: auto !important;
+			float: none !important;
+		}
+		.sec-outgrowMagic img.thumb-calc {
+			margin-right: 8px;
+			margin-bottom: 30px;
+		}
 	/* homepage res changes by Arti */
 
 }
@@ -4680,32 +4718,40 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.qode-card-slider-holder-outer .controls .button.next{right:30px}
 }
 @media only screen and (max-width:480px) and (min-width:480px){
-	.video-img-inner span.video-playIcon {
-		width: 50px;
-		height: 50px;
-		left: 45%;
-		top: 23%;
-	}
-	.video-img-inner span.inside-circle {
-		width: 40px;
-		height: 40px;
-		left: 5px;
-		top: 5px;
-		padding-top: 2px;
-		font-size: 24px;
-		border: 1px solid #fb6c73;
-	}		
-	.video-img-inner span.inside-circle i{	
-		position: relative;
-		top: 0px;
-		font-size: 16px;
-	}
-	.fadein {
-		display: block !important;
-		left: -195px;
-		top: -280px;
-		position: relative;
-	}
+	/* homeapge responsive css by Arti */
+		.video-img-inner span.video-playIcon {
+			width: 50px;
+			height: 50px;
+			left: 45%;
+			top: 23%;
+		}
+		.video-img-inner span.inside-circle {
+			width: 40px;
+			height: 40px;
+			left: 5px;
+			top: 5px;
+			padding-top: 2px;
+			font-size: 24px;
+			border: 1px solid #fb6c73;
+		}		
+		.video-img-inner span.inside-circle i{	
+			position: relative;
+			top: 0px;
+			font-size: 16px;
+		}
+		.fadein {
+			display: block !important;
+			left: -195px;
+			top: -280px;
+			position: relative;
+		}
+		.swiper-slide.swiper-slide-prev {
+			padding: 50px 0px !important;
+		}
+		.swiper-slide.swiper-slide-next {
+			padding: 50px 0px !important;
+		}
+	/* end: homeapge responsive css by Arti */
 }
 @media only screen and (max-width:480px){
 	.qode-card-slider-holder-outer .controls.arrows .button,.qode-expanding-images .qode-side-image.qode-side-image-outer{display:none}
@@ -15742,13 +15788,13 @@ iframe.outgrow-video {
 		width: 25% !important;
 		height: 100%;
 		padding: 90px 0px;
-		opacity: 0.3;
+		opacity: 0.5;
 	}
 	.swiper-slide.swiper-slide-next {
 		width: 25% !important;
 		height: 100%;
 		padding: 90px 0px;
-		opacity: 0.3;
+		opacity: 0.5;
 	}
 
 /*end: new css by Arti */
