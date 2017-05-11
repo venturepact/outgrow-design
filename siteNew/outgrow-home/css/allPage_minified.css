@@ -15270,7 +15270,7 @@ span.icon-webcam {
     border: 2px solid #e1e1e1 !important; 
     box-shadow: 0px 11px 24px rgba(0,0,0,.28);
     border: none;
-	min-height: 80vh;
+	min-height: 75vh;
 }
 .sec-outgrowMagic {
     /*height: 90vh;*/
@@ -15734,6 +15734,21 @@ iframe.outgrow-video {
 	.swiper-button-prev{
 		background-image:url(../images/swiper-button-prev.png) !important;
 		background-size: 20px 35px !important;
+	}
+	.swiper-slide.swiper-slide-active {
+		width: 50% !important;
+	}
+	.swiper-slide.swiper-slide-prev {
+		width: 25% !important;
+		height: 100%;
+		padding: 90px 0px;
+		opacity: 0.3;
+	}
+	.swiper-slide.swiper-slide-next {
+		width: 25% !important;
+		height: 100%;
+		padding: 90px 0px;
+		opacity: 0.3;
 	}
 
 /*end: new css by Arti */
