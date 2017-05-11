@@ -27,6 +27,8 @@
 	<!-- <link rel="stylesheet" href="css/minified.css"> -->
 	<link rel="stylesheet" href="css/allPage_minified.css">
 
+	<!-- swiper css -->
+	<link rel="stylesheet" href="css/swiper.min.css">
 
 	<!-- Analytics Tracking Snippets Starts -->
 
@@ -1017,8 +1019,11 @@
 					</div>
 				</div>
 				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
 			</div>
-			<div class="swiper-pagination"></div>
 		</div>
 	</div>
 	<!--section testimonial -->
@@ -1181,6 +1186,9 @@
 	<script src="js/plans.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="js/loader/resizer.js"></script>
+
+	<!-- swiper js -->
+	<script src="js/swiper.min.js"></script>
 	<script>
 	  	jQuery.material.init();
 	</script>
@@ -1190,13 +1198,25 @@
 		console.log('Before slider');
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
-			paginationClickable: true
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			// spaceBetween: 30,
+			// centeredSlides: true,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
 		});
 		console.log('After slider');
 
 		var swiper = new Swiper('.swiper-container-first', {
 			pagination: '.swiper-pagination',
-			paginationClickable: true
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			// spaceBetween: 30,
+			// centeredSlides: true,
+			autoplay: 2500,
+			autoplayDisableOnInteraction: false
 		});
 		 //youtube video
 		 jQuery('.close').click(function(){
