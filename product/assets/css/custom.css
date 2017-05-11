@@ -7189,3 +7189,46 @@ select:-webkit-autofill {
     
     /* End: Modal setup-payment */	
 	
+
+
+
+/*new integration tab css*/
+
+.integrationTab-outer{ float: left; width:80%;}
+.integrationTab-outer .heading{font-size: 20px; color: #62696d; text-transform: capitalize; margin-top: 0; font-family: montserratlight;}
+.integrationTab-outer .heading span{color:#8e989f; font-size:14px; }
+.integrationTab-outer .dropdown-outer { float: left; width:100%; margin-top: 10px; margin-bottom: 10px;}
+.integrationTab-outer .dropdown-outer i{ float: left; margin-right: 10px;}
+.integrationTab-outer .datepicker-outer {border: 1px solid #bec5c9;width: 100%;padding: 4px 10px 4px 20px;float: left;color: #636f76;z-index: 9;background: none;cursor: pointer;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;border-radius: 3px; background: #fff;}
+.integrationTab-outer select {border: 1px solid #bec5c9;min-width: 10%; max-width: 40%;padding: 4px 10px 4px 20px;float: left;color: #636f76;z-index: 9;background: none;cursor: pointer;-webkit-border-radius: 3px;
+-moz-border-radius: 3px;border-radius: 3px; margin-right: 10px; text-align: left; background: #fff;}
+.integrationTab-outer .dp-outer { position: relative; width: 200px; float: left; z-index: 9;}
+.integrationTab-outer .dp-outer .daterangepicker.dropdown-menu {top: 366px !important;left: 560px !important; width: 492px !important;}
+.integrationTab-outer .daterangepicker.dropdown-menu.show-calendar.opensright{ width:495px !important;}
+.integrationTab-outer .status-outer{ float: right; padding: 10px; min-height: 80px; min-width: 80px; border: 1px solid #dae2e6; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-left: 10px; background: #fff; }
+.integrationTab-outer .status-outer h2{ text-align: center; font-size: 20px; margin-top: 5px; margin-bottom: 0;}
+.integrationTab-outer .status-outer h2.success{ color:#00c017}
+.integrationTab-outer .status-outer h2.fail{ color:#fb545b}
+.integrationTab-outer .status-outer h2.wait{ color:#dfb238}
+.integrationTab-outer .status-outer .total-status{ float: left; width:100%; font-size: 12px; color:#62696d; margin-top: 10px;}
+.integrationTab-outer .status-outer .total-status{ float: left; }
+.integrationTab-outer .status-outer .total-status i{ font-size: 12px; float: left; padding-left: 5px; padding-top: 2px;  padding-right: 2px;}
+.integrationTab-outer .status-outer .total-status i.success{ color:#00c017}
+.integrationTab-outer .status-outer .total-status i.fail{ color:#fb545b}
+.integrationTab-outer .status-outer .total-status i.wait{ color:#dfb238}
+.integrationTab-outer i.success{ color:#00c017}
+.integrationTab-outer i.fail{ color:#fb545b}
+.integrationTab-outer i.wait{ color:#dfb238}
+.integrationTab-outer .table-outer{ margin-top: 40px;}
+.integrationTab-outer table  th {padding: 8px 10px;border-bottom: 1px solid #dae2e6; color:#62696d; font-size: 13px;}
+.integrationTab-outer table  td {padding: 8px 10px; border-bottom: 1px solid #dae2e6; color:#62696d; font-size: 13px;}
+.integrationTab-outer table  td i{ font-size: 12px;}
+.integrationTab-outer table  td span{ color:#8e989f}
+.integrationTab-outer table  td .small-text{  font-size: 11px; display: inline;}
+.integrationTab-outer table tr:hover{background-color:#f9f9f9}
+.integrationTab-outer table td a{ font-size: 12px; text-transform: uppercase; color:#62696d;}
+.integrationTab-outer table td a:hover{ color:#fb545b;}
+.dataTables_paginate {text-align: center; margin-bottom: 20px; padding-top: 20px;}
+
+/*new integration tab css end*/

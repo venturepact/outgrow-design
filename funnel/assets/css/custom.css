@@ -7198,7 +7198,7 @@ select:-webkit-autofill {
     .funnel-outer .funnel-small-outer h5{ font-size: 18px; margin-bottom: 0; margin-top: 0; color:#62696d;}
     .funnel-outer .funnel-small-outer span{ font-size: 12px; text-transform: uppercase;}
     .funnel-outer .mb10{ margin-bottom: 10px;}  
-    .funnel-outer .graph-outer{ float: left; width:100%; margin-top: 10px;}
+    .funnel-outer .graph-outer{ float: left; width:100%; margin-top: 10px; padding:10px;}
     .light-red{color: #fe8c75;}
     .yellow{color: #f9ce4f;}
     .light-blue{ color:#68bce4}
@@ -7224,6 +7224,7 @@ select:-webkit-autofill {
       
       .i-position{display:none}
   }
+
 
 
     /*Funnel Design css  */
