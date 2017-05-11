@@ -216,7 +216,7 @@
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
 							<span class="video-playIcon" onclick="attachVid('mob')">
-								<span class="inside-circle"><i class="material-icons">play_circle_outline</i></span>
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
 					</div>
@@ -234,7 +234,7 @@
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
 							<span class="video-playIcon" onclick="attachVid('res')">
-								<span class="inside-circle"><i class="material-icons">play_circle_outline</i></span>
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
 					</div>
@@ -253,7 +253,7 @@
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="" data-src="images/video-img-playIcon.png" />-->
 							<span class="video-playIcon" onclick="attachVid('web')">
-								<span class="inside-circle"><i class="material-icons">play_circle_outline</i></span>
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
 					</div>
@@ -1438,31 +1438,31 @@
 			if (jQuery(window).width() > 768) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 320) {
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_circle_outline</i></span></span>`);
+							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 		})
 		jQuery(window).scroll(function() {
