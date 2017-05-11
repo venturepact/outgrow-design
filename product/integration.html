@@ -13,7 +13,7 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <!-- Your custom styles -->
     <link href="assets/css/extra.css" rel="stylesheet">
-	<link href="assets/css/custom.css" rel="stylesheet">
+	
     <link href="assets/css/analytics.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/bootstrap-datepicker3.css">
 	<!-- dashboard css-->
@@ -28,8 +28,9 @@
     <link href="assets/css/bootstrap-switch.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="assets/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">-->
-	<link rel="stylesheet" href="assets/css/daterangepicker.css">
+	 <!--<link rel="stylesheet" href="https://cdn.datatables.net/1.10.12/css/jquery.dataTables.min.css">-->
+	<link rel="stylesheet" href="assets/css/daterangepicker.css" />
+    <link href="assets/css/custom.css" rel="stylesheet" />
 
 </head>
 
@@ -275,7 +276,7 @@
 		 
 		   <!-- Start: wrapper -->
         <section class="wrapper">
-            <div class="col-md-12 col-sm-12 col-xs-12 np"  style="background:#f6f8f9;">
+            <div class="col-md-12 col-sm-12 col-xs-12 np">
                 <!-- Start: Left Sidebar -->
                 <div class="left-sidebar analytics-left-side col-md-3 col-sm-3 col-xs-3 np">
                     <div id="" class="tabbable tabs-left">
@@ -308,19 +309,18 @@
 										<i class="material-icons">traffic</i>
 									</span>
                                     <div class="left-sidebar-title">
-                                        <h6 >Traffic Details</h6>
+                                        <h6 class="">Traffic Details</h6>
                                         <span class="">Get deeper insights about your visitors</span>
                                     </div>
                                 </a>
                             </li>
-							 <li class="">
-                                <a href="#funnel" data-toggle="tab">
-                                    <span class="left-sidebar-icon noti-icon">									
-										<i class="material-icons">filter_list</i>
+                             <li class="">
+                                <a href="#integration" data-toggle="tab">
+                                    <span class="left-sidebar-icon noti-icon">
+										<i class="material-icons">traffic</i>
 									</span>
                                     <div class="left-sidebar-title">
-                                        <h6 >Funnel Visualisation</h6>
-                                        <span class="">Get deeper insights about your calculator’s traffic data</span>
+                                        <h6 class="">Integrations</h6>
                                     </div>
                                 </a>
                             </li>
@@ -329,17 +329,13 @@
                 </div>
                 <!-- End: Left Sidebar -->
                 <!-- Start: wrapper content -->
-                <div class="wrapper-content col-md-9 col-sm-9 col-xs-9 analytics-mt0 pb30">
+                <div class="wrapper-content col-md-9 col-sm-9 col-xs-9 analytics-mt0">
                     <div class="col-md-12 col-sm-12 col-xs-12 np">
                         <div class="tab-content tabs-wrapper col-md-12 col-sm-12 col-xs-12 np"> 
                             <!-- Start: overview (1) -->
                             <div class="tab-pane active " id="overview">
 								 <div class="col-md-12 col-sm-12 col-xs-12 ">
-									<div class="col-md-6 col-sm-12 col-xs-12 ">
-										<div class="graph-val"><span class="red"></span> India (55%)</div>
-										<div class="graph-val"><span class="blue"></span> India (55%)</div>
-									</div>
-									<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
+									<div class="col-md-6 col-sm-12 col-xs-12 pull-right ">
 										<div class="dp-outer ">
 											<i class="material-icons icon-left">date_range</i>
 											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
@@ -348,49 +344,43 @@
 									</div>
 								 </div>
                                 <div class="col-md-12 col-sm-12 col-xs-12 ">
-									<!--<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-									<div id="chart_div"></div>-->
-									 <div id="area-example" style="height: 300px;"></div>
+									<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+									<div id="chart_div"></div>
                                 </div>
 								<div class="col-md-12 col-sm-12 col-xs-12 analytics-mt20">
 									<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
 										<h6><i class="material-icons">people</i> Unique/  TotalVisitors</h6>
 										<h4>2/4</h4>
 										<div class="pull-left">
-											<!--<div id="chart_div1" style="width: 160px; height:30px;"></div>-->
-											<div id="chart-container"></div>
+											<div id="chart_div1" style="width: 160px; height:30px;"></div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
 										<h6><i class="material-icons">person_add</i> Conversions</h6>
 										<h4>3</h4>
 										<div class="pull-left">
-											<!--<div id="chart_div2" style="width: 160px; height:30px;"></div>-->
-											<div id="chart-container1"></div>
+											<div id="chart_div2" style="width: 160px; height:30px;"></div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
 										<h6><i class="material-icons">trending_up</i> Coversion Rate</h6>
 										<h4>60%</h4>
 										<div class="pull-left">
-											<!--<div id="chart_div3" style="width: 160px; height:30px;"></div>-->
-											<div id="chart-container2"></div>
+											<div id="chart_div3" style="width: 160px; height:30px;"></div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
 										<h6><i class="material-icons">query_builder</i> Avg Length of Visit</h6>
 										<h4>10 Sec</h4>
 										<div class="pull-left">
-											<!--<div id="chart_div4" style="width: 160px; height:30px;"></div>-->
-											<div id="chart-container3"></div>
+											<div id="chart_div4" style="width: 160px; height:30px;"></div>
 										</div>
 									</div>
 									<div class="col-md-2 col-sm-12 col-xs-12 analytics-box-outer">
 										<h6><i class="material-icons">record_voice_over</i> Avg. Responses</h6>
 										<h4>2/4</h4>
 										<div class="pull-left">
-											<!--<div id="chart_div5" style="width: 160px; height:30px;"></div>-->
-											<div id="chart-container4"></div>
+											<div id="chart_div5" style="width: 160px; height:30px;"></div>
 										</div>
 									</div>
 								</div>
@@ -438,8 +428,7 @@
 								
 								<div class="col-md-12 col-sm-12 col-xs-12 details-table-outer" >
 									<div class="table-responsive">
-									<table id="myTable" class="display table" cellspacing="0" width="100%"></table>
-									<!-- <table id="myTable" class="display table" cellspacing="0" width="100%">
+									<table id="myTable" class="display table" cellspacing="0" width="100%">
 										<thead>
 											<tr class="blue-border">
 												<th></th>
@@ -802,7 +791,7 @@
 												<td><a href="#">View Details</a></td>
 											</tr>
 										</tbody>
-									</table> -->
+									</table>
 									<div class="col-md-12 col-md-12 col-md-12 text-center hide">
 										<ul class="pagination">
 										  <li><a href="#">1</a></li>
@@ -820,7 +809,7 @@
                             <!-- Start: traffic (3) -->
                             <div class="tab-pane" id="traffic">
                                <div class="col-md-12 col-sm-12 col-xs-12 ">
-									<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
+									<div class="col-md-6 col-sm-12 col-xs-12 pull-right ">
 										<div class="dp-outer ">
 											<i class="material-icons icon-left">date_range</i>
 											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
@@ -832,24 +821,23 @@
 									<div class=" traffic-graph-outer">
 										<div class="col-md-5 col-sm-12 col-xs-12 np">
 											<h4>Top Geographies</h4>
+											<h6><span class="red"></span> India (55%)</h6>
+											<h6><span class="green"></span> Australia (20%)</h6>
+											<h6><span class="sky"></span> U.S.A (15%)</h6>
 										</div>
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<div id="regions_div" ></div>
-										</div>
-										<div class="dark-loader-outer hide">
-											<div class="loader"></div>
 										</div>
 									</div>
 									<div class="traffic-graph-outer">
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<h4>Devices</h4>
+											<h6><span class="orange"></span> Desktop Computers (55%)</h6>
+											<h6><span class="ex-light-green"></span> Laptops (30%)</h6>
+											<h6><span class="sky"></span> Mobile Phones & Tablets (15%)</h6>
 										</div>
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<div id="piechart" class="chart-position" ></div>
-										</div>
-										<div class="light-loader-outer hide">
-											<div class="loader"></div>
-											<a class="icon-link"><i class="material-icons">refresh</i></a>
 										</div>
 									</div>
 							   </div>
@@ -857,6 +845,9 @@
 									<div class="traffic-graph-outer">
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<h4>Traffic Sources</h4>
+											<h6><span class="orange"></span> Direct Access (55%)</h6>
+											<h6><span class="ex-light-green"></span> Facebook (20%)</h6>
+											<h6><span class="sky"></span> Twitter (15%)</h6>
 										</div>
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<div id="piechart1" class="chart-position" ></div>
@@ -865,6 +856,9 @@
 									<div class="traffic-graph-outer">
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<h4>Browser</h4>
+											<h6><span class="orange"></span> Chrome Os Desktop (55%)</h6>
+											<h6><span class="ex-light-green"></span> Safari (Iphone) (30%)</h6>
+											<h6><span class="sky"></span> Firefox (Android) (15%)</h6>
 										</div>
 										<div class="col-md-6 col-sm-12 col-xs-12 np">
 											<div id="piechart2" class="chart-position" ></div>
@@ -874,82 +868,151 @@
                             </div>
                             <!-- End: traffic (3) -->
 
-							   <!-- Start: finnel (4) -->
-                            <div class="tab-pane" id="funnel">
+                              <!-- Start: integration (4) -->.
+
+
+                            <div class="tab-pane" id="integration">
                                <div class="col-md-12 col-sm-12 col-xs-12 ">
-								   <div class="col-md-3 col-sm-12 col-xs-12">
-									   	<div class="version-text">Funnel Version</div>
-										<div class="dp-outer ">
-											<i class="material-icons icon-left">date_range</i>
-											<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
-											<i class="material-icons icon-right">keyboard_arrow_down</i>
-										</div>
-								   </div>
-									<div class="col-md-6 col-sm-12 col-xs-12 pull-right np">
-										
-									</div>
-								 </div>
-							    <div class="col-md-12 col-sm-12 col-xs-12 ">
-									<div class="funnel-outer">
-										<div class="col-md-12 col-sm-12 col-xs-12 np mb10">
-											<div class="col-md-6 col-sm-12 col-xs-12 header-text ">
-												User engagement across Quiz 
+									<div class="integrationTab-outer">
+                                        <div class="col-md-12 col-sm-12 col-xs-12 np ">
+                                            <div class="col-md-6 col-sm-12 col-xs-12 np ">												
+													<h1 class="heading">Task List <span>- Mailchimp</span></h1>
+													<div class="dropdown-outer">
+														<i class="material-icons">filter_list</i>
+														<select>
+															<option>option 1</option>
+															<option >option 2</option>
+															<option >option 3</option>
+															<option >option 4</option>
+														</select>
+														<div class="dp-outer ">
+															<i class="material-icons icon-left">date_range</i>
+															<input class="input-daterange-datepicker datepicker-outer" type="text" name="daterange" value="01/01/2015 - 01/31/2016"/>
+															<i class="material-icons icon-right">keyboard_arrow_down</i>
+														</div>
+												</div>
+                                            </div>
+                                            <div class="col-md-6 col-sm-12 col-xs-12 np ">
+												<div class="status-outer">
+													<h2 class="wait">999</h2>
+													<div class="total-status"><i class="material-icons wait">query_builder</i> <span>Waiting</span></div>
+												</div>
+												<div class="status-outer">
+													<h2 class="fail">8</h2>
+													<div class="total-status"><i class="material-icons fail">info</i> <span>Failed</span></div>
+												</div>												
+												<div class="status-outer">
+													<h2 class="success">2K</h2>
+													<div class="total-status"><i class="material-icons success ">check_circle</i> <span>Sent</span></div>
+												</div>
 											</div>
-											<div class="col-md-6 col-sm-12 col-xs-12 header-text text-right">
-												Total visits: 25,800
-											</div>
-										</div>
-								<div class="col-md-12 col-sm-12 col-xs-12 np">		
-									<div class="funnel-small-outer">
-										<i class="material-icons light-red">visibility</i>
-										<h5>8520</h5>
-										<span class="light-red">Unique Visits</span>
-										<i class="material-icons i-position">trending_flat</i>
-									</div>
-									<div class="funnel-small-outer">
-										<i class="material-icons yellow">touch_app</i>
-										<h5>85%</h5>
-										<span class="yellow">Started: 5820</span>
-										<i class="material-icons i-position">trending_flat</i>
-									</div>
-									<div class="funnel-small-outer">
-										<i class="material-icons light-blue">flag</i>
-										<h5>38%</h5>
-										<span class="light-blue">completed: 5780</span>
-										<i class="material-icons i-position">trending_flat</i>
-									</div>
-									<div class="funnel-small-outer">
-										<i class="material-icons p-green">face</i>
-										<h5>20%</h5>
-										<span class="p-green">leads: 400</span>
-										<i class="material-icons i-position">trending_flat</i>
-									</div>
-									<div class="funnel-small-outer">
-										<i class="material-icons light-green">thumb_up</i>
-										<h5>20%</h5>
-										<span class="light-green">Engagement: 400</span>
-									</div>
-								</div>
-								<div class="graph-outer">
-									 <div id="chart_div" class="chart"></div>
-								</div>
-							   </div>
-							   <div class="funnel-outer-graph">
-										<div class="col-md-12 col-sm-12 col-xs-12 np mb10">
-											<div class="col-md-6 col-sm-12 col-xs-12 header-text ">
-												Questions engagement
-											</div>
-											<div class="col-md-6 col-sm-12 col-xs-12 header-text text-right">
+                                        </div>
+										<div class="col-md-12 col-sm-12 col-xs-12 np">
+											<div class="table-responsive table-outer">
+											<table id="example" class="display" cellspacing="0" width="100%">
+												<thead>
+													<tr>
+														<th>Name</th>
+														<th>Status</th>
+														<th>Date</th>
+														<th>Deatils</th>
+														
+													</tr>
+												</thead>
 												
-											</div>
+												<tbody>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons wait">query_builder</i> Waiting for Sync</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)" data-toggle="modal" data-target="#intigration-popup">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons wait">query_builder</i> Waiting for Sync</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+														
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons success">check_circle</i> Synced successfully</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons success">check_circle</i> Synced successfully</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons success">check_circle</i> Synced successfully</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons success">check_circle</i> Synced successfully</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons fail">info</i> Failed to Sync</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+														<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons fail">info</i> Failed to Sync</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+													<tr>
+													<td>
+															Neha<br/>
+															<span>neha@outgrow.co</span>
+														</td>
+														<td><i class="material-icons fail">info</i> Failed to Sync</td>
+														<td>1 / 14 / 2017,<div class="small-text"> 7:20:24 PM</div></td>
+														<td><a href="javascript:void(0)">View Details</td>
+													</tr>
+												</tbody>
+											</table>	
+											</div>		
 										</div>
-							
-								<div class="graph-outer">
-									 <div id="chart_div-1" class="chart"></div>
-								</div>
-							   </div>
+                                    </div>
+								 </div>
+							 
+							 
                             </div>
-                            <!-- End: traffic (4) -->
+                            <!-- End: integration (4) -->
 
                            
                         </div>
@@ -963,7 +1026,6 @@
 		
 		<div class="user-detail-outer">
 			<div class="top-section">
-				<div class="clear-set"><i class="material-icons">clear</i></div>
 				<div class="name-circle">hg</div>
 				<div class="detail-section">
 					<h4>Harmeet Singh</h4>
@@ -1009,6 +1071,48 @@
 		
 	</div>	
         <!-- End: Header -->
+
+
+	<!-- Start: Modal Integration -->
+	<div id="intigration-popup" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-idea ">
+			<!-- Modal content-->
+			<div class="modal-content">				 
+					<div class="modal-body">
+						<div class="modal-header">	
+							<h4 class="modal-title">data for Neha - neha@outgrow.co - Waiting for Sync</h4>
+						</div> 
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="content-area" >
+						<div class="json-outer scrollbar">
+							<div class="company-logo-outer">
+								<img src="assets/images/outgrow-logo.png" alt="" >
+							</div>
+							<div class="inner-section force-overflow slim-style" >
+								Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. 	
+							</div>
+						</div>
+						<div class="json-outer scrollbar">
+							<div class="company-logo-outer">
+								<img src="assets/images/mail-chimp.png" alt="" >
+							</div>
+							<div class="inner-section force-overflow slim-style" > </div>
+						</div>
+					</div>			
+				</div>
+				 <div class="modal-footer">
+					<a class="button-link ripple-light" href="#">Select</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Modal Integration -->
+
+
+
+
+
          <!-- BEGIN: PAGE SCRIPTS -->
         <script type="text/javascript" src="assets/js/jquery.min.js"></script>
 		
@@ -1034,68 +1138,14 @@
 		<script type="text/javascript" src="https://cdn.datatables.net/1.10.12/js/jquery.dataTables.min.js"></script>
 		<script type="text/javascript" src="assets/js/moment.js"></script>
 		<script type="text/javascript" src="assets/js/daterangepicker.js"></script>
-		<script type="text/javascript" src="assets/js/fusioncharts.js"></script>
-		<script type="text/javascript" src="assets/js/fusioncharts.widgets.js"></script>
-		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+		
         <script type="text/javascript">
         // Modal slide effect js
         $(document).on('click', '.next-step', function(e) {
                 
         });
 
-var dataSet = [
-    [ "Tiger Nixon", "System Architect", "Edinburgh", "5421", "2011/04/25", "$320,800" ],
-    [ "Garrett Winters", "Accountant", "Tokyo", "8422", "2011/07/25", "$170,750" ],
-    [ "Ashton Cox", "Junior Technical Author", "San Francisco", "1562", "2009/01/12", "$86,000" ],
-    [ "Cedric Kelly", "Senior Javascript Developer", "Edinburgh", "6224", "2012/03/29", "$433,060" ],
-    [ "Airi Satou", "Accountant", "Tokyo", "5407", "2008/11/28", "$162,700" ],
-    [ "Brielle Williamson", "Integration Specialist", "New York", "4804", "2012/12/02", "$372,000" ],
-    [ "Herrod Chandler", "Sales Assistant", "San Francisco", "9608", "2012/08/06", "$137,500" ],
-    [ "Rhona Davidson", "Integration Specialist", "Tokyo", "6200", "2010/10/14", "$327,900" ],
-    [ "Colleen Hurst", "Javascript Developer", "San Francisco", "2360", "2009/09/15", "$205,500" ],
-    [ "Sonya Frost", "Software Engineer", "Edinburgh", "1667", "2008/12/13", "$103,600" ],
-    [ "Jena Gaines", "Office Manager", "London", "3814", "2008/12/19", "$90,560" ],
-    [ "Quinn Flynn", "Support Lead", "Edinburgh", "9497", "2013/03/03", "$342,000" ],
-    [ "Charde Marshall", "Regional Director", "San Francisco", "6741", "2008/10/16", "$470,600" ],
-    [ "Haley Kennedy", "Senior Marketing Designer", "London", "3597", "2012/12/18", "$313,500" ],
-    [ "Tatyana Fitzpatrick", "Regional Director", "London", "1965", "2010/03/17", "$385,750" ],
-    [ "Michael Silva", "Marketing Designer", "London", "1581", "2012/11/27", "$198,500" ],
-    [ "Paul Byrd", "Chief Financial Officer (CFO)", "New York", "3059", "2010/06/09", "$725,000" ],
-    [ "Gloria Little", "Systems Administrator", "New York", "1721", "2009/04/10", "$237,500" ],
-    [ "Bradley Greer", "Software Engineer", "London", "2558", "2012/10/13", "$132,000" ],
-    [ "Dai Rios", "Personnel Lead", "Edinburgh", "2290", "2012/09/26", "$217,500" ],
-    [ "Jenette Caldwell", "Development Lead", "New York", "1937", "2011/09/03", "$345,000" ],
-    [ "Yuri Berry", "Chief Marketing Officer (CMO)", "New York", "6154", "2009/06/25", "$675,000" ],
-    [ "Caesar Vance", "Pre-Sales Support", "New York", "8330", "2011/12/12", "$106,450" ],
-    [ "Doris Wilder", "Sales Assistant", "Sidney", "3023", "2010/09/20", "$85,600" ],
-    [ "Angelica Ramos", "Chief Executive Officer (CEO)", "London", "5797", "2009/10/09", "$1,200,000" ],
-    [ "Gavin Joyce", "Developer", "Edinburgh", "8822", "2010/12/22", "$92,575" ],
-    [ "Jennifer Chang", "Regional Director", "Singapore", "9239", "2010/11/14", "$357,650" ],
-    [ "Brenden Wagner", "Software Engineer", "San Francisco", "1314", "2011/06/07", "$206,850" ],
-    [ "Fiona Green", "Chief Operating Officer (COO)", "San Francisco", "2947", "2010/03/11", "$850,000" ],
-    [ "Shou Itou", "Regional Marketing", "Tokyo", "8899", "2011/08/14", "$163,000" ],
-    [ "Michelle House", "Integration Specialist", "Sidney", "2769", "2011/06/02", "$95,400" ],
-    [ "Suki Burks", "Developer", "London", "6832", "2009/10/22", "$114,500" ],
-    [ "Prescott Bartlett", "Technical Author", "London", "3606", "2011/05/07", "$145,000" ],
-    [ "Gavin Cortez", "Team Leader", "San Francisco", "2860", "2008/10/26", "$235,500" ],
-    [ "Martena Mccray", "Post-Sales support", "Edinburgh", "8240", "2011/03/09", "$324,050" ],
-    [ "Unity Butler", "Marketing Designer", "San Francisco", "5384", "2009/12/09", "$85,675" ]
-];
- 
-   
         $(document).ready(function() {
- $('#myTable').DataTable( {
-        data: dataSet,
-        columns: [
-            { title: "Name" },
-            { title: "Position" },
-            { title: "Office" },
-            { title: "Extn." },
-            { title: "Start date" },
-            { title: "Salary" }
-        ]
-    } );
-
             $('#myModal').on('shown.bs.modal', function() {
                 $('#myInput').focus()
             })
@@ -1113,16 +1163,16 @@ var dataSet = [
 			
 			 		  
 			
-			  // var oTable;
-			  // oTable = $('#msds-table').dataTable();
+			  var oTable;
+			  oTable = $('#msds-table').dataTable();
 
-			  // $('#msds-select').change( function() { 
-					// oTable.fnFilter( $(this).val() ); 
-			  //  });
+			  $('#msds-select').change( function() { 
+					oTable.fnFilter( $(this).val() ); 
+			   });
 	   
-			// $('#myTable').DataTable({
-			// 	"pagingType": "full_numbers"
-			// });
+			$('#myTable').DataTable({
+				"pagingType": "full_numbers"
+			});
 			
 			$(".vd").click(function (event) {
 				event.stopPropagation();
@@ -1143,411 +1193,92 @@ var dataSet = [
 				$(".user-detail-outer").fadeOut();
 			}); 
 			
-			
+			 $('#example').DataTable();
         });
 
         //$('select.time-zone').timezones();
 
         $("#dropdown-menu select").dropdown();
 		
-		
-		$('.input-daterange-datepicker').daterangepicker({
-			  buttonClasses: ['btn', 'btn-sm'],
-					applyClass: 'btn-danger',
-                cancelClass: 'btn-inverse'
-        });		  
+		//Google Garph Start
+		google.charts.load('current', {packages: ['corechart', 'line']});
+		google.charts.setOnLoadCallback(drawBasic);
+
+		function drawBasic() {
+
+			  var data = new google.visualization.DataTable();
+			  data.addColumn('number', 'X');
+			  data.addColumn('number', 'chart');
+
+			  data.addRows([
+				[0, 0],   [1, 1],  [2, 50],  [3, 1],  [4, 1],  [5, 1],
+				[6, 50],  [7, 1],  [8, 1],  [9, 1],  [10, 1], [11, 50],
+			  ]);
+
+			  var options = {
+				 legend: 'none',
+				  hAxis: { minValue: 0, maxValue: 7 },
+				  pointSize: 10,
+				  series: {
+						0: { pointShape: 'circle' },
+						1: { pointShape: 'triangle' },
+						2: { pointShape: 'square' },
+						3: { pointShape: 'diamond' },
+						4: { pointShape: 'star' },
+						5: { pointShape: 'polygon' }
+					}
+			  };
+				
+			  var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+
+			  chart.draw(data, options);
+			  
+			}
+			//Google Garph end
 			
-		//Morris charts snippet - js
+			//Google Garph 2nd
+			 
+			  google.charts.setOnLoadCallback(drawChart1);
+			  function drawChart1() {
+				var data = google.visualization.arrayToDataTable([
+				  ['Year', 'Sales'],
+				  ['2013',  200],
+				  ['2014',  1000],
+				  ['2015',  300],
+				  ['2016',  1030]
+				]);
+				
+				var options = {};
 
-$.getScript('http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js',function(){
-$.getScript('http://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.0/morris.min.js',function(){
-
-  Morris.Area({
-    element: 'area-example',
-    data: [
-      { y: '1.1.', a: 10, b: 90 },
-      { y: '2.1.', a: 75,  b: 65 },
-      { y: '3.1.', a: 50,  b: 40 },
-      { y: '4.1.', a: 75,  b: 65 },
-      { y: '5.1.', a: 50,  b: 40 },
-      { y: '6.1.', a: 75,  b: 65 },
-      { y: '7.1.', a: 100, b: 90 }
-    ],
-    xkey: 'y',
-    ykeys: ['a', 'b'],
-    labels: ['Series A', 'Series B'], 
-	fillOpacity: 0.4,
-	  hideHover: 'auto',
-	  behaveLikeLine: true,
-	  resize: true,
-	  pointFillColors: ['#fb545b'],
-	  pointStrokeColors: ['#269fd8'],
-	  lineColors: ['#fb545b', '#269fd8'],
-  });
-  
-});
-});	
- 
- /*small graphs*/
-FusionCharts.ready(function () {
-    var sparkchart = new FusionCharts({
-        type: 'sparkcolumn',
-        renderAt: 'chart-container',
-        width: '88%',
-        height: '50',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "chartTopMargin": "0",
-                "chartBottomMargin": "0",
-                "chartRightMargin": "0",
-                "numberPrefix": "$",
-                "showBorder": "0",
-                "canvasBorderThickness": "0",
-                "bgColor": "#ffffff",                                                
-                "plotFillColor": "#0075c2",
-                "highColor": "#1aaf5d",
-                "lowColor": "#8e0000",
-                "showHoverEffect": "1"                
-            },
-            "dataset": [
-                {
-                    "data": [
-                        {
-                            "value": "783000"
-                        },
-                        {
-                            "value": "601000"
-                        },
-                        {
-                            "value": "515000"
-                        },
-                        {
-                            "value": "315900"
-                        },
-                        {
-                            "value": "388000"
-                        },
-                        {
-                            "value": "433000"
-                        },
-                        {
-                            "value": "910000"
-                        },
-                        {
-                            "value": "798000"
-                        },
-                        {
-                            "value": "483300"
-                        },
-                        {
-                            "value": "562000"
-                        },
-                        {
-                            "value": "359400"
-                        },
-                        {
-                            "value": "485000"
-                        }
-                    ]
-                }
-            ]
-        }
-    })
-    .render();
-});
-
-FusionCharts.ready(function () {
-    var sparkchart = new FusionCharts({
-        type: 'sparkcolumn',
-        renderAt: 'chart-container1',
-        width: '88%',
-        height: '50',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "chartTopMargin": "0",
-                "chartBottomMargin": "0",
-                "chartRightMargin": "0",
-                "numberPrefix": "$",
-                "showBorder": "0",
-                "canvasBorderThickness": "0",
-                "bgColor": "#ffffff",                                                
-                "plotFillColor": "#0075c2",
-                "highColor": "#1aaf5d",
-                "lowColor": "#8e0000",
-                "showHoverEffect": "1"                
-            },
-            "dataset": [
-                {
-                    "data": [
-                        {
-                            "value": "783000"
-                        },
-                        {
-                            "value": "601000"
-                        },
-                        {
-                            "value": "515000"
-                        },
-                        {
-                            "value": "315900"
-                        },
-                        {
-                            "value": "388000"
-                        },
-                        {
-                            "value": "433000"
-                        },
-                        {
-                            "value": "910000"
-                        },
-                        {
-                            "value": "798000"
-                        },
-                        {
-                            "value": "483300"
-                        },
-                        {
-                            "value": "562000"
-                        },
-                        {
-                            "value": "359400"
-                        },
-                        {
-                            "value": "485000"
-                        }
-                    ]
-                }
-            ]
-        }
-    })
-    .render();
-});
-
-FusionCharts.ready(function () {
-    var sparkchart = new FusionCharts({
-        type: 'sparkcolumn',
-        renderAt: 'chart-container2',
-        width: '88%',
-        height: '50',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "chartTopMargin": "0",
-                "chartBottomMargin": "0",
-                "chartRightMargin": "0",
-                "numberPrefix": "$",
-                "showBorder": "0",
-                "canvasBorderThickness": "0",
-                "bgColor": "#ffffff",                                                
-                "plotFillColor": "#0075c2",
-                "highColor": "#1aaf5d",
-                "lowColor": "#8e0000",
-                "showHoverEffect": "1"                
-            },
-            "dataset": [
-                {
-                    "data": [
-                        {
-                            "value": "783000"
-                        },
-                        {
-                            "value": "601000"
-                        },
-                        {
-                            "value": "515000"
-                        },
-                        {
-                            "value": "315900"
-                        },
-                        {
-                            "value": "388000"
-                        },
-                        {
-                            "value": "433000"
-                        },
-                        {
-                            "value": "910000"
-                        },
-                        {
-                            "value": "798000"
-                        },
-                        {
-                            "value": "483300"
-                        },
-                        {
-                            "value": "562000"
-                        },
-                        {
-                            "value": "359400"
-                        },
-                        {
-                            "value": "485000"
-                        }
-                    ]
-                }
-            ]
-        }
-    })
-    .render();
-});
-
-
-FusionCharts.ready(function () {
-    var sparkchart = new FusionCharts({
-        type: 'sparkcolumn',
-        renderAt: 'chart-container3',
-        width: '88%',
-        height: '50',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "chartTopMargin": "0",
-                "chartBottomMargin": "0",
-                "chartRightMargin": "0",
-                "numberPrefix": "$",
-                "showBorder": "0",
-                "canvasBorderThickness": "0",
-                "bgColor": "#ffffff",                                                
-                "plotFillColor": "#0075c2",
-                "highColor": "#1aaf5d",
-                "lowColor": "#8e0000",
-                "showHoverEffect": "1"                
-            },
-            "dataset": [
-                {
-                    "data": [
-                        {
-                            "value": "783000"
-                        },
-                        {
-                            "value": "601000"
-                        },
-                        {
-                            "value": "515000"
-                        },
-                        {
-                            "value": "315900"
-                        },
-                        {
-                            "value": "388000"
-                        },
-                        {
-                            "value": "433000"
-                        },
-                        {
-                            "value": "910000"
-                        },
-                        {
-                            "value": "798000"
-                        },
-                        {
-                            "value": "483300"
-                        },
-                        {
-                            "value": "562000"
-                        },
-                        {
-                            "value": "359400"
-                        },
-                        {
-                            "value": "485000"
-                        }
-                    ]
-                }
-            ]
-        }
-    })
-    .render();
-});
-
-
-
-
-FusionCharts.ready(function () {
-    var sparkchart = new FusionCharts({
-        type: 'sparkcolumn',
-        renderAt: 'chart-container4',
-        width: '88%',
-        height: '50',
-        dataFormat: 'json',
-        dataSource: {
-            "chart": {
-                "chartTopMargin": "0",
-                "chartBottomMargin": "0",
-                "chartRightMargin": "0",
-                "numberPrefix": "$",
-                "showBorder": "0",
-                "canvasBorderThickness": "0",
-                "bgColor": "#ffffff",                                                
-                "plotFillColor": "#0075c2",
-                "highColor": "#1aaf5d",
-                "lowColor": "#8e0000",
-                "showHoverEffect": "1"                
-            },
-            "dataset": [
-                {
-                    "data": [
-                        {
-                            "value": "900000"
-                        },
-                        {
-                            "value": "601000"
-                        },
-                        {
-                            "value": "515000"
-                        },
-                        {
-                            "value": "315900"
-                        },
-                        {
-                            "value": "388000"
-                        },
-                        {
-                            "value": "433000"
-                        },
-                        {
-                            "value": "910000"
-                        },
-                        {
-                            "value": "798000"
-                        },
-                        {
-                            "value": "483300"
-                        },
-                        {
-                            "value": "562000"
-                        },
-                        {
-                            "value": "359400"
-                        },
-                        {
-                            "value": "485000"
-                        }
-                    ]
-                }
-            ]
-        }
-    })
-    .render();
-});
-
-	google.charts.load('current', {packages: ['corechart', 'line']});
-	google.charts.setOnLoadCallback(drawChart);
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div1'));
+				chart.draw(data, options);
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div2'));
+				chart.draw(data, options);
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div3'));
+				chart.draw(data, options);
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div4'));
+				chart.draw(data, options);
+				var chart = new google.visualization.AreaChart(document.getElementById('chart_div5'));
+				chart.draw(data, options);
+			  }
+			//Google Garph 2nd end
+			
+			
+			
+			  google.charts.setOnLoadCallback(drawChart);
 			  function drawChart() {
 
 				var data = google.visualization.arrayToDataTable([
 				  ['Task', 'Hours per Day'],
-				  ['Desktop Computers (55%)',5],
-				  ['Laptops (30%)', 10],
-				  ['Mobile Phones & Tablets (15%)',9],
+				  ['',5],
+				  ['', 10],
+				  ['',9],
 				]);
 				
 				var options = {
-				  'width':'680',  'height':'280',
+				  'width':250,  'height':320,
 				  backgroundColor: 'transparent',
-				  legend: 'left',
+				  legend: 'none',
 				  colors: ['#f38630', '#69d2e7', '#e0e4cc']
 				  
 				};
@@ -1560,7 +1291,9 @@ FusionCharts.ready(function () {
 				chart.draw(data, options);
 			  }
 			  
-			   google.charts.setOnLoadCallback(drawRegionsMap);
+			  
+			
+			  google.charts.setOnLoadCallback(drawRegionsMap);
 
 			  function drawRegionsMap() {
 
@@ -1575,7 +1308,6 @@ FusionCharts.ready(function () {
 				  ['RU', 700]
 				]);
 				var options = {'width':250,  'height':180,
-				legend: 'left',
 				 colors: ['#ce5050', '#f17a52', '#f9de71']
 				 };
 
@@ -1583,99 +1315,13 @@ FusionCharts.ready(function () {
 				chart.draw(data, options);
 			  }
 			  
-			//   google combo graph
-
-			    google.charts.load('current', {'packages':['corechart']});
-				google.charts.setOnLoadCallback(drawVisualization);
-
-				function drawVisualization() {
-					// Some raw data (not necessarily accurate)
-				var data = google.visualization.arrayToDataTable([
-					['Month', 'Bolivia',{ role: 'style' } ,  'Average'],
-					['a',  2000,'#fe7c60',   2000 ],
-					['b',  400, '#f8c82d',   400],
-					['2006/07',  200 ,'#68bce4',   200],
-					['2007/08',  100 ,'#7ecf7a',   100],
-					['2008/09',  100 ,'#5fcfb3',   100]
-				]);
-
-					
-
-				var options = {
-					bar: {groupWidth: '50'},
-					legend: {position: 'none'},
-					hAxis: { textPosition: 'none',gridlines: {color: 'transparent'} },
-					vAxis: {gridlines: {color: 'transparent'},textPosition:'none', baselineColor: '#fff',},
-					seriesType: 'bars', 
-					series: {1: {type: 'line'}},
-					pointSize: 10,
-					colors: ['','#fb5f66'],
-					chartArea: {'width': '100%', 'height': '95%'},
-					backgroundColor: { fill:'transparent' },
-					
-				};
-
-				var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-				chart.draw(data, options);
-			}
-
-
-
-			//   google bar graph
-			google.charts.load('current', {packages: ['corechart', 'bar']});
-			google.charts.setOnLoadCallback(drawBasic);
-
-			function drawBasic() {
-
-				var data = google.visualization.arrayToDataTable([
-					['Q', '2010 Population',],
-					['Q1', 8175000],
-					['Q2', 3792000],
-					['Q3', 2695000],
-					['Q4', 2099000],
-					['Q5', 1526000],
-					['Q6', 8175000],
-					['Q7', 3792000],
-					['Q8', 2695000],
-					['Q9', 2099000],
-					['Q10', 1526000],
-					['Q11', 8175000],
-					['Q12', 3792000],
-					['Q13', 2695000],
-					['Q14', 2099000],
-					['Q15', 1526000],
-					['Q16', 8175000],
-					['Q17', 3792000],
-					['Q18', 2695000],
-					['Q19', 2099000],
-					['Q20', 1526000]
-				]);
-
-				var options = {
-					chartArea: {'width': '95%', 'height': '80%'},
-					hAxis: {
-					minValue: 0,
-					gridlines: {color: 'transparent'}
-					},
-					vAxis: {
-					textPosition: 'none', baselineColor: '#fff',gridlines: {color: 'transparent'}
-					},
-					legend: {position: 'none'},
-					bar: {groupWidth: '30'},
-					colors: ['#68bce4' ],
-					
-				};
-
-				var chart = new google.visualization.ColumnChart(document.getElementById('chart_div-1'));
-
-				chart.draw(data, options);
-				}
+		$('.input-daterange-datepicker').daterangepicker({
+			  buttonClasses: ['btn', 'btn-sm'],
+					applyClass: 'btn-danger',
+                cancelClass: 'btn-inverse'
+        });		  
 			
         </script>
-
-		
-
-
 		<script type="text/javascript">
         (function() {
         var s = document.createElement("script");

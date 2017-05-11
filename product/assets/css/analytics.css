@@ -61,7 +61,7 @@
 
 
 /*date rangepicker css*/
-.daterangepicker.dropdown-menu { top: 310px !important; right: 40px !important; width:492px !important;}
+/*.daterangepicker.dropdown-menu { top: 310px !important; right: 40px !important; width:492px !important;}*/
 .daterangepicker.opensright:before {right: 40px !important; }
 .daterangepicker.opensright:after{right: 41px !important; }
 .daterangepicker .ranges {margin: 4px;text-align: right !important;width: 98%;}
