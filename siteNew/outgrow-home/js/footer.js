@@ -110,6 +110,7 @@ jQuery(document).ready(function() {
 	}
 	var anchorElem = '<a href="'+href+'" class="link-login params" onclick="callGA('+callText+')">'+anchorText+'</a>';
 	jQuery('.anchorParent').html(anchorElem);
+	jQuery('.trialLOL').prop('href', trialLink);
 	jQuery('#trialAnchor').prop('href', trialLink);
 	jQuery('#loginAnchor').prop('href', loginLink);
 	jQuery('#footer').html(footer);
