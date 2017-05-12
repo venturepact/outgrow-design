@@ -206,16 +206,16 @@
 			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs-mob">
 				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
+					<!--<div class="col-md-12 np text-center">
 						<span class="icon-webcam"></span>
 						<span class="icon-rectangular-box"></span>
-					</div>
+					</div>-->
 					<div class="overflow-hidden">
 						<div class="video-img-inner video-img-inner-mob">
 							<img class="video-img" src="" data-src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('mob')">
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
 								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
@@ -233,7 +233,7 @@
 							<img class="video-img" src="" data-src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('res')">
+							<span class="video-playIcon">
 								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
@@ -252,7 +252,7 @@
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="" data-src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('web')">
+							<span class="video-playIcon">
 								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
 							</span>
 						</div>
@@ -1095,7 +1095,7 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<button type="button" onclick="btnClose()" class="close btn-close" data-dismiss="modal" aria-label="Close">
 					<i class="material-icons">close</i></button>
 					<div class="row">
 						<div class="modal-video-full">
@@ -1252,7 +1252,7 @@
 			spaceBetween: 30,
 			slidesPerView: 3,
 			centeredSlides: true,
-			autoplay: 2500,
+			// autoplay: 2500,
 			speed:500,
 			autoplayDisableOnInteraction: false
 		});
@@ -1263,10 +1263,10 @@
 			paginationClickable: true,
 			nextButton: '.swiper-button-next',
 			prevButton: '.swiper-button-prev',
-			spaceBetween: 30,
-			slidesPerView: 3,
+			//spaceBetween: 30,
+			//slidesPerView: 3,
 			centeredSlides: true,
-			autoplay: 2500,
+			// autoplay: 2500,
 			speed:500,
 			autoplayDisableOnInteraction: false
 		});
@@ -1399,6 +1399,19 @@
 
 	});
 
+	jQuery(document).on('click', '.video-playIcon', function () {
+		console.log('Clicked');
+		if (jQuery(window).width() > 768) {
+			attachVid('web');
+		}
+		if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
+			attachVid('res');
+		}
+		if (jQuery(window).width() <= 320) {
+			attachVid('mob');
+		}
+	})
+
 	function attachVid(type) {
 		if ('web' === type) changeHeightWeb();
 		if ('mob' === type) changeHeightMob();
@@ -1418,12 +1431,23 @@
 
 	function changeHeightMob() {
 		console.log('Mob');
-		jQuery(".video-img-inner-mob").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
+		jQuery(".video-img-inner-mob").html(`<img class="video-img" src="images/video-thumbnail.jpg" data-src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>`);
 		var xDiv = document.getElementById('video-main-rs-mob');
-		if (xDiv.style.height == '')
-			xDiv.style.height = '260px';
-		else
-			xDiv.style.height = '';
+		jQuery('#video-main-rs-mob .btn-close').show();
+	}
+
+	function btnClose(){
+			jQuery(".video-img-inner-mob").html(`<img class="video-img" src="images/video-thumbnail.jpg" data-src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>`);
 	}
 
 	function changeHeightRes() {
@@ -1480,31 +1504,31 @@
 			if (jQuery(window).width() > 768) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 320) {
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 		})
 		jQuery(window).scroll(function() {
@@ -1530,7 +1554,6 @@
 			jQuery(".backdrop-custom").removeClass("is-active");
 			//jQuery("html").css("overflow","auto");
 		});
-
 
 	</script>
 	<script>
