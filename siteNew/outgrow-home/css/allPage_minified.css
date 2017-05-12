@@ -3328,7 +3328,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-1-left .btn-buildcal.red i{display:inline-block;float:none;position:relative;margin-right:10px;top:5px;font-size:20px}
 	.section-1-left .btn-buildcal.red{width:100%;font-size:15px;padding:10px}
 	.img-bottom-text{top:10px}
-	.section-1-left .btn-bottominfo{width:100%;text-align:center}
+	.section-1-left .btn-bottominfo{width:100%;text-align:center; margin-bottom:0px;}
 	.section-1-right{padding-left:0}
 	.sec1-box-left{float:left;width:100%;margin-top:40px;padding:0 20px}
 	.sec1-box1,.sec1-box2{width:45%;left:-1px;margin-bottom:2px;position:relative}
@@ -3749,7 +3749,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
     	padding-top: 0px !important;
 		padding-bottom: 50px !important;
 	}
-	#video-main-rs.hide-height{padding-top: 0px;}
+	#video-main-rs.hide-height{padding-top: 30px;}
 	.calc-links a {
 		width: auto !important;
 		float: none !important;
