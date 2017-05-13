@@ -3557,6 +3557,11 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 		div.swiper-slide.swiper-slide-next {display: none;}*/
 
 		.section-startFreeTrial-btn .btn-buildcal{font-size: 13px !important; padding: 10px 25px !important;}
+		div.swiper-container .swiper-slide.swiper-slide-active {
+			width: 100% !important;
+		}
+		.swiper-container .swiper-slide.swiper-slide-next{display: none;}
+		.swiper-container .swiper-slide.swiper-slide-prev{display: none;}
 
 	/* end: homepage responsive by arti */
 
@@ -3573,7 +3578,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	    padding-right: 90px;
 	}
 	#video-main-rs{display: none !important;}
-	#video-main-rs-mob.hide-height{padding: 40px 10px; height: 200px;display: block !important;}
+	#video-main-rs-mob.hide-height{padding: 25px 0px; height: 200px;display: block !important;}
 	#video-main-rs-mob .video-img-inner span.video-playIcon {
 		width: 35px;
 		height: 35px;
@@ -3666,6 +3671,7 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.sec5-2{position:relative;margin-top:-58%;left:72%;width:30%;float:left}
 	.sec5-2-1{width:100%;float:left;margin-top:0px;margin-left:0px}
 	#Testimonial .quote-container{margin-top:50px}
+	.section-2-subheading {font-size: 14px;}
 }
 @media (min-width:568px) and (max-width:568px){
 	.section-7-left h4,.section-9-left h4{margin-top:30px}
@@ -3971,6 +3977,11 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 			margin-right: 8px;
 			margin-bottom: 30px;
 		}
+		div.swiper-container .swiper-slide.swiper-slide-active {
+			width: 100% !important;
+		}
+		.swiper-container .swiper-slide.swiper-slide-next{display: none;}
+		.swiper-container .swiper-slide.swiper-slide-prev{display: none;}
 	/* homepage res changes by Arti */
 
 }
@@ -3995,6 +4006,11 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 	.section-1-left{padding-right:1%}
 	.custom-navbar .signUp-style a{margin-top:4px}
 	#pricing .enterprise_pos{margin-top:0}
+	div.swiper-container .swiper-slide.swiper-slide-active {
+		width: 100% !important;
+	}
+	.swiper-container .swiper-slide.swiper-slide-next{display: none;}
+	.swiper-container .swiper-slide.swiper-slide-prev{display: none;}
 }
 @media (min-width:1024px) and (max-width:1250px){
 	.sec-quiz-heading{font-size: 28px;}
@@ -8557,6 +8573,12 @@ aside #lang_sel img.iclflag,aside #lang_sel_click img.iclflag,footer #lang_sel i
 	.carousel:not(.advanced_responsiveness) .carousel-inner{position:relative}
 	.carousel:not(.advanced_responsiveness) .carousel-inner .qbutton{font-size:12px;line-height:31px;height:31px}
 	.carousel:not(.advanced_responsiveness) .carousel-inner .qbutton i{margin:0 0 0 20px}
+	div.swiper-container .swiper-slide.swiper-slide-active {
+		width: 100% !important;
+	}
+	.swiper-container .swiper-slide.swiper-slide-next{display: none;}
+	.swiper-container .swiper-slide.swiper-slide-prev{display: none;}
+	
 }
 @media only screen and (max-height:850px){
 	.full_screen:not(.advanced_responsiveness) .carousel-inner .slider_content{height:35%}
@@ -15560,6 +15582,7 @@ section.section.sec-targetedSale-title {
     margin: 0 auto;
 	cursor: pointer;
 	margin-top: 10px;
+	box-shadow: 0px 11px 24px rgba(0,0,0,.28);
 }
 .video-img-inner {
     background: #fff;
