@@ -945,7 +945,7 @@
 										</div>
 							
 								<div class="graph-outer">
-									 <div id="chart_div-1" class="chart"></div>
+									 <div id="chart_div-11" class="chart"></div>
 								</div>
 							   </div>
                             </div>
@@ -1666,11 +1666,53 @@ FusionCharts.ready(function () {
 					
 				};
 
-				var chart = new google.visualization.ColumnChart(document.getElementById('chart_div-1'));
+				var chart = new google.visualization.ColumnChart(document.getElementById('chart_div-11'));
 
 				chart.draw(data, options);
 				}
 			
+			
+			
+			//   google combo graph
+
+			    google.charts.load('current', {'packages':['corechart']});
+				google.charts.setOnLoadCallback(drawVisualization1);
+
+				function drawVisualization1() {
+					// Some raw data (not necessarily accurate)
+				var data = google.visualization.arrayToDataTable([
+					['Month', 'Bolivia',  'Average'],
+					['Q1',  500,   500 ],
+					['Q2',  800,  800],
+					['Q3',  200 ,   200],
+					['Q4',  900 ,   900],
+					['Q5',  600 ,   600],
+					['Q6',  200,   200 ],
+					['Q7',  600,  600],
+					['Q8',  300 ,   300],
+					['Q9',  500 ,   500],
+					['Q10',  200 ,   200]
+				]);
+
+					
+
+				var options = {
+					bar: {groupWidth: '50'},
+					legend: {position: 'none'},
+					hAxis: { textPosition: 'none',gridlines: {color: 'transparent'} },
+					vAxis: {gridlines: {color: 'transparent'},textPosition:'none', baselineColor: '#fff',},
+					seriesType: 'bars', 
+					series: {1: {type: 'line'}},
+					pointSize: 10,
+					colors: ['#68bce4','#fb5f66'],
+					chartArea: {'width': '100%', 'height': '95%'},
+					backgroundColor: { fill:'transparent' },
+					
+				};
+
+				var chart = new google.visualization.ComboChart(document.getElementById('chart_div-11'));
+				chart.draw(data, options);
+			}
         </script>
 
 		
