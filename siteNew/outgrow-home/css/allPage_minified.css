@@ -3565,6 +3565,8 @@ iframe[name=google_conversion_frame]{height:0!important;width:0!important;line-h
 
 	/* end: homepage responsive by arti */
 
+	
+
 
 }
 @media (min-width:0px) and (max-width:767px) and (orientation:landscape) {
@@ -15432,6 +15434,7 @@ span.icon-webcam {
     box-shadow: 0px 11px 24px rgba(0,0,0,.28);
     border: none;
 	/*min-height: 75vh;*/
+	
 }
 .sec-outgrowMagic {
     /*height: 90vh;*/

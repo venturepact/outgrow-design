@@ -420,6 +420,21 @@
 	#feature .feature-heading-1 h3{
 		font-size:13px;
 	}
+
+	/* start: feature page responsive by arti */
+		#feature .section-f4 img{margin-bottom: 30px;}
+		#feature .sec-graphsCharts .section-f1-left {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		#feature .sec-graphsCharts i.material-icons.icon-style {font-size: 40px;}
+		#feature .sec-graphsCharts .section-f1-left span.subheading {margin-bottom: 15px;}
+		#feature .sec-graphsCharts .section-f1-right { margin-top: 10px;}
+
+	/* end: feature page responsive by arti */
+
+
+
 }
 @media (min-width:440px) and (max-width:768px){
 	#feature .span-style{

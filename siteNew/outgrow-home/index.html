@@ -1413,6 +1413,12 @@
 	})
 
 	function attachVid(type) {
+		var href = window.location.href.split('#')[1];
+		if(!href) {
+			window.location.href = window.location.href + "#video-main"
+		} else {
+			window.location.href = window.location.href.split('#')[0] + '#video-main'
+		}
 		if ('web' === type) changeHeightWeb();
 		if ('mob' === type) changeHeightMob();
 		if ('res' === type) changeHeightRes();
