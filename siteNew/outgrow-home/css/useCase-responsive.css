@@ -38,26 +38,27 @@
 	}
 
 	/* example page responsive css by Arti */
-	.tab-inner-frame iframe {display: none;}
-	.calc-links a {
-		width: auto !important;
-		float: none !important;
-	}
-	.sec-outgrowMagic img.thumb-calc {
-		margin-right: 8px;
-		margin-bottom: 30px;
-	}
-	.sec-outgrowMagic img.thumb-calc {
-		margin-right: 8px;
-		margin-bottom: 30px;
-	}
-	.sec-example .sec-outgrowMagic-title {margin-top: 0px !important; margin-bottom: 0px;}
-	.sec-example .section-2-subheading{display:  block;}
-	.sec-example .sec-outgrowMagic {margin-bottom: 20px;}
-	.sec-example .sec-outgrowMagic-title {padding: 20px 0px 30px;}
-	.sec-example .section-2-heading { font-size: 22px;}
-	.sec-example .section-2-subheading {font-size: 14px; top: 10px;}
-}
+		.tab-inner-frame iframe {display: none;}
+		.calc-links a {
+			width: auto !important;
+			float: none !important;
+		}
+		.sec-outgrowMagic img.thumb-calc {
+			margin-right: 8px;
+			margin-bottom: 30px;
+		}
+		.sec-outgrowMagic img.thumb-calc {
+			margin-right: 8px;
+			margin-bottom: 30px;
+		}
+		.sec-example .sec-outgrowMagic-title {margin-top: 0px !important; margin-bottom: 0px;}
+		.sec-example .section-2-subheading{display:  block;}
+		.sec-example .sec-outgrowMagic {margin-bottom: 20px;}
+		.sec-example .sec-outgrowMagic-title {padding: 20px 0px 30px;}
+		.sec-example .section-2-heading { font-size: 22px;}
+		.sec-example .section-2-subheading {font-size: 14px; top: 10px;}
+		.usecase .section-usecase2-left h4 {font-size: 22px;}
+		.usecase .section-usecase1-left h4 {font-size: 22px;}
 
 	/* end: example page responsive css by Arti */
 
