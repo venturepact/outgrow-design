@@ -5447,6 +5447,182 @@ iframe[name=google_conversion_frame] {
 		margin-bottom: 0px;
 	}
 
+	.tab-outer-frame {
+		/*background: #fff;
+		border: 2px solid #e1e1e1;
+		border-radius: 25px;
+		padding: 20px;*/
+		/*right: -9px;*/
+		/*right: 5px;*/
+		padding: 0px 50px 0px 20px;
+	}
+	.tab-inner-frame {
+		background: #fff;
+		/*min-height: 480px;*/
+		/*border: 2px solid #e1e1e1;*/
+		/*position: relative;*/
+		/*height:80vh;*/
+		padding: 0;
+	}
+	span.icon-webcam {
+		position: absolute;
+		top: 0px;
+		width: 8px;
+		height: 8px;
+		border-radius: 20px;
+		margin-top: 6px;
+		background: #fff;
+		border: 3px solid #e1e1e1;
+		display: none;
+	}
+	.sec-outgrowMagic img.thumb-calc{
+		box-shadow: 0px 11px 24px rgba(0,0,0,.28);
+	}
+	.tab-inner-frame iframe {
+		width: 100%;
+		height: 100%;
+		border: 2px solid #e1e1e1 !important; 
+		box-shadow: 0px 11px 24px rgba(0,0,0,.28);
+		border: none;
+		/*min-height: 75vh;*/
+		
+	}
+	.sec-outgrowMagic {
+		/*height: 90vh;*/
+		background: #fff;
+		margin-top: 0;
+		/*position: relative;*/
+		margin-bottom: 0px;
+	}
+
+	.sec-example .sec-outgrowMagic-title {
+		background: #fc6d73;
+		color: #fff;
+		margin: 55px 0px;
+		padding: 40px 40px 50px;
+		float: left;
+		width: 100%;
+	}
+	.sec-example .sec-outgrowMagic img.thumb-calc{
+		box-shadow: 0px 11px 24px rgba(0,0,0,.28);
+	}
+	.sec-example .sec-outgrowMagic {
+		/*height: 90vh;*/
+		background: #fff;
+		margin-top: 0;
+		/*position: relative;*/
+		margin-bottom: 0px;
+	}
+	.sec-example .section-2-heading {
+		float: left;
+		width: 100%;
+		text-align: center;
+		color: #fff !important;
+		font-size: 40px;
+		font-family: montserratregular;
+		text-transform: uppercase;
+		margin: 0px;
+	}
+	.sec-example .section-2-subheading {
+		float: left;
+		width: 100%;
+		text-align: center;
+		color: #fff;
+		font-size: 18px;
+		font-family: montserratlight;
+		margin: 0;
+		position: relative;
+		top: 5px;
+	}
+
+	.section-6-left {
+		padding-left: 50px;
+		padding-right: 35px;
+	}
+
+	/* Start: Modal embed */
+		.calcEmbed-modal {
+			padding: 0px !important;
+			background: rgba(0,0,0,0.6);
+		}
+
+		.calcEmbed-modal .modal-xlg{
+			float: left;
+			width: 100%;
+			margin: 0px;
+		}
+
+		.calcEmbed-modal .modal-dialog-video {
+			margin: 0px auto;
+			width: 100%;
+			/*margin: 0 auto;
+			position: fixed;
+			top: 0;
+			left: 0;*/
+		}
+		.calcEmbed-modal iframe {
+			width: 100%;
+			height: 100vh;
+			border: none;
+		}
+		.calcEmbed-modal .modal-content {
+			border-radius: 0px;
+			/* border: 1px solid #e9eef0; */
+			float: left;
+			width: 100%;
+			height: 100%;
+			box-shadow: none;
+			border: none;
+			background: transparent;
+		}
+		.calcEmbed-modal .modal-header {
+			padding: 20px 25px;
+			border-bottom: none;
+		}
+		.calcEmbed-modal .modal-logo{
+			margin-bottom: 50px;
+			margin-top: 40px;
+		}
+		.calcEmbed-modal .modal-body {
+			position: relative;
+			padding: 0px;
+			float: left;
+			width: 100%;
+		}
+		.calcEmbed-modal button.close.btn-close {
+			position: absolute;
+			top: 15px;
+			right: 25px;
+			opacity: 0.9;
+			z-index: 9;
+			height: 35px;
+			width: 35px;
+			background: rgba(0,0,0,0.4);
+			border-radius: 50%;
+		}
+		.calcEmbed-modal button.close.btn-close i.material-icons{
+			font-size: 24px;
+			color: #fff;
+			text-shadow: none;
+			vertical-align: middle;
+		}
+		.calcEmbed-modal button.close.btn-close:hover {
+			opacity: 1;
+		}
+	/* End: Modal embed */
+
+	.calc-links a {
+		float: left;
+		width: 100%;
+		margin-bottom: 30px;
+	}
+	.calc-links a{border: 2px solid transparent;}
+	.calc-links a.active img {border: 2px solid #fb5f66;}
+	.section-main.sec-example {
+		float: left;
+		width: 100%;
+	}
+
 /* end: new css changes by Arti */
 
 @media (min-width:768px){

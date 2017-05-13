@@ -1113,61 +1113,6 @@
 		</div>
 	</div>
 	<!-- End: Modal Video -->
-
-
-	<!-- Start: Modal Quizer Embed  -->
-	<div id="embed-modal-quizer" class="modal fade embedmodal-custom-quiz" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<!-- Modal content-->
-			<iframe class="" src="https://website.outgrow.co/58753b12e62e517207695b70" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Quizer Embed -->
-
-
-	<!-- Start: Modal Embed 1 -->
-	<div id="embed-modal1" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<!-- Modal content-->
-			<iframe class="" src="https://website.outgrow.co/58753b12e62e517207695b70" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Embed 1 -->
-
-
-
-	<!-- Start: Modal Embed 2 -->
-	<div id="embed-modal2" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<!-- Modal content-->
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<iframe class="" src="https://website.outgrow.co/5875396fe62e5172076953fe" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Embed 2 -->
-
-
-
-	<!-- Start: Modal Embed 3 -->
-	<div id="embed-modal3" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<!-- Modal content-->
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<iframe class="" src="https://website.outgrow.co/58714cd1df75740d5cd978e0" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Embed 3 -->
-
 	<!-- Start: Modal calcEmbed1 -->
 	<div id="calcEmbed-modal1" class="modal fade calcEmbed-modal" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-video">
@@ -1287,70 +1232,10 @@
 			jQuery("html").css('overflow','auto');
 		});
 
-
-		//embed web mobile js
-		jQuery(".embed1-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active1'))
-			jQuery(this).addClass('active1');
-			jQuery('.em-weblink').removeClass('active1');
-			jQuery("#em1").removeClass('embed-web');
-			jQuery("#em1").addClass('embed-mobile');
-			jQuery("#em1 .wrapper").addClass('wrapper-mobile');
-		});
-
-		jQuery(".embed1-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active1'))
-			jQuery(this).addClass('active1');
-			jQuery('.em-moblink').removeClass('active1');
-			jQuery("#em1").addClass('embed-web');
-			jQuery("#em1").removeClass('embed-mobile');
-			jQuery("#em1 .wrapper").removeClass('wrapper-mobile');
-		});
-
-
-		jQuery(".embed2-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active2'))
-			jQuery(this).addClass('active2');
-			jQuery('.em-weblink').removeClass('active2');
-			jQuery("#em2").removeClass('embed-web');
-			jQuery("#em2").addClass('embed-mobile');
-			jQuery("#em2 .wrapper").addClass('wrapper-mobile');
-		});
-
-		jQuery(".embed2-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active2'))
-			jQuery(this).addClass('active2');
-			jQuery('.em-moblink').removeClass('active2');
-			jQuery("#em2").addClass('embed-web');
-			jQuery("#em2").removeClass('embed-mobile');
-			jQuery("#em2 .wrapper").removeClass('wrapper-mobile');
-		});
-
-
-
-		jQuery(".embed3-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active3'))
-			jQuery(this).addClass('active3');
-			jQuery('.em-weblink').removeClass('active3');
-			jQuery("#em3").removeClass('embed-web');
-			jQuery("#em3").addClass('embed-mobile');
-			jQuery("#em3 .wrapper").addClass('wrapper-mobile');
-		});
-
-		jQuery(".embed3-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active3'))
-			jQuery(this).addClass('active3');
-			jQuery('.em-moblink').removeClass('active3');
-			jQuery("#em3").addClass('embed-web');
-			jQuery("#em3").removeClass('embed-mobile');
-			jQuery("#em3 .wrapper").removeClass('wrapper-mobile');
-		});
-
-		if (document.documentElement.clientWidth < 1024) {
-			jQuery(".embed-web").addClass('embed-mobile');
-			jQuery(".wrapper").addClass('wrapper-mobile');
-		}
-	 	console.log('index document ready')
+		// if (document.documentElement.clientWidth < 1024) {
+		// 	jQuery(".embed-web").addClass('embed-mobile');
+		// 	jQuery(".wrapper").addClass('wrapper-mobile');
+		// }
 
 		//Intercom
 		var url			=	window.location.href;
@@ -1362,24 +1247,6 @@
 			app_id: intercom_id
 		};
 		(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/r841gnag';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
-
-		jQuery('.mk-animate-element').viewportChecker({
-			classToAdd: 'mk-in-viewport', // Class to add to the elements when they are visible
-		});
-
-
-		jQuery(".toggle-dots-white").click(function(){
-			jQuery(".billing-grey-bottom").slideToggle('slow');
-		});
-
-		jQuery(".toggle-dots-grey").click(function(){
-			jQuery(".billing-white-bottom").slideToggle('slow');
-		});
-
-		jQuery(".toggle-dots-white2").click(function(){
-			jQuery(".billing-grey2").slideToggle('slow');
-		});
-
 
 		jQuery('.counter').counterUp({
 			delay: 10,
@@ -1541,10 +1408,8 @@
 			if (jQuery(this).scrollTop() > 70) {
 				jQuery("nav").addClass('nav-boxshadow');
 
-				//jQuery(".custom-navbar.navbar-default").css("padding","5px 25px 5px 10px")
 			} else {
 				jQuery("nav").removeClass('nav-boxshadow');
-				//jQuery(".custom-navbar.navbar-default").css("padding","10px 25px 10px 10px")
 			}
 		});
 
@@ -1552,56 +1417,14 @@
 		jQuery( "#open" ).click(function() {
 		  	jQuery(".menu-outer").addClass("is-active");
 			jQuery(".backdrop-custom").addClass("is-active");
-			//jQuery("html").css("overflow","hidden");
 		});
 
 		jQuery( ".close-menu" ).click(function() {
 			jQuery(".menu-outer").removeClass("is-active");
 			jQuery(".backdrop-custom").removeClass("is-active");
-			//jQuery("html").css("overflow","auto");
 		});
 
 	</script>
-	<script>
-		// function sticky_relocate() {
-		// 	var window_top = jQuery(window).scrollTop();
-		// 	var window_bottom = window_top + jQuery(window).height();
-		// 	var div_top = jQuery('#sticky-anchor').offset().top;
-		// 	var outgrowMagic = jQuery('.sec-outgrowMagic').offset().top + jQuery('.sec-outgrowMagic').outerHeight(true);
-		// 	if (window_top > div_top) {
-		// 		jQuery('#sticky').addClass('stick');
-		// 		jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-		// 	} else {
-		// 		jQuery('#sticky').removeClass('stick');
-		// 		jQuery('#sticky-anchor').height(0);
-		// 	}
-		// 	console.log(window_bottom,outgrowMagic);
-		// 	if (window_bottom >= outgrowMagic) {
-		// 		jQuery('#sticky').removeClass('stick');
-		// 		//jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-		// 	}
-		// }
-
-		// jQuery(function() {
-		// 	jQuery(window).scroll(sticky_relocate);
-		// 	sticky_relocate();
-		// });
-
-	</script>
-
-	<!--<script type="text/javascript">
-	//Usersnap
-	(function() {
-	var s = document.createElement("script");
-	s.type = "text/javascript";
-	s.async = true;
-	s.src = '//api.usersnap.com/load/'+
-			'261ef3ad-9942-4aa6-8418-c67c79aa25fe.js';
-	var x = document.getElementsByTagName('script')[0];
-	x.parentNode.insertBefore(s, x);
-	})();
-	</script>-->
-
 	<script type="text/javascript">
 		function callGA(str) {
 			switch(str) {
@@ -1650,41 +1473,6 @@
 			}
 		}
 	</script>
-
-	<script>
-(function (window, $) {
-	$(function() {
-
-
-	$('.ripple').on('click', function (event) {
-	//event.preventDefault();
-		var $div = $('<div/>'),
-		btnOffset = $(this).offset(),
-		xPos = event.pageX - btnOffset.left,
-		yPos = event.pageY - btnOffset.top;
-
-
-
-		$div.addClass('ripple-effect');
-		var $ripple = $(".ripple-effect");
-
-		$ripple.css("height", $(this).height());
-		$ripple.css("width", $(this).height());
-		$div
-		.css({
-		top: yPos - ($ripple.height()/2),
-		left: xPos - ($ripple.width()/2),
-		background: $(this).data("ripple-color")
-		})
-		.appendTo($(this));
-
-		window.setTimeout(function(){
-			$div.remove();
-			}, 2000);
-		});
-	});
-})(window, jQuery);
-  </script>
 	<script type="text/javascript">
 		var iframes = iFrameResize({
 	        log: false,
@@ -1695,11 +1483,5 @@
 	    myVid=document.getElementById("player");
 	    myVid.muted=true;
 	</script>
-	<!-- <div class="footer-img-2">
-		<script language="JavaScript" type="text/javascript">
-			TrustLogo("https://outgrow.co/images/comodo_secure.png", "SC5", "none");
-		</script>
-		<a href="https://www.instantssl.com/wildcard-ssl.html" id="comodoTL"></a>
-	</div> -->
 </body>
 </html>

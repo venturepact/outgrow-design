@@ -19,7 +19,7 @@
 		margin-top:10px;
 		text-transform: none;
 		line-height: normal;
-		font-size: 24px;
+		font-size: 22px;
 		text-align: center;
 	}
 	.section-usecase1 {
@@ -36,6 +36,32 @@
 	.usecase .gallery-content-center .abc{
 		margin-top:30px;
 	}
+
+	/* example page responsive css by Arti */
+	.tab-inner-frame iframe {display: none;}
+	.calc-links a {
+		width: auto !important;
+		float: none !important;
+	}
+	.sec-outgrowMagic img.thumb-calc {
+		margin-right: 8px;
+		margin-bottom: 30px;
+	}
+	.sec-outgrowMagic img.thumb-calc {
+		margin-right: 8px;
+		margin-bottom: 30px;
+	}
+	.sec-example .sec-outgrowMagic-title {margin-top: 0px !important; margin-bottom: 0px;}
+	.sec-example .section-2-subheading{display:  block;}
+	.sec-example .sec-outgrowMagic {margin-bottom: 20px;}
+	.sec-example .sec-outgrowMagic-title {padding: 20px 0px 30px;}
+	.sec-example .section-2-heading { font-size: 22px;}
+	.sec-example .section-2-subheading {font-size: 14px; top: 10px;}
+}
+
+	/* end: example page responsive css by Arti */
+
+
 }
 	@media (min-width:480px) and (max-width: 768px){
 	.section-usecase1 {
@@ -75,6 +101,26 @@
 		padding-left:15px;
 		padding-right:50px;
 	}
+
+	/* example page responsive css by Arti */
+	.tab-inner-frame iframe {display: none;}
+	.calc-links a {
+		width: auto !important;
+		float: none !important;
+	}
+	.sec-outgrowMagic img.thumb-calc {
+		margin-right: 8px;
+		margin-bottom: 30px;
+	}
+	.sec-outgrowMagic img.thumb-calc {
+		margin-right: 8px;
+		margin-bottom: 30px;
+	}
+	.sec-example .sec-outgrowMagic-title {margin-top: 0px !important;}
+	.sec-example .section-2-subheading{display:  block;}
+
+	/* end: example page responsive css by Arti */
+
 }
 @media (min-width: 1024px) and (max-width:1250px) {
 	.collage-outer{
