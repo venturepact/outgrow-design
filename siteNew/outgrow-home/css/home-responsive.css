@@ -167,7 +167,7 @@
         line-height: 32px
     }
     .sec3-box2inner h5 {
-        font-size: 18px;
+        font-size: 16px;
         color: rgba(98, 105, 109, .4);
         text-transform: uppercase
     }
@@ -176,7 +176,7 @@
     }
     .sec3-box2 h3 {
         position: relative;
-        top: 0
+        top: 0;     font-size: 18px;
     }
     .mobile-sec3 .swiper-container {
         padding-bottom: 30px
@@ -188,7 +188,7 @@
     }
     .mobile-sec3 .sec3-box2 p {
         color: rgba(98, 105, 109, .7);
-        line-height: normal
+        line-height: normal;     font-size: 13px;
     }
     .mobile-sec3 .sec3-box2 span {
         font-size: 16px;

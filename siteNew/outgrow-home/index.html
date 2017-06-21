@@ -27,6 +27,8 @@
 	<!-- <link rel="stylesheet" href="css/minified.css"> -->
 	<link rel="stylesheet" href="css/allPage_minified.css">
 
+	<!-- swiper css -->
+	<link rel="stylesheet" href="css/swiper.min.css">
 
 	<!-- Analytics Tracking Snippets Starts -->
 
@@ -204,49 +206,55 @@
 			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs-mob">
 				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
+					<!--<div class="col-md-12 np text-center">
 						<span class="icon-webcam"></span>
 						<span class="icon-rectangular-box"></span>
-					</div>
+					</div>-->
 					<div class="overflow-hidden">
 						<div class="video-img-inner video-img-inner-mob">
-							<img class="video-img" src="images/video-thumbnail.jpg" />
+							<img class="video-img" src="" data-src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12 np rs-show text-center hide-height" id="video-main-rs">
 				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
+					<!--<div class="col-md-12 np text-center">
 						<span class="icon-webcam"></span>
 						<span class="icon-rectangular-box"></span>
-					</div>
+					</div>-->
 					<div class="overflow-hidden">
 						<div class="video-img-inner video-img-inner-res">
-							<img class="video-img" src="images/video-thumbnail.jpg" />
+							<img class="video-img" src="" data-src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
 							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>
+							<span class="video-playIcon">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-12 col-sm-12 col-xs-12 np rs-hide text-center hide-height" id="video-main">
 				<div class="video-img-wrapper">
-					<div class="col-md-12 np text-center">
+					<!--<div class="col-md-12 np text-center">
 						<span class="icon-webcam"></span>
 						<span class="icon-rectangular-box"></span>
-					</div>
+					</div>-->
 					<div class="overflow-hidden">
 						<div class="video-img-inner video-img-inner-web">
-							<img class="video-img" src="images/video-thumbnail.jpg" />
+							<img class="video-img" src="" data-src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>
+							<!--<img class="img-playIcon" src="" data-src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>
 						</div>
 					</div>
 				</div>
@@ -270,31 +278,31 @@
 							<div class="wpb_wrapper">
 								<div class='qode-expanding-images'>
 									<div class='qode-expanding-images-inner mk-animate-element scale-up'>
-										<img class='qode-frame-image' src='images/img-craftedtemp-tab.png'
+										<img class='qode-frame-image' src="images/img-craftedtemp-tab.png" data-src="images/img-craftedtemp-tab.png"
 											alt='laptop frame' />
 										<div class="fadein">
-											<img id="f4" src='images/img-craftedtemp-tab04.png'>
-											<img id="f3" src='images/img-craftedtemp-tab03.png'>
-											<img id="f2" src='images/img-craftedtemp-tab02.png'>
-											<img id="f1" src='images/img-craftedtemp-tab01.png'>
+											<img id="f4" src="" data-src="images/img-craftedtemp-tab04.png">
+											<img id="f3" src="" data-src="images/img-craftedtemp-tab03.png">
+											<img id="f2" src="" data-src="images/img-craftedtemp-tab02.png">
+											<img id="f1" src="" data-src="images/img-craftedtemp-tab01.png">
 										</div>
 									</div>
 									<div class='qode-side-images'>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-bottom='transform:translate3d(70%,25%,0)' data--150-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-1 qode-lazy-image qode-side-image-inner'
-												data-image='images/img-craftedtemp-left1.jpg' data-lazy='true'></div>
+												data-image='images/ct02.jpg' data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-100-bottom='transform:translate3d(70%,-25%,0)' data--50-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-2 qode-lazy-image qode-side-image-inner'
-												data-image='images/img-craftedtemp-left2.jpg'
+												data-image='images/ct04.jpg'
 												data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-bottom='transform:translate3d(-70%,25%,0)' data--150-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-3 qode-lazy-image qode-side-image-inner'
-												data-image='images/img-craftedtemp-right1.jpg'
+												data-image='images/ct05.jpg'
 												data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
@@ -306,19 +314,19 @@
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-bottom='transform:translate3d(180%,35%,0)' data--150-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-5 qode-lazy-image qode-side-image-outer'
-												data-image='images/img-craftedtemp-left3.jpg'
+												data-image='images/ct01.jpg'
 												data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-100-bottom='transform:translate3d(180%,-35%,0)' data--50-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-6 qode-lazy-image qode-side-image-outer'
-												data-image='images/img-craftedtemp-left4.jpg'
+												data-image='images/ct03.jpg'
 												data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
 											<div data-bottom='transform:translate3d(-180%,25%,0)' data--150-bottom='transform:translate3d(0,0,0)'
 												class='qode-side-image qode-side-image-7 qode-lazy-image qode-side-image-outer'
-												data-image='images/img-craftedtemp-right3.jpg'
+												data-image='images/ct06.jpg'
 												data-lazy='true'></div>
 										</a>
 										<a class='qode-side-image-link mk-animate-element scale-up' href=javascript:void(0);>
@@ -540,13 +548,13 @@
 		<div class="container mobile-container">
 			<div class="col-xs-12 col-sm-12 col-md-12 np outer-container text-center">
 				<div class="col-md-6 col-sm-12 col-xs-12 np rs-hide">
-					<img class="img-1 mk-animate-element right-to-left" src="images/sec3-img1-edited.png" />
+					<img class="img-1 mk-animate-element right-to-left" src="" data-src="images/sec3-img1-edited.png" />
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 np rs-hide">
-					<img src="images/sec3-img2-edited.png" class="mk-animate-element left-to-right img-2" />
+					<img src="" data-src="images/sec3-img2-edited.png" class="mk-animate-element left-to-right img-2" />
 				</div>
 				<div class="col-md-6 col-sm-12 col-xs-12 np rs-show">
-					<img src="images/mobile-top2.png" class="mk-animate-element left-to-right img-2" />
+					<img src="" data-src="images/mobile-top2.png" class="mk-animate-element left-to-right img-2" />
 				</div>
 			</div>
 		</div>
@@ -626,8 +634,8 @@
 	<section class="section section-5">
 		<div class="container mobile-container">
 			<div class="col-xs-12 col-sm-12 col-md-9 col-sm-pull-3 np section-5-right mk-animate-element fade-in rs-show">
-				<img class="mk-animate-element scale-up sec5-2-1" src="images/img-publishAnywhere.png" />
-				<!--<img class="sec5-2 mk-animate-element left-to-right" src="images/sec5-2-new.png" />-->
+				<img class="mk-animate-element scale-up sec5-2-1" src="" data-src="images/img-publishAnywhere.png" />
+				<!--<img class="sec5-2 mk-animate-element left-to-right" src="" data-src="images/sec5-2-new.png" />-->
 			</div>
 			<div class="col-xs-12 col-sm-12 col-sm-push-9 col-md-3 section-5-left">
 				<h4 class="mk-animate-element right-to-left">
@@ -648,8 +656,7 @@
 
 			</div>
 			<div class="col-xs-12 col-sm-9 col-sm-pull-3 np section-5-right mk-animate-element fade-in rs-hide">
-				<img class="mk-animate-element scale-up sec5-2-1" src="images/img-publishAnywhere.png" />
-				<!--<img class="sec5-2 mk-animate-element left-to-right" src="images/sec5-2-new.png" />-->
+				<img class="mk-animate-element scale-up sec5-2-1" src="" data-src="images/img-publishAnywhere.png" />
 			</div>
 		</div>
 	</section>
@@ -658,9 +665,9 @@
 	<!-- Homepage section 6 start-->
 	<section class="section section-6">
 		<div class="container img-container">
-			<div class="col-xs-12 col-sm-12 col-md-9 np mk-animate-element fade-in section-6-right rs-show ">
-				<img class="mk-animate-element right-to-left sec6-2-1" src="images/img-boostgrowth-tab.png" />
-				<img class="sec6-2-2 mk-animate-element left-to-right" src="images/img-boostgrowth-mobile.png" />
+			<div class="col-xs-12 col-sm-12 col-md-9 np mk-animate-element fade-in section-6-right rs-show">
+				<img class="mk-animate-element right-to-left sec6-2-1" src="" data-src="images/img-boostgrowth-tab.png" />
+				<img class="sec6-2-2 mk-animate-element left-to-right" src="" data-src="images/img-boostgrowth-mobile.png" />
 			</div>
 			<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container">
 				<h4 class="mk-animate-element left-to-right">
@@ -676,8 +683,8 @@
 				</span>
 			</div>
 			<div class="col-xs-12 col-sm-9 np mk-animate-element fade-in section-6-right rs-hide">
-				<img class="mk-animate-element right-to-left " src="images/img-boostgrowth-tab.png" />
-				<img class="sec4-2 mk-animate-element left-to-right" src="images/img-boostgrowth-mobile.png" />
+				<img class="mk-animate-element right-to-left" src=""  data-src="images/img-boostgrowth-tab.png" />
+				<img class="sec4-2 mk-animate-element left-to-right" src="" data-src="images/img-boostgrowth-mobile.png" />
 			</div>
 		</div>
 	</section>
@@ -688,8 +695,7 @@
 	<section class="section section-5">
 		<div class="container mobile-container">
 			<div class="col-xs-12 col-sm-12 col-md-9 col-sm-pull-3 np section-5-right mk-animate-element fade-in rs-show">
-				<img class="mk-animate-element scale-up" src="images/img-analyze_improve.png" />
-				<!-- <img class="sec5-2 mk-animate-element left-to-right" src="images/sec5-2-new.png" /> -->
+				<img class="mk-animate-element scale-up" src="" data-src="images/img-analyze_improve.png" />
 			</div>
 			<div class="col-xs-12 col-sm-12 col-sm-push-9 col-md-3 section-5-left">
 				<h4 class="mk-animate-element right-to-left">
@@ -710,8 +716,7 @@
 
 			</div>
 			<div class="col-xs-12 col-sm-9 col-sm-pull-3 np section-5-right mk-animate-element fade-in rs-hide">
-				<img class="mk-animate-element scale-up" src="images/img-analyze_improve.png" />
-				<!-- <img class="sec5-2 mk-animate-element left-to-right" src="images/sec5-2-new.png" /> -->
+				<img class="mk-animate-element scale-up" src="" data-src="images/img-analyze_improve.png" />
 			</div>
 
 			<div class="col-xs-12 col-sm-12 text-center rs-hide">
@@ -729,41 +734,59 @@
 			<h5 class="section-2-subheading mk-animate-element scale-up">
 				 Easily Integrate with Over 500 sales & marketing tools
 			</h5>
-			<div class="col-xs-12 col-sm-12 col-md-12 np mk-animate-element scale-up rs-hide mk-in-viewport text-center">
-				<img class="mk-animate-element scale-up int-box-shadow" src="images/img-integration-full.jpg" />
+			<div class="col-xs-12 col-sm-12 col-md-12 np rs-hide mk-in-viewport text-center">
+				<!--<img class="mk-animate-element scale-up int-box-shadow" src=""  data-src="images/img-integration-full.jpg" />-->
+				<div class="img-int-wrapper">
+					<img class="" src=""  data-src="images/img-int-1.jpg" />
+					<img class="" src=""  data-src="images/img-int-2.jpg" />
+					<img class="" src=""  data-src="images/img-int-3.jpg" />
+					<img class="" src=""  data-src="images/img-int-4.jpg" />
+					<img class="" src=""  data-src="images/img-int-5.jpg" />
+					<img class="" src=""  data-src="images/img-int-6.jpg" />
+					<img class="" src=""  data-src="images/img-int-7.jpg" />
+					<img class="" src=""  data-src="images/img-int-8.jpg" />
+					<img class="" src=""  data-src="images/img-int-9.jpg" />
+					<img class="" src=""  data-src="images/img-int-10.jpg" />
+					<img class="" src=""  data-src="images/img-int-11.jpg" />
+					<img class="" src=""  data-src="images/img-int-12.jpg" />
+				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 np mk-animate-element scale-up rs-show text-center mk-in-viewport rs-hide-int-res">
-				<img class="int-box-shadow" src="images/img-integration-resp.jpg">
+				<!--<img class="int-box-shadow" src="" data-src="images/img-integration-resp.jpg">-->
+				<div class="img-int-wrapper">
+					<img class="" src=""  data-src="images/img-int-1.jpg" />
+					<img class="" src=""  data-src="images/img-int-2.jpg" />
+					<img class="" src=""  data-src="images/img-int-3.jpg" />
+					<img class="" src=""  data-src="images/img-int-4.jpg" />
+					<img class="" src=""  data-src="images/img-int-5.jpg" />
+					<img class="" src=""  data-src="images/img-int-6.jpg" />
+					<img class="" src=""  data-src="images/img-int-7.jpg" />
+					<img class="" src=""  data-src="images/img-int-8.jpg" />
+					<img class="" src=""  data-src="images/img-int-9.jpg" />
+					<img class="" src=""  data-src="images/img-int-10.jpg" />
+					<img class="" src=""  data-src="images/img-int-11.jpg" />
+					<img class="" src=""  data-src="images/img-int-12.jpg" />
+				</div>
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 np mk-animate-element scale-up rs-show text-center mk-in-viewport rs-hide-int-mob">
-				<img class="int-box-shadow" src="images/img-integration-mob.jpg">
+				<!--<img class="int-box-shadow" src=""  data-src="images/img-integration-mob.jpg">-->
+				<div class="img-int-wrapper">
+					<img class="" src=""  data-src="images/img-int-1.jpg" />
+					<img class="" src=""  data-src="images/img-int-2.jpg" />
+					<img class="" src=""  data-src="images/img-int-3.jpg" />
+					<img class="" src=""  data-src="images/img-int-4.jpg" />
+					<img class="" src=""  data-src="images/img-int-5.jpg" />
+					<img class="" src=""  data-src="images/img-int-6.jpg" />
+					<img class="" src=""  data-src="images/img-int-7.jpg" />
+					<img class="" src=""  data-src="images/img-int-8.jpg" />
+					<img class="" src=""  data-src="images/img-int-9.jpg" />
+					<img class="" src=""  data-src="images/img-int-10.jpg" />
+					<img class="" src=""  data-src="images/img-int-11.jpg" />
+					<img class="" src=""  data-src="images/img-int-12.jpg" />
+				</div>
 			</div>
 		</div>
 	</section>
-
-	<!-- Homepage section 10 start-->
-	<section class="section section-10 hide">
-		<div class="container-fluid">
-			<div class="sec10-testimonial mk-animate-element left-to-right">
-				<div class="sec10-testname1 hide">
-					<img src="images/testimonial1.png" />
-				</div>
-				<div class="sec10-tes-inner">
-					<em class="sec10-em1">“</em>
-					<span>I am on my third calculator already. The first two were organically shared on a popular industry mailing list and fetched us over 5000 highly targeted leads!</span>
-
-				</div>
-				<div class="sec10-testname">
-					<h5>Hillary Hunt</h5>
-<!-- 					<span>Marketing Manager</span>
- -->				</div>
-				<a class="sec10-testimonial-link">Marketing Manager</a>
-			</div>
-		</div>
-	</section>
-	<!-- Homepage section 10 end-->
-
-
 	<!-- Homepage section 6 end-->
 
 	<!-- Homepage The Outgrow Magic -->
@@ -781,58 +804,59 @@
 
 		<section class="section section-5 sec-outgrowMagic">
 			<div class="container-fluid np">
-				<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container rs-hide">
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc?vHeight=1')">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
+				<div class="col-xs-12 col-md-3 col-sm-12 section-6-left mobile-container rs-hide calc-links">
+					<a href="javascript:void(0);" target="_blank" class="active"
+						onclick="display('https://website.outgrow.co/Which-engineering-major-is-right-for-you?vHeight=1')">
+						<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc01.jpg" />
 					</a>
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator?vHeight=1')">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
+					<a href="javascript:void(0);" target="_blank" class=""
+						onclick="display('https://website.outgrow.co/Cost-of-a-video-campaign-4?vHeight=1')">
+						<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc02.jpg" />
 					</a>
-					<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC?vHeight=1')">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+					<a href="javascript:void(0);" target="_blank" class=""
+						onclick="display('https://website.outgrow.co/What-is-your-risk-of-getting-a-heart-disease?vHeight=1')">
+						<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc03.jpg" />
 					</a>
-					<!--<a href="javascript:void(0);" target="_blank">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-					</a>
-					<a href="javascript:void(0);" target="_blank">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-					</a>
-					<a href="javascript:void(0);" target="_blank">
-						<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-					</a>-->
 				</div>
 				<div class="col-xs-12 col-sm-12 col-md-9 np">
 					<!--<div id="sticky-anchor"></div>-->
 					<div class="tab-outer-frame col-xs-12 col-md-12 col-sm-12 text-center">
-						<span class="icon-webcam"></span>
+						<!--<span class="icon-webcam"></span>-->
 						<div class="hrefTarget tab-inner-frame col-xs-12 col-md-12 col-sm-12">
-							<iframe id="og-iframe" src="https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc"></iframe>
+							<iframe id="og-iframe" src="https://website.outgrow.co/Which-engineering-major-is-right-for-you?vHeight=1"></iframe>
 						</div>
 					</div>
 					<!--<div id="sticky-anchor"></div>
 					<div id="sticky">This will stay at top of page</div>-->
 				</div>
-				
-				<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show scroll-wrapper scrollbar">
+
+				<!--<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show scroll-wrapper scrollbar">
 					<div class="col-md-12 np">
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Video-Campaign-Cost-Calc?vHeight=1')">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc1.jpg" />
+						<a href="javascript:void(0);" target="_blank"
+							onclick="display('https://website.outgrow.co/Which-engineering-major-is-right-for-you?vHeight=1')">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc01.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/Nutrients-Intake-Calculator?vHeight=1')">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc2.jpg" />
+						<a href="javascript:void(0);" target="_blank"
+							onclick="display('https://website.outgrow.co/Cost-of-a-video-campaign-4?vHeight=1')">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc02.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank" onclick="display('https://outgrow1.outgrow.co/DREAM-VACATION-COST-CALC?vHeight=1')">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						<a href="javascript:void(0);" target="_blank"
+							onclick="display('https://website.outgrow.co/What-is-your-risk-of-getting-a-heart-disease?vHeight=1')">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc03.jpg" />
 						</a>
-						<!--<a href="javascript:void(0);" target="_blank">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+					</div>
+				</div>-->
+				<div class="col-xs-12 col-md-12 col-sm-12 section-6-left mobile-container rs-show text-center">
+					<div class="col-md-12 col-sm-12 col-xs-12 np calc-links">
+						<a href="javascript:void(0);" class="col-sm-4 np calcembed active" data-toggle="modal" data-target="#calcEmbed-modal1">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc01.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
+						<a href="javascript:void(0);" class="col-sm-4 np calcembed"  data-toggle="modal" data-target="#calcEmbed-modal2">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc02.jpg" />
 						</a>
-						<a href="javascript:void(0);" target="_blank">
-							<img class="mk-animate-element scale-up thumb-calc" src="images/img-outgrow-magic-calc3.jpg" />
-						</a>-->
+						<a href="javascript:void(0);" class="col-sm-4 np calcembed" data-toggle="modal" data-target="#calcEmbed-modal3">
+							<img class="mk-animate-element scale-up thumb-calc" src="" data-src="images/calc03.jpg" />
+						</a>
 					</div>
 				</div>
 				<!--<div class="col-xs-12 col-sm-12 np rs-show hide">
@@ -848,592 +872,6 @@
 		</section>
 	</div>
 	<!-- Homepage The Outgrow Magic -->
-
-	<!-- Homepage section 7 start-->
-	<section class="section section-7 hide">
-		<div class="container-fluid np">
-			<section>
-				<span class="section-runnigheading mk-animate-element scale-up hide">Get Inspired..</span>
-			</section>
-			<div class="col-xs-12 col-md-6 col-sm-12 section-9-right col-sm-push-6 ">
-				<div class="col-xs-12 col-sm-12 slider-sa text-center">
-					<div class="rs-show">
- 						<div class="swiper-container box-shadow  mk-animate-element scale-up rs-show">
- 							<div class="swiper-wrapper">
- 								<div class="swiper-slide">
- 									<img src="images/em1-3.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 								<div class="swiper-slide">
- 									<img src="images/em1-2.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 							</div>
- 							<!-- Add Pagination -->
- 						</div>
- 						<div class="swiper-pagination"></div>
- 					</div>
- 					<div class="qode-cards-gallery-holder left rs-hide" data-side=left>
- 						<div class="qode-cards-gallery">
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="http://resources.outgrow.co/what-kind-of-engineer-you-should-be/ " target="_blank">  <img src="#" alt="" class="qode-lazy-image" data-image="images/em1-2.jpg"
- 										style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true"
- 									/> </a>
- 							</div>
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="http://resources.outgrow.co/what-kind-of-engineer-you-should-be/ " target="_blank">  <img src="#" alt="" class="qode-lazy-image" data-image="images/em1-3.jpg"
- 										style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true"
- 									/> </a>
- 							</div>
-						 </div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 section-9-left col-sm-pull-6 ">
-				<h4 class="mk-animate-element left-to-right">
-					What kind of engineer should you be?
-				</h4>
-				<div class="sec9-test mk-animate-element left-to-right">
-					<em class="left">“</em>
-					<p>
-						The first question prospective students ask is: 'which major is right for me'? This calculator lets us answer such questions and build relationships early on. The bounce rates were < 10% - something I haven't seen after spending over $10M in online ads.
-						<em class="right">”</em>
-					</p>
-					<span class="text-1">Head of Admissions,</span>
-					<span class="text-2">Top Ranked Online University</span>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-11 np">
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">k</em>
-						<label class="counter">22</label>
-						<p>Unique Views</p>
-					</div>
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">k</em>
-						<label class="counter">12</label>
-						<p>Leads</p>
-					</div>
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">%</em>
-						<label  class="counter">98</label>
-						<p>Conversion Rate</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-hide">
-					<a href="http://resources.outgrow.co/what-kind-of-engineer-you-should-be/ " target="_blank"> <button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Calculator</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-show">
-					<a href="https://website.outgrow.co/Which-engineering-major-is-right-for-you" target="_blank"><button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Quiz</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Homepage section 7 end-->
-
-	<!-- Homepage section 8 start-->
-	<section class="section section-8 hide">
-		<div class="container-fluid np">
-			<div class="col-xs-12 col-sm-12 col-md-6 section-7-left1">
-				<div class="col-xs-12 col-sm-12 slider-sa text-center">
-					<div class="rs-show">
- 						<div class="swiper-container box-shadow  mk-animate-element scale-up">
- 							<div class="swiper-wrapper">
- 								<div class="swiper-slide">
- 									<img src="images/em2-1.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 								<div class="swiper-slide">
- 									<img src="images/em2-2.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 							</div>
- 							<!-- Add Pagination -->
- 						</div>
- 						<div class="swiper-pagination"></div>
- 					</div>
- 					<div class="qode-cards-gallery-holder right rs-hide" data-side=right>
- 						<div class="qode-cards-gallery">
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="https://website.outgrow.co/5875396fe62e5172076953fe" class="embed-modal2" target="_blank" > <img src="#" alt="" class="qode-lazy-image" data-image="images/em2-1.jpg"
- 										style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true"
- 									/> </a>
- 							</div>
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="https://website.outgrow.co/5875396fe62e5172076953fe" class="embed-modal2" target="_blank"> <img src="#" alt="" class="qode-lazy-image" data-image="images/em2-2.jpg"
- 										style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true" /> </a>
- 							</div>
-						 </div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 section-7-left">
-				<h4 class="mk-animate-element right-to-left">
-					How much should you pay for a video campaign ?
-				</h4>
-				<div class="sec9-test mk-animate-element right-to-left">
-					<em class="left">“</em>
-					<p>
-						The video cost calculator helped us create a brand centered around transparency. It soon became the go-to tool for advertisers to assess production costs (even when they were considering our competitors). Not surprisingly, today, it is our <b>#1 source of leads</b>.
-						<em class="right">”</em>
-					</p>
-					<span class="text-1">Chief Creative Officer, </span>
-					<span class="text-2">Top Hollywood Ad Agency</span>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-11 np">
-					<div class="circle-value mk-animate-element right-to-left">
-						<em class="">k</em>
-						<label class="counter">56</label>
-						<p>Unique Visits</p>
-					</div>
-					<div class="circle-value mk-animate-element right-to-left">
-						<em class="">k</em>
-						<label class="counter">19</label>
-						<p>Search Traffic</p>
-					</div>
-					<div class="circle-value mk-animate-element right-to-left">
-						<em class="">%</em>
-						<label  class="counter">34</label>
-						<p>Completion Rate</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-hide">
-					<a href="https://website.outgrow.co/5875396fe62e5172076953fe" class="embed-modal2"  target="_blank"><button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Calculator</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-show">
-					<a href="https://website.outgrow.co/5875396fe62e5172076953fe" target="_blank"><button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Calculator</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Homepage section 8 end-->
-
-	<!-- Homepage section 9 start-->
-	<section class="section section-9 hide">
-		<div class="container-fluid np">
-			<div class="col-xs-12 col-sm-12 col-md-6 col-sm-push-6 section-9-right">
-				<div class="col-xs-12 col-sm-12 slider-sa text-center">
-					<div class="rs-show">
- 						<div class="swiper-container box-shadow  mk-animate-element scale-up rs-show">
- 							<div class="swiper-wrapper">
- 								<div class="swiper-slide">
- 									<img src="images/em3-3.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 								<div class="swiper-slide">
- 									<img src="images/em3-2.jpg" alt="" class="qode-lazy-image" />
- 								</div>
- 							</div>
- 							<!-- Add Pagination -->
- 						</div>
- 						<div class="swiper-pagination"></div>
- 					</div>
- 					<div class="qode-cards-gallery-holder left rs-hide" data-side=left>
- 						<div class="qode-cards-gallery">
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="http://resources.outgrow.co/risk-of-getting-heart-disease/" target="_blank"> <img src="#" alt="" class="qode-lazy-image" data-image="images/em3-3.jpg"
- 									style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true"
-									 /> </a>
- 							</div>
- 							<div class="card" style="background-color:#f3f3f3">
- 								<a href="http://resources.outgrow.co/risk-of-getting-heart-disease/" target="_blank"> <img src="#" alt="" class="qode-lazy-image" data-image="images/em3-2.jpg"
- 								 style="width:1122px;height:1px" data-ratio="0.62566844919786" data-lazy="true"	/> </a>
- 							</div>
-						 </div>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-sm-12 col-md-6 section-9-left section-9-left2 col-sm-pull-6">
-				<h4 class="mk-animate-element left-to-right">
-					What is your risk of getting a heart disease?
-				</h4>
-				<div class="sec9-test mk-animate-element left-to-right">
-					<em class="left">“</em>
-					<p>
-						Being an age old healthcare company, social media was never a serious marketing channel. But this changed when we launched our series of "What is the risk of getting a ______ disease?" calculators. With these calculators, facebook is now our cheapest source of leads!
-						<em class="right">”</em>
-					</p>
-					<span class="text-1">Head of Customer Experience,</span>
-					<span class="text-2">IDBI Insurance</span>
-				</div>
-				<div class="col-xs-12 col-sm-12 col-md-11 np">
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">k</em>
-						<label class="counter">98</label>
-						<p>Unique Views</p>
-					</div>
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">%</em>
-						<label class="counter">66</label>
-						<p>Referral Traffic</p>
-					</div>
-					<div class="circle-value mk-animate-element left-to-right">
-						<em class="">%</em>
-						<label  class="counter">6</label>
-						<p>Bounce Rate</p>
-					</div>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-hide">
-					<a href="http://resources.outgrow.co/risk-of-getting-heart-disease/" target="_blank"> <button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Calculator</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-				<div class="col-xs-12 col-sm-11 np rs-show">
-					<a href="https://website.outgrow.co/What-is-your-risk-of-getting-a-heart-disease" target="_blank"><button class="btn-buildcal mk-animate-element left-to-right"> <p>Try The Calculator</p> <i class="material-icons">keyboard_arrow_right</i></button></a>
-				</div>
-
-			</div>
-		</div>
-	</section>
-	<!-- Homepage section 9 end-->
-
-	<!-- Homepage section 12 start-->
-	<section class="section section-12 hide">
-		<div class="container-fluid">
-			<div class="sec10-testimonial mk-animate-element right-to-left">
-				<div class="sec10-testname1 hide">
-					<img src="images/testimonial2.png" />
-				</div>
-				<div class="sec10-tes-inner">
-					<em class="sec10-em1">“</em>
-					<span>We sent a calculator to a prospective customer and found that the email was opened over 400 times. Either he was obsessed with the calculator or shared with his entire company.</span>
-
-				</div>
-				<div class="sec10-testname">
-					<h5>Paul McIntiere</h5>
-<!-- 					<span></span>
- -->				</div>
-				<a class="sec10-testimonial-link">Sales Territory Manager</a>
-
-			</div>
-		</div>
-	</section>
-	<!-- homepage section 12 new start -->
-	<div id="alternatingSizesPortfolioSection" class="vc_row wpb_row section vc_row-fluid hide  vc_custom_1469789306140 grid_section"
-		style=' text-align:center;'>
-		<div class=" section_inner clearfix">
-			<div class='section_inner_margin clearfix'>
-				<div class="wpb_column vc_column_container vc_col-sm-12">
-					<div class="vc_column-inner ">
-						<div class="wpb_wrapper">
-							<div class="vc_empty_space  vc_custom_1469695103969" style="height: 0px"><span class="vc_empty_space_inner"> <span class="empty_space_image"  ></span> </span>
-							</div>
-							<div class='projects_holder_outer v3 portfolio_with_space portfolio_with_hover_text'>
-								<div class='projects_holder portfolio_main_holder clearfix v3 alternating_sizes portfolio_landscape_image '>
-									<article class='mix portfolio_category_3 ' style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="javascript:void(0);"
-														style="font-size: 12px">Bridge Original</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Original"
-												href="javascript:void(0);"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_2 portfolio_category_9 portfolio_category_7 '
-										style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge77.qodeinteractive.com/" style="font-size: 12px">Bridge Modern Furniture</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Modern Furniture"
-												href="http://bridge77.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="77" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_2 ' style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge8.qodeinteractive.com/" style="font-size: 12px">Bridge Craftsman</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Craftsman"
-												href="http://bridge8.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="600" height="380" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 600px) 100vw, 600px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_4 portfolio_category_2 portfolio_category_5 '
-										style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge10.qodeinteractive.com/" style="font-size: 12px">Bridge Modern Photography</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Modern Photography"
-												href="http://bridge10.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="600" height="380"  class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 600px) 100vw, 600px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9 portfolio_category_5 '
-										style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge69.qodeinteractive.com/" style="font-size: 12px">Bridge Resume</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Resume"
-												href="http://bridge69.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9 '
-										style=''><span class="qode-portfolio-new-badge">NEW</span>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge38.qodeinteractive.com/" style="font-size: 12px">Bridge Conference</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Conference"
-												href="http://bridge38.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_2 ' style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="javascript:void(0)" style="font-size: 12px">Bridge Consulting</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Consulting"
-												href="javascript:void(0)"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_2 ' style=''>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge9.qodeinteractive.com/" style="font-size: 12px">Bridge Corporation</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge Corporation"
-												href="http://bridge9.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9 '
-										style=''><span class="qode-portfolio-new-badge">NEW</span>
-										<div class="item_holder flip_from_left">
-											<div class="portfolio_title_holder">
-												<h5 itemprop="name" class="portfolio_title entry_title"><a itemprop="url" href="http://bridge42.qodeinteractive.com/" style="font-size: 12px">Bridge UX/UI Design</a></h5>
-											</div>
-											<a itemprop="url" class="portfolio_link_class" title="Bridge UX/UI Design"
-												href="http://bridge42.qodeinteractive.com/"></a>
-											<div class="portfolio_shader"></div>
-											<div class="image_holder"><span class="image"><img width="700" height="442" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-										</div>
-									</article>
-									<div class='filler'></div>
-									<div class='filler'></div>
-									<div class='filler'></div>
-								</div>
-							</div>
-							<div class="vc_empty_space" style="height: 49px"><span class="vc_empty_space_inner"> <span class="empty_space_image"  ></span> </span>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- homepage section 12 new end -->
-	<!-- Homepage section 12 end-->
-	<section class="hide">
-		<span class="section-runnigheading mk-animate-element scale-up rs-show">Find Your Style</span>
-	</section>
-	<!-- Homepage section 13 start-->
-	<div class=" Section-13 col-xs-12 np hide">
-		<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-		  <div class="panel panel-default mk-animate-element left-to-right">
-			<div class="panel-heading" role="tab" id="headingOne">
-			  <h4 class="panel-title">
-				<a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-				  Calculator 1 #
-				</a>
-			  </h4>
-			</div>
-			<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-			  <div class="panel-body">
-				Calculator 1 # Description
-			  </div>
-			</div>
-		  </div>
-		  <div class="panel panel-default mk-animate-element left-to-right">
-			<div class="panel-heading" role="tab" id="headingTwo">
-			  <h4 class="panel-title">
-				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-				  Calculator 2 #
-				</a>
-			  </h4>
-			</div>
-			<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-			  <div class="panel-body">
-				Calculator 2 # Description
-			  </div>
-			</div>
-		  </div>
-		  <div class="panel panel-default mk-animate-element left-to-right">
-			<div class="panel-heading" role="tab" id="headingThree">
-			  <h4 class="panel-title">
-				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-				  Calculator 3 #
-				</a>
-			  </h4>
-			</div>
-			<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-			  <div class="panel-body">
-				Calculator 3 # Description
-			  </div>
-			</div>
-		  </div>
-		  <div class="panel panel-default mk-animate-element left-to-right">
-			<div class="panel-heading" role="tab" id="headingfour">
-			  <h4 class="panel-title">
-				<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
-				  Calculator 4 #
-				</a>
-			  </h4>
-			</div>
-			<div id="collapsefour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingfour">
-			  <div class="panel-body">
-				Calculator 4 # Description
-			  </div>
-			</div>
-		  </div>
-		</div>
-	</div>
-	<section class="section section-13 hide">
-
-		<div id="alternatingSizesPortfolioSection" class="vc_row wpb_row section vc_row-fluid  vc_custom_1469789306140 grid_section hide"
-			style=' text-align:center;'>
-			<div class=" section_inner clearfix">
-				<div class='section_inner_margin clearfix'>
-					<div class="wpb_column vc_column_container vc_col-sm-12">
-						<div class="vc_column-inner ">
-							<div class="wpb_wrapper">
-								<div class="vc_empty_space  vc_custom_1469695103969" style="height: 0px"><span class="vc_empty_space_inner"> <span class="empty_space_image"  ></span> </span>
-								</div>
-								<div class='projects_holder_outer v3 portfolio_with_space portfolio_with_hover_text'>
-									<div class='projects_holder portfolio_main_holder clearfix v3 alternating_sizes portfolio_landscape_image '>
-										<article class='mix portfolio_category_3' style=''>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Airbnb vs Hotel "
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner1-new.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a"  sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9 portfolio_category_5'
-											style=''>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Insurance Saving"
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner5-subhead.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9'
-											style=''><span class="qode-portfolio-new-badge hide">NEW</span>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Heart Disease"
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner6-subhead.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<article class='mix portfolio_category_3 portfolio_category_2' style=''>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Video Campaign"
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner7.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="a" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<article class='mix portfolio_category_3 portfolio_category_2' style=''>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Home Loan"
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner8.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<article class='mix portfolio_category_3 portfolio_category_4 portfolio_category_2 portfolio_category_9'
-											style=''><span class="qode-portfolio-new-badge hide">NEW</span>
-											<div class="item_holder flip_from_left">
-												<a itemprop="url" class="portfolio_link_class" title="Star Health"
-													href="javascript:void(0);"></a>
-												<div class="portfolio_shader"></div>
-												<div class="image_holder"><span class="image"><img width="700" height="442" src="images/banner9.jpg" class="attachment-portfolio-landscape size-portfolio-landscape wp-post-image" alt="p" sizes="(max-width: 700px) 100vw, 700px" /></span></div>
-											</div>
-										</article>
-										<div class='filler'></div>
-										<div class='filler'></div>
-										<div class='filler'></div>
-									</div>
-								</div>
-								<div class="vc_empty_space" style="height: 49px"><span class="vc_empty_space_inner"> <span class="empty_space_image"  ></span> </span>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="section start-trial-cta">
-				<div class="container-fluid np">
-					<div class="col-md-12 col-sm-12 col-xs-12 np">
-						<a href="#" id="trialAnchor">
-							<button class="btn-buildcal mk-animate-element left-to-right mk-in-viewport full-visible ripple ">
-								<i class="material-icons">view_compact</i>
-								<p>Build Your interactive experience</p>
-							</button>
-						</a>
-						<!-- <label>No Credit Card Required</label> -->
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container mobile-container ebook-container">
-			<div class="col-md-12 col-sm-12 col-xs-12 np hide">
-				<div class="section-13-heading mk-animate-element scale-up mk-in-viewport full-visible">
-					Download Our Ebook
-				</div>
-				<div class="section-13-subheading mk-animate-element scale-up mk-in-viewport full-visible">
-				 Create beautiful experiences in minutes with our simple, yet powerful development studio.
-				</div>
-			</div>
-			<div class="col-md-12 col-sm-12 col-xs-12 np">
-				<div class="col-md-6 col-sm-12 col-xs-12 np rs-show text-center">
-					<img class="ebook-img" src="images/ebook-1.png">
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 np">
-					<div class="ebook-outer">
-						<div class="ebook-head">
-							The Only Guide to Growth Hacking with Calculators!
-						</div>
-						<div class="ebook-subhead">
-							Learn how you can boost lead generation with interactive calculators.
-						</div>
-						<div class="ebook-sub-heading">
-							Get the Ebook
-						</div>
-						<div class="col-md-12 col-sm-12 col-xs-12 np sahil-material">
-							<form class="">
-                               <p class="errors" id="ebook-error"></p>
-                                <div class="form-group label-floating">
-                                    <label class="control-label" for="ebook-name">Name</label>
-                                    <input name="ebook-name" class="form-control" id="ebook-name" type="text" required>
-                                	<span class="material-input"></span>
-                                </div>
-                                 <div class="form-group label-floating">
-                                    <label class="control-label" for="ebook-email">Email</label>
-                                    <input name="ebook-email" class="form-control" id="ebook-email" type="email" required>
-                                	<span class="material-input"></span>
-                                </div>
-                            </form>
-                        	<button id="ebook-submit" onclick="submitEbookData(event)" class="btn btn-default form-btn">Get Access<i class="material-icons">arrow_downward</i></button>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12 col-xs-12 np rs-hide">
-					<img class="ebook-img" src="images/ebook-1.png">
-				</div>
-			</div>
-		</div>
-	</section>
 
 	<!--section Hyper targeted sales -->
 	<!--<section class="section sec-targetedSale-title">
@@ -1484,7 +922,7 @@
 		</div>
 	</div>
 	<div class="col-xs-12 col-sm-12 col-md-12 np mk-animate-element scale-up rs-show text-center mk-in-viewport sec-targetedSale">
-		<img class="" src="images/img-hyperTargetedSale.jpg">
+		<img class="" src="" data-src="images/img-hyperTargetedSale.jpg" >
 		<div class="float-wrapper">
 			<div class="float-icon"><i class="material-icons">person_outline</i></div>
 			<div class="float-content">
@@ -1534,107 +972,116 @@
 			<div class="swiper-container mk-animate-element scale-up">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile01.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile01.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile02.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile02.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile03.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile03.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile04.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile04.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile05.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile05.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile06.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile06.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile07.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile07.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile08.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile08.jpg" alt="" class="qode-lazy-image" />
 					</div>
 				</div>
-				<!-- Add Pagination -->
 			</div>
+			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials rs-show rs-hide-less480">
 			<div class="swiper-container mk-animate-element scale-up">
 				<div class="swiper-wrapper">
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile01.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile01.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile02.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile02.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile03.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile03.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile04.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile04.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile05.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile05.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile06.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile06.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile07.jpg" alt="" class="qode-lazy-image" />
+						<img src=""  data-src="images/testimonialsMobile07.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonialsMobile08.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonialsMobile08.jpg" alt="" class="qode-lazy-image" />
 					</div>
 				</div>
-				<!-- Add Pagination -->
 			</div>
+			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 		<div class="col-xs-12 col-sm-12 np slider-sa text-center sec-testimonials rs-hide">
 			<div class="swiper-container mk-animate-element scale-up">
-				<div class="swiper-wrapper">
+				<div class="swiper-wrapper">		
 					<div class="swiper-slide">
-						<img src="images/testimonials01.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials01.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials02.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials02.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials03.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials03.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials04.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials04.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials05.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials05.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials06.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials06.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials07.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials07.jpg" alt="" class="qode-lazy-image" />
 					</div>
 					<div class="swiper-slide">
-						<img src="images/testimonials08.jpg" alt="" class="qode-lazy-image" />
+						<img src="" data-src="images/testimonials08.jpg" alt="" class="qode-lazy-image" />
 					</div>
 				</div>
-				<!-- Add Pagination -->
 			</div>
+			<!-- Add Pagination -->
 			<div class="swiper-pagination"></div>
+			<!-- Add Arrows -->
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
 		</div>
 	</div>
 	<!--section testimonial -->
 
 	<section class="section section-startFreeTrial-btn text-center">
-		<a href="http://app.outgrow.'+ext+'" class="params">
+		<a href="" class="params trialLOL">
 			<button onclick="callGA(\'CANNOT WAIT CTA\')" class="btn-buildcal mk-animate-element fade-in">
-			<img src="images/icon-mouse.png">Start Free Trial</button>
+			<img src="" data-src="images/icon-mouse.png">Start Free Trial</button>
 		</a>
-		<div class="rs-hide-mb"><label>Plans Start at $45/month</label></div>
+		<div class=""><label>Plans Start at $45/month</label></div>
 	</section>
 
 	<section class="section section-14" id="footer">
@@ -1648,7 +1095,7 @@
 			<!-- Modal content-->
 			<div class="modal-content">
 				<div class="modal-body">
-					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<button type="button" onclick="btnClose()" class="close btn-close" data-dismiss="modal" aria-label="Close">
 					<i class="material-icons">close</i></button>
 					<div class="row">
 						<div class="modal-video-full">
@@ -1666,60 +1113,57 @@
 		</div>
 	</div>
 	<!-- End: Modal Video -->
-
-
-	<!-- Start: Modal Quizer Embed  -->
-	<div id="embed-modal-quizer" class="modal fade embedmodal-custom-quiz" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<!-- Modal content-->
-			<iframe class="" src="https://website.outgrow.co/58753b12e62e517207695b70" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Quizer Embed -->
-
-
-	<!-- Start: Modal Embed 1 -->
-	<div id="embed-modal1" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
-		<div class="modal-dialog modal-dialog-video">
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<!-- Modal content-->
-			<iframe class="" src="https://website.outgrow.co/58753b12e62e517207695b70" height="100%" width="100%" frameborder="0"></iframe>
-		</div>
-	</div>
-	<!-- End: Modal Embed 1 -->
-
-
-
-	<!-- Start: Modal Embed 2 -->
-	<div id="embed-modal2" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
+	<!-- Start: Modal calcEmbed1 -->
+	<div id="calcEmbed-modal1" class="modal fade calcEmbed-modal" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-video">
 			<!-- Modal content-->
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<iframe class="" src="https://website.outgrow.co/5875396fe62e5172076953fe" height="100%" width="100%" frameborder="0"></iframe>
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="col-md-12 np">
+						<iframe src="https://website.outgrow.co/Which-engineering-major-is-right-for-you?vHeight=1"></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- End: Modal Embed 2 -->
+	<!-- End: Modal calcEmbed1 -->
 
-
-
-	<!-- Start: Modal Embed 3 -->
-	<div id="embed-modal3" class="modal fade embedmodal-custom" tabindex="-1" role="dialog">
+	<!-- Start: Modal calcEmbed2 -->
+	<div id="calcEmbed-modal2" class="modal fade calcEmbed-modal" tabindex="-1" role="dialog">
 		<div class="modal-dialog modal-dialog-video">
 			<!-- Modal content-->
-			<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
-				<i class="material-icons">close</i>
-			</button>
-			<iframe class="" src="https://website.outgrow.co/58714cd1df75740d5cd978e0" height="100%" width="100%" frameborder="0"></iframe>
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="col-md-12 np">
+						<iframe src="https://website.outgrow.co/Cost-of-a-video-campaign-4?vHeight=1"></iframe>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
-	<!-- End: Modal Embed 3 -->
+	<!-- End: Modal calcEmbed2 -->
+
+	<!-- Start: Modal calcEmbed3 -->
+	<div id="calcEmbed-modal3" class="modal fade calcEmbed-modal" tabindex="-1" role="dialog">
+		<div class="modal-dialog modal-dialog-video">
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-body">
+					<button type="button" class="close btn-close" data-dismiss="modal" aria-label="Close">
+					<i class="material-icons">close</i></button>
+					<div class="col-md-12 np">
+						<iframe src="https://website.outgrow.co/What-is-your-risk-of-getting-a-heart-disease?vHeight=1"></iframe>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End: Modal calcEmbed3 -->
+
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 	<script>
 		jQuery.noConflict();
@@ -1735,6 +1179,9 @@
 	<script src="js/plans.js"></script>
 	<script src="js/footer.js"></script>
 	<script src="js/loader/resizer.js"></script>
+
+	<!-- swiper js -->
+	<script src="js/swiper.min.js"></script>
 	<script>
 	  	jQuery.material.init();
 	</script>
@@ -1744,13 +1191,29 @@
 		console.log('Before slider');
 		var swiper = new Swiper('.swiper-container', {
 			pagination: '.swiper-pagination',
-			paginationClickable: true
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			spaceBetween: 30,
+			slidesPerView: 3,
+			centeredSlides: true,
+			autoplay: 2500,
+			speed:500,
+			autoplayDisableOnInteraction: false
 		});
 		console.log('After slider');
 
 		var swiper = new Swiper('.swiper-container-first', {
 			pagination: '.swiper-pagination',
-			paginationClickable: true
+			paginationClickable: true,
+			nextButton: '.swiper-button-next',
+			prevButton: '.swiper-button-prev',
+			//spaceBetween: 30,
+			//slidesPerView: 3,
+			centeredSlides: true,
+			// autoplay: 2500,
+			speed:500,
+			autoplayDisableOnInteraction: false
 		});
 		 //youtube video
 		 jQuery('.close').click(function(){
@@ -1761,68 +1224,18 @@
 	    });
 
 		//embed web mobile js
-		jQuery(".embed1-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active1'))
-			jQuery(this).addClass('active1');
-			jQuery('.em-weblink').removeClass('active1');
-			jQuery("#em1").removeClass('embed-web');
-			jQuery("#em1").addClass('embed-mobile');
-			jQuery("#em1 .wrapper").addClass('wrapper-mobile');
+		jQuery(".calcembed").click(function(){
+			jQuery("html").css('overflow','hidden');
 		});
 
-		jQuery(".embed1-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active1'))
-			jQuery(this).addClass('active1');
-			jQuery('.em-moblink').removeClass('active1');
-			jQuery("#em1").addClass('embed-web');
-			jQuery("#em1").removeClass('embed-mobile');
-			jQuery("#em1 .wrapper").removeClass('wrapper-mobile');
+		jQuery(".close").click(function(){
+			jQuery("html").css('overflow','auto');
 		});
 
-
-		jQuery(".embed2-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active2'))
-			jQuery(this).addClass('active2');
-			jQuery('.em-weblink').removeClass('active2');
-			jQuery("#em2").removeClass('embed-web');
-			jQuery("#em2").addClass('embed-mobile');
-			jQuery("#em2 .wrapper").addClass('wrapper-mobile');
-		});
-
-		jQuery(".embed2-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active2'))
-			jQuery(this).addClass('active2');
-			jQuery('.em-moblink').removeClass('active2');
-			jQuery("#em2").addClass('embed-web');
-			jQuery("#em2").removeClass('embed-mobile');
-			jQuery("#em2 .wrapper").removeClass('wrapper-mobile');
-		});
-
-
-
-		jQuery(".embed3-layout .em-moblink").click(function(){
-			if(!jQuery(this).hasClass('active3'))
-			jQuery(this).addClass('active3');
-			jQuery('.em-weblink').removeClass('active3');
-			jQuery("#em3").removeClass('embed-web');
-			jQuery("#em3").addClass('embed-mobile');
-			jQuery("#em3 .wrapper").addClass('wrapper-mobile');
-		});
-
-		jQuery(".embed3-layout .em-weblink").click(function(){
-			if(!jQuery(this).hasClass('active3'))
-			jQuery(this).addClass('active3');
-			jQuery('.em-moblink').removeClass('active3');
-			jQuery("#em3").addClass('embed-web');
-			jQuery("#em3").removeClass('embed-mobile');
-			jQuery("#em3 .wrapper").removeClass('wrapper-mobile');
-		});
-
-		if (document.documentElement.clientWidth < 1024) {
-			jQuery(".embed-web").addClass('embed-mobile');
-			jQuery(".wrapper").addClass('wrapper-mobile');
-		}
-	 	console.log('index document ready')
+		// if (document.documentElement.clientWidth < 1024) {
+		// 	jQuery(".embed-web").addClass('embed-mobile');
+		// 	jQuery(".wrapper").addClass('wrapper-mobile');
+		// }
 
 		//Intercom
 		var url			=	window.location.href;
@@ -1835,61 +1248,79 @@
 		};
 		(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/r841gnag';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();
 
-		jQuery('.mk-animate-element').viewportChecker({
-			classToAdd: 'mk-in-viewport', // Class to add to the elements when they are visible
-		});
-
-
-		jQuery(".toggle-dots-white").click(function(){
-			jQuery(".billing-grey-bottom").slideToggle('slow');
-		});
-
-		jQuery(".toggle-dots-grey").click(function(){
-			jQuery(".billing-white-bottom").slideToggle('slow');
-		});
-
-		jQuery(".toggle-dots-white2").click(function(){
-			jQuery(".billing-grey2").slideToggle('slow');
-		});
-
-
 		jQuery('.counter').counterUp({
 			delay: 10,
 			time: 1000
 		});
 
-		
+
 		appendParamsToUrl();
 		var query_params = location.search.split('=');
 		createCookie('referralCode',query_params[1],3);
 
+		// calc active link
+		jQuery('.calc-links a').on('click',function(){
+			jQuery('a').removeClass('active');
+			jQuery(this).addClass('active');
+		});
+
 	});
 
+	jQuery(document).on('click', '.video-playIcon', function () {
+		console.log('Clicked');
+		if (jQuery(window).width() > 768) {
+			attachVid('web');
+		}
+		if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
+			attachVid('res');
+		}
+		if (jQuery(window).width() <= 320) {
+			attachVid('mob');
+		}
+	})
+
 	function attachVid(type) {
+		var href = window.location.href.split('#')[1];
+		if(!href) {
+			window.location.href = window.location.href + "#video-main"
+		} else {
+			window.location.href = window.location.href.split('#')[0] + '#video-main'
+		}
 		if ('web' === type) changeHeightWeb();
 		if ('mob' === type) changeHeightMob();
 		if ('res' === type) changeHeightRes();
 	}
 
-	function changeHeightWeb() {	
-		console.log('Web');	
+	function changeHeightWeb() {
+		console.log('Web');
 		jQuery(".video-img-inner-web").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
 		var xDiv = document.getElementById('video-main');
 
 		if (xDiv.style.height == '')
-			xDiv.style.height = '630px';
+			xDiv.style.height = '580px';
 		else
 			xDiv.style.height = '';
 	}
 
 	function changeHeightMob() {
 		console.log('Mob');
-		jQuery(".video-img-inner-mob").html("<iframe class='outgrow-video' src='https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0;autoplay=1' frameborder='0' allowfullscreen></iframe>");
+		jQuery(".video-img-inner-mob").html(`<img class="video-img" src="images/video-thumbnail.jpg" data-src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>`);
 		var xDiv = document.getElementById('video-main-rs-mob');
-		if (xDiv.style.height == '')
-			xDiv.style.height = '260px';
-		else
-			xDiv.style.height = '';
+		jQuery('#video-main-rs-mob .btn-close').show();
+	}
+
+	function btnClose(){
+			jQuery(".video-img-inner-mob").html(`<img class="video-img" src="images/video-thumbnail.jpg" data-src="images/video-thumbnail.jpg" />
+							<span class="img-overlay"></span>
+							<!--<img class="img-playIcon" src="images/video-img-playIcon.png" />-->
+							<span class="video-playIcon" data-toggle="modal" data-target="#video-modal">
+								<span class="inside-circle"><i class="material-icons">play_arrow</i></span>
+							</span>`);
 	}
 
 	function changeHeightRes() {
@@ -1946,41 +1377,39 @@
 			if (jQuery(window).width() > 768) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 768 && jQuery(window).width() > 320) {
 				jQuery('.video-img-inner-mob').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('mob')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 			if (jQuery(window).width() <= 320) {
 				jQuery('.video-img-inner-res').empty().append(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('res')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 
 				jQuery('.video-img-inner-web').empty(`<img class="video-img" src="images/video-thumbnail.jpg" />
 							<!--<iframe class="outgrow-video" src="https://www.youtube.com/embed/PmN_MY5kNrE?vq=hd720&amp;rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 							<span class="img-overlay"></span>
-							<span class="video-playIcon" onclick="attachVid('web')"><span class="inside-circle">></span></span>`);
+							<span class="video-playIcon"><span class="inside-circle"><i class="material-icons">play_arrow</i></span></span>`);
 			}
 		})
 		jQuery(window).scroll(function() {
 			if (jQuery(this).scrollTop() > 70) {
 				jQuery("nav").addClass('nav-boxshadow');
 
-				//jQuery(".custom-navbar.navbar-default").css("padding","5px 25px 5px 10px")
 			} else {
 				jQuery("nav").removeClass('nav-boxshadow');
-				//jQuery(".custom-navbar.navbar-default").css("padding","10px 25px 10px 10px")
 			}
 		});
 
@@ -1988,57 +1417,14 @@
 		jQuery( "#open" ).click(function() {
 		  	jQuery(".menu-outer").addClass("is-active");
 			jQuery(".backdrop-custom").addClass("is-active");
-			//jQuery("html").css("overflow","hidden");
 		});
 
 		jQuery( ".close-menu" ).click(function() {
 			jQuery(".menu-outer").removeClass("is-active");
 			jQuery(".backdrop-custom").removeClass("is-active");
-			//jQuery("html").css("overflow","auto");
 		});
 
-
 	</script>
-	<script>
-		// function sticky_relocate() {
-		// 	var window_top = jQuery(window).scrollTop();
-		// 	var window_bottom = window_top + jQuery(window).height();
-		// 	var div_top = jQuery('#sticky-anchor').offset().top;
-		// 	var outgrowMagic = jQuery('.sec-outgrowMagic').offset().top + jQuery('.sec-outgrowMagic').outerHeight(true);
-		// 	if (window_top > div_top) {
-		// 		jQuery('#sticky').addClass('stick');
-		// 		jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-		// 	} else {
-		// 		jQuery('#sticky').removeClass('stick');
-		// 		jQuery('#sticky-anchor').height(0);
-		// 	}
-		// 	console.log(window_bottom,outgrowMagic);
-		// 	if (window_bottom >= outgrowMagic) {
-		// 		jQuery('#sticky').removeClass('stick');
-		// 		//jQuery('#sticky-anchor').height(jQuery('#sticky').outerHeight());
-		// 	}
-		// }
-
-		// jQuery(function() {
-		// 	jQuery(window).scroll(sticky_relocate);
-		// 	sticky_relocate();
-		// });
-
-	</script>
-
-	<!--<script type="text/javascript">
-	//Usersnap
-	(function() {
-	var s = document.createElement("script");
-	s.type = "text/javascript";
-	s.async = true;
-	s.src = '//api.usersnap.com/load/'+
-			'261ef3ad-9942-4aa6-8418-c67c79aa25fe.js';
-	var x = document.getElementsByTagName('script')[0];
-	x.parentNode.insertBefore(s, x);
-	})();
-	</script>-->
-
 	<script type="text/javascript">
 		function callGA(str) {
 			switch(str) {
@@ -2087,56 +1473,15 @@
 			}
 		}
 	</script>
-
-	<script>
-(function (window, $) {
-	$(function() {
-
-
-	$('.ripple').on('click', function (event) {
-	//event.preventDefault();
-		var $div = $('<div/>'),
-		btnOffset = $(this).offset(),
-		xPos = event.pageX - btnOffset.left,
-		yPos = event.pageY - btnOffset.top;
-
-
-
-		$div.addClass('ripple-effect');
-		var $ripple = $(".ripple-effect");
-
-		$ripple.css("height", $(this).height());
-		$ripple.css("width", $(this).height());
-		$div
-		.css({
-		top: yPos - ($ripple.height()/2),
-		left: xPos - ($ripple.width()/2),
-		background: $(this).data("ripple-color")
-		})
-		.appendTo($(this));
-
-		window.setTimeout(function(){
-			$div.remove();
-			}, 2000);
-		});
-	});
-})(window, jQuery);
-  </script>
 	<script type="text/javascript">
-	var iframes = iFrameResize({
-        log: false,
-        autoResize: true,
-        enablePublicMethods: true,
-        checkOrigin: false,
-    },'#og-iframe');
+		var iframes = iFrameResize({
+	        log: false,
+	        autoResize: true,
+	        enablePublicMethods: true,
+	        checkOrigin: false,
+	    },'#og-iframe');
 	    myVid=document.getElementById("player");
 	    myVid.muted=true;
 	</script>
-	<!-- <div class="footer-img-2">
-		<script language="JavaScript" type="text/javascript">
-			TrustLogo("https://outgrow.co/images/comodo_secure.png", "SC5", "none");
-		</script>
-		<a href="https://www.instantssl.com/wildcard-ssl.html" id="comodoTL"></a>
-	</div> -->
 </body>
 </html>

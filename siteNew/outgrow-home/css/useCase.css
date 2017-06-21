@@ -193,8 +193,8 @@ body{background:#fff !important;}
     font-size: 48px;
     line-height: 40px;
     font-family:montserratbold;
-    margin-top:-10px;
-	margin-bottom:30px;
+    margin-top:30px;
+	margin-bottom:0px;
 }
 .collage-outer .collage-solid{
 	background: #fb6c73;

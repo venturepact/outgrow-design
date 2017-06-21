@@ -110,6 +110,7 @@ jQuery(document).ready(function() {
 	}
 	var anchorElem = '<a href="'+href+'" class="link-login params" onclick="callGA('+callText+')">'+anchorText+'</a>';
 	jQuery('.anchorParent').html(anchorElem);
+	jQuery('.trialLOL').prop('href', trialLink);
 	jQuery('#trialAnchor').prop('href', trialLink);
 	jQuery('#loginAnchor').prop('href', loginLink);
 	jQuery('#footer').html(footer);
@@ -266,5 +267,22 @@ function setUTMRefCookie() {
 
 function display(url) {
 	console.log('Display called', url)
-	jQuery('.hrefTarget').empty().append('<iframe src="'+url+'"></iframe>');
+	jQuery('.hrefTarget').empty().append('<iframe id="og-iframe" src="'+url+'"></iframe>');
+	var iframes = iFrameResize({
+        log: false,
+        autoResize: true,
+        enablePublicMethods: true,
+        checkOrigin: false,
+    },'#og-iframe');
 }
+jQuery(window).load(function () {
+	jQuery('img').each(function(){
+		console.log('Changing attr');
+		jQuery(this).attr('src',jQuery(this).attr('data-src'));
+	});
+	jQuery('.outgrow-video').each(function(){
+		jQuery(this).attr('src',jQuery(this).attr('data-src'));
+		//myVid	= document.getElementById("player");
+		//myVid.muted	=	true;
+	});
+})

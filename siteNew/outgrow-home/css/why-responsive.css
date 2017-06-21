@@ -25,6 +25,7 @@
 		padding-bottom: 0px;
 		text-transform:none;
 		font-family:montserratultra_light;
+		    font-size: 22px;
 	}
 	#why .section-2-subheading{
 		text-align: left;
@@ -117,7 +118,7 @@
 	#why .section-16-left h4 {
 		margin-top: 0px;
 		margin-bottom: 20px;
-		font-size: 24px;
+		font-size: 22px;
 	}
 	#why .section-16-left span span{
 		margin-top: 2px;
@@ -155,7 +156,7 @@
 		font-size:40px;
 	}
 	#why .section-w3-text h4{
-		font-size:24px;
+		font-size:22px;
 	}
 	#why .section-w3-text span{
 		font-size:16px;
@@ -172,7 +173,7 @@
 		margin-bottom: 20px;
 		width:100%;
 		padding:0 20px;
-		margin-top: 0px;
+		margin-top: 0px;    font-size: 22px;
 	}
 	/* iframe {
 		position: absolute;
@@ -263,7 +264,7 @@
 		width: 100%;
 		padding: 0 20px;
 		margin-top: 0px;
-		font-size:24px;
+		font-size:22px;
 	}
 	#why .section-w2-left span i{
 		font-size:40px;
@@ -298,7 +299,7 @@
 		width: 100%;
 		font-size:24px;
 		padding: 0 20px;
-		margin-top: 0px;
+		margin-top: 0px; font-size: 22px;
 	}
 	#why .section-w2 img {
 		margin-top: 0px;

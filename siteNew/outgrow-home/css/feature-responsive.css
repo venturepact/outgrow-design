@@ -31,7 +31,7 @@
 		margin-bottom: 40px;
 	}
 	#feature .section-6.sec-integration h1{
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .section-6.sec-integration p{
 		padding-bottom:30px;
@@ -173,7 +173,7 @@
 		box-shadow: 2px 0px 8px 2px rgba(0,0,0,0.1);
 	}
 	#feature .section-15 .section-15-left h4{
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .section-15 .section-15-left span span{
 		font-size:16px;
@@ -185,7 +185,7 @@
 		margin-bottom:10px;
 	}
 	#feature .section-17 .section-17-left h4{
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .section-17 .section-17-left span span{
 		font-size:16px;
@@ -259,7 +259,7 @@
 	#feature .container.container-center h1{
 		padding:0px;
 		text-align:center;
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .section.section-10 span{
 		font-size:14px;
@@ -323,7 +323,7 @@
 	}
 	#feature .section-f1-left h4{
 		line-height:normal;
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .secf1-test {
 		margin-bottom: 0px;
@@ -335,7 +335,7 @@
 	}
 	#feature .section-f2 .section-f2-left h4{
 		line-height:normal;
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .section-f1-left span i{
 		margin-right: 10px;
@@ -345,7 +345,7 @@
 		margin-top: 10px;
 	}
 	#feature .section-f3 .section-f3-left h4{
-		font-size:24px;
+		font-size:22px;
 		line-height:normal;
 	}
 	#feature .secf3-test{
@@ -363,7 +363,7 @@
 		margin-top:10px;
 	}
 	#feature .section-f4 .section-f4-left h4{
-		font-size:24px;
+		font-size:22px;
 	}
 	#feature .secf4-test{
 		margin:10px 0px;
@@ -389,7 +389,7 @@
 		margin-top:10px;
 	}
 	#feature .section-4 .section-4-left h4{
-		font-size:24px;
+		font-size:22px;
 		line-height:normal;
 	}
 	#feature .sec9-test{
@@ -418,8 +418,26 @@
 		font-size:16px !important;
 	}
 	#feature .feature-heading-1 h3{
-		font-size:13px;
+		font-size:22px; line-height: 32px;
 	}
+	#feature .feature-heading-1 h4 { font-size: 16px;}
+
+	/* start: feature page responsive by arti */
+		#feature .section-f4 img{margin-bottom: 30px;}
+		#feature .sec-graphsCharts .section-f1-left {
+			padding-right: 20px;
+			padding-left: 20px;
+		}
+		#feature .sec-graphsCharts i.material-icons.icon-style {font-size: 40px;}
+		#feature .sec-graphsCharts .section-f1-left span.subheading {margin-bottom: 15px;}
+		#feature .sec-graphsCharts .section-f1-right { margin-top: 10px;}
+		#feature .section.section-5 h4 {font-size: 22px;}
+		#feature .section.section-10 h4 {font-size: 14px;}
+
+	/* end: feature page responsive by arti */
+
+
+
 }
 @media (min-width:440px) and (max-width:768px){
 	#feature .span-style{
