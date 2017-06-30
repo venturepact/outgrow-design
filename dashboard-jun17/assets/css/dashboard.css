@@ -2548,31 +2548,35 @@ h6,
 .users-outer{ float: left; width:100%; padding: 10px; display: table; }
 .users{float: left; width: 35px; border: 2px solid #fb545b; border-radius: 50%; background: #fff; color: #fb545b; height: 35px; text-align: center;padding-top: 5px;
     margin: 0 10px 0 0; font-size: 18px;}
-/*.name-outer{ float: left; width:88%; display: table-cell;  }
-.users-outer .username{ float: left; display:inline-block; color:#8e989f;}
-.users-outer .role{ float: left; width:100%;color:#8e989f; opacity:0.5;}*/
+
 .temp-card-outer-main{ float: left; width:100%;}
 .temp-web-header{ float: left; width:100%; background: #f0f3f5; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px; color:#62696d; font-size: 14px;}
-.temp-web-header .name-outer{ float: left; width:30%; padding: 10px;}
+.temp-web-header .name-outer{ float: left; width:33%; padding: 10px; }
 .temp-web-header .type-outer{ float: left; width:15%; padding: 10px; }
-.temp-web-header .status-outer{ float: left; width:11%; padding: 10px;}
+.temp-web-header .status-outer{ float: left; width:8%; padding: 10px; text-align: center;}
 .temp-web-header .uv-outer{ float: left; width:14%; padding: 10px; text-align: center;}
 .temp-web-header .leads-outer{ float: left; width:8%; padding: 10px; text-align: center;}
 .temp-web-header .pd-outer{ float: left; width:14%; padding: 10px; text-align: center;}
 .temp-web-header .dp-icon-outer{ float: left; width:8%; padding: 8px 10px; text-align: center;}
 .temp-web-header .dp-icon-outer i{ font-size: 20px; padding-top:2px;}
-.temp-card{ float: left; width:100%; background: #fff; font-size: 14px; border-bottom: 1px solid #e6eaec;}
-.temp-card .name-outer{ float: left; width:30%; padding: 10px;}
-.temp-card .type-outer{ float: left; width:15%; padding: 10px; }
-.temp-card .status-outer{ float: left; width:11%; padding: 10px;}
+.temp-card{ float: left; width:100%; background: #fff; font-size: 14px; transition: all 0.8s ease; border-bottom: 1px solid #e6eaec;font-size: 13px; display: inline-flex;}
+.temp-card:hover{box-shadow: 0 0px 20px 1px rgba(0,0,0,.1); position: relative;}
+.temp-card .name-outer{ float: left; width:33%; padding: 10px;display: inline-flex;  line-height: 20px; text-align: left;}
+.temp-card .type-outer{ float: left; width:15%; padding: 10px;  }
+.temp-card .status-outer{ float: left; width:8%; padding: 10px; text-align: center;}
+.temp-card .status-outer span{ background:#fb545b;padding: 2px 10px; color:#fff; -webkit-border-radius: 25px;
+-moz-border-radius: 25px;
+border-radius: 25px; font-size: 11px; text-transform: uppercase; }
 .temp-card .uv-outer{ float: left; width:14%; padding: 10px; text-align: center;}
 .temp-card .leads-outer{ float: left; width:8%; padding: 10px; text-align: center;}
 .temp-card .pd-outer{ float: left; width:14%; padding: 10px; text-align: center;}
 .temp-card .dp-icon-outer{ float: left; width:8%; padding: 8px 10px; text-align: center;}
 .temp-card .dp-icon-outer i{ font-size: 20px; padding-top:2px;}
-.temp-img-outer{width: 77px; height: 77px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
-.temp-img-outer .img-section { height: 77px; width: 77px; background-image: url(../images/dash-top.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
-.temp-name{ display: table-cell; vertical-align: middle; min-height: 100%; }
+.temp-img-outer{width:70px; height: 70px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
+.temp-img-outer .img-section { height: 70px; width: 70px; background-image: url(../images/dash-top.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
+.temp-name{ float: left; width:67%; }
+.common-table {display: table; width: 100%; height: 100%;}
+.common-table-cell {display: table-cell; vertical-align: middle;}
 
 
 /*dashboard-new css end*/
