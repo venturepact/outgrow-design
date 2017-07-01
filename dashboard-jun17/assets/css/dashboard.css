@@ -2608,7 +2608,7 @@ h6,
 .artical-outer{float: left;width: 100%; padding: 10px;  line-height: 20px;  text-align: left; font-size: 13px; }
 .artical-text{ float: left; width:67%;height: 60px; }
 .artical-img-outer{width:60px; height: 60px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
-.artical-img-outer .img-section { height: 60px; width: 60px; background-image: url(../images/bg2.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
+.artical-img-outer .img-section { height: 60px; width: 60px; background-image: url(../images/user.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
 
 .update-outer{float: left;width: 100%; padding: 10px 15px;  line-height: 18px;  text-align: left; font-size: 13px; color:#8e989f; }
 .update-text{ float: left; width:67%;height: 60px; }
