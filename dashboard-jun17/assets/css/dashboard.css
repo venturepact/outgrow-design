@@ -2616,7 +2616,7 @@ h6,
 .update-text-outer .text-section {font-family: montserratlight; color:#8e989f; font-size: 13px; position: absolute; top:10px; left:15px;  }
 .update-text span{font-family: montserratlight; opacity: 0.6;}
 
-.pagination-outer{ float: left; width:100%; margin-top: 25px;}
+.pagination-outer{ float: left; width:100%; margin-top: 25px; margin-bottom: 25px;}
 .pagination-outer .next-button{ float: right;  padding: 2px 30px 2px 12px; font-family: montserratlight; font-size: 12px; border:1px solid #dae2e6; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; position: relative; color:#97a0a6;}
 .pagination-outer .next-button i{ -ms-transform: rotate(180deg); /* IE 9 */    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */    transform: rotate(180deg);     position: absolute; font-size: 17px; top: 3px; right: 9px; color:#97a0a6;}
 .pagination-outer .back-button{ float: right;  padding: 2px 12px 2px 30px; font-family: montserratlight; font-size: 12px; border:1px solid #dae2e6; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; position: relative; color:#97a0a6; margin-right: 10px;}

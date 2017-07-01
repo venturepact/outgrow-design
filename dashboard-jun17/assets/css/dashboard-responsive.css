@@ -1,0 +1,38 @@
+@media only screen and (min-width : 150px) and (max-width : 767px) {
+/* Styles */
+.rs-hide{ display: none ;}
+.temp-card .name-outer { width: 100%;}
+.temp-card{ display: block;}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 480px) {
+/* Styles */
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 640px) and (max-width : 767px) {
+/* Styles */
+
+
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-width : 768px) and (max-width : 1023px) {
+
+
+
+}
+
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+/* Styles */
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1824px) {
+/* Styles */
+}
+
