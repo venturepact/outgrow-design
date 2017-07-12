@@ -2571,6 +2571,7 @@ h6,
 .temp-card .type-outer{ float: left; width:15%; padding: 10px; display: inline-flex; }
 .temp-card .status-outer{ float: left; width:8%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .status-outer span{ background:#fb545b;padding: 2px 10px; color:#fff; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; font-size: 11px; text-transform: capitalize; }
+.temp-card .status-outer span.draft{ background:#eee;padding: 2px 10px; color:#999; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; font-size: 11px; text-transform: capitalize; }
 .temp-card .uv-outer{ float: left; width:14%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .leads-outer{ float: left; width:8%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .pd-outer{ float: left; width:14%; padding: 10px; text-align: center; display: inline-flex;}
@@ -2622,4 +2623,5 @@ h6,
 .pagination-outer .back-button{ float: right;  padding: 2px 12px 2px 30px; font-family: montserratlight; font-size: 12px; border:1px solid #dae2e6; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; position: relative; color:#97a0a6; margin-right: 10px;}
 .pagination-outer .back-button i{ position: absolute; font-size: 17px; top: 3px; left: 9px; color:#97a0a6;}
 .pagination-outer .back-button.disable{ opacity: 0.7;}
+.pagination-outer .mid-outer{ width:160px; margin: 0 auto; display: block;}
 /*dashboard-new css end*/
