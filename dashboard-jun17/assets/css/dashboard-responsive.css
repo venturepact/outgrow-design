@@ -1,25 +1,72 @@
-@media only screen and (min-width : 150px) and (max-width : 767px) {
+@media only screen and (min-width : 150px) and (max-width : 768px) {
 /* Styles */
 .rs-hide{ display: none ;}
 .temp-card .name-outer { width: 100%;}
-.temp-card{ display: block;}
+.temp-card{ display: block; margin-bottom: 30px; position: relative;}
+.np-left{ padding-right: 0;}
+.temp-name{ width: 80%;}
+.temp-img-outer { width: 70px; height: 70px;}
+.responsive-view,.responsive-view-left, .responsive-view-right{ display: block;font-family: montserratlight;}
+.responsive-view-left{ float: left;width:40%;}
+.responsive-view-right{ float: left;width:60%;}
+.responsive-view-left .text-outer{ float: left; width:100%; text-align: left; color: #62696d; text-transform: uppercase; padding:10px 22px; }
+.temp-card .type-outer,.temp-card .uv-outer,.temp-card .leads-outer,.temp-card .pd-outer{ width:100%; text-align: left; padding:8px;}
+.temp-card .status-outer,.temp-card .dp-icon-outer{position: absolute;}
+.temp-card .status-outer{ top:-18px; right:-6px; padding:4px 5px; width:10%; min-height: 34px;}
+.ribbon {position: absolute; width: 100px; font-size: 10px; padding: 3px 5px; color: #fff; background-color: #fb545b; text-transform: uppercase;  top: -5px;  right: -7px;}
+.ribbon:before { right: 0; border-width: 7px 7px 0px 0px; content: ""; position: absolute; display: block;border-style: solid;border-color: #fb545b transparent transparent transparent; bottom: -7px;}
+.ribbon:after {content: ' '; position: absolute; width: 10px; height: 0; left: -10px;top: 0;border-width: 17px 10px;border-style: solid;border-color: #fb545b #fb545b #fb545b transparent;}
+.temp-card .status-outer span{ padding: 0;}
+.rs-show{ display: block;}
+.temp-card .dp-icon-outer {top: 25px; right: 25px; width: 20px;}
+.temp-card .dp-icon-outer i{ font-size: 24px;}
+.new-dropdown-menu { left: -54%; top: 35px;}
+.new-dropdown-menu:before{ left:80px;}
+.np-right{ padding-left: 0;}
+.create-temp-outer{  padding: 10px 0; background: none;}
+.create-temp-outer .btn-outer{ display: inline-block;; width:78%; margin-top: 10px;}
+
+}
 
 
-/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width : 320px) and (max-width : 639px) {
+/* Styles */
+.temp-name{ font-size: 12px;line-height: 20px;}
+.responsive-view-left .text-outer{  font-size: 11px; padding:9px 20px; }
+.temp-card .type-outer,.temp-card .uv-outer,.temp-card .leads-outer,.temp-card .pd-outer{ font-size: 12px;  }
+.temp-card .status-outer span{ font-size: 9px; text-transform: uppercase;}
+.temp-img-outer .img-section {height: 92px; width: 95px;}
+.temp-img-outer { width: 94px; height: 90px; margin-right: 15px;}
+.temp-card .status-outer { top: -12px; right: -6px; padding: 4px 5px;  width: 40px; min-height: 24px;}
+.ribbon:after { border-width: 12px 10px;}
+.responsive-view-left{ float: left;width:50%;}
+.responsive-view-right{ float: left;width:50%;}
+.temp-img-outer { width: 70px; height: 70px;}
+.temp-name{ width:52%;}
+.dashboard-outer{ padding:20px;}
+.create-temp-outer .btn-outer a {padding: 10px 12px 10px 30px;}
+.create-temp-outer .btn-outer a i{ left:10px;}
+}
+
+
+@media only screen and (min-width : 640px) and (max-width : 768px) {
+/* Styles */
+.temp-name{ font-size: 24px;line-height: 30px;}
+.responsive-view-left .text-outer{  font-size: 22px; }
+.temp-card .type-outer,.temp-card .uv-outer,.temp-card .leads-outer,.temp-card .pd-outer{ font-size: 24px;  }
+.temp-card .status-outer span{ font-size: 18px; text-transform: uppercase;}
+.temp-img-outer .img-section {height: 92px; width: 95px;}
+.temp-img-outer { width: 94px; height: 90px; margin-right: 15px;}
+.create-temp-outer .btn-outer a i {position: absolute;left: 20px; top: 14px; font-size: 26px;}
+.create-temp-outer .btn-outer{ font-size: 28px;}
+.add-user-cta {width: 45px;height: 45px; padding-top: 7px;}
+.add-user-cta i{ font-size: 28px;}
+
+}
+
+
+
 @media only screen and (min-width : 320px) and (max-width : 480px) {
-/* Styles */
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-width : 640px) and (max-width : 767px) {
-/* Styles */
-
-
-}
-
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-width : 768px) and (max-width : 1023px) {
 
 
 
