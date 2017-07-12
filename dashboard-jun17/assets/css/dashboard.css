@@ -2540,20 +2540,20 @@ h6,
 .create-temp-outer .btn-outer a:hover{ background-color:#fb545b; color: #fff;  }
 .create-temp-outer .btn-outer a i{ position: absolute;left: 27px;top: 11px; font-size: 18px;}
 .common-outer{ float: left; width:100%; background: #fff; min-height: 150px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-bottom: 30px;}
-.common-outer .head-section{ float: left; width:100%; padding:5px 15px; border-bottom:1px solid #ecf0f2; min-height: 50px;  }
+.common-outer .head-section{ float: left; width:100%; padding:5px 20px; border-bottom:1px solid #ecf0f2; min-height: 50px;  }
 .common-outer .heading{color: #62696d; font-size: 14px; text-transform: capitalize; float: left; padding:10px 0; font-family: 'montserratregular' !important;}
 .idea-outer{ float: left; width:100%; background: #f65f68;-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; margin-bottom: 30px;}
 .idea-icon-outer{ float: left; width:100%; padding:10px; text-align: center; padding-bottom: 5px;}
 .idea-text-outer{font-family: 'robotolight'; float: left; width:100% ;text-align: center; font-size: 17px; color: #fff;line-height: 25px; padding: 0 10px 18px 10px; }
 .idea-text-outer a{ font-family: 'robotobold'; text-transform: uppercase; border-bottom: 2px solid #fff; color: #fff;}
 
-.add-user-cta {float: right;width: 34px; border: 2px solid #fb545b;border-radius: 50%; margin-left: 5px; margin-bottom: 5px; background: #fb545b; color: #fff;height: 34px;text-align: center; padding-top: 6px;margin-top: 3px;}
+.add-user-cta {float: right;width: 34px; border: 2px solid #fb545b;border-radius: 50%; margin-left: 5px; margin-bottom: 5px; background: #fb545b; color: #fff;height: 34px;text-align: center; padding-top: 6px;margin-top: 5px;}
 .add-user-cta i{ font-size: 18px; color: #fff;}
 .add-user-cta:hover{  color: #fff;}
-.users-outer{ float: left; width:100%; padding: 10px; display: table; }
+.users-outer{ float: left; width:100%; padding: 10px 20px; display: table; }
 .users{float: left; width: 35px; border: 1px solid #fb545b; border-radius: 50%; background: #fff; color: #fb545b; height: 35px; text-align: center;padding-top: 5px;
     margin: 0 10px 0 0; font-size: 18px;}
-.user-name-outer{ float: left; width:84%; height: 35px; color: #8e989f; font-size: 13px;}
+.user-name-outer{ float: left; width:82%; height: 35px; color: #8e989f; font-size: 13px;}
 .user-name-outer span{ opacity: 0.6;}
 .temp-card-outer-main{ float: left; width:100%;}
 .temp-web-header{ float: left; width:100%; background: #f0f3f5; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px; color:#62696d; font-size: 14px;}
@@ -2572,10 +2572,10 @@ h6,
 .temp-card .status-outer{ float: left; width:12.5%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .status-outer span{ background:#fb545b;padding: 2px 10px; color:#fff; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; font-size: 11px; text-transform: capitalize; }
 .temp-card .status-outer span.draft{ background:#eee;padding: 2px 10px; color:#999; -webkit-border-radius: 25px;-moz-border-radius: 25px;border-radius: 25px; font-size: 11px; text-transform: capitalize; }
-.temp-card .uv-outer{ float: left; width:21.5%; padding: 10px; text-align: center; display: inline-flex;}
+.temp-card .uv-outer{ float: left; width:20%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .leads-outer{ float: left; width:11.5%; padding: 10px; text-align: center; display: inline-flex;}
 .temp-card .pd-outer{ float: left; width:21.5%; padding: 10px; text-align: center; display: inline-flex;}
-.temp-card .dp-icon-outer{ float: left; width:10%; padding: 8px 10px; text-align: center; display: inline-flex;}
+.temp-card .dp-icon-outer{ float: left; width:12%; padding: 8px 10px; text-align: center; display: inline-flex;}
 .temp-card .dp-icon-outer i{ font-size: 20px; padding-top:2px; color:#fb545b; }
 .temp-img-outer{width:70px; height: 70px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .temp-img-outer .img-section { height: 70px; width: 70px; background-image: url(../images/bg2.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
@@ -2606,12 +2606,12 @@ h6,
 .see-more-link a{color: #8e989f; font-size: 12px; opacity: 0.6; margin-top: 10px; float: left; font-family: montserratlight; transition: all 0.8s ease;}
 .see-more-link a:hover{opacity: 1;}
 
-.artical-outer{float: left;width: 100%; padding: 10px;  line-height: 20px;  text-align: left; font-size: 13px; }
+.artical-outer{float: left;width: 100%; padding: 10px 20px;  line-height: 20px;  text-align: left; font-size: 13px; }
 .artical-text{ float: left; width:67%;height: 60px; }
 .artical-img-outer{width:60px; height: 60px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .artical-img-outer .img-section { height: 60px; width: 60px; background-image: url(../images/user.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
 
-.update-outer{float: left;width: 100%; padding: 10px 15px;  line-height: 18px;  text-align: left; font-size: 13px; color:#8e989f; }
+.update-outer{float: left;width: 100%; padding: 10px 20px;  line-height: 18px;  text-align: left; font-size: 13px; color:#8e989f; }
 .update-text{ float: left; width:67%;height: 60px; }
 .update-text-outer{width:60px; height: 60px; background: #f0f3f5;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .update-text-outer .text-section {font-family: montserratlight; color:#8e989f; font-size: 13px; position: absolute; top:10px; left:15px;  }

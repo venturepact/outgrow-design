@@ -2,7 +2,7 @@
 /* Styles */
 .rs-hide{ display: none ;}
 .temp-card .name-outer { width: 100%;}
-.temp-card{ display: block; margin-bottom: 30px; position: relative;}
+.temp-card{ display: block; margin-bottom: 30px; position: relative; padding:5px 0; }
 .np-left{ padding-right: 0;}
 .temp-name{ width: 80%;}
 .temp-img-outer { width: 70px; height: 70px;}
@@ -37,8 +37,8 @@
 .temp-card .status-outer span{ font-size: 9px; text-transform: uppercase;}
 .temp-img-outer .img-section {height: 92px; width: 95px;}
 .temp-img-outer { width: 94px; height: 90px; margin-right: 15px;}
-.temp-card .status-outer { top: -12px; right: -6px; padding: 4px 5px;  width: 40px; min-height: 24px;}
-.ribbon:after { border-width: 12px 10px;}
+.temp-card .status-outer { top: -10px; right: -6px; padding: 2px 5px;  width: 40px; min-height: 20px;}
+.ribbon:after { border-width: 10px 10px;}
 .responsive-view-left{ float: left;width:50%;}
 .responsive-view-right{ float: left;width:50%;}
 .temp-img-outer { width: 70px; height: 70px;}
