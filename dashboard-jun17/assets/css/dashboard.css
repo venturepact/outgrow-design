@@ -2534,7 +2534,7 @@ h6,
 .np-left{ padding-left: 0!important;}
 .np-right{ padding-right: 0!important;}
 .dashboard-outer{ float: left; width:100%; padding:30px; background: #f6f8f9; margin-top:72px;  /* only for html*/ } 
-.create-temp-outer{ float: left; width:100%; padding:25px 0; margin-bottom: 30px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.create-temp-outer{ float: left; width:100%; padding:10px 0; margin-bottom: 30px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
 .create-temp-outer .btn-outer{ float: left; width:100%; }
 .create-temp-outer .btn-outer a{ border: 1px solid #fb545b; color:#fb545b; background-color:#fff; padding: 10px 30px 10px 50px; margin: 0 auto; font-family: 'montserratregular' !important;  position: relative; -webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px; transition: all 0.8s ease; box-shadow: 0 2px 10px 1px rgba(0,0,0,.1);}
 .create-temp-outer .btn-outer a:hover{ background-color:#fb545b; color: #fff;  }
@@ -2663,4 +2663,6 @@ a.add-user-cta .popover-block:before {
     content: '';
 }
 
+.artical-text a{color: #8e989f;  font-size: 13px;}
+.artical-text a:hover{color: #666;  font-size: 13px;}
 /*dashboard-new css end*/
