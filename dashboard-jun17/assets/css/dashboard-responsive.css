@@ -19,9 +19,7 @@
 .temp-card .status-outer span{ padding: 0;}
 .rs-show{ display: block;}
 .temp-card .dp-icon-outer {top: 25px; right: 25px; width: 20px;}
-.temp-card .dp-icon-outer i{ font-size: 24px;}
 .new-dropdown-menu { left: -54%; top: 35px;}
-.new-dropdown-menu:before{ left:80px;}
 .np-right{ padding-left: 0;}
 .create-temp-outer{  padding: 10px 0; background: none;}
 .create-temp-outer .btn-outer{ display: inline-block;; width:78%; margin-top: 10px;}
@@ -31,7 +29,7 @@
 
 @media only screen and (min-width : 320px) and (max-width : 639px) {
 /* Styles */
-.temp-name{ font-size: 12px;line-height: 20px;}
+.temp-name{ font-size: 13px;line-height: 20px; width:52%;}
 .responsive-view-left .text-outer{  font-size: 11px; padding:9px 20px; }
 .temp-card .type-outer,.temp-card .uv-outer,.temp-card .leads-outer,.temp-card .pd-outer{ font-size: 12px;  }
 .temp-card .status-outer span{ font-size: 9px; text-transform: uppercase;}
@@ -42,10 +40,15 @@
 .responsive-view-left{ float: left;width:50%;}
 .responsive-view-right{ float: left;width:50%;}
 .temp-img-outer { width: 70px; height: 70px;}
-.temp-name{ width:52%;}
 .dashboard-outer{ padding:20px;}
 .create-temp-outer .btn-outer a {padding: 10px 12px 10px 30px;}
 .create-temp-outer .btn-outer a i{ left:10px;}
+.update-text { width: 68%;}
+.artical-text {width: 68%;}
+.temp-card .dp-icon-outer {top: 18px; right: 16px; width: 20px;}
+.new-dropdown-menu {left: -24px; top: 31px;}
+.new-dropdown-menu:before {top: -12px; left: 89px;}
+
 }
 
 
@@ -57,11 +60,17 @@
 .temp-card .status-outer span{ font-size: 18px; text-transform: uppercase;}
 .temp-img-outer .img-section {height: 92px; width: 95px;}
 .temp-img-outer { width: 94px; height: 90px; margin-right: 15px;}
-.create-temp-outer .btn-outer a i {position: absolute;left: 20px; top: 14px; font-size: 26px;}
+.create-temp-outer .btn-outer a i {position: absolute; left: 19px; top: 18px; font-size: 28px;}
 .create-temp-outer .btn-outer{ font-size: 28px;}
 .add-user-cta {width: 45px;height: 45px; padding-top: 7px;}
 .add-user-cta i{ font-size: 28px;}
-
+.common-outer .heading{ font-size: 24px;}
+.see-more-link a{ font-size: 20px;}
+.artical-text{ font-size: 22px; line-height: 28px;}
+.update-text {width: 70%; font-size: 22px; line-height: 28px;}
+.create-temp-outer .btn-outer a{padding:15px 30px 15px 50px;}
+.temp-card .dp-icon-outer i{ font-size: 30px;}
+.new-dropdown-menu:before{ left:86px;}
 }
 
 
