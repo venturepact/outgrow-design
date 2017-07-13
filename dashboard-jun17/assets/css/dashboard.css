@@ -2553,7 +2553,7 @@ h6,
 .users-outer{ float: left; width:100%; padding: 10px 20px; display: table; }
 .users{float: left; width: 35px; border: 1px solid #fb545b; border-radius: 50%; background: #fff; color: #fb545b; height: 35px; text-align: center;padding-top: 5px;
     margin: 0 10px 0 0; font-size: 18px;}
-.user-name-outer{ float: left; width:82%; height: 35px; color: #8e989f; font-size: 13px;}
+.user-name-outer{ float: left; width:80%; height: 35px; color: #8e989f; font-size: 13px;}
 .user-name-outer span{ opacity: 0.6;}
 .temp-card-outer-main{ float: left; width:100%;}
 .temp-web-header{ float: left; width:100%; background: #f0f3f5; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px; color:#62696d; font-size: 14px;}
@@ -2607,12 +2607,12 @@ h6,
 .see-more-link a:hover{opacity: 1;}
 
 .artical-outer{float: left;width: 100%; padding: 10px 20px;  line-height: 20px;  text-align: left; font-size: 13px; }
-.artical-text{ float: left; width:72%;height: 60px; }
+.artical-text{ float: left; width:70%;height: 60px; }
 .artical-img-outer{width:60px; height: 60px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .artical-img-outer .img-section { height: 60px; width: 60px; background-image: url(../images/user.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
 
 .update-outer{float: left;width: 100%; padding: 10px 20px;  line-height: 18px;  text-align: left; font-size: 13px; color:#8e989f; }
-.update-text{ float: left; width:72%;height: 60px; }
+.update-text{ float: left; width:70%;height: 60px; }
 .update-text-outer{width:60px; height: 60px; background: #f0f3f5;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .update-text-outer .text-section {font-family: montserratlight; color:#8e989f; font-size: 13px; position: absolute; top:10px; left:15px;  }
 .update-text span{font-family: montserratlight; opacity: 0.6;}
