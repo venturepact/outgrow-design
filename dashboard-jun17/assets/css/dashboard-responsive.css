@@ -21,7 +21,7 @@
 .temp-card .dp-icon-outer {top: 25px; right: 25px; width: 20px;}
 .new-dropdown-menu { left: -54%; top: 35px;}
 .np-right{ padding-left: 0;}
-.create-temp-outer{  padding: 10px 0; background: none;}
+.create-temp-outer{  padding: 10px 0; background: none; text-align: left;}
 .create-temp-outer .btn-outer{ display: inline-block;; width:78%; margin-top: 10px;}
 
 }

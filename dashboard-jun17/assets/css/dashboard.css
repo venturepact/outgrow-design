@@ -2534,7 +2534,7 @@ h6,
 .np-left{ padding-left: 0!important;}
 .np-right{ padding-right: 0!important;}
 .dashboard-outer{ float: left; width:100%; padding:30px; background: #f6f8f9; margin-top:72px;  /* only for html*/ } 
-.create-temp-outer{ float: left; width:100%; padding:10px 0; margin-bottom: 30px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; }
+.create-temp-outer{ float: left; width:100%; padding:10px 0; margin-bottom: 30px; -webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px; padding:60px 25px; text-align: center; background: #fff;}
 .create-temp-outer .btn-outer{ float: left; width:100%; }
 .create-temp-outer .btn-outer a{ border: 1px solid #fb545b; color:#fb545b; background-color:#fff; padding: 10px 30px 10px 50px; margin: 0 auto; font-family: 'montserratregular' !important;  position: relative; -webkit-border-radius: 50px;-moz-border-radius: 50px;border-radius: 50px; transition: all 0.8s ease; box-shadow: 0 2px 10px 1px rgba(0,0,0,.1);}
 .create-temp-outer .btn-outer a:hover{ background-color:#fb545b; color: #fff;  }
@@ -2555,7 +2555,7 @@ h6,
     margin: 0 10px 0 0; font-size: 18px;}
 .user-name-outer{ float: left; width:80%; height: 35px; color: #8e989f; font-size: 13px;}
 .user-name-outer span{ opacity: 0.6;}
-.temp-card-outer-main{ float: left; width:100%;}
+.temp-card-outer-main{ float: left; width:100%; }
 .temp-web-header{ float: left; width:100%; background: #f0f3f5; -webkit-border-top-left-radius: 5px;-webkit-border-top-right-radius: 5px;-moz-border-radius-topleft: 5px;-moz-border-radius-topright: 5px;border-top-left-radius: 5px;border-top-right-radius: 5px; color:#62696d; font-size: 14px;}
 .temp-web-header .name-outer{ float: left; width:33%; padding: 10px; padding-left: 20px; }
 .temp-web-header .type-outer{ float: left; width:15%; padding: 10px; }
@@ -2565,7 +2565,7 @@ h6,
 .temp-web-header .pd-outer{ float: left; width:14%; padding: 10px; text-align: center;}
 .temp-web-header .dp-icon-outer{ float: left; width:8%; padding: 8px 10px; text-align: center;}
 .temp-web-header .dp-icon-outer i{ font-size: 20px; padding-top:2px; color:#fb545b;}
-.temp-card{ float: left; width:100%; background: #fff; font-size: 14px; transition: all 0.8s ease; border-bottom: 1px solid #e6eaec;font-size: 13px; display: inline-flex; position: relative;}
+.temp-card{ float: left; width:100%; background: #fff; font-size: 14px; transition: all 0.8s ease; border-bottom: 1px solid #e6eaec;font-size: 13px;  position: relative; font-family: montserratlight;}
 .temp-card a.card-link:hover{box-shadow: 0 0px 40px 1px rgba(0,0,0,.1);}
 .temp-card .name-outer{ float: left; width:33%; padding: 15px;display: inline-flex;  line-height: 20px; text-align: left; padding-left: 20px;}
 .temp-card .type-outer{ float: left; width:22.5%; padding: 10px; display: inline-block; min-height: 100px; }
@@ -2579,9 +2579,9 @@ h6,
 .temp-card .dp-icon-outer i{ font-size: 20px; padding-top:2px; color:#fb545b; cursor: pointer; position: relative; z-index: 2; }
 .temp-img-outer{width:70px; height: 70px;  border-radius: 50px; color: #cbd1d4; text-align: center;  padding-top: 18px;  margin-right: 10px; position:relative; overflow: hidden; float: left;}
 .temp-img-outer .img-section { height: 70px; width: 70px; background-image: url(../images/bg2.jpg); background-repeat: no-repeat; position: absolute; top:0; background-size: cover;}
-.temp-name{ float: left; width:67%;  color:#666;}
+.temp-name{ float: left; width:67%;  color:#666; display: inline-block; min-height: 70px;}
 .common-table {display: table; width: 100%; height: 100%;}
-.common-table-cell {display: table-cell; vertical-align: middle;}
+.common-table-cell {display: table-cell; vertical-align: middle; font-family: montserratlight; }
 .relative{ position: relative;}
 .common-table-cell.relative:hover .new-dropdown-menu {display: block;}
 .new-dropdown-menu { position: absolute;left: 50%;top: 57px; float: left; background: #62696d;  color: #fff;  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.24);  display: none;  padding: 10px 0;  z-index: 9;  border-radius: 4px !important;  min-width: 125px;  transform: translateX(-50%);}
