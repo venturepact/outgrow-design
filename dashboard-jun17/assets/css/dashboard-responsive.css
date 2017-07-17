@@ -23,6 +23,7 @@
 .np-right{ padding-left: 0;}
 .create-temp-outer{  padding: 10px 0; background: none; text-align: left;}
 .create-temp-outer .btn-outer{ display: inline-block;; width:78%; margin-top: 10px;}
+.temp-card .common-table{ min-height: auto;}
 
 }
 
@@ -84,8 +85,13 @@
 
 
 /* Desktops and laptops ----------- */
-@media only screen and (min-width : 1224px) {
+@media only screen and (min-width : 1024px) {
 /* Styles */
+
+.user-name-outer{ width:75%;}
+.artical-text{ width:61%;}
+.update-text{ width:61%;}
+
 }
 
 /* Large screens ----------- */
