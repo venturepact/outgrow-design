@@ -2667,6 +2667,6 @@ a.add-user-cta .popover-block:before {
 .artical-text a{color: #8e989f;  font-size: 13px;}
 .artical-text a:hover{color: #666;  font-size: 13px;}
 .live-link{  position: relative; margin-left: 5px;   }
-.live-link i{ font-size: 16px; position: absolute;  z-index: 99; top:1px; color:#666}
+.live-link i{ font-size: 15px; position: absolute;  z-index: 99; top:1px; color:#666}
 .live-link i:hover{ color:#f65f68}
 /*dashboard-new css end*/
