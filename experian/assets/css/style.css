@@ -236,44 +236,33 @@ a, button:focus, input, textarea {
     width: 100%;
     float: left;
 }
-.ques-component input.slider-input {
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 0px;
-    flex: 1 1 0;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    margin: 0;
-    margin-right: 0;
-    border-radius: 0;
-    padding: 8px 12px;
-    padding-bottom: 4px;
-    padding-left: 2px;
-    margin-bottom: 13px;
-    font-size: 15px;
-    border-bottom-width: 2px;
+.slider-output{
+    position: relative;
+    width: auto;
+    float: left;
+    left: 14px;
+    top: -4px;
 }
-.slider-set .range-slider input.slider-input {
-    position: absolute;
-    top: -7px;
+.slider-set input.slider-input {
+    height: 24px;
+    line-height: 15px !important;
     width: 115px;
     background: none;
     border-radius: 0;
     font-size: 15px;
-    margin-left: 17px;
     overflow: hidden;
     text-overflow: ellipsis;
-    padding: 1px 11px;
+    padding: 0px 5px 0px 5px;
     text-align: center;
+    border: none;
     border-bottom: 3px solid #3478dd;
-    color: #3478dd;
+    color: #3478dd !important;
     box-sizing: border-box;
     font-family: oxygen;
-    height: 26px;
 }
 .slider-input-post, .slider-input-pre {
     position: absolute;
-    top: -9px;
+    top: -4px;
     font-size: 15px;
     float: left;
     font-weight: 400;
@@ -286,21 +275,19 @@ a, button:focus, input, textarea {
     line-height: 28px;
 }
 .slider-input-pre {
-    margin-left: 17px!important;
     text-align: right;
 }
-.slider-set .range-slider .slider-input-pre~input.slider-input {
+.slider-set .slider-input-pre~input.slider-input {
     padding-right: 0;
-    padding-left: 32px;
+    padding-left: 30px;
+    margin: 0;
 }
 .slider-input-post {
-    margin-left: 21px!important;
-    text-align: center;
-    left: 93%;
+    text-align: left;
+    right: 0;
 }
-.slider-set .range-slider input.slider-input.suffix-text {
-    padding-right: 35px!important;
-    padding-left: 0!important;
+.slider-set input.slider-input.suffix-text {
+    padding-right: 25px!important;
 }
 .down-arrow-outer {
     width: 100%;

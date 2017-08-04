@@ -52,15 +52,15 @@
         max-width: 27px;
     	margin-left: -1px!important;
 	}
-	.slider-set .range-slider input.slider-input{
+	.slider-set input.slider-input{
 		width: 85px!important;
 	    margin-left: 14px!important;
 	    padding: 1px 3px!important;
 	}
-	.slider-set .range-slider .slider-input-pre~input.slider-input{
+	.slider-set .slider-input-pre~input.slider-input{
 		padding-left: 20px!important;
 	}
-	.slider-set .range-slider input.slider-input.suffix-text{
+	.slider-set input.slider-input.suffix-text{
 		padding-right: 25px!important;
 	}
 	.range-slider .irs-slider {
@@ -132,6 +132,9 @@
 	    width: 100%;
 	    max-width: 100%;
 	    height: 350px!important;
+	}
+	.slider-output{
+		left: 0;
 	}
 }
 @media (min-width: 480px) and (max-width: 767px){
@@ -252,7 +255,7 @@
 	.slider-input-post, .slider-input-pre {
 	    font-size: 20px;
 	}
-	.slider-set .range-slider input.slider-input{
+	.slider-set input.slider-input{
 	    font-size: 20px;
 	}
 	.slider-input-post {
@@ -291,5 +294,8 @@
 	}
 	.secondary-result .result-value p {
 	    font-size: 20px;
+	}
+	.slider-output{
+		top: 0;
 	}
 }
