@@ -151,6 +151,9 @@
 	.slider-input-post {
 	    margin-left: 16px!important;
 	}
+	.slider-input-post {
+	    margin-left: 23px!important;
+	}
 }
 @media (min-width: 640px) and (max-width: 767px){
 	.table-outer table {

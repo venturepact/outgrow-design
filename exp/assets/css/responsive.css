@@ -156,6 +156,9 @@
 	.table-outer table {
 	    max-width: 590px;
 	}
+	.slider-input-post {
+	    margin-left: 23px!important;
+	}
 }
 @media (min-width: 768px) and (max-width: 1023px){
 	.form-outer{

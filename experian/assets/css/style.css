@@ -270,6 +270,7 @@ a, button:focus, input, textarea {
     color: #3478dd;
     box-sizing: border-box;
     font-family: oxygen;
+    height: 26px;
 }
 .slider-input-post, .slider-input-pre {
     position: absolute;
