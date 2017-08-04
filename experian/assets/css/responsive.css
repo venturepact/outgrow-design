@@ -10,11 +10,9 @@
 	html{
 		overflow: auto !important;
 	}
-	.inner-page{
-		display: block;
-	}
 	.questionner-outer {
 	    width: 100%;
+	    min-height: 100%;
 	}
 	.form-outer{
 	    padding: 20px 0;
