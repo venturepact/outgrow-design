@@ -1,0 +1,294 @@
+@media (min-width: 0px) and (max-width: 330px){
+	.table-outer table {
+	    max-width: 215px!important;
+	}
+	#graph-container {
+	    min-width: 200px!important;
+	}
+}
+@media (min-width:0px) and (max-width:767px){
+	html{
+		overflow: auto !important;
+	}
+	.inner-page{
+		display: block;
+	}
+	.questionner-outer {
+	    width: 100%;
+	}
+	.form-outer{
+	    padding: 20px 0;
+    	padding-bottom: 40px;
+	}
+	.form-outer form{
+		padding: 0 22px;
+	    float: left;
+	    /*height: auto!important;*/
+	}
+	.question-number {
+	    display: none;
+	}
+	.ques-head{
+	    padding: 0;
+	    margin: 0;
+	    margin-right: 10px;
+	}
+	.ques-head div{    
+		font-size: 15px;
+	}
+	.ques-component{
+	    margin-bottom: 15px;
+	    margin-top: 0;
+	    padding: 0;
+	}
+	.range-slider {
+	    text-align: center;
+	    width: calc(100% - 100px);
+	    float: left;
+	}
+	.slider-input-pre{
+	    max-width: 27px;
+    	margin-left: 5px!important;
+	}
+	.slider-input-post{
+        max-width: 27px;
+    	margin-left: -1px!important;
+	}
+	.slider-set .range-slider input.slider-input{
+		width: 85px!important;
+	    margin-left: 14px!important;
+	    padding: 1px 3px!important;
+	}
+	.slider-set .range-slider .slider-input-pre~input.slider-input{
+		padding-left: 20px!important;
+	}
+	.slider-set .range-slider input.slider-input.suffix-text{
+		padding-right: 25px!important;
+	}
+	.range-slider .irs-slider {
+	    top: 5px!important;
+	    width: 23px!important;
+	    height: 23px!important;
+	    z-index: 0!important;
+	}
+	.result-outer{
+	    width: 100%;
+	    height: 100%;
+	    max-width: 100%;
+	    position: relative;
+	    background-size: cover;
+	    float: left;
+	}
+	.down-arrow-outer {
+	    display: block;
+	}
+	.result-inner{
+		padding: 25px 0px;
+	    width: 100%;
+	    min-height: 100%;
+	}
+	.result-first {
+	    padding: 0;
+	}
+	.result-first .result-text{
+		border-radius: 0;
+		padding: 20px;
+	}
+	.result-value p {
+	    font-size: 17px;
+	}
+	.result-outer-scroll{
+		height: auto !important;
+	    min-height: auto;
+    	padding-right: 0;
+	}
+	.secondary-result .result-value p {
+	    font-size: 16px;
+	}
+	.secondary-result{
+		padding: 12px 20px;
+	}	
+	.graph-icon-mainDiv {
+	    position: relative;
+	    padding: 15px;
+	}
+	.graph-title {
+	    padding: 0 7px;
+	    font-size: 20px;
+	    margin-top: 20px;
+	}
+	.table-title {
+	    font-size: 20px;
+	    padding: 0 7px;
+	}
+	.table-outer table {
+	    display: inline-block;
+	    overflow-x: auto;
+	    overflow-y: auto;
+	    max-width: 330px;
+	}
+	.table-outer table tbody tr td, .table-outer table thead tr th {
+	    padding: 10px 20px!important;
+	}
+	#graph-container {
+	    width: 100%;
+	    max-width: 100%;
+	    height: 350px!important;
+	}
+}
+@media (min-width: 480px) and (max-width: 767px){
+	.form-outer{
+		padding: 20px;
+	}
+	.result-inner{
+		padding: 30px 20px;
+	}
+	.table-outer table {
+	    max-width: 430px;
+	}
+}
+@media (min-width: 480px) and (max-width: 640px){
+	.slider-input-post {
+	    margin-left: 16px!important;
+	}
+}
+@media (min-width: 640px) and (max-width: 767px){
+	.table-outer table {
+	    max-width: 590px;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px){
+	.form-outer{
+		padding: 20px 0;
+    	padding-right: 10px;
+	}
+	.form-outer form{
+		padding-right: 30px;
+	}
+	.questionner-outer{
+		width: 57%;
+    	float: left;
+	}
+	.slider-input-post {
+	    margin-left: 0!important;
+	}
+	.result-outer{
+	    width: 43%!important;
+	    max-width: 100%!important;
+	    display: block!important;
+	    position: fixed!important;
+	    background-size: cover!important;
+	    float: right!important;
+	    right: 0!important;
+	    min-height: 100%!important;
+	}
+	.result-inner{
+	    padding: 20px 10px 65px 15px;
+	}
+	.result-topheading{
+		padding-right: 0;
+    	margin-bottom: 10px;
+	}
+	.result-first {
+	    padding-right: 5px;
+	}
+	.result-first .result-text{
+	    padding: 12px 16px;
+	    border-radius: 0;
+	    padding-right: 10px;
+	}
+	.result-value p{
+		font-size: 17px;
+	}
+	.result-desc p{
+		font-size: 13px;
+		padding-right: 15px;
+	}
+	.result-outer-scroll {
+	    padding: 0;
+	}
+	.secondary-result .result-desc p {
+	    font-size: 12px;
+	}
+	.secondary-result .result-value p {
+	    font-size: 16px;
+	}
+	.table-outer table {
+	    max-width: 730px;
+	}
+	.graph-icon-mainDiv {
+	    padding: 10px;
+	    padding-top: 30px;
+	}
+	.table-outer table tbody tr td, .table-outer table thead tr th {
+	    padding: 10px 20px!important;
+	}
+}
+@media (min-width: 1680px) and (max-width: 1920px){
+	.questionner-outer {
+	    width: 55%;
+	}
+	.result-outer{
+		width: 45%;
+	}
+	.question-outer {
+	    margin-bottom: 25px;
+	}
+	.ques-num span {
+	    font-size: 20px;
+	    line-height: 30px;
+	}
+	.ques-head div {
+	    line-height: 30px;
+	    font-size: 20px;
+	}
+	.ques-component {
+	    padding-left: 26px;
+	}
+	.slider-set {
+	    width: 90%;
+	}
+	.slider-input-post, .slider-input-pre {
+	    font-size: 20px;
+	}
+	.slider-set .range-slider input.slider-input{
+	    font-size: 20px;
+	}
+	.slider-input-post {
+        max-width: 40px;
+	    min-width: 20px;
+	    left: 85%;
+	}
+	.irs {
+	    margin-top: 6px;
+	}
+	.range-slider .irs-slider {
+	    top: 9px!important;
+	    width: 20px!important;
+	    height: 20px!important;
+	}
+	.vis-outer i{
+	    font-size: 24px;
+	}
+	.charts-label {
+	    font-size: 16px;
+	    margin-left: 4px;
+	}
+	.graph-icon .help-text {
+	    right: 10px;
+	}
+	.result-desc p{
+		font-size: 18px;
+    	line-height: 28px;
+	}
+	.result-value p {
+	    font-size: 22px;
+	}
+	.secondary-result .result-desc p {
+	    font-size: 18px;
+	    line-height: 28px;
+	}
+	.secondary-result .result-value p {
+	    font-size: 20px;
+	}
+}
