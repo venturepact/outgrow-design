@@ -1,4 +1,4 @@
-let live_app = '598457e017335d7369d3e81b'; /* app unique key**/
+let live_app = '598957e33647358022a3327d'; /* app unique key**/
 let visitor_key = ''; /* visitor key **/
 let hidVal = {};
 
@@ -22,7 +22,6 @@ let fxns = (function () {
       data: JSON.stringify(post_data),
       success: (response) => {
         visitor_key = response.data.key;
-        console.log(visitor_key, response.data.key);
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('Error');
@@ -71,8 +70,10 @@ let fxns = (function () {
       formulas.push({
         _id: $(this).data('result'),
         value: $(this).text(),
-        postfix: '',
-        unit: ''
+        units: {
+          preValue: '',
+          postValue: ''
+        }
       });
     });
 
@@ -104,8 +105,8 @@ let fxns = (function () {
     save_item: function (item, value) {
       save_stats(item, value);
     },
-    save_result: function (item, value) {
-      save_result(item, value);
+    save_result: function () {
+      save_result();
     }
   };
 })();
@@ -120,9 +121,9 @@ $(".js-range-slider").ionRangeSlider({
   grid: true,
   onFinish: function (data) {
     /* save stats */
-    fxns.save_item('598457df17335d7369d3e77d', data.from);
+    fxns.save_item(data.input.data('question'), data.from);
     /* save result */
-    fxns.save_result('598457df17335d7369d3e77d', data.from);
+    fxns.save_result();
   }
 });
 /* initialize range sliders end **/
