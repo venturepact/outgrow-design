@@ -110,7 +110,7 @@ let fxns = (function () {
         save_stats(data.input.data('question'), data.from);
         calculateFormula();
       },
-	  prettify: function (num, fixed) {
+      prettify: function (num, fixed) {
         if (num === null) { return null; } // terminate early
         if (num === 0) { return '0'; } // terminate early
         fixed = (!fixed || fixed < 0) ? 0 : fixed; // number of decimal places to show
@@ -167,12 +167,65 @@ $(document).ready(function () {
   resultScroll();
   fxns.generateVisitor(); /*  unique key For User */
   fxns.initSlider();
-
+  //Inputs
+  $('.slider-input').keyup(function (event) {
+    if (event.keyCode == 13) {
+      var sliderEle = $(this).parent().parent().find('.js-range-slider');
+      event.target.blur();
+    } else {
+      event.target.value = addCommas(event.target.value.replace(/,/g, ''));
+    }
+  });
+  $('.slider-input').focusout(function (event) {
+    let val = event.target.value.replace(/,/g, '');
+    let sliderEle = $(this).parent().parent().find('.js-range-slider');
+    let max = sliderEle.attr('data-max');
+    let min = sliderEle.attr('data-min')
+    console.log(sliderEle.attr('data-max'));
+    //checkValue(event);
+    if (parseFloat(val) > parseFloat(max))
+      val = max;
+    else if (parseFloat(val) < parseFloat(min))
+      val = min;
+    sliderEle.data('ionRangeSlider').update({
+      from: val
+    });
+  });
 });
 
 $(window).resize(function () {
   resultScroll();
 });
+
+function addCommas(nStr) {
+  nStr += '';
+  let x = nStr.split('.');
+  let x1 = x[0];
+  let x2 = x.length > 1 ? '.' + x[1] : '';
+  var rgx = /(\d+)(\d{3})/;
+  while (rgx.test(x1)) {
+    x1 = x1.replace(rgx, '$1' + ',' + '$2');
+  }
+  return x1 + x2;
+}
+
+function checkValue(event) {
+  let val = event.target.value.replace(/,/g, '');
+  if (parseFloat(val) > parseFloat(this.data.props.maxVal))
+    this.data.props.currentValue = this.data.props.maxVal;
+  else if (parseFloat(val) < parseFloat(this.data.props.minVal))
+    this.data.props.currentValue = this.data.props.minVal;
+  else
+    this.data.props.currentValue = val;
+  this.sliderRef.update({
+    from: this.data.props.currentValue
+  });
+  if (this.data.props.postfix)
+    this.data.props.currentLabel = this.formulaService.addCommas(this.data.props.currentValue) + this.data.props.unit;
+  else
+    this.data.props.currentLabel = this.data.props.unit + this.formulaService.addCommas(this.data.props.currentValue);
+  this.change();
+}
 
 function resultScroll() {
   let resultheading = $('.result-topheading').height();
