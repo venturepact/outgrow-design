@@ -489,10 +489,15 @@ a, button:focus, input, textarea {
 }
 .result-value {
     width: 35%;
-    float: left;
+    float: right;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+    margin: 0;
+    word-break: break-word;
 }
 .result-value p{
-	width: 100%;
+	width: auto;
     float: right;
     font-size: 23px;
     line-height: 23px;
