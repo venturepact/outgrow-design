@@ -138,7 +138,7 @@ let fxns = (function () {
       /** replace formula with values */
       /*** calculate values by pass to math lib */
       formula = Math.round(math.eval(formula));
-      $(this).text(formula);
+      $(this).text(addCommas(formula));
     });
 
     /* save result */
@@ -159,6 +159,9 @@ let fxns = (function () {
     },
     initSlider: function () {
       rangeSliderInit();
+    },
+    calculate: function () {
+      calculateFormula();
     }
   };
 })();
@@ -181,8 +184,6 @@ $(document).ready(function () {
     let sliderEle = $(this).parent().parent().find('.js-range-slider');
     let max = sliderEle.attr('data-max');
     let min = sliderEle.attr('data-min')
-    console.log(sliderEle.attr('data-max'));
-    //checkValue(event);
     if (parseFloat(val) > parseFloat(max))
       val = max;
     else if (parseFloat(val) < parseFloat(min))
@@ -190,6 +191,7 @@ $(document).ready(function () {
     sliderEle.data('ionRangeSlider').update({
       from: val
     });
+    fxns.calculate();
   });
 });
 
