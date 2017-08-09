@@ -107,6 +107,7 @@ let fxns = (function () {
       grid: true,
       onFinish: function (data) {
         /* save stats */
+		$(data.input.data('id')).val(addCommas(data.from));
         save_stats(data.input.data('question'), data.from);
         calculateFormula();
       },
@@ -209,24 +210,6 @@ function addCommas(nStr) {
     x1 = x1.replace(rgx, '$1' + ',' + '$2');
   }
   return x1 + x2;
-}
-
-function checkValue(event) {
-  let val = event.target.value.replace(/,/g, '');
-  if (parseFloat(val) > parseFloat(this.data.props.maxVal))
-    this.data.props.currentValue = this.data.props.maxVal;
-  else if (parseFloat(val) < parseFloat(this.data.props.minVal))
-    this.data.props.currentValue = this.data.props.minVal;
-  else
-    this.data.props.currentValue = val;
-  this.sliderRef.update({
-    from: this.data.props.currentValue
-  });
-  if (this.data.props.postfix)
-    this.data.props.currentLabel = this.formulaService.addCommas(this.data.props.currentValue) + this.data.props.unit;
-  else
-    this.data.props.currentLabel = this.data.props.unit + this.formulaService.addCommas(this.data.props.currentValue);
-  this.change();
 }
 
 function resultScroll() {
