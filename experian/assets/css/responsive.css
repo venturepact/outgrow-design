@@ -103,7 +103,7 @@
 	.secondary-result .result-value p {
 	    font-size: 16px;
 	}
-	.secondary-result .result-value {
+	.secondary-result .result-value span {
 	    font-size: 16px;
 	}
 	.secondary-result{
@@ -220,7 +220,7 @@
 	.secondary-result .result-value p {
 	    font-size: 16px;
 	}
-	.secondary-result .result-value {
+	.secondary-result .result-value span{
 	    font-size: 16px;
 	}
 	.table-outer table {
@@ -299,6 +299,9 @@
 	    line-height: 28px;
 	}
 	.secondary-result .result-value p {
+	    font-size: 20px;
+	}
+	.secondary-result .result-value span {
 	    font-size: 20px;
 	}
 	.slider-output{

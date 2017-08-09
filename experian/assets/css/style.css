@@ -490,9 +490,11 @@ a, button:focus, input, textarea {
 .result-value {
     width: 35%;
     float: right;
+    text-align: right;
+}
+.result-value span{
     font-size: 18px;
     line-height: 23px;
-    text-align: right;
     margin: 0;
     word-break: break-word;
 }
