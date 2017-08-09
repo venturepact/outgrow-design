@@ -22,6 +22,7 @@ let fxns = (function () {
       data: JSON.stringify(post_data),
       success: (response) => {
         visitor_key = response.data.key;
+        calculateFormula();
       },
       error: function (jqXHR, textStatus, errorThrown) {
         console.log('Error');
@@ -98,6 +99,46 @@ let fxns = (function () {
     });
   }
   /* -- save question end-- **/
+  function rangeSliderInit() {
+    /* initialize range sliders **/
+    $(".js-range-slider").ionRangeSlider({
+      type: "single",
+      min: 0,
+      max: 100,
+      from: 50,
+      keyboard: true,
+      grid: true,
+      onFinish: function (data) {
+        /* save stats */
+        save_stats(data.input.data('question'), data.from);
+        calculateFormula();
+      }
+    });
+  }
+  /* initialize range sliders end **/
+
+  /** calculate formula */
+  function calculateFormula() {
+    let questions = $(".js-range-slider");
+    $('.result-value p').each(function () {
+      let formula = $(this).data('formula');
+      /** replace formula with values */
+      formula = formula.replace(/(Q[\d]+)/g, (match) => {
+        let index = Number(match.split(/[Q]/)[1]);
+        return questions[index - 1].value ? questions[index - 1].value : match;
+      });
+      /** replace formula with values */
+      /*** calculate values by pass to math lib */
+      formula = Math.round(math.eval(formula));
+      $(this).text(formula);
+    });
+
+    /* save result */
+    save_result();
+  }
+  /** calculate formula end */
+
+
   return {
     generateVisitor: function () {
       generateVisitor();
@@ -107,30 +148,18 @@ let fxns = (function () {
     },
     save_result: function () {
       save_result();
+    },
+    initSlider: function () {
+      rangeSliderInit();
     }
   };
 })();
 
-/* initialize range sliders **/
-$(".js-range-slider").ionRangeSlider({
-  type: "single",
-  min: 0,
-  max: 100,
-  from: 50,
-  keyboard: true,
-  grid: true,
-  onFinish: function (data) {
-    /* save stats */
-    fxns.save_item(data.input.data('question'), data.from);
-    /* save result */
-    fxns.save_result();
-  }
-});
-/* initialize range sliders end **/
-
 $(document).ready(function () {
   resultScroll();
   fxns.generateVisitor(); /*  unique key For User */
+  fxns.initSlider();
+
 });
 
 $(window).resize(function () {

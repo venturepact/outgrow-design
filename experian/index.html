@@ -19,6 +19,7 @@
     <link href="assets/css/ion.rangeSlider.css" rel="stylesheet">
     <link href="assets/css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.14.2/math.min.js"></script>
 </head>
 <body class="experian">
 	<div class="inner-page">
@@ -438,7 +439,12 @@
 						<div class="result-text">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Monthly Mortgage Payments</p></div>
-							    <div class="result-value" ><p data-result="5950a32f2074049076cd5194">537&nbsp;</p></div>
+							    <div class="result-value" >
+									<p 
+										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)"
+										data-result="5950a32f2074049076cd5194"
+									>537</p>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -446,43 +452,66 @@
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Interest Paid</p></div>
-							    <div class="result-value" ><p data-result="59438432efd7bd1100e80600">$93,256&nbsp;</p></div>
+							    <div class="result-value" >
+									$<p 
+										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*Q3*12-Q1"
+										data-result="59438432efd7bd1100e80600"
+									>93,256</p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Number Of  Payments</p></div>
-							    <div class="result-value" ><p data-result="59438432efd7bd1100e805ff">360&nbsp;</p></div>
+							    <div class="result-value" >
+									<p 
+										data-formula='(12*Q3)'
+										data-result="59438432efd7bd1100e805ff">360</p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Mortgage Payments</p></div>
-							    <div class="result-value"><p data-result="594393fd53de611100f040cc">$193,256&nbsp;</p></div>
+							    <div class="result-value">
+									$<p 
+										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*(Q3*12)"
+										data-result="594393fd53de611100f040cc"></p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Monthly Payment</p></div>
-							    <div class="result-value" ><p data-result="5943a823438437110034842e">$862&nbsp;</p></div>
+							    <div class="result-value" >
+									$<p
+										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)+Q6+Q7+Q5/12+Q4/12"								
+										data-result="5943a823438437110034842e">862</p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Home Insurance</p></div>
-							    <div class="result-value" ><p data-result="5943a823438437110034842d">$18,000&nbsp;</p></div>
+								<div class="result-value" >
+									$<p 
+										data-formula="(Q5*30)"
+										data-result="5943a823438437110034842d">18,000</p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Private Mortgage Insurance</p></div>
-							    <div class="result-value" ><p data-result="5943a823438437110034842c">$0&nbsp;</p></div>
+							    <div class="result-value" >
+									$
+									<p 
+										data-formula="((12*Q3)*Q6)"
+										data-result="5943a823438437110034842c">0</p></div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Total Property Tax</p></div>
-							    <div class="result-value" ><p data-result="594ce2a46c48cfed7099fd71">$99,000&nbsp;</p></div>
+							    <div class="result-value" >
+									$<p 
+										data-formula="30*Q4" 
+										data-result="594ce2a46c48cfed7099fd71">99000</p></div>
 							</div>
 						</div>
 					</div>
