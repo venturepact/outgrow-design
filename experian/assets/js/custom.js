@@ -356,6 +356,9 @@ function graphInit() {
     "type": "line"
   }
   Highcharts.chart('graph-container', {
+     credits: {
+        enabled: false
+    },
     chart: {
       type: graphNow.type,
       backgroundColor: '#fff',
