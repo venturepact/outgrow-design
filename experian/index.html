@@ -185,6 +185,7 @@
 	          	<i class="material-icons">close</i>
 	        </a>
 	        <div class="visuals-outer">
+				<div id="temp-graph-table" class="hide"></div>
 	        	<span class="graph-title">Mortgage Charts</span>
 	        	<div class="graph-outer">
 		        	<div id="graph-container"></div>
@@ -192,227 +193,25 @@
 		        <div class="data-table">
       				<div class="table-outer">
       					<span class="table-title">Mortgage Loan Repayment in $</span>
-      					<table>
-				          <thead>
-				            <tr>
+						<div id="og-table-excel" class="scrollbar hide"></div>
+						<table id="table-final">
+				          <thead id="table-final-head">
+				            <!-- <tr>
 				              <th>Year</th>
 				              <th>Yearly Payment</th>
 				              <th>Beginning Balance</th>
 				              <th>Interest Paid</th>
 				              <th>Principal amount</th>
-				            </tr>
+				            </tr> -->
 				          </thead>
-				          <tbody>
-				            <tr class="light">
+				          <tbody id="table-final-body">
+				            <!-- <tr class="light">
 				              <td>1</td>
 				              <td>$6,441</td>
 				              <td>$100,000</td>
 				              <td>$4,966</td>
 				              <td>$1,475</td>
-				            </tr>
-				            <tr class="light">
-				              <td>2</td>
-				              <td>$6,441</td>
-				              <td>$98,524</td>
-				              <td>$4,891</td>
-				              <td>$1,550</td>
-				            </tr>
-				            <tr class="light">
-				              <td>3</td>
-				              <td>$6,441</td>
-				              <td>$96,973</td>
-				              <td>$4,811</td>
-				              <td>$1,630</td>
-				            </tr>
-				            <tr class="light">
-				              <td>4</td>
-				              <td>$6,441</td>
-				              <td>$95,343</td>
-				              <td>$4,728</td>
-				              <td>$1,713</td>
-				            </tr>
-				            <tr class="light">
-				              <td>5</td>
-				              <td>$6,441</td>
-				              <td>$93,630</td>
-				              <td>$4,640</td>
-				              <td>$1,801</td>
-				            </tr>
-				            <tr class="light">
-				              <td>6</td>
-				              <td>$6,441</td>
-				              <td>$91,828</td>
-				              <td>$4,548</td>
-				              <td>$1,893</td>
-				            </tr>
-				            <tr class="light">
-				              <td>7</td>
-				              <td>$6,441</td>
-				              <td>$89,935</td>
-				              <td>$4,451</td>
-				              <td>$1,990</td>
-				            </tr>
-				            <tr class="light">
-				              <td>8</td>
-				              <td>$6,441</td>
-				              <td>$87,945</td>
-				              <td>$4,349</td>
-				              <td>$2,092</td>
-				            </tr>
-				            <tr class="light">
-				              <td>9</td>
-				              <td>$6,441</td>
-				              <td>$85,852</td>
-				              <td>$4,242</td>
-				              <td>$2,199</td>
-				            </tr>
-				            <tr class="light">
-				              <td>10</td>
-				              <td>$6,441</td>
-				              <td>$83,653</td>
-				              <td>$4,130</td>
-				              <td>$2,311</td>
-				            </tr>
-				            <tr class="light">
-				              <td>11</td>
-				              <td>$6,441</td>
-				              <td>$81,342</td>
-				              <td>$4,011</td>
-				              <td>$2,429</td>
-				            </tr>
-				            <tr class="light">
-							    <td>12</td>
-							    <td>$6,441</td>
-							    <td>$78,912</td>
-							    <td>$3,887</td>
-							    <td>$2,554</td>
-							</tr>
-							<tr class="light">
-							    <td>13</td>
-							    <td>$6,441</td>
-							    <td>$76,357</td>
-							    <td>$3,756</td>
-							    <td>$2,684</td>
-							</tr>
-							<tr class="light">
-							    <td>14</td>
-							    <td>$6,441</td>
-							    <td>$73,672</td>
-							    <td>$3,619</td>
-							    <td>$2,822</td>
-							</tr>
-							<tr class="light">
-							    <td>15</td>
-							    <td>$6,441</td>
-							    <td>$70,850</td>
-							    <td>$3,475</td>
-							    <td>$2,966</td>
-							</tr>
-							<tr class="light">
-							    <td>16</td>
-							    <td>$6,441</td>
-							    <td>$67,883</td>
-							    <td>$3,323</td>
-							    <td>$3,118</td>
-							</tr>
-							<tr class="light">
-							    <td>17</td>
-							    <td>$6,441</td>
-							    <td>$64,765</td>
-							    <td>$3,163</td>
-							    <td>$3,278</td>
-							</tr>
-							<tr class="light">
-							    <td>18</td>
-							    <td>$6,441</td>
-							    <td>$61,487</td>
-							    <td>$2,996</td>
-							    <td>$3,445</td>
-							</tr>
-							<tr class="light">
-							    <td>19</td>
-							    <td>$6,441</td>
-							    <td>$58,041</td>
-							    <td>$2,819</td>
-							    <td>$3,622</td>
-							</tr>
-							<tr class="light">
-							    <td>20</td>
-							    <td>$6,441</td>
-							    <td>$54,419</td>
-							    <td>$2,634</td>
-							    <td>$3,807</td>
-							</tr>
-							<tr class="light">
-							    <td>21</td>
-							    <td>$6,441</td>
-							    <td>$50,612</td>
-							    <td>$2,439</td>
-							    <td>$4,002</td>
-							</tr>
-							<tr class="light">
-							    <td>22</td>
-							    <td>$6,441</td>
-							    <td>$46,610</td>
-							    <td>$2,234</td>
-							    <td>$4,206</td>
-							</tr>
-							<tr class="light">
-							    <td>23</td>
-							    <td>$6,441</td>
-							    <td>$42,403</td>
-							    <td>$2,019</td>
-							    <td>$4,422</td>
-							</tr>
-							<tr class="light">
-							    <td>24</td>
-							    <td>$6,441</td>
-							    <td>$37,981</td>
-							    <td>$1,793</td>
-							    <td>$4,648</td>
-							</tr>
-							<tr class="light">
-							    <td>25</td>
-							    <td>$6,441</td>
-							    <td>$33,332</td>
-							    <td>$1,555</td>
-							    <td>$4,886</td>
-							</tr>
-							<tr class="light">
-							    <td>26</td>
-							    <td>$6,441</td>
-							    <td>$28,446</td>
-							    <td>$1,305</td>
-							    <td>$5,136</td>
-							</tr>
-							<tr class="light">
-							    <td>27</td>
-							    <td>$6,441</td>
-							    <td>$23,310</td>
-							    <td>$1,042</td>
-							    <td>$5,398</td>
-							</tr>
-							<tr class="light">
-							    <td>28</td>
-							    <td>$6,441</td>
-							    <td>$17,911</td>
-							    <td>$766</td>
-							    <td>$5,675</td>
-							</tr>
-							<tr class="light">
-							    <td>29</td>
-							    <td>$6,441</td>
-							    <td>$12,236</td>
-							    <td>$476</td>
-							    <td>$5,965</td>
-							</tr>
-							<tr class="light">
-							    <td>30</td>
-							    <td>$6,441</td>
-							    <td>$6,270</td>
-							    <td>$171</td>
-							    <td>$6,270</td>
-							</tr>
+				            </tr> -->
 				          </tbody>
 				        </table>
       				</div>
@@ -440,7 +239,7 @@
 							<div class="exp-res-outer">
 								<div class="result-desc"><p>Monthly Mortgage Payments</p></div>
 							    <div class="result-value" >
-									<p 
+									<p 	id="result-1-value"
 										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)"
 										data-result="5950a32f2074049076cd5194"
 									>537</p>
@@ -454,6 +253,7 @@
 								<div class="result-desc"><p>Total Interest Paid</p></div>
 							    <div class="result-value" >
 									<span>$</span><p 
+										id="result-2-value"
 										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*Q3*12-Q1"
 										data-result="59438432efd7bd1100e80600"
 									>93,256</p></div>
@@ -464,6 +264,7 @@
 								<div class="result-desc"><p>Total Number Of  Payments</p></div>
 							    <div class="result-value" >
 									<p 
+										id="result-3-value"
 										data-formula='(12*Q3)'
 										data-result="59438432efd7bd1100e805ff">360</p></div>
 							</div>
@@ -473,6 +274,7 @@
 								<div class="result-desc"><p>Total Mortgage Payments</p></div>
 							    <div class="result-value">
 									<span>$</span><p 
+										id="result-4-value"
 										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*(Q3*12)"
 										data-result="594393fd53de611100f040cc">193,256</p></div>
 							</div>
@@ -482,6 +284,7 @@
 								<div class="result-desc"><p>Total Monthly Payment</p></div>
 							    <div class="result-value" >
 									<span>$</span><p
+										id="result-5-value"
 										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)+Q6+Q7+Q5/12+Q4/12"								
 										data-result="5943a823438437110034842e">862</p></div>
 							</div>
@@ -492,6 +295,7 @@
 								<div class="result-value" >
 									<span>$</span>
 									<p 
+										id="result-6-value"
 										data-formula="(Q5*30)"
 										data-result="5943a823438437110034842d">18,000</p></div>
 							</div>
@@ -502,6 +306,7 @@
 							    <div class="result-value" >
 									<span>$</span>
 									<p 
+										id="result-7-value"
 										data-formula="((12*Q3)*Q6)"
 										data-result="5943a823438437110034842c">0</p></div>
 							</div>
@@ -512,6 +317,7 @@
 							    <div class="result-value" >
 									<span>$</span>
 									<p 
+										id="result-8-value"
 										data-formula="30*Q4" 
 										data-result="594ce2a46c48cfed7099fd71">99,000</p></div>
 							</div>
@@ -601,5 +407,6 @@
 	<script src="https://code.highcharts.com/highcharts.js"></script>
 	<script src="https://code.highcharts.com/modules/exporting.js"></script>
 	<script src="assets/js/custom.js"></script>
+	<script src="assets/js/handsontable/handsontable.full.min.js"></script>
 </body>
 </html>
