@@ -103,6 +103,9 @@
 	.secondary-result .result-value p {
 	    font-size: 16px;
 	}
+	.secondary-result .result-value span {
+	    font-size: 16px;
+	}
 	.secondary-result{
 		padding: 12px 20px;
 	}	
@@ -217,6 +220,9 @@
 	.secondary-result .result-value p {
 	    font-size: 16px;
 	}
+	.secondary-result .result-value span{
+	    font-size: 16px;
+	}
 	.table-outer table {
 	    max-width: 730px;
 	}
@@ -293,6 +299,9 @@
 	    line-height: 28px;
 	}
 	.secondary-result .result-value p {
+	    font-size: 20px;
+	}
+	.secondary-result .result-value span {
 	    font-size: 20px;
 	}
 	.slider-output{
