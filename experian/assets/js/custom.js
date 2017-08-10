@@ -187,8 +187,9 @@ $(document).ready(function () {
     let min = sliderEle.attr('data-min')
     if (parseFloat(val) > parseFloat(max))
       val = max;
-    else if (parseFloat(val) < parseFloat(min))
-      val = min;
+    else if ((parseFloat(val) < parseFloat(min)) || isNaN(val))
+      val = min;	
+	event.target.value	=	addCommas(val);
     sliderEle.data('ionRangeSlider').update({
       from: val
     });
