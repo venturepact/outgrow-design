@@ -458,6 +458,9 @@ a, button:focus, input, textarea {
     width: 100%;
     font-family: oxygen;
 }
+.result-first .result-text .result-value span{
+    font-size: 23px;
+}
 .exp-res-outer {
     display: flex;
     -webkit-box-flex: 1;
