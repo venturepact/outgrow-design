@@ -147,7 +147,7 @@
 		/* Safari only override ::i-block-chrome,*/ 
 		.slider-set input.slider-input {
 		    height: 30px;
-		    top: -4px;
+		    top: -6px;
 		    position: absolute;
 		}
 	}
