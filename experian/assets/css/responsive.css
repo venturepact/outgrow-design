@@ -51,6 +51,7 @@
 	.slider-input-post{
         max-width: 27px;
     	margin-left: -1px!important;
+	    right: -100px;
 	}
 	.slider-set input.slider-input{
 		width: 85px!important;
@@ -146,7 +147,7 @@
 		/* Safari only override ::i-block-chrome,*/ 
 		.slider-set input.slider-input {
 		    height: 30px;
-		    top: -7px;
+		    top: -4px;
 		    position: absolute;
 		}
 	}
