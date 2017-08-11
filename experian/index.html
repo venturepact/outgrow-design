@@ -1,250 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Experian Mortgage Loan Calculator</title>
-    <!-- Favicon -->
-    <link rel="shortcut icon" id="favicon" type="image/png" href="assets/images/favicon-latest.ico">
-    <!-- Bootstrap and dependencies -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-    <!-- <link href="assets/css/selectize.default.css" rel="stylesheet"> -->
-    <!-- <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet"> -->
-    <!-- Icon files -->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!-- Custom style -->
-    <link href="assets/css/style.css" rel="stylesheet">
-    <link href="assets/css/responsive.css" rel="stylesheet">
-    <link href="assets/css/ion.rangeSlider.css" rel="stylesheet">
-    <link href="assets/css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Experian Mortgage Loan Calculator</title>
+	<!-- Favicon -->
+	<link rel="shortcut icon" id="favicon" type="image/png" href="assets/images/favicon-latest.ico">
+	<!-- Bootstrap and dependencies -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<!-- <link href="assets/css/selectize.default.css" rel="stylesheet"> -->
+	<!-- <link href="assets/css/bootstrap-slider.min.css" rel="stylesheet"> -->
+	<!-- Icon files -->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!-- Custom style -->
+	<link href="assets/css/style.css" rel="stylesheet">
+	<link href="assets/css/responsive.css" rel="stylesheet">
+	<link href="assets/css/ion.rangeSlider.css" rel="stylesheet">
+	<link href="assets/css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.14.2/math.min.js"></script>
 </head>
+
 <body class="experian">
-	<div class="loader-outer"><div class="loader"></div></div>
+	<div class="loader-outer">
+		<div class="loader"></div>
+	</div>
 	<div class="inner-page">
 		<div class="questionner-outer">
 			<div class="form-outer">
 				<form>
 					<div class="question-outer">
 						<div class="ques-num">
-                    		<span class="question-number">1.</span>
-                    		<div class="ques-head">
-		                      <div>What is your loan amount in $?</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="1000000" data-step="1000" data-from="100000" data-prefix="$" id="range_43" class="js-range-slider" data-question="598957e13647358022a331c4" data-id="#input1" value="" />
-								   	</div>
+							<span class="question-number">1.</span>
+							<div class="ques-head">
+								<div>What is your loan amount in $?</div>
+							</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="1000000" data-step="1000" data-from="100000" data-prefix="$" id="range_43" class="js-range-slider"
+										 data-question="598957e13647358022a331c4" data-id="#input1" value="" />
+									</div>
 								</div>
 								<div class="slider-output">
-								   	<span class="slider-input-pre">$</span>
-								   	<input id="input1" class="slider-input" type="text" value="100,000">
-							   </div>
-							</div>
-                    	</div>
-					</div>
-					<div class="question-outer">
-						<div class="ques-num">
-                    		<span class="question-number">2.</span>
-                    		<div class="ques-head">
-		                      <div>Rate (APR %)</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="20" data-step="0.5" data-from="5" data-postfix="%" id="range_44" class="js-range-slider" value="" data-question="598957e13647358022a331c7" data-id="#input2" />
-								   	</div>
-								</div>
-								<div class="slider-output">
-								   	<input id="input2" class="slider-input suffix-text" type="text" value="5">
-								   	<span class="slider-input-post">%</span>
-							   </div>
-							</div>
-                    	</div>
-					</div>
-					<div class="question-outer">
-						<div class="ques-num">
-                    		<span class="question-number">3.</span>
-                    		<div class="ques-head">
-		                      <div>Payment Term (Years)</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-grid-snap="true" data-min="5" data-max="30" data-step="5" data-from="30" data-postfix="yr" id="range_45" class="js-range-slider" value="" data-question="598957e13647358022a331ca" data-id="#input3" />
-								   	</div>
-								</div>
-								<div class="slider-output">
-								   	<input id="input3" class="slider-input suffix-text" type="text" value="30">
-								   	<span class="slider-input-post">yr</span>
-								</div>
-							</div>
-                    	</div>
-					</div>
-					<div class="question-outer">
-						<div class="ques-num">
-                    		<span class="question-number">4.</span>
-                    		<div class="ques-head">
-		                      <div>Annual Property Tax</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="20000" data-step="1" data-from="3300" data-prefix="$" id="range_46" class="js-range-slider" value="" data-question="598957e13647358022a331cd" data-id="#input4" />
-								   	</div>
-								</div>
-							   	<div class="slider-output">
-									<span  class="slider-input-pre">$</span>
-							   		<input id="input4" class="slider-input" type="text" value="3,300">
-							   	</div>
-							</div>
-                    	</div>
-					</div>
-					<div class="question-outer">
-						<div class="ques-num">
-                    		<span class="question-number">5.</span>
-                    		<div class="ques-head">
-		                      <div>Annual Home Insurance</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="6000" data-step="1" data-from="600" data-prefix="$" id="range_47" class="js-range-slider" value="" data-question="598957e13647358022a331d0" data-id="#input5" />
-								   	</div>
-								</div>
-							   	<div class="slider-output">
 									<span class="slider-input-pre">$</span>
-							   		<input id="input5" class="slider-input" type="text" value="600">
-							   	</div>
+									<input id="input1" class="slider-input" type="text" value="100,000">
+								</div>
 							</div>
-                    	</div>
+						</div>
 					</div>
 					<div class="question-outer">
 						<div class="ques-num">
-                    		<span class="question-number">6.</span>
-                    		<div class="ques-head">
-		                      <div>Monthly Private Mortgage Insurance (PMI)</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="4000" data-step="1" data-prefix="$" id="range_48" class="js-range-slider" value="" data-question="598957e13647358022a331d3" data-id="#input6" />
-								   	</div>
-								</div>
-							   	<div class="slider-output">
-								   	<span class="slider-input-pre">$</span>
-								   	<input id="input6" class="slider-input" type="text">
-							   </div>
+							<span class="question-number">2.</span>
+							<div class="ques-head">
+								<div>Rate (APR %)</div>
 							</div>
-                    	</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="20" data-step="0.5" data-from="5" data-postfix="%" id="range_44" class="js-range-slider"
+										 value="" data-question="598957e13647358022a331c7" data-id="#input2" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<input id="input2" class="slider-input suffix-text" type="text" value="5">
+									<span class="slider-input-post">%</span>
+								</div>
+							</div>
+						</div>
 					</div>
 					<div class="question-outer">
 						<div class="ques-num">
-                    		<span class="question-number">7.</span>
-                    		<div class="ques-head">
-		                      <div>Monthly Homeowners Association Fee (HOA)</div>
-		                    </div>
-                    	</div>
-                    	<div class="ques-component">
-                    		<div class="slider-set">
-	                    		<div class="range-slider">
-	                    			<div class="well1">
-								    	<input type="text" data-min="0" data-max="3000" data-step="1" data-prefix="$" id="range_49" class="js-range-slider" value="" data-question="598957e13647358022a331d6" data-id="#input7" />
-								   	</div>
-								</div>
-							   	<div class="slider-output">
-								   	<span class="slider-input-pre">$</span>
-								   	<input id="input7" class="slider-input" type="text">
-							   	</div>
+							<span class="question-number">3.</span>
+							<div class="ques-head">
+								<div>Payment Term (Years)</div>
 							</div>
-                    	</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-grid-snap="true" data-min="5" data-max="30" data-step="5" data-from="30" data-postfix="yr" id="range_45"
+										 class="js-range-slider" value="" data-question="598957e13647358022a331ca" data-id="#input3" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<input id="input3" class="slider-input suffix-text" type="text" value="30">
+									<span class="slider-input-post">yr</span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question-outer">
+						<div class="ques-num">
+							<span class="question-number">4.</span>
+							<div class="ques-head">
+								<div>Annual Property Tax</div>
+							</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="20000" data-step="1" data-from="3300" data-prefix="$" id="range_46" class="js-range-slider"
+										 value="" data-question="598957e13647358022a331cd" data-id="#input4" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<span class="slider-input-pre">$</span>
+									<input id="input4" class="slider-input" type="text" value="3,300">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question-outer">
+						<div class="ques-num">
+							<span class="question-number">5.</span>
+							<div class="ques-head">
+								<div>Annual Home Insurance</div>
+							</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="6000" data-step="1" data-from="600" data-prefix="$" id="range_47" class="js-range-slider"
+										 value="" data-question="598957e13647358022a331d0" data-id="#input5" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<span class="slider-input-pre">$</span>
+									<input id="input5" class="slider-input" type="text" value="600">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question-outer">
+						<div class="ques-num">
+							<span class="question-number">6.</span>
+							<div class="ques-head">
+								<div>Monthly Private Mortgage Insurance (PMI)</div>
+							</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="4000" data-step="1" data-prefix="$" id="range_48" class="js-range-slider" value=""
+										 data-question="598957e13647358022a331d3" data-id="#input6" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<span class="slider-input-pre">$</span>
+									<input id="input6" class="slider-input" type="text">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="question-outer">
+						<div class="ques-num">
+							<span class="question-number">7.</span>
+							<div class="ques-head">
+								<div>Monthly Homeowners Association Fee (HOA)</div>
+							</div>
+						</div>
+						<div class="ques-component">
+							<div class="slider-set">
+								<div class="range-slider">
+									<div class="well1">
+										<input type="text" data-min="0" data-max="3000" data-step="1" data-prefix="$" id="range_49" class="js-range-slider" value=""
+										 data-question="598957e13647358022a331d6" data-id="#input7" />
+									</div>
+								</div>
+								<div class="slider-output">
+									<span class="slider-input-pre">$</span>
+									<input id="input7" class="slider-input" type="text">
+								</div>
+							</div>
+						</div>
 					</div>
 				</form>
 				<div class="down-arrow-outer">
-	                <h3>Scroll Down for Results</h3>
-	                <i class="material-icons">arrow_downward</i>
-              </div>
+					<h3>Scroll Down for Results</h3>
+					<i class="material-icons">arrow_downward</i>
+				</div>
 			</div>
 		</div>
 		<div class="graph-icon-mainDiv">
-	        <a class="graph-icon-hideDiv" href="javascript:void(0);">
+			<a class="graph-icon-hideDiv" href="javascript:void(0);">
 	          	<i class="material-icons">close</i>
 	        </a>
-	        <div class="visuals-outer">
+			<div class="visuals-outer">
 				<div id="temp-graph-table" class="hide"></div>
-	        	<span class="graph-title">Mortgage Charts</span>
-	        	<div class="graph-outer">
-		        	<div id="graph-container"></div>
-		        </div>
-		        <div class="data-table">
-      				<div class="table-outer">
-      					<span class="table-title">Mortgage Loan Repayment in $</span>
+				<span class="graph-title">Mortgage Charts</span>
+				<div class="graph-outer">
+					<div id="graph-container"></div>
+				</div>
+				<div class="data-table">
+					<div class="table-outer">
+						<span class="table-title">Mortgage Loan Repayment in $</span>
 						<div id="og-table-excel" class="scrollbar hide"></div>
 						<table id="table-final">
-				          <thead id="table-final-head">
-				            <!-- <tr>
+							<thead id="table-final-head">
+								<!-- <tr>
 				              <th>Year</th>
 				              <th>Yearly Payment</th>
 				              <th>Beginning Balance</th>
 				              <th>Interest Paid</th>
 				              <th>Principal amount</th>
 				            </tr> -->
-				          </thead>
-				          <tbody id="table-final-body">
-				            <!-- <tr class="light">
+							</thead>
+							<tbody id="table-final-body">
+								<!-- <tr class="light">
 				              <td>1</td>
 				              <td>$6,441</td>
 				              <td>$100,000</td>
 				              <td>$4,966</td>
 				              <td>$1,475</td>
 				            </tr> -->
-				          </tbody>
-				        </table>
-      				</div>
-      			</div>
-		    </div>
-      	</div>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
 		<div class="result-outer">
 			<div class="result-main">
 				<div class="result-inner">
 					<div class="result-topheading">
 						<div class="media-outer">
 							<a class="graph-icon" href="javascript:void(0);">
-			                  	<div class="help-outer">
-				                    <div class="vis-outer">
-				                      <div class="charts-label">View Charts</div>
-				                      <i class="material-icons">timeline</i>
-				                    </div>
-				                    <div class="help-text">Graphs &amp; Charts</div>
-			               		</div>
-			                </a>
+								<div class="help-outer">
+									<div class="vis-outer">
+										<div class="charts-label">View Charts</div>
+										<i class="material-icons">timeline</i>
+									</div>
+									<div class="help-text">Graphs &amp; Charts</div>
+								</div>
+							</a>
 						</div>
 					</div>
 					<div class="result-first">
 						<div class="result-text">
 							<div class="exp-res-outer">
-								<div class="result-desc"><p>Monthly Mortgage Payments</p></div>
-							    <div class="result-value" >
-							    	<span>$</span>
-									<p 	id="result-1-value"
-										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)"
-										data-result="5950a32f2074049076cd5194"
-									>537</p>
+								<div class="result-desc">
+									<p>Monthly Mortgage Payments</p>
+								</div>
+								<div class="result-value">
+									<span>$</span>
+									<p id="result-1-value" data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)" data-result="5950a32f2074049076cd5194">537</p>
 								</div>
 							</div>
 						</div>
@@ -252,120 +262,122 @@
 					<div class="result-outer-scroll">
 						<div class="secondary-result">
 							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Interest Paid</p></div>
-							    <div class="result-value" >
-									<span>$</span><p 
-										id="result-2-value"
-										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*Q3*12-Q1"
-										data-result="59438432efd7bd1100e80600"
-									>93,256</p></div>
-							</div>
-						</div>
-						<div class="secondary-result">
-							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Number Of  Payments</p></div>
-							    <div class="result-value" >
-									<p 
-										id="result-3-value"
-										data-formula='(12*Q3)'
-										data-result="59438432efd7bd1100e805ff">360</p></div>
-							</div>
-						</div>
-						<div class="secondary-result">
-							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Mortgage Payments</p></div>
-							    <div class="result-value">
-									<span>$</span><p 
-										id="result-4-value"
-										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*(Q3*12)"
-										data-result="594393fd53de611100f040cc">193,256</p></div>
-							</div>
-						</div>
-						<div class="secondary-result">
-							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Monthly Payment</p></div>
-							    <div class="result-value" >
-									<span>$</span><p
-										id="result-5-value"
-										data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)+Q6+Q7+Q5/12+Q4/12"								
-										data-result="5943a823438437110034842e">862</p></div>
-							</div>
-						</div>
-						<div class="secondary-result">
-							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Home Insurance</p></div>
-								<div class="result-value" >
+								<div class="result-desc">
+									<p>Total Interest Paid</p>
+								</div>
+								<div class="result-value">
 									<span>$</span>
-									<p 
-										id="result-6-value"
-										data-formula="(Q5*30)"
-										data-result="5943a823438437110034842d">18,000</p></div>
+									<p id="result-2-value" data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*Q3*12-Q1" data-result="59438432efd7bd1100e80600">93,256</p>
+								</div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Private Mortgage Insurance</p></div>
-							    <div class="result-value" >
-									<span>$</span>
-									<p 
-										id="result-7-value"
-										data-formula="((12*Q3)*Q6)"
-										data-result="5943a823438437110034842c">0</p></div>
+								<div class="result-desc">
+									<p>Total Number Of Payments</p>
+								</div>
+								<div class="result-value">
+									<p id="result-3-value" data-formula='(12*Q3)' data-result="59438432efd7bd1100e805ff">360</p>
+								</div>
 							</div>
 						</div>
 						<div class="secondary-result">
 							<div class="exp-res-outer">
-								<div class="result-desc"><p>Total Property Tax</p></div>
-							    <div class="result-value" >
+								<div class="result-desc">
+									<p>Total Mortgage Payments</p>
+								</div>
+								<div class="result-value">
 									<span>$</span>
-									<p 
-										id="result-8-value"
-										data-formula="30*Q4" 
-										data-result="594ce2a46c48cfed7099fd71">99,000</p></div>
+									<p id="result-4-value" data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)*(Q3*12)" data-result="594393fd53de611100f040cc">193,256</p>
+								</div>
+							</div>
+						</div>
+						<div class="secondary-result">
+							<div class="exp-res-outer">
+								<div class="result-desc">
+									<p>Total Monthly Payment</p>
+								</div>
+								<div class="result-value">
+									<span>$</span>
+									<p id="result-5-value" data-formula="Q1*(Q2/1200*(1+Q2/1200)^(Q3*12))/((1+Q2/1200)^(Q3*12)-1)+Q6+Q7+Q5/12+Q4/12" data-result="5943a823438437110034842e">862</p>
+								</div>
+							</div>
+						</div>
+						<div class="secondary-result">
+							<div class="exp-res-outer">
+								<div class="result-desc">
+									<p>Total Home Insurance</p>
+								</div>
+								<div class="result-value">
+									<span>$</span>
+									<p id="result-6-value" data-formula="(Q5*30)" data-result="5943a823438437110034842d">18,000</p>
+								</div>
+							</div>
+						</div>
+						<div class="secondary-result">
+							<div class="exp-res-outer">
+								<div class="result-desc">
+									<p>Total Private Mortgage Insurance</p>
+								</div>
+								<div class="result-value">
+									<span>$</span>
+									<p id="result-7-value" data-formula="((12*Q3)*Q6)" data-result="5943a823438437110034842c">0</p>
+								</div>
+							</div>
+						</div>
+						<div class="secondary-result">
+							<div class="exp-res-outer">
+								<div class="result-desc">
+									<p>Total Property Tax</p>
+								</div>
+								<div class="result-value">
+									<span>$</span>
+									<p id="result-8-value" data-formula="30*Q4" data-result="594ce2a46c48cfed7099fd71">99,000</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			</div>
 		</div>
+	</div>
 	</div>
 	<!-- GA Code -->
 	<script>
 		var gad = "UA-82253758-1";
 		(function (i, s, o, g, r, a, m) {
-		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-		(i[r].q = i[r].q || []).push(arguments)
-		}, i[r].l = 1 * new Date(); a = s.createElement(o),
-		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+			i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date(); a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
 		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 		var parser = document.createElement('a');
 		parser.href = window.location.href;
-		ga('create', gad, 'auto', 'devteam', {'allowLinker': true});
+		ga('create', gad, 'auto', 'devteam', { 'allowLinker': true });
 		ga('require', 'linker');
-		ga('devteam.linker:autoLink', [parser.hostname] );
+		ga('devteam.linker:autoLink', [parser.hostname]);
 	</script>
 	<script>
 		//Constant Data
-		var live_app_id	=	'598957e33647358022a3327d';
-		var company_id	=	'581cfdfd6accc60141b4ba4a';
-		var calc_name	=	'Experian Calc Demo';
-		var calc_url	=	'Experian-Calc-Demo';
-		var formula1	=	'';
-		var formula2	=	'';
-		var formula3	=	'';
-		var formula4	=	'';
-		var formula5	=	'';
-		var formula6	=	'';
-		var formula7	=	'';
-		var formula8	=	'';
-		var formula9	=	'';
-		
+		var live_app_id = '598957e33647358022a3327d';
+		var company_id = '581cfdfd6accc60141b4ba4a';
+		var calc_name = 'Experian Calc Demo';
+		var calc_url = 'Experian-Calc-Demo';
+		var formula1 = '';
+		var formula2 = '';
+		var formula3 = '';
+		var formula4 = '';
+		var formula5 = '';
+		var formula6 = '';
+		var formula7 = '';
+		var formula8 = '';
+		var formula9 = '';
+
 		//Extract UTMs from URL
 		function getParameterByName(name, url) {
 			name = name.replace(/[\[\]]/g, '\\$&');
 			const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-			results = regex.exec(url);
+				results = regex.exec(url);
 			if (!results) {
 				return null;
 			}
@@ -374,31 +386,31 @@
 			}
 			return decodeURIComponent(results[2].replace(/\+/g, ' '));
 		}
-		var queryURL 	=	'';
-		var utm_param	=	{};
-		var url			=	window.location.href;
+		var queryURL = '';
+		var utm_param = {};
+		var url = window.location.href;
 		if (document.referrer === '' || document.referrer === undefined) {
-			queryURL	=	url;
+			queryURL = url;
 		} else {
-			queryURL	=	document.referrer;
+			queryURL = document.referrer;
 		}
 		if (queryURL.length) {
 			// null means query param is absent, "" (present with no value), else it will return a value
-			var utm_source		=	getParameterByName('utm_source', queryURL);
-			var utm_medium		=	getParameterByName('utm_medium', queryURL);
-			var utm_campaign	=	getParameterByName('utm_campaign', queryURL);
-			var utm_term		=	getParameterByName('utm_term', queryURL);
-			var utm_content		=	getParameterByName('utm_content', queryURL);
+			var utm_source = getParameterByName('utm_source', queryURL);
+			var utm_medium = getParameterByName('utm_medium', queryURL);
+			var utm_campaign = getParameterByName('utm_campaign', queryURL);
+			var utm_term = getParameterByName('utm_term', queryURL);
+			var utm_content = getParameterByName('utm_content', queryURL);
 			utm_param = {
-			  utm_source: ((utm_source) ? utm_source : ''),
-			  utm_medium: ((utm_medium) ? utm_medium : ''),
-			  utm_campaign: ((utm_campaign) ? utm_campaign : ''),
-			  utm_term: ((utm_term) ? utm_term : ''),
-			  utm_content: ((utm_content) ? utm_content : '')
+				utm_source: ((utm_source) ? utm_source : ''),
+				utm_medium: ((utm_medium) ? utm_medium : ''),
+				utm_campaign: ((utm_campaign) ? utm_campaign : ''),
+				utm_term: ((utm_term) ? utm_term : ''),
+				utm_content: ((utm_content) ? utm_content : '')
 			}
 		}
-		
-		$(document).ready(function(){
+
+		$(document).ready(function () {
 			//Send GA Request
 			ga('devteam.send', 'pageview', '/' + live_app_id);
 			ga('devteam.send', 'pageview', '/' + company_id);
@@ -411,4 +423,5 @@
 	<script src="assets/js/custom.js"></script>
 	<script src="assets/js/handsontable/handsontable.full.min.js"></script>
 </body>
+
 </html>

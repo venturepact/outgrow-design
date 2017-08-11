@@ -1,9 +1,9 @@
 let live_app = '598957e33647358022a3327d'; /* app unique key**/
 let visitor_key = ''; /* visitor key **/
 let hidVal = {};
-   $(window).load(function() {
-     $('.loader-outer').hide();
-  });
+$(window).load(function () {
+  $('.loader-outer').hide();
+});
 let fxns = (function () {
   /* -- Get Visitor Key -- **/
   function generateVisitor() {
@@ -358,11 +358,11 @@ function graphInit() {
     "type": "line"
   }
   Highcharts.chart('graph-container', {
-     credits: {
-        enabled: false
+    credits: {
+      enabled: false
     },
-    exporting: { 
-      enabled: false 
+    exporting: {
+      enabled: false
     },
     chart: {
       type: graphNow.type,
