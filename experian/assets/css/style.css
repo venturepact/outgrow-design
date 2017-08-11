@@ -262,7 +262,7 @@ a, button:focus, input, textarea {
 }
 .slider-input-post, .slider-input-pre {
     position: absolute;
-    top: -4px;
+    top: -3px;
     font-size: 15px;
     float: left;
     font-weight: 400;
