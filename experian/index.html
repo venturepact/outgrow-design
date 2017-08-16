@@ -19,7 +19,7 @@
 	<link href="assets/css/responsive.css" rel="stylesheet">
 	<link href="assets/css/ion.rangeSlider.css" rel="stylesheet">
 	<link href="assets/css/ion.rangeSlider.skinHTML5.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/3.14.2/math.min.js"></script>
 </head>
 
@@ -64,7 +64,7 @@
 							<div class="slider-set">
 								<div class="range-slider">
 									<div class="well1">
-										<input type="text" data-min="0" data-max="20" data-step="0.5" data-from="5" data-postfix="%" id="range_44" class="js-range-slider"
+										<input type="text" data-min="1" data-max="20" data-step="0.5" data-from="5" data-postfix="%" id="range_44" class="js-range-slider"
 										 value="" data-question="598957e13647358022a331c7" data-id="#input2" />
 									</div>
 								</div>
@@ -363,53 +363,7 @@
 		var company_id = '581cfdfd6accc60141b4ba4a';
 		var calc_name = 'Experian Calc Demo';
 		var calc_url = 'Experian-Calc-Demo';
-		var formula1 = '';
-		var formula2 = '';
-		var formula3 = '';
-		var formula4 = '';
-		var formula5 = '';
-		var formula6 = '';
-		var formula7 = '';
-		var formula8 = '';
-		var formula9 = '';
-
-		//Extract UTMs from URL
-		function getParameterByName(name, url) {
-			name = name.replace(/[\[\]]/g, '\\$&');
-			const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
-				results = regex.exec(url);
-			if (!results) {
-				return null;
-			}
-			if (!results[2]) {
-				return '';
-			}
-			return decodeURIComponent(results[2].replace(/\+/g, ' '));
-		}
-		var queryURL = '';
-		var utm_param = {};
-		var url = window.location.href;
-		if (document.referrer === '' || document.referrer === undefined) {
-			queryURL = url;
-		} else {
-			queryURL = document.referrer;
-		}
-		if (queryURL.length) {
-			// null means query param is absent, "" (present with no value), else it will return a value
-			var utm_source = getParameterByName('utm_source', queryURL);
-			var utm_medium = getParameterByName('utm_medium', queryURL);
-			var utm_campaign = getParameterByName('utm_campaign', queryURL);
-			var utm_term = getParameterByName('utm_term', queryURL);
-			var utm_content = getParameterByName('utm_content', queryURL);
-			utm_param = {
-				utm_source: ((utm_source) ? utm_source : ''),
-				utm_medium: ((utm_medium) ? utm_medium : ''),
-				utm_campaign: ((utm_campaign) ? utm_campaign : ''),
-				utm_term: ((utm_term) ? utm_term : ''),
-				utm_content: ((utm_content) ? utm_content : '')
-			}
-		}
-
+		
 		$(document).ready(function () {
 			//Send GA Request
 			ga('devteam.send', 'pageview', '/' + live_app_id);

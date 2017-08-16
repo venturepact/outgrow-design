@@ -1,8 +1,44 @@
 let live_app = '598957e33647358022a3327d'; /* app unique key**/
 let visitor_key = ''; /* visitor key **/
 let hidVal = {};
-$(window).load(function () {
-  $('.loader-outer').hide();
+//Extract UTMs from URL
+function getParameterByName(name, url) {
+  name = name.replace(/[\[\]]/g, '\\$&');
+  const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+    results = regex.exec(url);
+  if (!results) {
+    return null;
+  }
+  if (!results[2]) {
+    return '';
+  }
+  return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+var queryURL = '';
+var utm_param = {};
+var url = window.location.href;
+if (document.referrer === '' || document.referrer === undefined) {
+  queryURL = url;
+} else {
+  queryURL = document.referrer;
+}
+if (queryURL.length) {
+  // null means query param is absent, "" (present with no value), else it will return a value
+  var utm_source = getParameterByName('utm_source', queryURL);
+  var utm_medium = getParameterByName('utm_medium', queryURL);
+  var utm_campaign = getParameterByName('utm_campaign', queryURL);
+  var utm_term = getParameterByName('utm_term', queryURL);
+  var utm_content = getParameterByName('utm_content', queryURL);
+  utm_param = {
+    utm_source: ((utm_source) ? utm_source : ''),
+    utm_medium: ((utm_medium) ? utm_medium : ''),
+    utm_campaign: ((utm_campaign) ? utm_campaign : ''),
+    utm_term: ((utm_term) ? utm_term : ''),
+    utm_content: ((utm_content) ? utm_content : '')
+  }
+}
+$(window).on('load', function(){
+	$('.loader-outer').hide();
 });
 let fxns = (function () {
   /* -- Get Visitor Key -- **/
